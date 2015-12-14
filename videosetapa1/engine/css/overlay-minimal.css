@@ -2,7 +2,7 @@
 div#voverlay {
 	
 	/* growing background image */
-	background-image:url(../images/back.png);
+	background-image:url(../images/white.png);
 	
 	/* dimensions after the growing animation finishes  */
 	width:640px;
@@ -12,18 +12,18 @@ div#voverlay {
 	display:none;
 	
 	/* some padding to layout nested elements nicely  */
-	padding:16px;
+	padding:35px;
 }
 
 /* default close button positioned on upper right corner */
-div#voverlay .close {
+div#voverlay div.close {
 	background-image:url(../images/close.png);
 	position:absolute;
-	right:-9px;
-	top:-9px;
+	right:5px;
+	top:5px;
 	cursor:pointer;
-	height:32px;
-	width:32px;
+	height:35px;
+	width:35px;
 }
 
 div#vcontainer{
