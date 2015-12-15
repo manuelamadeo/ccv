@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:jalbum="http://jalbum.net/jalbumrss">
+    <channel>
+        <title>etapa27</title>
+   	<link>.</link>
+        <generator>jAlbum 13</generator>
+   		<description></description>
+        <jalbum:absolutePath></jalbum:absolutePath>
+        <item>
+            <title>2015-05-20 21.20.15</title>
+            <link>2015-05-20 21.20.15.png</link>
+            <pubDate>Tue, 15 Dec 2015 20:21:04 +0100</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/2015-05-20 21.20.15.png" width="144" height="256"/>
+            <media:content type="image/png" url="2015-05-20 21.20.15.png" width="540" height="960"/>
+            <guid isPermaLink="false">2015-05-20 21.20.15.png</guid>
+        </item>
+        <item>
+            <title>2015-05-21 14.22.19</title>
+            <link>2015-05-21 14.22.19.png</link>
+            <pubDate>Tue, 15 Dec 2015 20:21:04 +0100</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/2015-05-21 14.22.19.png" width="144" height="256"/>
+            <media:content type="image/png" url="2015-05-21 14.22.19.png" width="540" height="960"/>
+            <guid isPermaLink="false">2015-05-21 14.22.19.png</guid>
+        </item>
+        <item>
+            <title>2015-06-05 12.36.20</title>
+            <link>2015-06-05 12.36.20.jpg</link>
+            <pubDate>Tue, 15 Dec 2015 20:21:04 +0100</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/2015-06-05 12.36.20.jpg" width="256" height="192"/>
+            <media:content type="image/jpeg" url="2015-06-05 12.36.20.jpg" width="1280" height="960"/>
+            <guid isPermaLink="false">2015-06-05 12.36.20.jpg</guid>
+        </item>
+        <item>
+            <title>etapa</title>
+            <link>etapa.jpg</link>
+            <pubDate>Tue, 15 Dec 2015 20:21:04 +0100</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/etapa.jpg" width="256" height="222"/>
+            <media:content type="image/jpeg" url="etapa.jpg" width="922" height="799"/>
+            <guid isPermaLink="false">etapa.jpg</guid>
+        </item>
+        <item>
+            <title>tortola</title>
+            <link>tortola.png</link>
+            <pubDate>Tue, 15 Dec 2015 20:21:04 +0100</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/tortola.png" width="256" height="110"/>
+            <media:content type="image/png" url="tortola.png" width="700" height="300"/>
+            <guid isPermaLink="false">tortola.png</guid>
+        </item>
+    </channel>
+</rss>
