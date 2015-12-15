@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>etapa25</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Pinto">
+<meta name="author" content="Mike Sozanski">
+<script src="res/js/modernizr-2.8.3.min.js"></script>
+<script src="res/js/modernizr.touch.js"></script>
+<link rel="stylesheet" type="text/css" media="all" href="res/css/materialize.css" />
+ <link rel="stylesheet" title="Standard" href="res/css/font-awesome.css" type="text/css" media="screen" />
+ <!-- Le styles -->
+ <link rel="stylesheet" href="res/js/video/video-js.min.css" />
+<link rel="stylesheet" title="Standard" href="res/styles.css" type="text/css" media="screen" />
+
+<link rel="alternate" href="album.rss" type="application/rss+xml">
+</head>
+<body id="top">
+
+    <div class="container">
+	
+    <header id="header" class="light-blue lighten-2 z-depth-1 header header--fixed hide-from-print animated slideDown headroom--top" role="banner">	
+<ul id="socialbutton" class="mfb-component--tr mfb-slidein-spring" data-mfb-toggle="hover">
+      <li class="mfb-component__wrap">
+        <a href="#" class="grey darken-1 mfb-component__button--main" data-mfb-label="Share">
+          <i class="white-text mfb-component__main-icon--resting fa fa-share"></i>
+          <i class="white-text mfb-component__main-icon--active fa fa-times"></i>
+        </a>
+        <ul class="mfb-component__list">
+		<li><a class="blue show-hint waves-effect mfb-component__button--child" id="face" data-mfb-label="Facebook"  data-v-title="Facebook"><i class="fa fa-facebook-square mfb-component__child-icon"></i></a></li>
+     <li><a class=" show-hint waves-effect mfb-component__button--child" data-mfb-label="Twitter" id="twit" data-v-title="Twitter"><i class="fa fa-twitter-square mfb-component__child-icon"></i></a></li>
+   <li><a class="orange show-hint waves-effect mfb-component__button--child" data-mfb-label="Google+" data-v-title="Google+"><i class="fa fa-google-plus-square mfb-component__child-icon"></i></a></li>
+   <li><a class="red show-hint waves-effect mfb-component__button--child" data-mfb-label="Pinterest" data-v-title="Pinterest"><i class="fa fa-pinterest-square mfb-component__child-icon"></i></a></li>
+   <li><a class="green show-hint waves-effect mfb-component__button--child" data-mfb-label="Email" data-v-title="Email"><i class="fa fa-envelope mfb-component__child-icon"></i></a></li>
+        </ul>
+      </li>
+    </ul>
+
+<ul id="resetMe" class="scrollTop resetFilter mfb-component--tr mfb-slidein-spring" data-mfb-toggle="hover">
+      <li class="mfb-component__wrap">
+        <a href="#top" class="mfb-component__button--main" data-mfb-label="Reset">
+         <i class=" mfb-component__main-icon--resting fa fa-refresh"></i>
+          <i class=" mfb-component__main-icon--active fa fa-th"></i>
+        </a></li></ul>
+
+<ul id="aboutbutton" class="mfb-component--tl mfb-slidein-spring" data-mfb-toggle="hover">
+      <li class="mfb-component__wrap">
+        <a href="#about" class="grey darken-1 mfb-component__button--main modal-trigger" data-mfb-label="About">
+          <i class="white-text mfb-component__main-icon--resting fa fa-info"></i>
+          <i class="white-text mfb-component__main-icon--active fa fa-external-link"></i>
+        </a></li></ul>
+
+
+
+
+  		<!-- Dropdown Trigger -->
+		<div class="center-align">
+		<a id="home" class="grey darken-1 btn waves-effect waves-light animated slideInDown" href="./index.html" ><i class="white-text fa fa-home fa-lg"></i></a>
+  <a class="dropdown-button btn grey darken-1 white-text animated slideInDown" data-beloworigin="true" href='#' data-activates='dropdown1'><i class="white-text fa fa-folder-open fa-lg"></i> More <i class="white-text fa fa-caret-down fa-lg right"></i></a>
+<!-- Dropdown Structure -->
+   <ul id='dropdown1' class='dropdown-content'>
+   <li><a href="./index.html"><i class="grey-text text-darken-4 fa fa-home fa-lg"></i> Home</a></li>
+  </ul>
+<a href="#!" class="btn-floating waves-effect waves-light grey darken-1 animated slideInDown" id="toggle-search"><i class="white-text fa fa-search fa-lg"></i></a>
+</div>
+</ja:if>
+
+     
+     <div class="row white-text" id="searcher">
+      <div class="container">
+        <nav>
+         <div class="nav-wrapper light-blue lighten-2">
+		 <div class="row">
+		  <!--
+		  <div class="col s6 m6 l6 center-align">
+  <a class="key dropdown-button btn-flat" data-constrainwidth="false" data-beloworigin="true" href='#' data-activates='filters'>Filter <i class="white-text fa fa-caret-down fa-lg right"></i></a>
+  <a href="#" class="reset clearInput btn-floating btn-flat  waves-effect waves-light" title="Reset" ><i class="white-text fa fa-refresh fa-lg"></i></a>
+		 <ul id="filters"  class='dropdown-content'>
+		 <li><a href="#" class="clearInput">Show All</a></li>
+ <li class="divider"></li>
+		
+    </ul>
+		 </div> --> <!-- s6 m6 l6 -->
+		 
+		 <div class="col s12">
+     <form>
+        <div class="input-field center light-blue lighten-2 grey-text text-darken-4">
+          <input id="search" type="search" required placehoder="Search">
+          <label for="search"><i class="fa fa-search fa-lg"></i></label>
+          <i class="mdi-navigation-close fa fa-times fa-lg clearInput"></i>
+        </div>
+      </form>
+	   </div> </div>
+    </div></nav>
+      </div>
+</div>
+</header>
+ <div class="row heading">
+    <div class="col s12 headers center-align grey-text text-darken-4">
+<h3> Jalbumskins Pinto</h3>
+ <h5>Image Gallery</h5>
+</div></div>
+
+ 
+
+<div  class="gallery">
+
+
+
+<div class="card item white teaser lazyload" >
+        <div class="card-image">
+         <a href="slides/2015-05-20%2021.20.15.png" class="ps waves-effect waves-block waves-light" data-size="270x480" data-index="0" data-title="<b>2015-05-20 21.20.15</b> "> <img data-src="thumbs/2015-05-20%2021.20.15.png" alt="2015-05-20 21.20.15" class="lazyload" src="thumbs/2015-05-20%2021.20.15.png"></a>
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4"><i class="grey-text text-darken-4 file-icon fa fa-picture-o"></i> 2015-05-20 21.20.15 <i class="grey-text text-darken-4 fa fa-info-circle fa-lg pull-right"></i></span>
+		  <div class="keywords">
+ </div>
+        </div>
+        <div class="card-reveal white grey-text text-darken-4">
+          <span class="card-title"><img src="thumbs/2015-05-20%2021.20.15.png" class="mini-Img z-depth-1" alt="2015-05-20 21.20.15">2015-05-20 21.20.15  <i class="fa fa-times right"></i></span>
+         <hr>
+           <p></p>
+		 
+<div class="exif"><b>EXIF Info</b><br>Creation Date: <br>Camera Make: <br>Camera Model: <br>Aperture: <br>Exposure Time: <br>Shutter Speed: <br>Focal Length: <br> ISO:  <br>Sensor:  <br> Flash: <br> Location:  <br> Resolution: <br> Keywords:
+ </div>
+
+        </div>
+      </div>
+	  	  
+
+
+
+<div class="card item white teaser lazyload" >
+        <div class="card-image">
+         <a href="slides/2015-05-21%2014.22.19.png" class="ps waves-effect waves-block waves-light" data-size="270x480" data-index="0" data-title="<b>2015-05-21 14.22.19</b> "> <img data-src="thumbs/2015-05-21%2014.22.19.png" alt="2015-05-21 14.22.19" class="lazyload" src="thumbs/2015-05-21%2014.22.19.png"></a>
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4"><i class="grey-text text-darken-4 file-icon fa fa-picture-o"></i> 2015-05-21 14.22.19 <i class="grey-text text-darken-4 fa fa-info-circle fa-lg pull-right"></i></span>
+		  <div class="keywords">
+ </div>
+        </div>
+        <div class="card-reveal white grey-text text-darken-4">
+          <span class="card-title"><img src="thumbs/2015-05-21%2014.22.19.png" class="mini-Img z-depth-1" alt="2015-05-21 14.22.19">2015-05-21 14.22.19  <i class="fa fa-times right"></i></span>
+         <hr>
+           <p></p>
+		 
+<div class="exif"><b>EXIF Info</b><br>Creation Date: <br>Camera Make: <br>Camera Model: <br>Aperture: <br>Exposure Time: <br>Shutter Speed: <br>Focal Length: <br> ISO:  <br>Sensor:  <br> Flash: <br> Location:  <br> Resolution: <br> Keywords:
+ </div>
+
+        </div>
+      </div>
+	  	  
+
+
+
+<div class="card item white teaser lazyload" >
+        <div class="card-image">
+         <a href="slides/2015-06-05%2012.36.20.jpg" class="ps waves-effect waves-block waves-light" data-size="640x480" data-index="0" data-title="<b>2015-06-05 12.36.20</b> "> <img data-src="thumbs/2015-06-05%2012.36.20.jpg" alt="2015-06-05 12.36.20" class="lazyload" src="thumbs/2015-06-05%2012.36.20.jpg"></a>
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4"><i class="grey-text text-darken-4 file-icon fa fa-picture-o"></i> 2015-06-05 12.36.20 <i class="grey-text text-darken-4 fa fa-info-circle fa-lg pull-right"></i></span>
+		  <div class="keywords">
+ </div>
+        </div>
+        <div class="card-reveal white grey-text text-darken-4">
+          <span class="card-title"><img src="thumbs/2015-06-05%2012.36.20.jpg" class="mini-Img z-depth-1" alt="2015-06-05 12.36.20">2015-06-05 12.36.20  <i class="fa fa-times right"></i></span>
+         <hr>
+           <p></p>
+		 
+<div class="exif"><b>EXIF Info</b><br>Creation Date: <br>Camera Make: <br>Camera Model: <br>Aperture: <br>Exposure Time: <br>Shutter Speed: <br>Focal Length: <br> ISO:  <br>Sensor:  <br> Flash: <br> Location:  <br> Resolution: <br> Keywords:
+ </div>
+
+        </div>
+      </div>
+	  	  
+
+
+
+<div class="card item white teaser lazyload" >
+        <div class="card-image">
+         <a href="slides/etapa.jpg" class="ps waves-effect waves-block waves-light" data-size="554x480" data-index="0" data-title="<b>etapa</b> "> <img data-src="thumbs/etapa.jpg" alt="etapa" class="lazyload" src="thumbs/etapa.jpg"></a>
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4"><i class="grey-text text-darken-4 file-icon fa fa-picture-o"></i> etapa <i class="grey-text text-darken-4 fa fa-info-circle fa-lg pull-right"></i></span>
+		  <div class="keywords">
+ </div>
+        </div>
+        <div class="card-reveal white grey-text text-darken-4">
+          <span class="card-title"><img src="thumbs/etapa.jpg" class="mini-Img z-depth-1" alt="etapa">etapa  <i class="fa fa-times right"></i></span>
+         <hr>
+           <p></p>
+		 
+<div class="exif"><b>EXIF Info</b><br>Creation Date: <br>Camera Make: <br>Camera Model: <br>Aperture: <br>Exposure Time: <br>Shutter Speed: <br>Focal Length: <br> ISO:  <br>Sensor:  <br> Flash: <br> Location:  <br> Resolution: <br> Keywords:
+ </div>
+
+        </div>
+      </div>
+	  	  
+
+
+
+<div class="card item white teaser lazyload" >
+        <div class="card-image">
+         <a href="slides/tortola.png" class="ps waves-effect waves-block waves-light" data-size="640x274" data-index="0" data-title="<b>tortola</b> "> <img data-src="thumbs/tortola.png" alt="tortola" class="lazyload" src="thumbs/tortola.png"></a>
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4"><i class="grey-text text-darken-4 file-icon fa fa-picture-o"></i> tortola <i class="grey-text text-darken-4 fa fa-info-circle fa-lg pull-right"></i></span>
+		  <div class="keywords">
+ </div>
+        </div>
+        <div class="card-reveal white grey-text text-darken-4">
+          <span class="card-title"><img src="thumbs/tortola.png" class="mini-Img z-depth-1" alt="tortola">tortola  <i class="fa fa-times right"></i></span>
+         <hr>
+           <p></p>
+		 
+<div class="exif"><b>EXIF Info</b><br>Creation Date: <br>Camera Make: <br>Camera Model: <br>Aperture: <br>Exposure Time: <br>Shutter Speed: <br>Focal Length: <br> ISO:  <br>Sensor:  <br> Flash: <br> Location:  <br> Resolution: <br> Keywords:
+ </div>
+
+        </div>
+      </div>
+	  	  
+</div>
+</div>
+
+
+	<a href="#top" class="scrollTop up grey darken-1 btn-floating mfb-component--br waves-effect waves-light animated slideInDown" data-mfb-toggle="hover" data-mfb-label="Scroll"><i class="white-text fa fa-chevron-up fa-lg"></i></a>
+	
+	
+  <!-- Modal Structure -->
+  <div id="about" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>About</h4>
+    Paste Your HTML Code Here for your About Page
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+    </div>
+  </div>
+   
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe.
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+				<div class="pswp__logo"></div>
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader,active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+	</div>
+
+
+	
+		<!-- /container -->
+ <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="res/js/jquery-2.1.3.min.js"><\/script>')</script>
+		<script src="res/js/video/video.js"></script>
+ <script src="res/js/materialize.min.js"></script>
+<script type="text/javascript" src="res/base.js"></script>
+<script type="text/javascript" src="res/pinto.js"></script>
+</body>
+</html>
+
+

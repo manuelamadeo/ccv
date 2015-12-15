@@ -1,0 +1,82 @@
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	color: #442c25;
+	text-align: center;
+	background-color: rgba(230,212,186,1.0);
+	margin: 0px;
+}
+a {
+	outline: none;
+	text-decoration: none;
+}
+img {
+	border: none;
+}
+.gr-itstdslide {
+	margin: 10px auto;
+	max-width: 1250px;
+	min-height: 32px;
+	padding: 0px 5px;
+}
+.gr-pagetitleslide {
+	color: #442c25;
+	font-size: 22px;
+	font-weight: bold;
+	font-style: normal;
+	max-width: 1250px;
+	text-shadow: none;
+	padding-bottom: 3px;
+}
+.gr-pagetitleslide a {
+	color: #442c25;
+	text-decoration: underline;
+}
+.gr-pagetitleslide a:hover {
+	color: #ff0000;
+}
+.gr-navleftgm {
+	width: 144px;
+	height: 32px;
+	float: left;
+	font-size: 0px;
+}
+.gr-navrightgm {
+	width: 144px;
+	height: 32px;
+	text-align: right;
+	float: right;
+	font-size: 0px;
+}
+.gr-navrightgm img {
+	width: 32px;
+	height: 32px;
+	padding-left: 4px;
+}
+.gr-mapcontainer {
+	max-width: 1200px;
+	margin: 20px auto 0px;
+	padding: 0px 35px 15px;
+} 
+.gr-mapcontainer > div {
+	border-color: rgba(68,44,37,1.0);
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 0px;
+	padding: 7px;
+	box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.3); 
+	outline: none;
+	background-color: rgba(255,255,255,0.0);
+}
+.gr-mapcontainer > div > div {
+	position: relative;
+	padding-bottom: 50.0%;
+}
+#map-canvas {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	margin: 0px;
+	padding: 0px;
+}
