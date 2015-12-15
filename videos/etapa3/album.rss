@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:jalbum="http://jalbum.net/jalbumrss">
+    <channel>
+        <title>etapa3</title>
+   	<link>.</link>
+        <generator>jAlbum 13</generator>
+   		<description></description>
+        <jalbum:absolutePath></jalbum:absolutePath>
+        <item>
+            <title>vid-20150405-wa0030</title>
+            <link>slides/vid-20150405-wa0030.mp4</link>
+            <pubDate>Tue, 15 Dec 2015 11:35:41 +0100</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/vid-20150405-wa0030.jpg" width="200" height="150"/>
+            <media:content  url="slides/vid-20150405-wa0030.mp4" width="640" height="352"/>
+            <jalbum:original url="slides/vid-20150405-wa0030.mp4" width="640" height="352" fileSize="11019354"/>
+            <guid isPermaLink="false">slides/vid-20150405-wa0030.jpg</guid>
+        </item>
+        <item>
+            <title>scr_20140527_231842</title>
+            <link>slides/scr_20140527_231842.mp4</link>
+            <pubDate>Tue, 15 Dec 2015 11:35:41 +0100</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/scr_20140527_231842.jpg" width="200" height="150"/>
+            <media:content  url="slides/scr_20140527_231842.mp4" width="405" height="720"/>
+            <jalbum:original url="slides/scr_20140527_231842.mp4" width="540" height="960" fileSize="83855582"/>
+            <guid isPermaLink="false">slides/scr_20140527_231842.jpg</guid>
+        </item>
+    </channel>
+</rss>
