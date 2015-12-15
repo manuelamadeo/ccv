@@ -12,18 +12,22 @@ div#voverlay {
 	display:none;
 	
 	/* some padding to layout nested elements nicely  */
-	padding:16px;
+	padding:30px 30px 32px 30px;
 }
 
 /* default close button positioned on upper right corner */
 div#voverlay .close {
-	background-image:url(../images/close.png);
+	background:url(../images/close.png) 0 0;
 	position:absolute;
-	right:-9px;
-	top:-9px;
+	right:4px;
+	top:4px;
 	cursor:pointer;
 	height:32px;
 	width:32px;
+}
+
+div#voverlay .close:hover {
+	background-position:0 100%;
 }
 
 div#vcontainer{
