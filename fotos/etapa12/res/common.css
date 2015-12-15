@@ -1,0 +1,77 @@
+/*
+ * Combined style sheet for the index pages and the slide pages, with classes that are common to both styles
+ */
+
+body {
+	font-family: Verdana, Arial, sans-serif;
+	margin: 8px;
+	text-align: center;
+}
+a {
+	outline: 0;
+}
+a:link, a:visited, a:active {
+	text-decoration: none
+}
+img {
+	border: none;
+}
+#albumtitle {
+	font-size: 16px;
+	font-weight: normal;
+	margin: 0px 5px 5px;
+}
+#foldertitle {
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0px 5px 5px;
+}
+#thumbnails {
+	width: 1016px;
+	margin: 10px auto;
+	font-size: 0px; /* Hack to collapse whitespace between boxes */
+}
+#thumbnails > div {
+	display: inline-block;
+	margin: 7px;
+	vertical-align: top;
+	width: 240px;
+}
+#thumbnails > div img {
+	padding: 0px;
+}
+#thumbnails > div > div {
+	font-size: 14px;
+	margin: 5px 0px;
+}
+.noborder {
+	border: none !important;
+}
+#thumbnav {
+	margin: 8px 0px;
+}
+#thumbnav img {
+	padding: 0px;
+}
+#slideimage {
+	font-size: 14px;
+	margin: 8px 0px;
+}
+#slideimage img {
+	padding: 0px;
+}
+#slidecaption {
+	margin: 8px 0px;
+}
+video {
+	padding: 0px;
+	margin: 8px 0px;
+}
+#homepagelink {
+	font-size: 14px;
+	margin: 8px 0px;
+}
+#creditlink {
+	font-size: 10px;
+	margin: 8px 0px;
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:jalbum="http://jalbum.net/jalbumrss">
+    <channel>
+        <title>etapa7</title>
+   	<link>.</link>
+        <generator>jAlbum 12</generator>
+   		<description></description>
+        <jalbum:absolutePath></jalbum:absolutePath>
+        <item>
+            <title>tortola</title>
+            <link>slides/tortola.jpg</link>
+            <pubDate>Tue, 15 Dec 2015 08:23:36 +0100</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/tortola.jpg" width="240" height="240"/>
+            <media:content type="image/jpeg" url="slides/tortola.jpg" width="700" height="300"/>
+            <guid isPermaLink="false">slides/tortola.jpg</guid>
+        </item>
+        <item>
+            <title>etapa</title>
+            <link>slides/etapa.jpg</link>
+            <pubDate>Tue, 15 Dec 2015 08:23:36 +0100</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/etapa.jpg" width="240" height="240"/>
+            <media:content type="image/jpeg" url="slides/etapa.jpg" width="831" height="720"/>
+            <guid isPermaLink="false">slides/etapa.jpg</guid>
+        </item>
+        <item>
+            <title>general</title>
+            <link>slides/general.jpg</link>
+            <pubDate>Tue, 15 Dec 2015 08:23:36 +0100</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/general.jpg" width="240" height="240"/>
+            <media:content type="image/jpeg" url="slides/general.jpg" width="405" height="720"/>
+            <guid isPermaLink="false">slides/general.jpg</guid>
+        </item>
+        <item>
+            <title>jjyyo</title>
+            <link>slides/jjyyo.jpg</link>
+            <pubDate>Tue, 15 Dec 2015 08:23:36 +0100</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/jjyyo.jpg" width="240" height="240"/>
+            <media:content type="image/jpeg" url="slides/jjyyo.jpg" width="405" height="720"/>
+            <guid isPermaLink="false">slides/jjyyo.jpg</guid>
+        </item>
+    </channel>
+</rss>
