@@ -3,7 +3,7 @@
      xmlns:media="http://search.yahoo.com/mrss/"
      xmlns:jalbum="http://jalbum.net/jalbumrss">
     <channel>
-        <title>etapa22</title>
+        <title>etapa31</title>
    	<link>.</link>
         <generator>jAlbum 13</generator>
    		<description></description>
@@ -11,7 +11,7 @@
         <item>
             <title>2015-05-20 21.20.15</title>
             <link>slides/2015-05-20 21.20.15.png</link>
-            <pubDate>Tue, 15 Dec 2015 17:41:40 +0100</pubDate>
+            <pubDate>Wed, 16 Dec 2015 00:39:29 +0100</pubDate>
             <description></description>
             <media:description type="html"></media:description>
             <media:thumbnail url="thumbs/2015-05-20 21.20.15.png" width="144" height="256"/>
@@ -21,7 +21,7 @@
         <item>
             <title>2015-05-21 14.22.19</title>
             <link>slides/2015-05-21 14.22.19.png</link>
-            <pubDate>Tue, 15 Dec 2015 17:41:40 +0100</pubDate>
+            <pubDate>Wed, 16 Dec 2015 00:39:29 +0100</pubDate>
             <description></description>
             <media:description type="html"></media:description>
             <media:thumbnail url="thumbs/2015-05-21 14.22.19.png" width="144" height="256"/>
@@ -31,7 +31,7 @@
         <item>
             <title>2015-06-05 12.36.20</title>
             <link>slides/2015-06-05 12.36.20.jpg</link>
-            <pubDate>Tue, 15 Dec 2015 17:41:40 +0100</pubDate>
+            <pubDate>Wed, 16 Dec 2015 00:39:29 +0100</pubDate>
             <description></description>
             <media:description type="html"></media:description>
             <media:thumbnail url="thumbs/2015-06-05 12.36.20.jpg" width="256" height="192"/>
@@ -41,7 +41,7 @@
         <item>
             <title>etapa</title>
             <link>slides/etapa.jpg</link>
-            <pubDate>Tue, 15 Dec 2015 17:41:40 +0100</pubDate>
+            <pubDate>Wed, 16 Dec 2015 00:39:29 +0100</pubDate>
             <description></description>
             <media:description type="html"></media:description>
             <media:thumbnail url="thumbs/etapa.jpg" width="256" height="222"/>
@@ -51,7 +51,7 @@
         <item>
             <title>tortola</title>
             <link>slides/tortola.png</link>
-            <pubDate>Tue, 15 Dec 2015 17:41:40 +0100</pubDate>
+            <pubDate>Wed, 16 Dec 2015 00:39:29 +0100</pubDate>
             <description></description>
             <media:description type="html"></media:description>
             <media:thumbnail url="thumbs/tortola.png" width="256" height="110"/>

@@ -3,50 +3,60 @@
      xmlns:media="http://search.yahoo.com/mrss/"
      xmlns:jalbum="http://jalbum.net/jalbumrss">
     <channel>
-        <title>etapa12</title>
+        <title>etapa31</title>
    	<link>.</link>
-        <generator>jAlbum 12</generator>
+        <generator>jAlbum 13</generator>
    		<description></description>
         <jalbum:absolutePath></jalbum:absolutePath>
         <item>
-            <title>general</title>
-            <link>slides/general.html</link>
-            <pubDate>Tue, 15 Dec 2015 08:37:50 +0100</pubDate>
+            <title>2015-05-20 21.20.15</title>
+            <link>slides/2015-05-20 21.20.15.png</link>
+            <pubDate>Wed, 16 Dec 2015 00:39:29 +0100</pubDate>
             <description></description>
             <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/general.jpg" width="240" height="240"/>
-            <media:content type="image/jpeg" url="slides/general.jpg" width="338" height="600"/>
-            <guid isPermaLink="false">slides/general.jpg</guid>
+            <media:thumbnail url="thumbs/2015-05-20 21.20.15.png" width="144" height="256"/>
+            <media:content type="image/png" url="slides/2015-05-20 21.20.15.png" width="540" height="960"/>
+            <guid isPermaLink="false">slides/2015-05-20 21.20.15.png</guid>
         </item>
         <item>
-            <title>jjyyo</title>
-            <link>slides/jjyyo.html</link>
-            <pubDate>Tue, 15 Dec 2015 08:37:50 +0100</pubDate>
+            <title>2015-05-21 14.22.19</title>
+            <link>slides/2015-05-21 14.22.19.png</link>
+            <pubDate>Wed, 16 Dec 2015 00:39:29 +0100</pubDate>
             <description></description>
             <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/jjyyo.jpg" width="240" height="240"/>
-            <media:content type="image/jpeg" url="slides/jjyyo.jpg" width="338" height="600"/>
-            <guid isPermaLink="false">slides/jjyyo.jpg</guid>
+            <media:thumbnail url="thumbs/2015-05-21 14.22.19.png" width="144" height="256"/>
+            <media:content type="image/png" url="slides/2015-05-21 14.22.19.png" width="540" height="960"/>
+            <guid isPermaLink="false">slides/2015-05-21 14.22.19.png</guid>
         </item>
         <item>
-            <title>tortola</title>
-            <link>slides/tortola.html</link>
-            <pubDate>Tue, 15 Dec 2015 08:37:50 +0100</pubDate>
+            <title>2015-06-05 12.36.20</title>
+            <link>slides/2015-06-05 12.36.20.jpg</link>
+            <pubDate>Wed, 16 Dec 2015 00:39:29 +0100</pubDate>
             <description></description>
             <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/tortola.jpg" width="240" height="240"/>
-            <media:content type="image/jpeg" url="slides/tortola.jpg" width="700" height="300"/>
-            <guid isPermaLink="false">slides/tortola.jpg</guid>
+            <media:thumbnail url="thumbs/2015-06-05 12.36.20.jpg" width="256" height="192"/>
+            <media:content type="image/jpeg" url="slides/2015-06-05 12.36.20.jpg" width="1280" height="960"/>
+            <guid isPermaLink="false">slides/2015-06-05 12.36.20.jpg</guid>
         </item>
         <item>
             <title>etapa</title>
-            <link>slides/etapa.html</link>
-            <pubDate>Tue, 15 Dec 2015 08:37:50 +0100</pubDate>
+            <link>slides/etapa.jpg</link>
+            <pubDate>Wed, 16 Dec 2015 00:39:29 +0100</pubDate>
             <description></description>
             <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/etapa.jpg" width="240" height="240"/>
-            <media:content type="image/jpeg" url="slides/etapa.jpg" width="692" height="600"/>
+            <media:thumbnail url="thumbs/etapa.jpg" width="256" height="222"/>
+            <media:content type="image/jpeg" url="slides/etapa.jpg" width="922" height="799"/>
             <guid isPermaLink="false">slides/etapa.jpg</guid>
+        </item>
+        <item>
+            <title>tortola</title>
+            <link>slides/tortola.png</link>
+            <pubDate>Wed, 16 Dec 2015 00:39:29 +0100</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/tortola.png" width="256" height="110"/>
+            <media:content type="image/png" url="slides/tortola.png" width="700" height="300"/>
+            <guid isPermaLink="false">slides/tortola.png</guid>
         </item>
     </channel>
 </rss>

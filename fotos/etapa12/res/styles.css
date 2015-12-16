@@ -1,26 +1,65 @@
-/*
- * Combined style sheet for the index pages and the slide pages, with only classes that are different for this style
- */
+/** light skin style sheet by Thilo Ilg **/
 
-body {
-	color: #111111;
-	background-color: #eeeeee;
+/**
+* embeddable -> background style of skin
+*/
+#Embeddable{
+	border-radius: 5px;
 }
-a {
-	color: #111111;
+
+/**
+* content -> includes the media like images and folders of images
+*/
+.jAlbum #jAlbum-content img{
+	border: 1px  solid rgba(255,255,255,1.0);
+	border-radius: 3px;
+	background-color: rgba(255,255,255,1.0);
 }
-a:hover {
-	color: red;
+
+/**
+* footer -> includes footer information
+*/
+.jAlbum #jAlbum-footer a, #jAlbum-footer p, .folderTitle, .jAlbum {
+	color: rgba(102,102,102,1.0);
 }
-#thumbnails > div img {
-	border: 0px solid #111111;
+.jAlbum .cancel p{
+	color: rgba(102,102,102,1.0);
 }
-#thumbnav img {
-	border: 0px solid #111111;
+
+
+/**
+* shadow -> shadow behind images and folders
+*/
+.jAlbum .shadow{
+	-webkit-box-shadow: 2px 2px 10px rgba(153,153,153,1.0);
+	-moz-box-shadow: 2px 2px 10px rgba(153,153,153,1.0);
+	box-shadow: 2px 2px 10px rgba(153,153,153,1.0);
 }
-#slideimage img {
-	border: 0px solid #111111;
+
+/**
+* border radius -> changes radius of the borders
+*/
+.jAlbum .imgRadius {
+	border-radius: 3px;
 }
-video {
-	border: 0px solid #111111;
+
+/**
+* overwrite by jAlbum settings
+*/
+.non-embedded body, #Embeddable{
+	background-color: rgba(238,238,238,1.0);
+}
+
+/**
+* change font size of whole skin
+*/
+.jAlbum #jAlbum-content p, .jAlbum #jAlbum-footer .center a{
+	font-size: 11px;
+}
+
+/**
+* leave folder button style
+*/
+.jAlbum #jAlbum-footer .left a{
+	font-size: 30px;
 }
