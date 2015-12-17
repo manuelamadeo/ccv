@@ -18,6 +18,13 @@ document.onkeydown = function(event) {
 };
 </script>
 <link rel="alternate" href="album.rss" type="application/rss+xml">
+
+	<script>
+	function goBack() {
+  		window.history.back()
+	}
+	</script>
+
 </head>
 <body>
 <div id="albumtitle">videos etapa4</div>
@@ -75,5 +82,9 @@ script.src = "http://jalbum.net/widgetapi/load.js";
 document.getElementById("jalbumwidgetcontainer").appendChild(script);
 //--><!]]></script>
 
+		<div data-role="footer">
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+		</div>
+ 
 </body>
 </html>
