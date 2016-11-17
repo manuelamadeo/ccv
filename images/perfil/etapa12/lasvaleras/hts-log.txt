@@ -1,0 +1,18 @@
+HTTrack3.48-22+htsswf+htsjava launched on Tue, 15 Nov 2016 23:48:44 at http://www.cronoescalada.com/index.php/tracks/iframe/228751.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "es, en, *" http://www.cronoescalada.com/index.php/tracks/iframe/228751.html -O1 "C:\Mis lugares Web\las valeras" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+23:49:08	Error: 	"Not Found" (404) at link jzaefferer.github.io/jquery-validation/jquery.validate.js (from www.cronoescalada.com/index.php/tracks/iframe/228751.html)
+23:49:21	Warning: 	File not parsed, looks like binary: www.cronoescalada.com/css/MovistarHeadline-Regular.ttf
+23:49:21	Warning: 	File not parsed, looks like binary: www.cronoescalada.com/css/MovistarHeadline-Bold.ttf
+23:49:21	Error: 	"Not Found" (404) at link www.cronoescalada.com/css/MovistarHeadline-Italic.ttf (from www.cronoescalada.com/css/style.css)
+23:49:21	Warning: 	File not parsed, looks like binary: www.cronoescalada.com/css/MovistarText-Regular.ttf
+23:49:21	Warning: 	File not parsed, looks like binary: www.cronoescalada.com/css/MovistarText-Italic.ttf
+23:49:21	Warning: 	File not parsed, looks like binary: www.cronoescalada.com/css/MovistarText-Bold.ttf
+
+HTTrack Website Copier/3.48-22 mirror complete in 37 seconds : 47 links scanned, 44 files written (2381804 bytes overall) [1067056 bytes received at 28839 bytes/sec], 1523745 bytes transferred using HTTP compression in 14 files, ratio 11%, 1.6 requests per connection
+(2 errors, 5 warnings, 0 messages)

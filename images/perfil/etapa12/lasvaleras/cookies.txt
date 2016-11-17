@@ -1,0 +1,4 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.cronoescalada.com	TRUE	/	FALSE	1999999999	ci_session	a%3A5%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A32%3A%22bb9e013661b77a2a5cdafa7431b34e9d%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A12%3A%2246.25.204.17%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A50%3A%22Mozilla%2F4.5+%28compatible%3B+HTTrack+3.0x%3B+Windows+98%29%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1479250138%3Bs%3A9%3A%22user_data%22%3Bs%3A0%3A%22%22%3B%7Db861a1d6149e641dd5dd23d2f773d699
+
