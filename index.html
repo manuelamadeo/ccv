@@ -317,7 +317,7 @@ app.initialize();
 	            <td><img src="images/calendario/4-feb.png" alt="4 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/5-feb.png" alt="5 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/6-feb.png" alt="6 de Febrero" width="100%" /></td>
-			  <td><a href="#Etapa1"><img src="images/calendario/7-feb.png" alt="7 de Febrero - Etapa 1" width="100%" /></a></td>
+			    <td><a href="#Etapa1"><img src="images/calendario/7-feb.png" alt="7 de Febrero - Etapa 1" width="100%" /></a></td>
 	        </tr>
 	        <tr>
 	            <td><img src="images/calendario/8-feb.png" alt="8 de Febrero" width="100%" /></td>
@@ -326,7 +326,7 @@ app.initialize();
 	            <td><img src="images/calendario/11-feb.png" alt="11 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/12-feb.png" alt="12 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/13-feb.png" alt="13 de Febrero" width="100%" /></td>
-			  <td><a href="#Etapa2"><img src="images/calendario/14-feb.png" alt="14 de Febrero - Etapa 2" width="100%" /></a></td>
+			    <td><a href="#Etapa2"><img src="images/calendario/14-feb.png" alt="14 de Febrero - Etapa 2" width="100%" /></a></td>
 	        </tr>
 	        <tr>
 	            <td><img src="images/calendario/15-feb.png" alt="15 de Febrero" width="100%" /></td>
@@ -715,6 +715,22 @@ app.initialize();
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
+				<li><a href="#Etapa1Carretera">Carretera</a></li>     
+                <li><a href="#Etapa1MTB">Montaña</a></li>
+			</ul>
+		</div>
+		<div data-role="footer">
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+		</div>
+	</div>
+
+	<!-- -------------------------------------- ETAPA 1 CARRETERA --------------------------------------- -->	
+	<div data-role="page" id="Etapa1Carretera">
+		<div data-role="header">
+			<h1>Etapa 1</h1>
+		</div>
+		<div data-role="content">
+	    	<ul data-role="listview">
 				<li><a href="#pEtapa1">Perfil De Etapa</a></li>     
                 <li><a href="https://manuelamadeo.github.io/ccv/images/clasificacion/etapa1/etapa.jpg">Clasificación</a></li>
 				<li><a href="#pClima1">Precisión Meterologica</a></li>     
@@ -757,6 +773,40 @@ app.initialize();
 		</div>
 	</div>
 	
+	<!-- -------------------------------------- ETAPA 1 MONTAÑA --------------------------------------- -->	
+	<div data-role="page" id="Etapa1MTB">
+		<div data-role="header">
+			<h1>Etapa 1</h1>
+		</div>
+		<div data-role="content">
+	    	<ul data-role="listview">
+				<li><a href="#pEtapa1MTB">Perfil De Etapa</a></li>     
+                <li><a href="https://manuelamadeo.github.io/ccv/images/clasificacion/etapa1/etapa.jpg">Clasificación</a></li>
+				<li><a href="#pClima1MTB">Precisión Meterologica</a></li>     
+				<li><a href="#pgaleria1">Galeria</a></li>
+			    <li><a href="http://manuelamadeo.github.io/ccv/images/perfil/etapa1/etapa1.html">Detalles de puertos</a></li>
+			</ul>
+		</div>
+		<div data-role="footer">
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+		</div>
+	</div>
+
+	<div data-role="page" id="pClima1MTB">
+		<div data-role="header">
+			<h1>Clima</h1>
+		</div>
+		<div data-role="content">
+	    	<ul data-role="listview">
+			    <li><a href="http://m.accuweather.com/es/es/valverde-de-jucar/304019/hourly-weather-forecast/304019">Valverde De Júcar</a></li>
+                <li><a href="http://m.accuweather.com/es/es/valera-de-abajo/307183/hourly-weather-forecast/307183">Valera De Abajo</a></li>
+			</ul>
+		</div>
+		<div data-role="footer">
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+		</div>
+	</div>
+
 	<!-- -------------------------------------- DETALLES ETAPA 2 -------------------------------------- -->
 	<div data-role="page" id="Etapa2">
 		<div data-role="header">
@@ -2805,8 +2855,215 @@ app.initialize();
 		</div>
 	</div>
 
-	<!-- -------------------------------------- FIN DETALLES DE ETAPAS -------------------------------------- -->	
-	<!-- -------------------------------------- PERFILES DE ETAPA -------------------------------------- -->	
+	<!-- -------------------------------------- FIN DETALLES DE ETAPAS -------------------------------------- -->
+	
+	<!-- -------------------------------------- PERFILES DE ETAPA CARRETERA -------------------------------------- -->	
+    <div data-role="page" id="pEtapa1MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/1.jpg" alt="Etapa 1" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+        
+	<div data-role="page" id="pEtapa2MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/2.jpg" alt="Etapa 2" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+	
+	<div data-role="page" id="pEtapa3MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/3.jpg" alt="Etapa 3" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+
+	<div data-role="page" id="pEtapa4MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/4.jpg" alt="Etapa 4" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+
+	<div data-role="page" id="pEtapa5MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/5.jpg" alt="Etapa 5" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+
+	<div data-role="page" id="pEtapa6MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/6.jpg" alt="Etapa 6" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+
+	<div data-role="page" id="pEtapa7MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/7.jpg" alt="Etapa 7" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+
+	<div data-role="page" id="pEtapa8MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/8.jpg" alt="Etapa 8" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+
+	<div data-role="page" id="pEtapa9MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/9.jpg" alt="Etapa 9" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+
+	<div data-role="page" id="pEtapa10MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/10.jpg" alt="Etapa 10" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+
+	<div data-role="page" id="pEtapa11MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/11.jpg" alt="Etapa 11" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+
+  	<div data-role="page" id="pEtapa12MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/12.jpg" alt="Etapa 12" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+
+  	<div data-role="page" id="pEtapa13MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/13.jpg" alt="Etapa 13" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+    
+	<div data-role="page" id="pEtapa14MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/14.jpg" alt="Etapa 14" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+
+	<div data-role="page" id="pEtapa15MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/15.jpg" alt="Etapa 15" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+
+  	<div data-role="page" id="pEtapa16MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/16.jpg" alt="Etapa 16" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+
+  	<div data-role="page" id="pEtapa17MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/17.jpg" alt="Etapa 17" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+
+  	<div data-role="page" id="pEtapa18MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/18.jpg" alt="Etapa 18" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+
+  	<div data-role="page" id="pEtapa19MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/19.jpg" alt="Etapa 19" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+    
+    <div data-role="page" id="pEtapa20MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/20.jpg" alt="Etapa 20" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+
+    <div data-role="page" id="pEtapa21MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/21.jpg" alt="Etapa 21" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+    
+    <div data-role="page" id="pEtapa22MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/22.jpg" alt="Etapa 22" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+    
+    <div data-role="page" id="pEtapa23MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/23.jpg" alt="Etapa 23" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+    
+    <div data-role="page" id="pEtapa24MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/24.jpg" alt="Etapa 24" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+    
+    <div data-role="page" id="pEtapa25MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/25.jpg" alt="Etapa 25" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+    
+    <div data-role="page" id="pEtapa26MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/26.jpg" alt="Etapa 26" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+    
+    <div data-role="page" id="pEtapa27MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/27.jpg" alt="Etapa 27" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+    
+    <div data-role="page" id="pEtapa28MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/28.jpg" alt="Etapa 28" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+    
+    <div data-role="page" id="pEtapa29MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/29.jpg" alt="Etapa 29" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+    
+    <div data-role="page" id="pEtapa30MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/30.jpg" alt="Etapa 30" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+    
+    <div data-role="page" id="pEtapa31MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/31.jpg" alt="Etapa 31" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+    
+    <div data-role="page" id="pEtapa32MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/32.jpg" alt="Etapa 32" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+    
+    <div data-role="page" id="pEtapa33" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/33.jpg" alt="Etapa 33" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+    
+    <div data-role="page" id="pEtapa34MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/34.jpg" alt="Etapa 34" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+    
+    <div data-role="page" id="pEtapa35MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/35.jpg" alt="Etapa 35" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+    
+    <div data-role="page" id="pEtapa36MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/36.jpg" alt="Etapa 36" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+    
+    <div data-role="page" id="pEtapa37MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/37.jpg" alt="Etapa 37" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+    
+    <div data-role="page" id="pEtapa38MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/38.jpg" alt="Etapa 38" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+    
+    <div data-role="page" id="pEtapa39MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/39.jpg" alt="Etapa 39" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+    
+    <div data-role="page" id="pEtapa40MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/40.jpg" alt="Etapa 40" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+    
+    <div data-role="page" id="pEtapa41MTB" style="background-size:100% 100%;">
+	    <img src="images/etapas/MTB/41.jpg" alt="Etapa 41" width="100%" height="100%" />
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+	</div>
+        
+	<!-- -------------------------------------- PERFILES DE ETAPA CARRETERA -------------------------------------- -->	
     <div data-role="page" id="pEtapa1" style="background-size:100% 100%;">
 	    <img src="images/etapas/1.jpg" alt="Etapa 1" width="100%" height="100%" />
 			<h4><a href="javascript:goBack()">Volver</a></h4>
