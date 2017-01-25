@@ -11,6 +11,12 @@ if (window.name!="frTabs")
  window.location.replace(document.all.item("Main-File").href);
 //-->
 </script>
+
+	<script>
+	function goBack() {
+  		window.history.back()
+	}
+</script>
 <style>
 <!--
 A {
@@ -24,9 +30,7 @@ A {
 <body topmargin=0 leftmargin=0 bgcolor="#808080">
 <table border=0 cellspacing=1>
  <tr>
- <td bgcolor="#FFFFFF" nowrap><b><small><small>&nbsp;<a href="sheet001.htm" target="frSheet"><font face="Arial" color="#000000">Hoja1</font></a>&nbsp;</small></small></b></td>
- <td bgcolor="#FFFFFF" nowrap><b><small><small>&nbsp;<a href="sheet002.htm" target="frSheet"><font face="Arial" color="#000000">Hoja2</font></a>&nbsp;</small></small></b></td>
- <td bgcolor="#FFFFFF" nowrap><b><small><small>&nbsp;<a href="sheet003.htm" target="frSheet"><font face="Arial" color="#000000">Hoja3</font></a>&nbsp;</small></small></b></td>
+ <td bgcolor="#808080" nowrap><b><a href="javascript:goBack()" target="frSheet"><font face="Arial" color="#1e90ff"><h1>_________________________________________VOLVER__________________________________________</h1></font></a></b></td>
 
  </tr>
 </table>
