@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="CacheEnabled">true</bool>
+    <bool name="LongClick">true</bool>
+    <bool name="OverView">true</bool>
+    <bool name="PluginState">true</bool>
+    <bool name="SaveFormData">true</bool>
+    <bool name="ScrollBars">true</bool>
+    <bool name="TextSelection">true</bool>
+    <bool name="WideView">true</bool>
+    <bool name="Zoom">false</bool>
+    <bool name="confexit">false</bool>
+    <bool name="dblexit">true</bool>
+    <bool name="extlink">true</bool>
+    <bool name="fullscr">false</bool>
+    <bool name="gestureZoom">true</bool>
+    <bool name="isDebugMode">true</bool>
+</resources>

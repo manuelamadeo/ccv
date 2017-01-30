@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:jalbum="http://jalbum.net/jalbumrss">
+    <channel>
+        <title>Responsive222</title>
+   	<link>.</link>
+        <generator>jAlbum 13</generator>
+   		<description></description>
+        <jalbum:absolutePath></jalbum:absolutePath>
+        <item>
+            <title>IMG-20151217-WA0007</title>
+            <link>slides/IMG-20151217-WA0007.jpg</link>
+            <pubDate>Thu, 17 Dec 2015 20:35:42 +0100</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20151217-WA0007.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20151217-WA0007.jpg" width="565" height="510"/>
+            <guid isPermaLink="false">slides/IMG-20151217-WA0007.jpg</guid>
+        </item>
+    </channel>
+</rss>

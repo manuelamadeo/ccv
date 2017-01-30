@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="CacheMode">HighCache</string>
+    <string name="action_exit">Exit</string>
+    <string name="action_tag">About</string>
+    <string name="app_name">CC.Valverde Del Júcar</string>
+    <string name="bottom">false</string>
+    <string name="centre">true</string>
+    <string name="end">false</string>
+    <string name="left">false</string>
+    <string name="right">false</string>
+    <string name="sharesubject">CC.Valverde Del Júcar</string>
+    <string name="sharetext">Hi there, Give this app a try.</string>
+    <string name="start">false</string>
+    <string name="tag">App Creada por manuelamadeo</string>
+    <string name="top">false</string>
+</resources>

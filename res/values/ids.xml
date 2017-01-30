@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="customViewContainer">false</item>
+    <item type="id" name="webView">false</item>
+    <item type="id" name="progressBar">false</item>
+    <item type="id" name="imageView">false</item>
+    <item type="id" name="progress_indicator">false</item>
+    <item type="id" name="action_tag">false</item>
+    <item type="id" name="action_exit">false</item>
+    <item type="id" name="action_share">false</item>
+</resources>
