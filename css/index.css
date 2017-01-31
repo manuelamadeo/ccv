@@ -281,6 +281,7 @@ ul #listdivider {
 		height: 280px; 
 	}
 }
+
 @media all and (min-width: 1200px){
  /*	h1 { color: #ff0; } FOR TESTING */
 		.content-secondary {
@@ -307,7 +308,18 @@ ul #listdivider {
 		font-size: 1.1em;
 	}
 }
+
+.enlace{
+	border:1px solid #888888;
+	padding: 10px 35px 10px 10px;
+	background-image:url(images/flecha.png);
+	background-repeat:no-repeat;
+	background-position:right
+}
+
 .blink {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
+	-webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
 }

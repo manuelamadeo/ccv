@@ -99,7 +99,6 @@
     <preference name="BackupWebStorage" value="cloud" />
     <preference name="TopActivityIndicator" value="gray" />
     <preference name="KeyboardDisplayRequiresUserAction" value="false" />
-    <preference name="HideKeyboardFormAccessoryBar" value="false" />
     <preference name="SuppressesIncrementalRendering" value="false" />
     <allow-navigation href="*" />
     <allow-navigation href="http://*/*" />
