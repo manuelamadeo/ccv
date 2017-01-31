@@ -35,7 +35,7 @@
     .param p1, "this$0"    # Lorg/apache/cordova/CordovaActivity;
 
     .prologue
-    .line 375
+    .line 385
     iput-object p1, p0, Lorg/apache/cordova/CordovaActivity$3;->this$0:Lorg/apache/cordova/CordovaActivity;
 
     iput-boolean p2, p0, Lorg/apache/cordova/CordovaActivity$3;->val$exit:Z
@@ -57,12 +57,12 @@
     .locals 5
 
     .prologue
-    .line 377
+    .line 387
     iget-boolean v0, p0, Lorg/apache/cordova/CordovaActivity$3;->val$exit:Z
 
     if-eqz v0, :cond_0
 
-    .line 378
+    .line 388
     iget-object v0, p0, Lorg/apache/cordova/CordovaActivity$3;->val$me:Lorg/apache/cordova/CordovaActivity;
 
     iget-object v0, v0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
@@ -75,7 +75,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 379
+    .line 389
     iget-object v0, p0, Lorg/apache/cordova/CordovaActivity$3;->val$me:Lorg/apache/cordova/CordovaActivity;
 
     const-string v1, "Application Error"
@@ -118,7 +118,7 @@
 
     invoke-virtual {v0, v1, v2, v3, v4}, Lorg/apache/cordova/CordovaActivity;->displayError(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
 
-    .line 381
+    .line 391
     :cond_0
     return-void
 .end method

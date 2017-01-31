@@ -37,7 +37,7 @@
     const/4 v0, 0x0
 
     .line 53
-    const-string v2, "5.2.1"
+    const-string v2, "6.1.0"
 
     const-string v3, "\\."
 

@@ -31,18 +31,18 @@
     .param p1, "parentEngine"    # Lorg/apache/cordova/engine/SystemWebViewEngine;
 
     .prologue
-    .line 72
+    .line 71
     invoke-direct {p0}, Landroid/webkit/WebChromeClient;-><init>()V
 
-    .line 60
+    .line 59
     const-wide/32 v0, 0x6400000
 
     iput-wide v0, p0, Lorg/apache/cordova/engine/SystemWebChromeClient;->MAX_QUOTA:J
 
-    .line 73
+    .line 72
     iput-object p1, p0, Lorg/apache/cordova/engine/SystemWebChromeClient;->parentEngine:Lorg/apache/cordova/engine/SystemWebViewEngine;
 
-    .line 74
+    .line 73
     iget-object v0, p1, Lorg/apache/cordova/engine/SystemWebViewEngine;->webView:Lorg/apache/cordova/engine/SystemWebView;
 
     invoke-virtual {v0}, Lorg/apache/cordova/engine/SystemWebView;->getContext()Landroid/content/Context;
@@ -51,7 +51,7 @@
 
     iput-object v0, p0, Lorg/apache/cordova/engine/SystemWebChromeClient;->appContext:Landroid/content/Context;
 
-    .line 75
+    .line 74
     new-instance v0, Lorg/apache/cordova/CordovaDialogsHelper;
 
     iget-object v1, p0, Lorg/apache/cordova/engine/SystemWebChromeClient;->appContext:Landroid/content/Context;
@@ -60,7 +60,7 @@
 
     iput-object v0, p0, Lorg/apache/cordova/engine/SystemWebChromeClient;->dialogsHelper:Lorg/apache/cordova/CordovaDialogsHelper;
 
-    .line 76
+    .line 75
     return-void
 .end method
 
@@ -70,12 +70,12 @@
     .locals 1
 
     .prologue
-    .line 291
+    .line 290
     iget-object v0, p0, Lorg/apache/cordova/engine/SystemWebChromeClient;->dialogsHelper:Lorg/apache/cordova/CordovaDialogsHelper;
 
     invoke-virtual {v0}, Lorg/apache/cordova/CordovaDialogsHelper;->destroyLastDialog()V
 
-    .line 292
+    .line 291
     return-void
 .end method
 
@@ -85,12 +85,12 @@
     .prologue
     const/4 v5, -0x2
 
-    .line 216
+    .line 215
     iget-object v4, p0, Lorg/apache/cordova/engine/SystemWebChromeClient;->mVideoProgressView:Landroid/view/View;
 
     if-nez v4, :cond_0
 
-    .line 220
+    .line 219
     new-instance v2, Landroid/widget/LinearLayout;
 
     iget-object v4, p0, Lorg/apache/cordova/engine/SystemWebChromeClient;->parentEngine:Lorg/apache/cordova/engine/SystemWebViewEngine;
@@ -105,27 +105,27 @@
 
     invoke-direct {v2, v4}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
-    .line 221
+    .line 220
     .local v2, "layout":Landroid/widget/LinearLayout;
     const/4 v4, 0x1
 
     invoke-virtual {v2, v4}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
-    .line 222
+    .line 221
     new-instance v3, Landroid/widget/RelativeLayout$LayoutParams;
 
     invoke-direct {v3, v5, v5}, Landroid/widget/RelativeLayout$LayoutParams;-><init>(II)V
 
-    .line 223
+    .line 222
     .local v3, "layoutParams":Landroid/widget/RelativeLayout$LayoutParams;
     const/16 v4, 0xd
 
     invoke-virtual {v3, v4}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(I)V
 
-    .line 224
+    .line 223
     invoke-virtual {v2, v3}, Landroid/widget/LinearLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 226
+    .line 225
     new-instance v0, Landroid/widget/ProgressBar;
 
     iget-object v4, p0, Lorg/apache/cordova/engine/SystemWebChromeClient;->parentEngine:Lorg/apache/cordova/engine/SystemWebViewEngine;
@@ -140,28 +140,28 @@
 
     invoke-direct {v0, v4}, Landroid/widget/ProgressBar;-><init>(Landroid/content/Context;)V
 
-    .line 227
+    .line 226
     .local v0, "bar":Landroid/widget/ProgressBar;
     new-instance v1, Landroid/widget/LinearLayout$LayoutParams;
 
     invoke-direct {v1, v5, v5}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    .line 228
+    .line 227
     .local v1, "barLayoutParams":Landroid/widget/LinearLayout$LayoutParams;
     const/16 v4, 0x11
 
     iput v4, v1, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
-    .line 229
+    .line 228
     invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 230
+    .line 229
     invoke-virtual {v2, v0}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 232
+    .line 231
     iput-object v2, p0, Lorg/apache/cordova/engine/SystemWebChromeClient;->mVideoProgressView:Landroid/view/View;
 
-    .line 234
+    .line 233
     .end local v0    # "bar":Landroid/widget/ProgressBar;
     .end local v1    # "barLayoutParams":Landroid/widget/LinearLayout$LayoutParams;
     .end local v2    # "layout":Landroid/widget/LinearLayout;
@@ -179,14 +179,14 @@
     .param p3, "sourceID"    # Ljava/lang/String;
 
     .prologue
-    .line 160
+    .line 159
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/4 v1, 0x7
 
     if-ne v0, v1, :cond_0
 
-    .line 162
+    .line 161
     const-string v0, "SystemWebChromeClient"
 
     const-string v1, "%s: Line %d : %s"
@@ -213,10 +213,10 @@
 
     invoke-static {v0, v1, v2}, Lorg/apache/cordova/LOG;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 163
+    .line 162
     invoke-super {p0, p1, p2, p3}, Landroid/webkit/WebChromeClient;->onConsoleMessage(Ljava/lang/String;ILjava/lang/String;)V
 
-    .line 165
+    .line 164
     :cond_0
     return-void
 .end method
@@ -229,14 +229,14 @@
     .end annotation
 
     .prologue
-    .line 171
+    .line 170
     invoke-virtual {p1}, Landroid/webkit/ConsoleMessage;->message()Ljava/lang/String;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 172
+    .line 171
     const-string v0, "SystemWebChromeClient"
 
     const-string v1, "%s: Line %d : %s"
@@ -275,7 +275,7 @@
 
     invoke-static {v0, v1, v2}, Lorg/apache/cordova/LOG;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 173
+    .line 172
     :cond_0
     invoke-super {p0, p1}, Landroid/webkit/WebChromeClient;->onConsoleMessage(Landroid/webkit/ConsoleMessage;)Z
 
@@ -294,7 +294,7 @@
     .param p9, "quotaUpdater"    # Landroid/webkit/WebStorage$QuotaUpdater;
 
     .prologue
-    .line 149
+    .line 148
     const-string v0, "SystemWebChromeClient"
 
     const-string v1, "onExceededDatabaseQuota estimatedSize: %d  currentQuota: %d  totalUsedQuota: %d"
@@ -329,12 +329,12 @@
 
     invoke-static {v0, v1, v2}, Lorg/apache/cordova/LOG;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 150
+    .line 149
     iget-wide v0, p0, Lorg/apache/cordova/engine/SystemWebChromeClient;->MAX_QUOTA:J
 
     invoke-interface {p9, v0, v1}, Landroid/webkit/WebStorage$QuotaUpdater;->updateQuota(J)V
 
-    .line 151
+    .line 150
     return-void
 .end method
 
@@ -346,15 +346,15 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 186
+    .line 185
     invoke-super {p0, p1, p2}, Landroid/webkit/WebChromeClient;->onGeolocationPermissionsShowPrompt(Ljava/lang/String;Landroid/webkit/GeolocationPermissions$Callback;)V
 
-    .line 187
+    .line 186
     const/4 v1, 0x1
 
     invoke-interface {p2, p1, v1, v3}, Landroid/webkit/GeolocationPermissions$Callback;->invoke(Ljava/lang/String;ZZ)V
 
-    .line 189
+    .line 188
     iget-object v1, p0, Lorg/apache/cordova/engine/SystemWebChromeClient;->parentEngine:Lorg/apache/cordova/engine/SystemWebViewEngine;
 
     iget-object v1, v1, Lorg/apache/cordova/engine/SystemWebViewEngine;->pluginManager:Lorg/apache/cordova/PluginManager;
@@ -365,7 +365,7 @@
 
     move-result-object v0
 
-    .line 190
+    .line 189
     .local v0, "geolocation":Lorg/apache/cordova/CordovaPlugin;
     if-eqz v0, :cond_0
 
@@ -375,10 +375,10 @@
 
     if-nez v1, :cond_0
 
-    .line 192
+    .line 191
     invoke-virtual {v0, v3}, Lorg/apache/cordova/CordovaPlugin;->requestPermissions(I)V
 
-    .line 195
+    .line 194
     :cond_0
     return-void
 .end method
@@ -387,7 +387,7 @@
     .locals 1
 
     .prologue
-    .line 205
+    .line 204
     iget-object v0, p0, Lorg/apache/cordova/engine/SystemWebChromeClient;->parentEngine:Lorg/apache/cordova/engine/SystemWebViewEngine;
 
     invoke-virtual {v0}, Lorg/apache/cordova/engine/SystemWebViewEngine;->getCordovaWebView()Lorg/apache/cordova/CordovaWebView;
@@ -396,7 +396,7 @@
 
     invoke-interface {v0}, Lorg/apache/cordova/CordovaWebView;->hideCustomView()V
 
-    .line 206
+    .line 205
     return-void
 .end method
 
@@ -408,7 +408,7 @@
     .param p4, "result"    # Landroid/webkit/JsResult;
 
     .prologue
-    .line 83
+    .line 82
     iget-object v0, p0, Lorg/apache/cordova/engine/SystemWebChromeClient;->dialogsHelper:Lorg/apache/cordova/CordovaDialogsHelper;
 
     new-instance v1, Lorg/apache/cordova/engine/SystemWebChromeClient$1;
@@ -417,7 +417,7 @@
 
     invoke-virtual {v0, p3, v1}, Lorg/apache/cordova/CordovaDialogsHelper;->showAlert(Ljava/lang/String;Lorg/apache/cordova/CordovaDialogsHelper$Result;)V
 
-    .line 92
+    .line 91
     const/4 v0, 0x1
 
     return v0
@@ -431,7 +431,7 @@
     .param p4, "result"    # Landroid/webkit/JsResult;
 
     .prologue
-    .line 100
+    .line 99
     iget-object v0, p0, Lorg/apache/cordova/engine/SystemWebChromeClient;->dialogsHelper:Lorg/apache/cordova/CordovaDialogsHelper;
 
     new-instance v1, Lorg/apache/cordova/engine/SystemWebChromeClient$2;
@@ -440,7 +440,7 @@
 
     invoke-virtual {v0, p3, v1}, Lorg/apache/cordova/CordovaDialogsHelper;->showConfirm(Ljava/lang/String;Lorg/apache/cordova/CordovaDialogsHelper$Result;)V
 
-    .line 110
+    .line 109
     const/4 v0, 0x1
 
     return v0
@@ -455,7 +455,7 @@
     .param p5, "result"    # Landroid/webkit/JsPromptResult;
 
     .prologue
-    .line 124
+    .line 123
     iget-object v1, p0, Lorg/apache/cordova/engine/SystemWebChromeClient;->parentEngine:Lorg/apache/cordova/engine/SystemWebViewEngine;
 
     iget-object v1, v1, Lorg/apache/cordova/engine/SystemWebViewEngine;->bridge:Lorg/apache/cordova/CordovaBridge;
@@ -464,20 +464,20 @@
 
     move-result-object v0
 
-    .line 125
+    .line 124
     .local v0, "handledRet":Ljava/lang/String;
     if-eqz v0, :cond_0
 
-    .line 126
+    .line 125
     invoke-virtual {p5, v0}, Landroid/webkit/JsPromptResult;->confirm(Ljava/lang/String;)V
 
-    .line 139
+    .line 138
     :goto_0
     const/4 v1, 0x1
 
     return v1
 
-    .line 128
+    .line 127
     :cond_0
     iget-object v1, p0, Lorg/apache/cordova/engine/SystemWebChromeClient;->dialogsHelper:Lorg/apache/cordova/CordovaDialogsHelper;
 
@@ -498,7 +498,7 @@
     .end annotation
 
     .prologue
-    .line 286
+    .line 285
     const-string v0, "SystemWebChromeClient"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -527,16 +527,16 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v0, v1}, Lorg/apache/cordova/LOG;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 287
+    .line 286
     invoke-virtual {p1}, Landroid/webkit/PermissionRequest;->getResources()[Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {p1, v0}, Landroid/webkit/PermissionRequest;->grant([Ljava/lang/String;)V
 
-    .line 288
+    .line 287
     return-void
 .end method
 
@@ -546,7 +546,7 @@
     .param p2, "callback"    # Landroid/webkit/WebChromeClient$CustomViewCallback;
 
     .prologue
-    .line 200
+    .line 199
     iget-object v0, p0, Lorg/apache/cordova/engine/SystemWebChromeClient;->parentEngine:Lorg/apache/cordova/engine/SystemWebViewEngine;
 
     invoke-virtual {v0}, Lorg/apache/cordova/engine/SystemWebViewEngine;->getCordovaWebView()Lorg/apache/cordova/CordovaWebView;
@@ -555,7 +555,7 @@
 
     invoke-interface {v0, p1, p2}, Lorg/apache/cordova/CordovaWebView;->showCustomView(Landroid/view/View;Landroid/webkit/WebChromeClient$CustomViewCallback;)V
 
-    .line 201
+    .line 200
     return-void
 .end method
 
@@ -581,13 +581,13 @@
     .end annotation
 
     .prologue
-    .line 266
+    .line 265
     .local p2, "filePathsCallback":Landroid/webkit/ValueCallback;, "Landroid/webkit/ValueCallback<[Landroid/net/Uri;>;"
     invoke-virtual {p3}, Landroid/webkit/WebChromeClient$FileChooserParams;->createIntent()Landroid/content/Intent;
 
     move-result-object v1
 
-    .line 268
+    .line 267
     .local v1, "intent":Landroid/content/Intent;
     :try_start_0
     iget-object v2, p0, Lorg/apache/cordova/engine/SystemWebChromeClient;->parentEngine:Lorg/apache/cordova/engine/SystemWebViewEngine;
@@ -604,23 +604,23 @@
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 280
+    .line 279
     :goto_0
     const/4 v2, 0x1
 
     return v2
 
-    .line 276
+    .line 275
     :catch_0
     move-exception v0
 
-    .line 277
+    .line 276
     .local v0, "e":Landroid/content/ActivityNotFoundException;
     const-string v2, "No activity found to handle file chooser intent."
 
-    invoke-static {v2, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/Throwable;)I
+    invoke-static {v2, v0}, Lorg/apache/cordova/LOG;->w(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 278
+    .line 277
     const/4 v2, 0x0
 
     invoke-interface {p2, v2}, Landroid/webkit/ValueCallback;->onReceiveValue(Ljava/lang/Object;)V
@@ -641,13 +641,13 @@
     .end annotation
 
     .prologue
-    .line 241
+    .line 240
     .local p1, "uploadMsg":Landroid/webkit/ValueCallback;, "Landroid/webkit/ValueCallback<Landroid/net/Uri;>;"
     const-string v0, "*/*"
 
     invoke-virtual {p0, p1, v0}, Lorg/apache/cordova/engine/SystemWebChromeClient;->openFileChooser(Landroid/webkit/ValueCallback;Ljava/lang/String;)V
 
-    .line 242
+    .line 241
     return-void
 .end method
 
@@ -667,13 +667,13 @@
     .end annotation
 
     .prologue
-    .line 245
+    .line 244
     .local p1, "uploadMsg":Landroid/webkit/ValueCallback;, "Landroid/webkit/ValueCallback<Landroid/net/Uri;>;"
     const/4 v0, 0x0
 
     invoke-virtual {p0, p1, p2, v0}, Lorg/apache/cordova/engine/SystemWebChromeClient;->openFileChooser(Landroid/webkit/ValueCallback;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 246
+    .line 245
     return-void
 .end method
 
@@ -695,7 +695,7 @@
     .end annotation
 
     .prologue
-    .line 250
+    .line 249
     .local p1, "uploadMsg":Landroid/webkit/ValueCallback;, "Landroid/webkit/ValueCallback<Landroid/net/Uri;>;"
     new-instance v0, Landroid/content/Intent;
 
@@ -703,18 +703,18 @@
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 251
+    .line 250
     .local v0, "intent":Landroid/content/Intent;
     const-string v1, "android.intent.category.OPENABLE"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 252
+    .line 251
     const-string v1, "*/*"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 253
+    .line 252
     iget-object v1, p0, Lorg/apache/cordova/engine/SystemWebChromeClient;->parentEngine:Lorg/apache/cordova/engine/SystemWebViewEngine;
 
     iget-object v1, v1, Lorg/apache/cordova/engine/SystemWebViewEngine;->cordova:Lorg/apache/cordova/CordovaInterface;
@@ -727,6 +727,6 @@
 
     invoke-interface {v1, v2, v0, v3}, Lorg/apache/cordova/CordovaInterface;->startActivityForResult(Lorg/apache/cordova/CordovaPlugin;Landroid/content/Intent;I)V
 
-    .line 261
+    .line 260
     return-void
 .end method

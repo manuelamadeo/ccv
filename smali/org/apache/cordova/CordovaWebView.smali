@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final CORDOVA_VERSION:Ljava/lang/String; = "5.2.1"
+.field public static final CORDOVA_VERSION:Ljava/lang/String; = "6.1.0"
 
 
 # virtual methods

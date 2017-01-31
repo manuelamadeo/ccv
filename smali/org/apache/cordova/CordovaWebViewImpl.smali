@@ -64,7 +64,7 @@
     .locals 1
 
     .prologue
-    .line 47
+    .line 46
     const-class v0, Lorg/apache/cordova/CordovaWebViewImpl;
 
     invoke-virtual {v0}, Ljava/lang/Class;->desiredAssertionStatus()Z
@@ -91,32 +91,32 @@
     .param p1, "cordovaWebViewEngine"    # Lorg/apache/cordova/CordovaWebViewEngine;
 
     .prologue
-    .line 86
+    .line 85
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 57
+    .line 56
     const/4 v0, 0x0
 
     iput v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->loadUrlTimeout:I
 
-    .line 63
+    .line 62
     new-instance v0, Lorg/apache/cordova/CordovaWebViewImpl$EngineClient;
 
     invoke-direct {v0, p0}, Lorg/apache/cordova/CordovaWebViewImpl$EngineClient;-><init>(Lorg/apache/cordova/CordovaWebViewImpl;)V
 
     iput-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->engineClient:Lorg/apache/cordova/CordovaWebViewImpl$EngineClient;
 
-    .line 73
+    .line 72
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
     iput-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->boundKeyCodes:Ljava/util/Set;
 
-    .line 87
+    .line 86
     iput-object p1, p0, Lorg/apache/cordova/CordovaWebViewImpl;->engine:Lorg/apache/cordova/CordovaWebViewEngine;
 
-    .line 88
+    .line 87
     return-void
 .end method
 
@@ -125,7 +125,7 @@
     .param p0, "x0"    # Lorg/apache/cordova/CordovaWebViewImpl;
 
     .prologue
-    .line 47
+    .line 46
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->pluginManager:Lorg/apache/cordova/PluginManager;
 
     return-object v0
@@ -136,7 +136,7 @@
     .param p0, "x0"    # Lorg/apache/cordova/CordovaWebViewImpl;
 
     .prologue
-    .line 47
+    .line 46
     iget v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->loadUrlTimeout:I
 
     return v0
@@ -147,7 +147,7 @@
     .param p0, "x0"    # Lorg/apache/cordova/CordovaWebViewImpl;
 
     .prologue
-    .line 47
+    .line 46
     iget v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->loadUrlTimeout:I
 
     add-int/lit8 v1, v0, 0x1
@@ -162,7 +162,7 @@
     .param p0, "x0"    # Lorg/apache/cordova/CordovaWebViewImpl;
 
     .prologue
-    .line 47
+    .line 46
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->cordova:Lorg/apache/cordova/CordovaInterface;
 
     return-object v0
@@ -173,7 +173,7 @@
     .param p0, "x0"    # Lorg/apache/cordova/CordovaWebViewImpl;
 
     .prologue
-    .line 47
+    .line 46
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->boundKeyCodes:Ljava/util/Set;
 
     return-object v0
@@ -184,7 +184,7 @@
     .param p0, "x0"    # Lorg/apache/cordova/CordovaWebViewImpl;
 
     .prologue
-    .line 47
+    .line 46
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->mCustomView:Landroid/view/View;
 
     return-object v0
@@ -196,7 +196,7 @@
     .param p1, "x1"    # Ljava/lang/String;
 
     .prologue
-    .line 47
+    .line 46
     invoke-direct {p0, p1}, Lorg/apache/cordova/CordovaWebViewImpl;->sendJavascriptEvent(Ljava/lang/String;)V
 
     return-void
@@ -208,7 +208,7 @@
     .param p1, "preferences"    # Lorg/apache/cordova/CordovaPreferences;
 
     .prologue
-    .line 76
+    .line 75
     const-string v4, "webview"
 
     const-class v5, Lorg/apache/cordova/engine/SystemWebViewEngine;
@@ -221,14 +221,14 @@
 
     move-result-object v0
 
-    .line 78
+    .line 77
     .local v0, "className":Ljava/lang/String;
     :try_start_0
     invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v3
 
-    .line 79
+    .line 78
     .local v3, "webViewClass":Ljava/lang/Class;, "Ljava/lang/Class<*>;"
     const/4 v4, 0x2
 
@@ -250,7 +250,7 @@
 
     move-result-object v1
 
-    .line 80
+    .line 79
     .local v1, "constructor":Ljava/lang/reflect/Constructor;, "Ljava/lang/reflect/Constructor<*>;"
     const/4 v4, 0x2
 
@@ -274,13 +274,13 @@
 
     return-object v4
 
-    .line 81
+    .line 80
     .end local v1    # "constructor":Ljava/lang/reflect/Constructor;, "Ljava/lang/reflect/Constructor<*>;"
     .end local v3    # "webViewClass":Ljava/lang/Class;, "Ljava/lang/Class<*>;"
     :catch_0
     move-exception v2
 
-    .line 82
+    .line 81
     .local v2, "e":Ljava/lang/Exception;
     new-instance v4, Ljava/lang/RuntimeException;
 
@@ -296,12 +296,12 @@
     .param p1, "event"    # Ljava/lang/String;
 
     .prologue
-    .line 341
+    .line 340
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->appPlugin:Lorg/apache/cordova/CoreAndroid;
 
     if-nez v0, :cond_0
 
-    .line 342
+    .line 341
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->pluginManager:Lorg/apache/cordova/PluginManager;
 
     const-string v1, "CoreAndroid"
@@ -314,24 +314,24 @@
 
     iput-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->appPlugin:Lorg/apache/cordova/CoreAndroid;
 
-    .line 345
+    .line 344
     :cond_0
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->appPlugin:Lorg/apache/cordova/CoreAndroid;
 
     if-nez v0, :cond_1
 
-    .line 346
+    .line 345
     const-string v0, "CordovaWebViewImpl"
 
     const-string v1, "Unable to fire event without existing plugin"
 
     invoke-static {v0, v1}, Lorg/apache/cordova/LOG;->w(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 350
+    .line 349
     :goto_0
     return-void
 
-    .line 349
+    .line 348
     :cond_1
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->appPlugin:Lorg/apache/cordova/CoreAndroid;
 
@@ -346,7 +346,7 @@
     .locals 1
 
     .prologue
-    .line 416
+    .line 415
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->engine:Lorg/apache/cordova/CordovaWebViewEngine;
 
     invoke-interface {v0}, Lorg/apache/cordova/CordovaWebViewEngine;->goBack()Z
@@ -360,7 +360,7 @@
     .locals 1
 
     .prologue
-    .line 395
+    .line 394
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->engine:Lorg/apache/cordova/CordovaWebViewEngine;
 
     invoke-interface {v0}, Lorg/apache/cordova/CordovaWebViewEngine;->canGoBack()Z
@@ -374,12 +374,12 @@
     .locals 1
 
     .prologue
-    .line 400
+    .line 399
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->engine:Lorg/apache/cordova/CordovaWebViewEngine;
 
     invoke-interface {v0}, Lorg/apache/cordova/CordovaWebViewEngine;->clearCache()V
 
-    .line 401
+    .line 400
     return-void
 .end method
 
@@ -390,12 +390,12 @@
     .end annotation
 
     .prologue
-    .line 406
+    .line 405
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->engine:Lorg/apache/cordova/CordovaWebViewEngine;
 
     invoke-interface {v0}, Lorg/apache/cordova/CordovaWebViewEngine;->clearCache()V
 
-    .line 407
+    .line 406
     return-void
 .end method
 
@@ -403,12 +403,12 @@
     .locals 1
 
     .prologue
-    .line 411
+    .line 410
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->engine:Lorg/apache/cordova/CordovaWebViewEngine;
 
     invoke-interface {v0}, Lorg/apache/cordova/CordovaWebViewEngine;->clearHistory()V
 
-    .line 412
+    .line 411
     return-void
 .end method
 
@@ -416,7 +416,7 @@
     .locals 1
 
     .prologue
-    .line 337
+    .line 336
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->engine:Lorg/apache/cordova/CordovaWebViewEngine;
 
     invoke-interface {v0}, Lorg/apache/cordova/CordovaWebViewEngine;->getView()Landroid/view/View;
@@ -434,7 +434,7 @@
     .locals 1
 
     .prologue
-    .line 321
+    .line 320
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->engine:Lorg/apache/cordova/CordovaWebViewEngine;
 
     invoke-interface {v0}, Lorg/apache/cordova/CordovaWebViewEngine;->getCookieManager()Lorg/apache/cordova/ICordovaCookieManager;
@@ -448,7 +448,7 @@
     .locals 1
 
     .prologue
-    .line 329
+    .line 328
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->engine:Lorg/apache/cordova/CordovaWebViewEngine;
 
     return-object v0
@@ -458,7 +458,7 @@
     .locals 1
 
     .prologue
-    .line 313
+    .line 312
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->pluginManager:Lorg/apache/cordova/PluginManager;
 
     return-object v0
@@ -468,7 +468,7 @@
     .locals 1
 
     .prologue
-    .line 317
+    .line 316
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->preferences:Lorg/apache/cordova/CordovaPreferences;
 
     return-object v0
@@ -478,7 +478,7 @@
     .locals 1
 
     .prologue
-    .line 325
+    .line 324
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->resourceApi:Lorg/apache/cordova/CordovaResourceApi;
 
     return-object v0
@@ -488,7 +488,7 @@
     .locals 1
 
     .prologue
-    .line 384
+    .line 383
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->engine:Lorg/apache/cordova/CordovaWebViewEngine;
 
     invoke-interface {v0}, Lorg/apache/cordova/CordovaWebViewEngine;->getUrl()Ljava/lang/String;
@@ -502,7 +502,7 @@
     .locals 1
 
     .prologue
-    .line 333
+    .line 332
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->engine:Lorg/apache/cordova/CordovaWebViewEngine;
 
     invoke-interface {v0}, Lorg/apache/cordova/CordovaWebViewEngine;->getView()Landroid/view/View;
@@ -516,18 +516,18 @@
     .locals 1
 
     .prologue
-    .line 474
+    .line 473
     invoke-virtual {p0}, Lorg/apache/cordova/CordovaWebViewImpl;->isInitialized()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 490
+    .line 489
     :goto_0
     return-void
 
-    .line 478
+    .line 477
     :cond_0
     iget v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->loadUrlTimeout:I
 
@@ -535,22 +535,22 @@
 
     iput v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->loadUrlTimeout:I
 
-    .line 481
+    .line 480
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->pluginManager:Lorg/apache/cordova/PluginManager;
 
     invoke-virtual {v0}, Lorg/apache/cordova/PluginManager;->onDestroy()V
 
-    .line 485
+    .line 484
     const-string v0, "about:blank"
 
     invoke-virtual {p0, v0}, Lorg/apache/cordova/CordovaWebViewImpl;->loadUrl(Ljava/lang/String;)V
 
-    .line 488
+    .line 487
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->engine:Lorg/apache/cordova/CordovaWebViewEngine;
 
     invoke-interface {v0}, Lorg/apache/cordova/CordovaWebViewEngine;->destroy()V
 
-    .line 489
+    .line 488
     invoke-virtual {p0}, Lorg/apache/cordova/CordovaWebViewImpl;->hideCustomView()V
 
     goto :goto_0
@@ -563,36 +563,36 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 428
+    .line 427
     invoke-virtual {p0}, Lorg/apache/cordova/CordovaWebViewImpl;->isInitialized()Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 440
+    .line 439
     :cond_0
     :goto_0
     return-void
 
-    .line 431
+    .line 430
     :cond_1
     iput-boolean v1, p0, Lorg/apache/cordova/CordovaWebViewImpl;->hasPausedEver:Z
 
-    .line 432
+    .line 431
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->pluginManager:Lorg/apache/cordova/PluginManager;
 
     invoke-virtual {v0, p1}, Lorg/apache/cordova/PluginManager;->onPause(Z)V
 
-    .line 433
+    .line 432
     const-string v0, "pause"
 
     invoke-direct {p0, v0}, Lorg/apache/cordova/CordovaWebViewImpl;->sendJavascriptEvent(Ljava/lang/String;)V
 
-    .line 436
+    .line 435
     if-nez p1, :cond_0
 
-    .line 438
+    .line 437
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->engine:Lorg/apache/cordova/CordovaWebViewEngine;
 
     invoke-interface {v0, v1}, Lorg/apache/cordova/CordovaWebViewEngine;->setPaused(Z)V
@@ -605,19 +605,19 @@
     .param p1, "keepRunning"    # Z
 
     .prologue
-    .line 443
+    .line 442
     invoke-virtual {p0}, Lorg/apache/cordova/CordovaWebViewImpl;->isInitialized()Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 457
+    .line 456
     :cond_0
     :goto_0
     return-void
 
-    .line 448
+    .line 447
     :cond_1
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->engine:Lorg/apache/cordova/CordovaWebViewEngine;
 
@@ -625,17 +625,17 @@
 
     invoke-interface {v0, v1}, Lorg/apache/cordova/CordovaWebViewEngine;->setPaused(Z)V
 
-    .line 449
+    .line 448
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->pluginManager:Lorg/apache/cordova/PluginManager;
 
     invoke-virtual {v0, p1}, Lorg/apache/cordova/PluginManager;->onResume(Z)V
 
-    .line 454
+    .line 453
     iget-boolean v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->hasPausedEver:Z
 
     if-eqz v0, :cond_0
 
-    .line 455
+    .line 454
     const-string v0, "resume"
 
     invoke-direct {p0, v0}, Lorg/apache/cordova/CordovaWebViewImpl;->sendJavascriptEvent(Ljava/lang/String;)V
@@ -647,18 +647,18 @@
     .locals 1
 
     .prologue
-    .line 460
+    .line 459
     invoke-virtual {p0}, Lorg/apache/cordova/CordovaWebViewImpl;->isInitialized()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 464
+    .line 463
     :goto_0
     return-void
 
-    .line 463
+    .line 462
     :cond_0
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->pluginManager:Lorg/apache/cordova/PluginManager;
 
@@ -671,18 +671,18 @@
     .locals 1
 
     .prologue
-    .line 467
+    .line 466
     invoke-virtual {p0}, Lorg/apache/cordova/CordovaWebViewImpl;->isInitialized()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 471
+    .line 470
     :goto_0
     return-void
 
-    .line 470
+    .line 469
     :cond_0
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->pluginManager:Lorg/apache/cordova/PluginManager;
 
@@ -697,31 +697,31 @@
     .end annotation
 
     .prologue
-    .line 278
+    .line 277
     iget-object v1, p0, Lorg/apache/cordova/CordovaWebViewImpl;->mCustomView:Landroid/view/View;
 
     if-nez v1, :cond_0
 
-    .line 292
+    .line 291
     :goto_0
     return-void
 
-    .line 279
+    .line 278
     :cond_0
     const-string v1, "CordovaWebViewImpl"
 
     const-string v2, "Hiding Custom View"
 
-    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v1, v2}, Lorg/apache/cordova/LOG;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 282
+    .line 281
     iget-object v1, p0, Lorg/apache/cordova/CordovaWebViewImpl;->mCustomView:Landroid/view/View;
 
     const/16 v2, 0x8
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
 
-    .line 285
+    .line 284
     iget-object v1, p0, Lorg/apache/cordova/CordovaWebViewImpl;->engine:Lorg/apache/cordova/CordovaWebViewEngine;
 
     invoke-interface {v1}, Lorg/apache/cordova/CordovaWebViewEngine;->getView()Landroid/view/View;
@@ -734,23 +734,23 @@
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    .line 286
+    .line 285
     .local v0, "parent":Landroid/view/ViewGroup;
     iget-object v1, p0, Lorg/apache/cordova/CordovaWebViewImpl;->mCustomView:Landroid/view/View;
 
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
-    .line 287
+    .line 286
     const/4 v1, 0x0
 
     iput-object v1, p0, Lorg/apache/cordova/CordovaWebViewImpl;->mCustomView:Landroid/view/View;
 
-    .line 288
+    .line 287
     iget-object v1, p0, Lorg/apache/cordova/CordovaWebViewImpl;->mCustomViewCallback:Landroid/webkit/WebChromeClient$CustomViewCallback;
 
     invoke-interface {v1}, Landroid/webkit/WebChromeClient$CustomViewCallback;->onCustomViewHidden()V
 
-    .line 291
+    .line 290
     iget-object v1, p0, Lorg/apache/cordova/CordovaWebViewImpl;->engine:Lorg/apache/cordova/CordovaWebViewEngine;
 
     invoke-interface {v1}, Lorg/apache/cordova/CordovaWebViewEngine;->getView()Landroid/view/View;
@@ -769,7 +769,7 @@
     .param p1, "cordova"    # Lorg/apache/cordova/CordovaInterface;
 
     .prologue
-    .line 92
+    .line 91
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -780,7 +780,7 @@
 
     invoke-virtual {p0, p1, v0, v1}, Lorg/apache/cordova/CordovaWebViewImpl;->init(Lorg/apache/cordova/CordovaInterface;Ljava/util/List;Lorg/apache/cordova/CordovaPreferences;)V
 
-    .line 93
+    .line 92
     return-void
 .end method
 
@@ -802,27 +802,27 @@
     .end annotation
 
     .prologue
-    .line 97
+    .line 96
     .local p2, "pluginEntries":Ljava/util/List;, "Ljava/util/List<Lorg/apache/cordova/PluginEntry;>;"
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->cordova:Lorg/apache/cordova/CordovaInterface;
 
     if-eqz v0, :cond_0
 
-    .line 98
+    .line 97
     new-instance v0, Ljava/lang/IllegalStateException;
 
     invoke-direct {v0}, Ljava/lang/IllegalStateException;-><init>()V
 
     throw v0
 
-    .line 100
+    .line 99
     :cond_0
     iput-object p1, p0, Lorg/apache/cordova/CordovaWebViewImpl;->cordova:Lorg/apache/cordova/CordovaInterface;
 
-    .line 101
+    .line 100
     iput-object p3, p0, Lorg/apache/cordova/CordovaWebViewImpl;->preferences:Lorg/apache/cordova/CordovaPreferences;
 
-    .line 102
+    .line 101
     new-instance v0, Lorg/apache/cordova/PluginManager;
 
     iget-object v1, p0, Lorg/apache/cordova/CordovaWebViewImpl;->cordova:Lorg/apache/cordova/CordovaInterface;
@@ -831,7 +831,7 @@
 
     iput-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->pluginManager:Lorg/apache/cordova/PluginManager;
 
-    .line 103
+    .line 102
     new-instance v0, Lorg/apache/cordova/CordovaResourceApi;
 
     iget-object v1, p0, Lorg/apache/cordova/CordovaWebViewImpl;->engine:Lorg/apache/cordova/CordovaWebViewEngine;
@@ -850,14 +850,14 @@
 
     iput-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->resourceApi:Lorg/apache/cordova/CordovaResourceApi;
 
-    .line 104
+    .line 103
     new-instance v0, Lorg/apache/cordova/NativeToJsMessageQueue;
 
     invoke-direct {v0}, Lorg/apache/cordova/NativeToJsMessageQueue;-><init>()V
 
     iput-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->nativeToJsMessageQueue:Lorg/apache/cordova/NativeToJsMessageQueue;
 
-    .line 105
+    .line 104
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->nativeToJsMessageQueue:Lorg/apache/cordova/NativeToJsMessageQueue;
 
     new-instance v1, Lorg/apache/cordova/NativeToJsMessageQueue$NoOpBridgeMode;
@@ -866,7 +866,7 @@
 
     invoke-virtual {v0, v1}, Lorg/apache/cordova/NativeToJsMessageQueue;->addBridgeMode(Lorg/apache/cordova/NativeToJsMessageQueue$BridgeMode;)V
 
-    .line 106
+    .line 105
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->nativeToJsMessageQueue:Lorg/apache/cordova/NativeToJsMessageQueue;
 
     new-instance v1, Lorg/apache/cordova/NativeToJsMessageQueue$LoadUrlBridgeMode;
@@ -877,7 +877,7 @@
 
     invoke-virtual {v0, v1}, Lorg/apache/cordova/NativeToJsMessageQueue;->addBridgeMode(Lorg/apache/cordova/NativeToJsMessageQueue$BridgeMode;)V
 
-    .line 108
+    .line 107
     const-string v0, "DisallowOverscroll"
 
     const/4 v1, 0x0
@@ -888,7 +888,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 109
+    .line 108
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->engine:Lorg/apache/cordova/CordovaWebViewEngine;
 
     invoke-interface {v0}, Lorg/apache/cordova/CordovaWebViewEngine;->getView()Landroid/view/View;
@@ -899,7 +899,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOverScrollMode(I)V
 
-    .line 111
+    .line 110
     :cond_1
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->engine:Lorg/apache/cordova/CordovaWebViewEngine;
 
@@ -917,7 +917,7 @@
 
     invoke-interface/range {v0 .. v6}, Lorg/apache/cordova/CordovaWebViewEngine;->init(Lorg/apache/cordova/CordovaWebView;Lorg/apache/cordova/CordovaInterface;Lorg/apache/cordova/CordovaWebViewEngine$Client;Lorg/apache/cordova/CordovaResourceApi;Lorg/apache/cordova/PluginManager;Lorg/apache/cordova/NativeToJsMessageQueue;)V
 
-    .line 113
+    .line 112
     sget-boolean v0, Lorg/apache/cordova/CordovaWebViewImpl;->$assertionsDisabled:Z
 
     if-nez v0, :cond_2
@@ -938,7 +938,7 @@
 
     throw v0
 
-    .line 115
+    .line 114
     :cond_2
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->pluginManager:Lorg/apache/cordova/PluginManager;
 
@@ -948,12 +948,12 @@
 
     invoke-virtual {v0, v1, v2}, Lorg/apache/cordova/PluginManager;->addService(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 116
+    .line 115
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->pluginManager:Lorg/apache/cordova/PluginManager;
 
     invoke-virtual {v0}, Lorg/apache/cordova/PluginManager;->init()V
 
-    .line 118
+    .line 117
     return-void
 .end method
 
@@ -962,7 +962,7 @@
     .param p1, "keyCode"    # I
 
     .prologue
-    .line 373
+    .line 372
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->boundKeyCodes:Ljava/util/Set;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -982,7 +982,7 @@
     .end annotation
 
     .prologue
-    .line 297
+    .line 296
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->mCustomView:Landroid/view/View;
 
     if-eqz v0, :cond_0
@@ -1002,7 +1002,7 @@
     .locals 1
 
     .prologue
-    .line 122
+    .line 121
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->cordova:Lorg/apache/cordova/CordovaInterface;
 
     if-eqz v0, :cond_0
@@ -1023,12 +1023,12 @@
     .param p1, "url"    # Ljava/lang/String;
 
     .prologue
-    .line 199
+    .line 198
     const/4 v0, 0x1
 
     invoke-virtual {p0, p1, v0}, Lorg/apache/cordova/CordovaWebViewImpl;->loadUrlIntoView(Ljava/lang/String;Z)V
 
-    .line 200
+    .line 199
     return-void
 .end method
 
@@ -1040,7 +1040,7 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 127
+    .line 126
     const-string v1, "CordovaWebViewImpl"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -1069,7 +1069,7 @@
 
     invoke-static {v1, v4}, Lorg/apache/cordova/LOG;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 128
+    .line 127
     const-string v1, "about:blank"
 
     invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -1086,17 +1086,17 @@
 
     if-eqz v1, :cond_1
 
-    .line 129
+    .line 128
     :cond_0
     iget-object v1, p0, Lorg/apache/cordova/CordovaWebViewImpl;->engine:Lorg/apache/cordova/CordovaWebViewEngine;
 
     invoke-interface {v1, p1, v0}, Lorg/apache/cordova/CordovaWebViewEngine;->loadUrl(Ljava/lang/String;Z)V
 
-    .line 194
+    .line 193
     :goto_0
     return-void
 
-    .line 133
+    .line 132
     :cond_1
     if-nez p2, :cond_2
 
@@ -1107,34 +1107,34 @@
     :cond_2
     const/4 p2, 0x1
 
-    .line 135
+    .line 134
     :goto_1
     if-eqz p2, :cond_4
 
-    .line 137
+    .line 136
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->loadedUrl:Ljava/lang/String;
 
     if-eqz v0, :cond_3
 
-    .line 138
+    .line 137
     const/4 v0, 0x0
 
     iput-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->appPlugin:Lorg/apache/cordova/CoreAndroid;
 
-    .line 139
+    .line 138
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->pluginManager:Lorg/apache/cordova/PluginManager;
 
     invoke-virtual {v0}, Lorg/apache/cordova/PluginManager;->init()V
 
-    .line 141
+    .line 140
     :cond_3
     iput-object p1, p0, Lorg/apache/cordova/CordovaWebViewImpl;->loadedUrl:Ljava/lang/String;
 
-    .line 145
+    .line 144
     :cond_4
     iget v6, p0, Lorg/apache/cordova/CordovaWebViewImpl;->loadUrlTimeout:I
 
-    .line 146
+    .line 145
     .local v6, "currentLoadUrlTimeout":I
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->preferences:Lorg/apache/cordova/CordovaPreferences;
 
@@ -1146,23 +1146,23 @@
 
     move-result v2
 
-    .line 149
+    .line 148
     .local v2, "loadUrlTimeoutValue":I
     new-instance v7, Lorg/apache/cordova/CordovaWebViewImpl$1;
 
     invoke-direct {v7, p0, p1}, Lorg/apache/cordova/CordovaWebViewImpl$1;-><init>(Lorg/apache/cordova/CordovaWebViewImpl;Ljava/lang/String;)V
 
-    .line 168
+    .line 167
     .local v7, "loadError":Ljava/lang/Runnable;
     new-instance v3, Lorg/apache/cordova/CordovaWebViewImpl$2;
 
     invoke-direct {v3, p0, v2, v6, v7}, Lorg/apache/cordova/CordovaWebViewImpl$2;-><init>(Lorg/apache/cordova/CordovaWebViewImpl;IILjava/lang/Runnable;)V
 
-    .line 185
+    .line 184
     .local v3, "timeoutCheck":Ljava/lang/Runnable;
     move v5, p2
 
-    .line 186
+    .line 185
     .local v5, "_recreatePlugins":Z
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->cordova:Lorg/apache/cordova/CordovaInterface;
 
@@ -1190,7 +1190,7 @@
     :cond_5
     move p2, v0
 
-    .line 133
+    .line 132
     goto :goto_1
 .end method
 
@@ -1199,17 +1199,17 @@
     .param p1, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 422
+    .line 421
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->pluginManager:Lorg/apache/cordova/PluginManager;
 
     if-eqz v0, :cond_0
 
-    .line 423
+    .line 422
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->pluginManager:Lorg/apache/cordova/PluginManager;
 
     invoke-virtual {v0, p1}, Lorg/apache/cordova/PluginManager;->onNewIntent(Landroid/content/Intent;)V
 
-    .line 425
+    .line 424
     :cond_0
     return-void
 .end method
@@ -1220,7 +1220,7 @@
     .param p2, "data"    # Ljava/lang/Object;
 
     .prologue
-    .line 378
+    .line 377
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->pluginManager:Lorg/apache/cordova/PluginManager;
 
     invoke-virtual {v0, p1, p2}, Lorg/apache/cordova/PluginManager;->postMessage(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
@@ -1237,12 +1237,12 @@
     .end annotation
 
     .prologue
-    .line 303
+    .line 302
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->nativeToJsMessageQueue:Lorg/apache/cordova/NativeToJsMessageQueue;
 
     invoke-virtual {v0, p1}, Lorg/apache/cordova/NativeToJsMessageQueue;->addJavaScript(Ljava/lang/String;)V
 
-    .line 304
+    .line 303
     return-void
 .end method
 
@@ -1252,12 +1252,12 @@
     .param p2, "callbackId"    # Ljava/lang/String;
 
     .prologue
-    .line 308
+    .line 307
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->nativeToJsMessageQueue:Lorg/apache/cordova/NativeToJsMessageQueue;
 
     invoke-virtual {v0, p1, p2}, Lorg/apache/cordova/NativeToJsMessageQueue;->addPluginResult(Lorg/apache/cordova/PluginResult;Ljava/lang/String;)V
 
-    .line 309
+    .line 308
     return-void
 .end method
 
@@ -1267,10 +1267,10 @@
     .param p2, "override"    # Z
 
     .prologue
-    .line 354
+    .line 353
     sparse-switch p1, :sswitch_data_0
 
-    .line 367
+    .line 366
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1295,11 +1295,11 @@
 
     throw v0
 
-    .line 360
+    .line 359
     :sswitch_0
     if-eqz p2, :cond_0
 
-    .line 361
+    .line 360
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->boundKeyCodes:Ljava/util/Set;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -1308,11 +1308,11 @@
 
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    .line 365
+    .line 364
     :goto_0
     return-void
 
-    .line 363
+    .line 362
     :cond_0
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->boundKeyCodes:Ljava/util/Set;
 
@@ -1324,7 +1324,7 @@
 
     goto :goto_0
 
-    .line 354
+    .line 353
     :sswitch_data_0
     .sparse-switch
         0x4 -> :sswitch_0
@@ -1344,33 +1344,33 @@
     .prologue
     const/4 v3, -0x1
 
-    .line 248
+    .line 247
     const-string v1, "CordovaWebViewImpl"
 
     const-string v2, "showing Custom View"
 
-    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v1, v2}, Lorg/apache/cordova/LOG;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 250
+    .line 249
     iget-object v1, p0, Lorg/apache/cordova/CordovaWebViewImpl;->mCustomView:Landroid/view/View;
 
     if-eqz v1, :cond_0
 
-    .line 251
+    .line 250
     invoke-interface {p2}, Landroid/webkit/WebChromeClient$CustomViewCallback;->onCustomViewHidden()V
 
-    .line 272
+    .line 271
     :goto_0
     return-void
 
-    .line 256
+    .line 255
     :cond_0
     iput-object p1, p0, Lorg/apache/cordova/CordovaWebViewImpl;->mCustomView:Landroid/view/View;
 
-    .line 257
+    .line 256
     iput-object p2, p0, Lorg/apache/cordova/CordovaWebViewImpl;->mCustomViewCallback:Landroid/webkit/WebChromeClient$CustomViewCallback;
 
-    .line 260
+    .line 259
     iget-object v1, p0, Lorg/apache/cordova/CordovaWebViewImpl;->engine:Lorg/apache/cordova/CordovaWebViewEngine;
 
     invoke-interface {v1}, Lorg/apache/cordova/CordovaWebViewEngine;->getView()Landroid/view/View;
@@ -1383,7 +1383,7 @@
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    .line 261
+    .line 260
     .local v0, "parent":Landroid/view/ViewGroup;
     new-instance v1, Landroid/widget/FrameLayout$LayoutParams;
 
@@ -1393,7 +1393,7 @@
 
     invoke-virtual {v0, p1, v1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 267
+    .line 266
     iget-object v1, p0, Lorg/apache/cordova/CordovaWebViewImpl;->engine:Lorg/apache/cordova/CordovaWebViewEngine;
 
     invoke-interface {v1}, Lorg/apache/cordova/CordovaWebViewEngine;->getView()Landroid/view/View;
@@ -1404,12 +1404,12 @@
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
 
-    .line 270
+    .line 269
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->setVisibility(I)V
 
-    .line 271
+    .line 270
     invoke-virtual {v0}, Landroid/view/ViewGroup;->bringToFront()V
 
     goto :goto_0
@@ -1437,7 +1437,7 @@
     .local p4, "params":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
     const/4 v8, 0x1
 
-    .line 204
+    .line 203
     const-string v3, "CordovaWebViewImpl"
 
     const-string v4, "showWebPage(%s, %b, %b, HashMap)"
@@ -1466,19 +1466,19 @@
 
     invoke-static {v3, v4, v5}, Lorg/apache/cordova/LOG;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 207
+    .line 206
     if-eqz p3, :cond_0
 
-    .line 208
+    .line 207
     iget-object v3, p0, Lorg/apache/cordova/CordovaWebViewImpl;->engine:Lorg/apache/cordova/CordovaWebViewEngine;
 
     invoke-interface {v3}, Lorg/apache/cordova/CordovaWebViewEngine;->clearHistory()V
 
-    .line 212
+    .line 211
     :cond_0
     if-nez p2, :cond_1
 
-    .line 214
+    .line 213
     iget-object v3, p0, Lorg/apache/cordova/CordovaWebViewImpl;->pluginManager:Lorg/apache/cordova/PluginManager;
 
     invoke-virtual {v3, p1}, Lorg/apache/cordova/PluginManager;->shouldAllowNavigation(Ljava/lang/String;)Z
@@ -1487,10 +1487,10 @@
 
     if-eqz v3, :cond_2
 
-    .line 217
+    .line 216
     invoke-virtual {p0, p1, v8}, Lorg/apache/cordova/CordovaWebViewImpl;->loadUrlIntoView(Ljava/lang/String;Z)V
 
-    .line 222
+    .line 221
     :cond_1
     :goto_0
     iget-object v3, p0, Lorg/apache/cordova/CordovaWebViewImpl;->pluginManager:Lorg/apache/cordova/PluginManager;
@@ -1505,7 +1505,7 @@
 
     if-nez v3, :cond_3
 
-    .line 223
+    .line 222
     const-string v3, "CordovaWebViewImpl"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -1528,11 +1528,11 @@
 
     invoke-static {v3, v4}, Lorg/apache/cordova/LOG;->w(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 242
+    .line 241
     :goto_1
     return-void
 
-    .line 219
+    .line 218
     :cond_2
     const-string v3, "CordovaWebViewImpl"
 
@@ -1558,7 +1558,7 @@
 
     goto :goto_0
 
-    .line 227
+    .line 226
     :cond_3
     :try_start_0
     new-instance v1, Landroid/content/Intent;
@@ -1567,18 +1567,18 @@
 
     invoke-direct {v1, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 229
+    .line 228
     .local v1, "intent":Landroid/content/Intent;
     const-string v3, "android.intent.category.BROWSABLE"
 
     invoke-virtual {v1, v3}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 230
+    .line 229
     invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v2
 
-    .line 233
+    .line 232
     .local v2, "uri":Landroid/net/Uri;
     const-string v3, "file"
 
@@ -1592,7 +1592,7 @@
 
     if-eqz v3, :cond_4
 
-    .line 234
+    .line 233
     iget-object v3, p0, Lorg/apache/cordova/CordovaWebViewImpl;->resourceApi:Lorg/apache/cordova/CordovaResourceApi;
 
     invoke-virtual {v3, v2}, Lorg/apache/cordova/CordovaResourceApi;->getMimeType(Landroid/net/Uri;)Ljava/lang/String;
@@ -1601,7 +1601,7 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->setDataAndType(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 238
+    .line 237
     :goto_2
     iget-object v3, p0, Lorg/apache/cordova/CordovaWebViewImpl;->cordova:Lorg/apache/cordova/CordovaInterface;
 
@@ -1615,13 +1615,13 @@
 
     goto :goto_1
 
-    .line 239
+    .line 238
     .end local v1    # "intent":Landroid/content/Intent;
     .end local v2    # "uri":Landroid/net/Uri;
     :catch_0
     move-exception v0
 
-    .line 240
+    .line 239
     .local v0, "e":Landroid/content/ActivityNotFoundException;
     const-string v3, "CordovaWebViewImpl"
 
@@ -1647,7 +1647,7 @@
 
     goto :goto_1
 
-    .line 236
+    .line 235
     .end local v0    # "e":Landroid/content/ActivityNotFoundException;
     .restart local v1    # "intent":Landroid/content/Intent;
     .restart local v2    # "uri":Landroid/net/Uri;
@@ -1664,13 +1664,13 @@
     .locals 1
 
     .prologue
-    .line 390
+    .line 389
     iget v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->loadUrlTimeout:I
 
     add-int/lit8 v0, v0, 0x1
 
     iput v0, p0, Lorg/apache/cordova/CordovaWebViewImpl;->loadUrlTimeout:I
 
-    .line 391
+    .line 390
     return-void
 .end method

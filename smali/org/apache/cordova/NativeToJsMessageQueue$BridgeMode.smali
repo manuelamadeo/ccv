@@ -19,7 +19,7 @@
     .locals 0
 
     .prologue
-    .line 272
+    .line 270
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -33,7 +33,7 @@
     .param p2, "fromOnlineEvent"    # Z
 
     .prologue
-    .line 274
+    .line 272
     return-void
 .end method
 
@@ -44,6 +44,6 @@
     .locals 0
 
     .prologue
-    .line 275
+    .line 273
     return-void
 .end method

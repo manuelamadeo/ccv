@@ -27,7 +27,7 @@
     .param p1, "this$1"    # Lorg/apache/cordova/CordovaActivity$4;
 
     .prologue
-    .line 399
+    .line 409
     iput-object p1, p0, Lorg/apache/cordova/CordovaActivity$4$1;->this$1:Lorg/apache/cordova/CordovaActivity$4;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,24 +43,24 @@
     .param p2, "which"    # I
 
     .prologue
-    .line 401
+    .line 411
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 
-    .line 402
+    .line 412
     iget-object v0, p0, Lorg/apache/cordova/CordovaActivity$4$1;->this$1:Lorg/apache/cordova/CordovaActivity$4;
 
     iget-boolean v0, v0, Lorg/apache/cordova/CordovaActivity$4;->val$exit:Z
 
     if-eqz v0, :cond_0
 
-    .line 403
+    .line 413
     iget-object v0, p0, Lorg/apache/cordova/CordovaActivity$4$1;->this$1:Lorg/apache/cordova/CordovaActivity$4;
 
     iget-object v0, v0, Lorg/apache/cordova/CordovaActivity$4;->this$0:Lorg/apache/cordova/CordovaActivity;
 
     invoke-virtual {v0}, Lorg/apache/cordova/CordovaActivity;->finish()V
 
-    .line 405
+    .line 415
     :cond_0
     return-void
 .end method

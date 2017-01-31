@@ -25,6 +25,19 @@
 .method public abstract destroy()V
 .end method
 
+.method public abstract evaluateJavascript(Ljava/lang/String;Landroid/webkit/ValueCallback;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Landroid/webkit/ValueCallback",
+            "<",
+            "Ljava/lang/String;",
+            ">;)V"
+        }
+    .end annotation
+.end method
+
 .method public abstract getCookieManager()Lorg/apache/cordova/ICordovaCookieManager;
 .end method
 

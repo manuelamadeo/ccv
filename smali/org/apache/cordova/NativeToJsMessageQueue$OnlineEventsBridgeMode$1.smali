@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode;
 
     .prologue
-    .line 324
+    .line 322
     iput-object p1, p0, Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$1;->this$0:Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +43,7 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 326
+    .line 324
     iget-object v0, p0, Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$1;->this$0:Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode;
 
     const/4 v1, 0x0
@@ -51,13 +51,13 @@
     # setter for: Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode;->online:Z
     invoke-static {v0, v1}, Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode;->access$102(Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode;Z)Z
 
-    .line 328
+    .line 326
     iget-object v0, p0, Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$1;->this$0:Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode;
 
     # setter for: Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode;->ignoreNextFlush:Z
     invoke-static {v0, v2}, Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode;->access$202(Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode;Z)Z
 
-    .line 329
+    .line 327
     iget-object v0, p0, Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$1;->this$0:Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode;
 
     # getter for: Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode;->delegate:Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$OnlineEventsBridgeModeDelegate;
@@ -67,6 +67,6 @@
 
     invoke-interface {v0, v2}, Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$OnlineEventsBridgeModeDelegate;->setNetworkAvailable(Z)V
 
-    .line 330
+    .line 328
     return-void
 .end method

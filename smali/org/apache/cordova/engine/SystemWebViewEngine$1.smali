@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lorg/apache/cordova/engine/SystemWebViewEngine;
 
     .prologue
-    .line 109
+    .line 110
     iput-object p1, p0, Lorg/apache/cordova/engine/SystemWebViewEngine$1;->this$0:Lorg/apache/cordova/engine/SystemWebViewEngine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .param p1, "r"    # Ljava/lang/Runnable;
 
     .prologue
-    .line 116
+    .line 117
     iget-object v0, p0, Lorg/apache/cordova/engine/SystemWebViewEngine$1;->this$0:Lorg/apache/cordova/engine/SystemWebViewEngine;
 
     iget-object v0, v0, Lorg/apache/cordova/engine/SystemWebViewEngine;->cordova:Lorg/apache/cordova/CordovaInterface;
@@ -53,7 +53,7 @@
 
     invoke-virtual {v0, p1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 117
+    .line 118
     return-void
 .end method
 
@@ -62,13 +62,13 @@
     .param p1, "value"    # Z
 
     .prologue
-    .line 112
+    .line 113
     iget-object v0, p0, Lorg/apache/cordova/engine/SystemWebViewEngine$1;->this$0:Lorg/apache/cordova/engine/SystemWebViewEngine;
 
     iget-object v0, v0, Lorg/apache/cordova/engine/SystemWebViewEngine;->webView:Lorg/apache/cordova/engine/SystemWebView;
 
     invoke-virtual {v0, p1}, Lorg/apache/cordova/engine/SystemWebView;->setNetworkAvailable(Z)V
 
-    .line 113
+    .line 114
     return-void
 .end method

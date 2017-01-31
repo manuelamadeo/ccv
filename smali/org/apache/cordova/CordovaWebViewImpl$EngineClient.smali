@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lorg/apache/cordova/CordovaWebViewImpl;
 
     .prologue
-    .line 492
+    .line 491
     iput-object p1, p0, Lorg/apache/cordova/CordovaWebViewImpl$EngineClient;->this$0:Lorg/apache/cordova/CordovaWebViewImpl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,13 +41,13 @@
     .locals 1
 
     .prologue
-    .line 495
+    .line 494
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl$EngineClient;->this$0:Lorg/apache/cordova/CordovaWebViewImpl;
 
     # operator++ for: Lorg/apache/cordova/CordovaWebViewImpl;->loadUrlTimeout:I
     invoke-static {v0}, Lorg/apache/cordova/CordovaWebViewImpl;->access$108(Lorg/apache/cordova/CordovaWebViewImpl;)I
 
-    .line 496
+    .line 495
     return-void
 .end method
 
@@ -58,12 +58,12 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 555
+    .line 554
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getKeyCode()I
 
     move-result v2
 
-    .line 556
+    .line 555
     .local v2, "keyCode":I
     const/4 v4, 0x4
 
@@ -71,7 +71,7 @@
 
     move v1, v3
 
-    .line 557
+    .line 556
     .local v1, "isBackButton":Z
     :goto_0
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getAction()I
@@ -80,7 +80,7 @@
 
     if-nez v4, :cond_3
 
-    .line 558
+    .line 557
     if-eqz v1, :cond_1
 
     iget-object v4, p0, Lorg/apache/cordova/CordovaWebViewImpl$EngineClient;->this$0:Lorg/apache/cordova/CordovaWebViewImpl;
@@ -92,23 +92,23 @@
 
     if-eqz v4, :cond_1
 
-    .line 559
+    .line 558
     invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v3
 
-    .line 596
+    .line 595
     :goto_1
     return-object v3
 
-    .line 556
+    .line 555
     .end local v1    # "isBackButton":Z
     :cond_0
     const/4 v1, 0x0
 
     goto :goto_0
 
-    .line 560
+    .line 559
     .restart local v1    # "isBackButton":Z
     :cond_1
     iget-object v4, p0, Lorg/apache/cordova/CordovaWebViewImpl$EngineClient;->this$0:Lorg/apache/cordova/CordovaWebViewImpl;
@@ -128,18 +128,18 @@
 
     if-eqz v4, :cond_2
 
-    .line 561
+    .line 560
     invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v3
 
     goto :goto_1
 
-    .line 562
+    .line 561
     :cond_2
     if-eqz v1, :cond_6
 
-    .line 563
+    .line 562
     iget-object v3, p0, Lorg/apache/cordova/CordovaWebViewImpl$EngineClient;->this$0:Lorg/apache/cordova/CordovaWebViewImpl;
 
     iget-object v3, v3, Lorg/apache/cordova/CordovaWebViewImpl;->engine:Lorg/apache/cordova/CordovaWebViewEngine;
@@ -154,7 +154,7 @@
 
     goto :goto_1
 
-    .line 565
+    .line 564
     :cond_3
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getAction()I
 
@@ -162,7 +162,7 @@
 
     if-ne v4, v3, :cond_6
 
-    .line 566
+    .line 565
     if-eqz v1, :cond_4
 
     iget-object v4, p0, Lorg/apache/cordova/CordovaWebViewImpl$EngineClient;->this$0:Lorg/apache/cordova/CordovaWebViewImpl;
@@ -174,19 +174,19 @@
 
     if-eqz v4, :cond_4
 
-    .line 567
+    .line 566
     iget-object v4, p0, Lorg/apache/cordova/CordovaWebViewImpl$EngineClient;->this$0:Lorg/apache/cordova/CordovaWebViewImpl;
 
     invoke-virtual {v4}, Lorg/apache/cordova/CordovaWebViewImpl;->hideCustomView()V
 
-    .line 568
+    .line 567
     invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v3
 
     goto :goto_1
 
-    .line 569
+    .line 568
     :cond_4
     iget-object v4, p0, Lorg/apache/cordova/CordovaWebViewImpl$EngineClient;->this$0:Lorg/apache/cordova/CordovaWebViewImpl;
 
@@ -205,70 +205,70 @@
 
     if-eqz v4, :cond_5
 
-    .line 570
+    .line 569
     const/4 v0, 0x0
 
-    .line 571
+    .line 570
     .local v0, "eventName":Ljava/lang/String;
     sparse-switch v2, :sswitch_data_0
 
-    .line 588
+    .line 587
     :goto_2
     if-eqz v0, :cond_6
 
-    .line 589
+    .line 588
     iget-object v4, p0, Lorg/apache/cordova/CordovaWebViewImpl$EngineClient;->this$0:Lorg/apache/cordova/CordovaWebViewImpl;
 
     # invokes: Lorg/apache/cordova/CordovaWebViewImpl;->sendJavascriptEvent(Ljava/lang/String;)V
     invoke-static {v4, v0}, Lorg/apache/cordova/CordovaWebViewImpl;->access$500(Lorg/apache/cordova/CordovaWebViewImpl;Ljava/lang/String;)V
 
-    .line 590
+    .line 589
     invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v3
 
     goto :goto_1
 
-    .line 573
+    .line 572
     :sswitch_0
     const-string v0, "volumedownbutton"
 
-    .line 574
+    .line 573
     goto :goto_2
 
-    .line 576
+    .line 575
     :sswitch_1
     const-string v0, "volumeupbutton"
 
-    .line 577
+    .line 576
     goto :goto_2
 
-    .line 579
+    .line 578
     :sswitch_2
     const-string v0, "searchbutton"
 
-    .line 580
+    .line 579
     goto :goto_2
 
-    .line 582
+    .line 581
     :sswitch_3
     const-string v0, "menubutton"
 
-    .line 583
+    .line 582
     goto :goto_2
 
-    .line 585
+    .line 584
     :sswitch_4
     const-string v0, "backbutton"
 
     goto :goto_2
 
-    .line 592
+    .line 591
     .end local v0    # "eventName":Ljava/lang/String;
     :cond_5
     if-eqz v1, :cond_6
 
-    .line 593
+    .line 592
     iget-object v3, p0, Lorg/apache/cordova/CordovaWebViewImpl$EngineClient;->this$0:Lorg/apache/cordova/CordovaWebViewImpl;
 
     iget-object v3, v3, Lorg/apache/cordova/CordovaWebViewImpl;->engine:Lorg/apache/cordova/CordovaWebViewEngine;
@@ -283,13 +283,13 @@
 
     goto :goto_1
 
-    .line 596
+    .line 595
     :cond_6
     const/4 v3, 0x0
 
     goto :goto_1
 
-    .line 571
+    .line 570
     :sswitch_data_0
     .sparse-switch
         0x4 -> :sswitch_4
@@ -309,7 +309,7 @@
 
     const/4 v0, 0x1
 
-    .line 602
+    .line 601
     iget-object v2, p0, Lorg/apache/cordova/CordovaWebViewImpl$EngineClient;->this$0:Lorg/apache/cordova/CordovaWebViewImpl;
 
     # getter for: Lorg/apache/cordova/CordovaWebViewImpl;->pluginManager:Lorg/apache/cordova/PluginManager;
@@ -323,11 +323,11 @@
 
     if-eqz v2, :cond_0
 
-    .line 611
+    .line 610
     :goto_0
     return v0
 
-    .line 604
+    .line 603
     :cond_0
     iget-object v2, p0, Lorg/apache/cordova/CordovaWebViewImpl$EngineClient;->this$0:Lorg/apache/cordova/CordovaWebViewImpl;
 
@@ -344,10 +344,10 @@
 
     move v0, v1
 
-    .line 605
+    .line 604
     goto :goto_0
 
-    .line 606
+    .line 605
     :cond_1
     iget-object v2, p0, Lorg/apache/cordova/CordovaWebViewImpl$EngineClient;->this$0:Lorg/apache/cordova/CordovaWebViewImpl;
 
@@ -366,7 +366,7 @@
 
     if-eqz v2, :cond_2
 
-    .line 607
+    .line 606
     iget-object v2, p0, Lorg/apache/cordova/CordovaWebViewImpl$EngineClient;->this$0:Lorg/apache/cordova/CordovaWebViewImpl;
 
     const/4 v3, 0x0
@@ -375,7 +375,7 @@
 
     goto :goto_0
 
-    .line 610
+    .line 609
     :cond_2
     const-string v1, "CordovaWebViewImpl"
 
@@ -407,7 +407,7 @@
     .param p1, "url"    # Ljava/lang/String;
 
     .prologue
-    .line 522
+    .line 521
     const-string v1, "CordovaWebViewImpl"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -436,10 +436,10 @@
 
     invoke-static {v1, v2}, Lorg/apache/cordova/LOG;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 524
+    .line 523
     invoke-virtual {p0}, Lorg/apache/cordova/CordovaWebViewImpl$EngineClient;->clearLoadTimeoutTimer()V
 
-    .line 527
+    .line 526
     iget-object v1, p0, Lorg/apache/cordova/CordovaWebViewImpl$EngineClient;->this$0:Lorg/apache/cordova/CordovaWebViewImpl;
 
     # getter for: Lorg/apache/cordova/CordovaWebViewImpl;->pluginManager:Lorg/apache/cordova/PluginManager;
@@ -451,7 +451,7 @@
 
     invoke-virtual {v1, v2, p1}, Lorg/apache/cordova/PluginManager;->postMessage(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 530
+    .line 529
     iget-object v1, p0, Lorg/apache/cordova/CordovaWebViewImpl$EngineClient;->this$0:Lorg/apache/cordova/CordovaWebViewImpl;
 
     iget-object v1, v1, Lorg/apache/cordova/CordovaWebViewImpl;->engine:Lorg/apache/cordova/CordovaWebViewEngine;
@@ -466,7 +466,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 531
+    .line 530
     new-instance v0, Ljava/lang/Thread;
 
     new-instance v1, Lorg/apache/cordova/CordovaWebViewImpl$EngineClient$1;
@@ -475,11 +475,11 @@
 
     invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
-    .line 544
+    .line 543
     .local v0, "t":Ljava/lang/Thread;
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
-    .line 548
+    .line 547
     .end local v0    # "t":Ljava/lang/Thread;
     :cond_0
     const-string v1, "about:blank"
@@ -490,7 +490,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 549
+    .line 548
     iget-object v1, p0, Lorg/apache/cordova/CordovaWebViewImpl$EngineClient;->this$0:Lorg/apache/cordova/CordovaWebViewImpl;
 
     # getter for: Lorg/apache/cordova/CordovaWebViewImpl;->pluginManager:Lorg/apache/cordova/PluginManager;
@@ -504,7 +504,7 @@
 
     invoke-virtual {v1, v2, v3}, Lorg/apache/cordova/PluginManager;->postMessage(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 551
+    .line 550
     :cond_1
     return-void
 .end method
@@ -514,7 +514,7 @@
     .param p1, "newUrl"    # Ljava/lang/String;
 
     .prologue
-    .line 500
+    .line 499
     const-string v0, "CordovaWebViewImpl"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -543,7 +543,7 @@
 
     invoke-static {v0, v1}, Lorg/apache/cordova/LOG;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 501
+    .line 500
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl$EngineClient;->this$0:Lorg/apache/cordova/CordovaWebViewImpl;
 
     # getter for: Lorg/apache/cordova/CordovaWebViewImpl;->boundKeyCodes:Ljava/util/Set;
@@ -553,7 +553,7 @@
 
     invoke-interface {v0}, Ljava/util/Set;->clear()V
 
-    .line 502
+    .line 501
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl$EngineClient;->this$0:Lorg/apache/cordova/CordovaWebViewImpl;
 
     # getter for: Lorg/apache/cordova/CordovaWebViewImpl;->pluginManager:Lorg/apache/cordova/PluginManager;
@@ -563,7 +563,7 @@
 
     invoke-virtual {v0}, Lorg/apache/cordova/PluginManager;->onReset()V
 
-    .line 503
+    .line 502
     iget-object v0, p0, Lorg/apache/cordova/CordovaWebViewImpl$EngineClient;->this$0:Lorg/apache/cordova/CordovaWebViewImpl;
 
     # getter for: Lorg/apache/cordova/CordovaWebViewImpl;->pluginManager:Lorg/apache/cordova/PluginManager;
@@ -575,7 +575,7 @@
 
     invoke-virtual {v0, v1, p1}, Lorg/apache/cordova/PluginManager;->postMessage(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 504
+    .line 503
     return-void
 .end method
 
@@ -586,34 +586,34 @@
     .param p3, "failingUrl"    # Ljava/lang/String;
 
     .prologue
-    .line 508
+    .line 507
     invoke-virtual {p0}, Lorg/apache/cordova/CordovaWebViewImpl$EngineClient;->clearLoadTimeoutTimer()V
 
-    .line 509
+    .line 508
     new-instance v0, Lorg/json/JSONObject;
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
-    .line 511
+    .line 510
     .local v0, "data":Lorg/json/JSONObject;
     :try_start_0
     const-string v2, "errorCode"
 
     invoke-virtual {v0, v2, p1}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
-    .line 512
+    .line 511
     const-string v2, "description"
 
     invoke-virtual {v0, v2, p2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 513
+    .line 512
     const-string v2, "url"
 
     invoke-virtual {v0, v2, p3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 517
+    .line 516
     :goto_0
     iget-object v2, p0, Lorg/apache/cordova/CordovaWebViewImpl$EngineClient;->this$0:Lorg/apache/cordova/CordovaWebViewImpl;
 
@@ -626,14 +626,14 @@
 
     invoke-virtual {v2, v3, v0}, Lorg/apache/cordova/PluginManager;->postMessage(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 518
+    .line 517
     return-void
 
-    .line 514
+    .line 513
     :catch_0
     move-exception v1
 
-    .line 515
+    .line 514
     .local v1, "e":Lorg/json/JSONException;
     invoke-virtual {v1}, Lorg/json/JSONException;->printStackTrace()V
 

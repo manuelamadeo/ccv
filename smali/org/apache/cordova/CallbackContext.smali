@@ -24,16 +24,16 @@
     .param p2, "webView"    # Lorg/apache/cordova/CordovaWebView;
 
     .prologue
-    .line 37
+    .line 35
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 38
+    .line 36
     iput-object p1, p0, Lorg/apache/cordova/CallbackContext;->callbackId:Ljava/lang/String;
 
-    .line 39
+    .line 37
     iput-object p2, p0, Lorg/apache/cordova/CallbackContext;->webView:Lorg/apache/cordova/CordovaWebView;
 
-    .line 40
+    .line 38
     return-void
 .end method
 
@@ -44,7 +44,7 @@
     .param p1, "message"    # I
 
     .prologue
-    .line 142
+    .line 140
     new-instance v0, Lorg/apache/cordova/PluginResult;
 
     sget-object v1, Lorg/apache/cordova/PluginResult$Status;->ERROR:Lorg/apache/cordova/PluginResult$Status;
@@ -53,7 +53,7 @@
 
     invoke-virtual {p0, v0}, Lorg/apache/cordova/CallbackContext;->sendPluginResult(Lorg/apache/cordova/PluginResult;)V
 
-    .line 143
+    .line 141
     return-void
 .end method
 
@@ -62,7 +62,7 @@
     .param p1, "message"    # Ljava/lang/String;
 
     .prologue
-    .line 133
+    .line 131
     new-instance v0, Lorg/apache/cordova/PluginResult;
 
     sget-object v1, Lorg/apache/cordova/PluginResult$Status;->ERROR:Lorg/apache/cordova/PluginResult$Status;
@@ -71,7 +71,7 @@
 
     invoke-virtual {p0, v0}, Lorg/apache/cordova/CallbackContext;->sendPluginResult(Lorg/apache/cordova/PluginResult;)V
 
-    .line 134
+    .line 132
     return-void
 .end method
 
@@ -80,7 +80,7 @@
     .param p1, "message"    # Lorg/json/JSONObject;
 
     .prologue
-    .line 124
+    .line 122
     new-instance v0, Lorg/apache/cordova/PluginResult;
 
     sget-object v1, Lorg/apache/cordova/PluginResult$Status;->ERROR:Lorg/apache/cordova/PluginResult$Status;
@@ -89,7 +89,7 @@
 
     invoke-virtual {p0, v0}, Lorg/apache/cordova/CallbackContext;->sendPluginResult(Lorg/apache/cordova/PluginResult;)V
 
-    .line 125
+    .line 123
     return-void
 .end method
 
@@ -97,7 +97,7 @@
     .locals 1
 
     .prologue
-    .line 51
+    .line 49
     iget-object v0, p0, Lorg/apache/cordova/CallbackContext;->callbackId:Ljava/lang/String;
 
     return-object v0
@@ -107,7 +107,7 @@
     .locals 1
 
     .prologue
-    .line 47
+    .line 45
     iget v0, p0, Lorg/apache/cordova/CallbackContext;->changingThreads:I
 
     if-lez v0, :cond_0
@@ -127,7 +127,7 @@
     .locals 1
 
     .prologue
-    .line 43
+    .line 41
     iget-boolean v0, p0, Lorg/apache/cordova/CallbackContext;->finished:Z
 
     return v0
@@ -138,16 +138,16 @@
     .param p1, "pluginResult"    # Lorg/apache/cordova/PluginResult;
 
     .prologue
-    .line 55
+    .line 53
     monitor-enter p0
 
-    .line 56
+    .line 54
     :try_start_0
     iget-boolean v0, p0, Lorg/apache/cordova/CallbackContext;->finished:Z
 
     if-eqz v0, :cond_0
 
-    .line 57
+    .line 55
     const-string v0, "CordovaPlugin"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -184,16 +184,16 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v0, v1}, Lorg/apache/cordova/LOG;->w(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 58
+    .line 56
     monitor-exit p0
 
-    .line 64
+    .line 62
     :goto_0
     return-void
 
-    .line 60
+    .line 58
     :cond_0
     invoke-virtual {p1}, Lorg/apache/cordova/PluginResult;->getKeepCallback()Z
 
@@ -206,12 +206,12 @@
     :goto_1
     iput-boolean v0, p0, Lorg/apache/cordova/CallbackContext;->finished:Z
 
-    .line 62
+    .line 60
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 63
+    .line 61
     iget-object v0, p0, Lorg/apache/cordova/CallbackContext;->webView:Lorg/apache/cordova/CordovaWebView;
 
     iget-object v1, p0, Lorg/apache/cordova/CallbackContext;->callbackId:Ljava/lang/String;
@@ -220,13 +220,13 @@
 
     goto :goto_0
 
-    .line 60
+    .line 58
     :cond_1
     const/4 v0, 0x0
 
     goto :goto_1
 
-    .line 62
+    .line 60
     :catchall_0
     move-exception v0
 
@@ -242,7 +242,7 @@
     .locals 2
 
     .prologue
-    .line 115
+    .line 113
     new-instance v0, Lorg/apache/cordova/PluginResult;
 
     sget-object v1, Lorg/apache/cordova/PluginResult$Status;->OK:Lorg/apache/cordova/PluginResult$Status;
@@ -251,7 +251,7 @@
 
     invoke-virtual {p0, v0}, Lorg/apache/cordova/CallbackContext;->sendPluginResult(Lorg/apache/cordova/PluginResult;)V
 
-    .line 116
+    .line 114
     return-void
 .end method
 
@@ -260,7 +260,7 @@
     .param p1, "message"    # I
 
     .prologue
-    .line 108
+    .line 106
     new-instance v0, Lorg/apache/cordova/PluginResult;
 
     sget-object v1, Lorg/apache/cordova/PluginResult$Status;->OK:Lorg/apache/cordova/PluginResult$Status;
@@ -269,7 +269,7 @@
 
     invoke-virtual {p0, v0}, Lorg/apache/cordova/CallbackContext;->sendPluginResult(Lorg/apache/cordova/PluginResult;)V
 
-    .line 109
+    .line 107
     return-void
 .end method
 
@@ -278,7 +278,7 @@
     .param p1, "message"    # Ljava/lang/String;
 
     .prologue
-    .line 81
+    .line 79
     new-instance v0, Lorg/apache/cordova/PluginResult;
 
     sget-object v1, Lorg/apache/cordova/PluginResult$Status;->OK:Lorg/apache/cordova/PluginResult$Status;
@@ -287,7 +287,7 @@
 
     invoke-virtual {p0, v0}, Lorg/apache/cordova/CallbackContext;->sendPluginResult(Lorg/apache/cordova/PluginResult;)V
 
-    .line 82
+    .line 80
     return-void
 .end method
 
@@ -296,7 +296,7 @@
     .param p1, "message"    # Lorg/json/JSONArray;
 
     .prologue
-    .line 90
+    .line 88
     new-instance v0, Lorg/apache/cordova/PluginResult;
 
     sget-object v1, Lorg/apache/cordova/PluginResult$Status;->OK:Lorg/apache/cordova/PluginResult$Status;
@@ -305,7 +305,7 @@
 
     invoke-virtual {p0, v0}, Lorg/apache/cordova/CallbackContext;->sendPluginResult(Lorg/apache/cordova/PluginResult;)V
 
-    .line 91
+    .line 89
     return-void
 .end method
 
@@ -314,7 +314,7 @@
     .param p1, "message"    # Lorg/json/JSONObject;
 
     .prologue
-    .line 72
+    .line 70
     new-instance v0, Lorg/apache/cordova/PluginResult;
 
     sget-object v1, Lorg/apache/cordova/PluginResult$Status;->OK:Lorg/apache/cordova/PluginResult$Status;
@@ -323,7 +323,7 @@
 
     invoke-virtual {p0, v0}, Lorg/apache/cordova/CallbackContext;->sendPluginResult(Lorg/apache/cordova/PluginResult;)V
 
-    .line 73
+    .line 71
     return-void
 .end method
 
@@ -332,7 +332,7 @@
     .param p1, "message"    # [B
 
     .prologue
-    .line 99
+    .line 97
     new-instance v0, Lorg/apache/cordova/PluginResult;
 
     sget-object v1, Lorg/apache/cordova/PluginResult$Status;->OK:Lorg/apache/cordova/PluginResult$Status;
@@ -341,6 +341,6 @@
 
     invoke-virtual {p0, v0}, Lorg/apache/cordova/CallbackContext;->sendPluginResult(Lorg/apache/cordova/PluginResult;)V
 
-    .line 100
+    .line 98
     return-void
 .end method

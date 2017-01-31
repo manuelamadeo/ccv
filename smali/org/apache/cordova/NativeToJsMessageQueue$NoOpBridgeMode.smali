@@ -19,7 +19,7 @@
     .locals 0
 
     .prologue
-    .line 279
+    .line 277
     invoke-direct {p0}, Lorg/apache/cordova/NativeToJsMessageQueue$BridgeMode;-><init>()V
 
     return-void
@@ -32,6 +32,6 @@
     .param p1, "queue"    # Lorg/apache/cordova/NativeToJsMessageQueue;
 
     .prologue
-    .line 281
+    .line 279
     return-void
 .end method

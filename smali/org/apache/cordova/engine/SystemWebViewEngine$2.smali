@@ -26,7 +26,7 @@
     .param p1, "this$0"    # Lorg/apache/cordova/engine/SystemWebViewEngine;
 
     .prologue
-    .line 229
+    .line 232
     iput-object p1, p0, Lorg/apache/cordova/engine/SystemWebViewEngine$2;->this$0:Lorg/apache/cordova/engine/SystemWebViewEngine;
 
     iput-object p2, p0, Lorg/apache/cordova/engine/SystemWebViewEngine$2;->val$settings:Landroid/webkit/WebSettings;
@@ -44,11 +44,11 @@
     .param p2, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 232
+    .line 235
     iget-object v0, p0, Lorg/apache/cordova/engine/SystemWebViewEngine$2;->val$settings:Landroid/webkit/WebSettings;
 
     invoke-virtual {v0}, Landroid/webkit/WebSettings;->getUserAgentString()Ljava/lang/String;
 
-    .line 233
+    .line 236
     return-void
 .end method

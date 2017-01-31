@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lorg/apache/cordova/CoreAndroid;
 
     .prologue
-    .line 286
+    .line 287
     iput-object p1, p0, Lorg/apache/cordova/CoreAndroid$5;->this$0:Lorg/apache/cordova/CoreAndroid;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -40,7 +40,7 @@
     .param p2, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 292
+    .line 293
     if-eqz p2, :cond_0
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
@@ -55,7 +55,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 293
+    .line 294
     const-string v1, "state"
 
     invoke-virtual {p2, v1}, Landroid/content/Intent;->hasExtra(Ljava/lang/String;)Z
@@ -64,14 +64,14 @@
 
     if-eqz v1, :cond_0
 
-    .line 294
+    .line 295
     const-string v1, "state"
 
     invoke-virtual {p2, v1}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 295
+    .line 296
     .local v0, "extraData":Ljava/lang/String;
     sget-object v1, Landroid/telephony/TelephonyManager;->EXTRA_STATE_RINGING:Ljava/lang/String;
 
@@ -81,14 +81,14 @@
 
     if-eqz v1, :cond_1
 
-    .line 296
+    .line 297
     const-string v1, "CordovaApp"
 
     const-string v2, "Telephone RINGING"
 
     invoke-static {v1, v2}, Lorg/apache/cordova/LOG;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 297
+    .line 298
     iget-object v1, p0, Lorg/apache/cordova/CoreAndroid$5;->this$0:Lorg/apache/cordova/CoreAndroid;
 
     iget-object v1, v1, Lorg/apache/cordova/CoreAndroid;->webView:Lorg/apache/cordova/CordovaWebView;
@@ -103,13 +103,13 @@
 
     invoke-virtual {v1, v2, v3}, Lorg/apache/cordova/PluginManager;->postMessage(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 309
+    .line 310
     .end local v0    # "extraData":Ljava/lang/String;
     :cond_0
     :goto_0
     return-void
 
-    .line 299
+    .line 300
     .restart local v0    # "extraData":Ljava/lang/String;
     :cond_1
     sget-object v1, Landroid/telephony/TelephonyManager;->EXTRA_STATE_OFFHOOK:Ljava/lang/String;
@@ -120,14 +120,14 @@
 
     if-eqz v1, :cond_2
 
-    .line 300
+    .line 301
     const-string v1, "CordovaApp"
 
     const-string v2, "Telephone OFFHOOK"
 
     invoke-static {v1, v2}, Lorg/apache/cordova/LOG;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 301
+    .line 302
     iget-object v1, p0, Lorg/apache/cordova/CoreAndroid$5;->this$0:Lorg/apache/cordova/CoreAndroid;
 
     iget-object v1, v1, Lorg/apache/cordova/CoreAndroid;->webView:Lorg/apache/cordova/CordovaWebView;
@@ -144,7 +144,7 @@
 
     goto :goto_0
 
-    .line 303
+    .line 304
     :cond_2
     sget-object v1, Landroid/telephony/TelephonyManager;->EXTRA_STATE_IDLE:Ljava/lang/String;
 
@@ -154,14 +154,14 @@
 
     if-eqz v1, :cond_0
 
-    .line 304
+    .line 305
     const-string v1, "CordovaApp"
 
     const-string v2, "Telephone IDLE"
 
     invoke-static {v1, v2}, Lorg/apache/cordova/LOG;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 305
+    .line 306
     iget-object v1, p0, Lorg/apache/cordova/CoreAndroid$5;->this$0:Lorg/apache/cordova/CoreAndroid;
 
     iget-object v1, v1, Lorg/apache/cordova/CoreAndroid;->webView:Lorg/apache/cordova/CordovaWebView;

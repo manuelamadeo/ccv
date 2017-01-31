@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lorg/apache/cordova/CoreAndroid;
 
     .prologue
-    .line 210
+    .line 211
     iput-object p1, p0, Lorg/apache/cordova/CoreAndroid$3;->this$0:Lorg/apache/cordova/CoreAndroid;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,13 +41,13 @@
     .locals 1
 
     .prologue
-    .line 212
+    .line 213
     iget-object v0, p0, Lorg/apache/cordova/CoreAndroid$3;->this$0:Lorg/apache/cordova/CoreAndroid;
 
     iget-object v0, v0, Lorg/apache/cordova/CoreAndroid;->webView:Lorg/apache/cordova/CordovaWebView;
 
     invoke-interface {v0}, Lorg/apache/cordova/CordovaWebView;->clearHistory()V
 
-    .line 213
+    .line 214
     return-void
 .end method

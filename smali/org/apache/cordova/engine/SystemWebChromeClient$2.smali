@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lorg/apache/cordova/engine/SystemWebChromeClient;
 
     .prologue
-    .line 100
+    .line 99
     iput-object p1, p0, Lorg/apache/cordova/engine/SystemWebChromeClient$2;->this$0:Lorg/apache/cordova/engine/SystemWebChromeClient;
 
     iput-object p2, p0, Lorg/apache/cordova/engine/SystemWebChromeClient$2;->val$result:Landroid/webkit/JsResult;
@@ -47,19 +47,19 @@
     .param p2, "value"    # Ljava/lang/String;
 
     .prologue
-    .line 103
+    .line 102
     if-eqz p1, :cond_0
 
-    .line 104
+    .line 103
     iget-object v0, p0, Lorg/apache/cordova/engine/SystemWebChromeClient$2;->val$result:Landroid/webkit/JsResult;
 
     invoke-virtual {v0}, Landroid/webkit/JsResult;->confirm()V
 
-    .line 108
+    .line 107
     :goto_0
     return-void
 
-    .line 106
+    .line 105
     :cond_0
     iget-object v0, p0, Lorg/apache/cordova/engine/SystemWebChromeClient$2;->val$result:Landroid/webkit/JsResult;
 
