@@ -43,22 +43,22 @@
     .locals 1
 
     .prologue
-    .line 78
+    .line 79
     const-string v0, "CordovaActivity"
 
     sput-object v0, Lorg/apache/cordova/CordovaActivity;->TAG:Ljava/lang/String;
 
-    .line 83
+    .line 84
     const/4 v0, 0x0
 
     sput v0, Lorg/apache/cordova/CordovaActivity;->ACTIVITY_STARTING:I
 
-    .line 84
+    .line 85
     const/4 v0, 0x1
 
     sput v0, Lorg/apache/cordova/CordovaActivity;->ACTIVITY_RUNNING:I
 
-    .line 85
+    .line 86
     const/4 v0, 0x2
 
     sput v0, Lorg/apache/cordova/CordovaActivity;->ACTIVITY_EXITING:I
@@ -70,10 +70,10 @@
     .locals 1
 
     .prologue
-    .line 77
+    .line 78
     invoke-direct {p0}, Landroid/app/Activity;-><init>()V
 
-    .line 90
+    .line 91
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lorg/apache/cordova/CordovaActivity;->keepRunning:Z
@@ -84,103 +84,89 @@
 
 # virtual methods
 .method protected createViews()V
-    .locals 5
+    .locals 4
 
     .prologue
-    const/4 v4, -0x1
+    const/4 v3, -0x1
+
+    .line 170
+    iget-object v1, p0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
+
+    invoke-interface {v1}, Lorg/apache/cordova/CordovaWebView;->getView()Landroid/view/View;
+
+    move-result-object v1
+
+    const/16 v2, 0x64
+
+    invoke-virtual {v1, v2}, Landroid/view/View;->setId(I)V
+
+    .line 171
+    iget-object v1, p0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
+
+    invoke-interface {v1}, Lorg/apache/cordova/CordovaWebView;->getView()Landroid/view/View;
+
+    move-result-object v1
+
+    new-instance v2, Landroid/widget/FrameLayout$LayoutParams;
+
+    invoke-direct {v2, v3, v3}, Landroid/widget/FrameLayout$LayoutParams;-><init>(II)V
+
+    invoke-virtual {v1, v2}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 175
-    iget-object v2, p0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
+    iget-object v1, p0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
 
-    invoke-interface {v2}, Lorg/apache/cordova/CordovaWebView;->getView()Landroid/view/View;
+    invoke-interface {v1}, Lorg/apache/cordova/CordovaWebView;->getView()Landroid/view/View;
 
-    move-result-object v2
+    move-result-object v1
 
-    const/16 v3, 0x64
+    invoke-virtual {p0, v1}, Lorg/apache/cordova/CordovaActivity;->setContentView(Landroid/view/View;)V
 
-    invoke-virtual {v2, v3}, Landroid/view/View;->setId(I)V
+    .line 177
+    iget-object v1, p0, Lorg/apache/cordova/CordovaActivity;->preferences:Lorg/apache/cordova/CordovaPreferences;
 
-    .line 176
-    iget-object v2, p0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
+    const-string v2, "BackgroundColor"
 
-    invoke-interface {v2}, Lorg/apache/cordova/CordovaWebView;->getView()Landroid/view/View;
+    invoke-virtual {v1, v2}, Lorg/apache/cordova/CordovaPreferences;->contains(Ljava/lang/String;)Z
 
-    move-result-object v2
+    move-result v1
 
-    new-instance v3, Landroid/widget/FrameLayout$LayoutParams;
+    if-eqz v1, :cond_0
 
-    invoke-direct {v3, v4, v4}, Landroid/widget/FrameLayout$LayoutParams;-><init>(II)V
+    .line 178
+    iget-object v1, p0, Lorg/apache/cordova/CordovaActivity;->preferences:Lorg/apache/cordova/CordovaPreferences;
 
-    invoke-virtual {v2, v3}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    const-string v2, "BackgroundColor"
 
-    .line 180
-    iget-object v2, p0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
+    const/high16 v3, -0x1000000
 
-    invoke-interface {v2}, Lorg/apache/cordova/CordovaWebView;->getView()Landroid/view/View;
-
-    move-result-object v2
-
-    invoke-virtual {p0, v2}, Lorg/apache/cordova/CordovaActivity;->setContentView(Landroid/view/View;)V
-
-    .line 182
-    iget-object v2, p0, Lorg/apache/cordova/CordovaActivity;->preferences:Lorg/apache/cordova/CordovaPreferences;
-
-    const-string v3, "BackgroundColor"
-
-    invoke-virtual {v2, v3}, Lorg/apache/cordova/CordovaPreferences;->contains(Ljava/lang/String;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    .line 184
-    :try_start_0
-    iget-object v2, p0, Lorg/apache/cordova/CordovaActivity;->preferences:Lorg/apache/cordova/CordovaPreferences;
-
-    const-string v3, "BackgroundColor"
-
-    const/high16 v4, -0x1000000
-
-    invoke-virtual {v2, v3, v4}, Lorg/apache/cordova/CordovaPreferences;->getInteger(Ljava/lang/String;I)I
+    invoke-virtual {v1, v2, v3}, Lorg/apache/cordova/CordovaPreferences;->getInteger(Ljava/lang/String;I)I
 
     move-result v0
 
-    .line 186
+    .line 180
     .local v0, "backgroundColor":I
-    iget-object v2, p0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
+    iget-object v1, p0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
 
-    invoke-interface {v2}, Lorg/apache/cordova/CordovaWebView;->getView()Landroid/view/View;
+    invoke-interface {v1}, Lorg/apache/cordova/CordovaWebView;->getView()Landroid/view/View;
 
-    move-result-object v2
+    move-result-object v1
 
-    invoke-virtual {v2, v0}, Landroid/view/View;->setBackgroundColor(I)V
-    :try_end_0
-    .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-virtual {v1, v0}, Landroid/view/View;->setBackgroundColor(I)V
 
-    .line 193
+    .line 183
     .end local v0    # "backgroundColor":I
     :cond_0
-    :goto_0
-    iget-object v2, p0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
+    iget-object v1, p0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
 
-    invoke-interface {v2}, Lorg/apache/cordova/CordovaWebView;->getView()Landroid/view/View;
+    invoke-interface {v1}, Lorg/apache/cordova/CordovaWebView;->getView()Landroid/view/View;
 
-    move-result-object v2
+    move-result-object v1
 
-    invoke-virtual {v2}, Landroid/view/View;->requestFocusFromTouch()Z
+    invoke-virtual {v1}, Landroid/view/View;->requestFocusFromTouch()Z
 
-    .line 194
+    .line 184
     return-void
-
-    .line 188
-    :catch_0
-    move-exception v1
-
-    .line 189
-    .local v1, "e":Ljava/lang/NumberFormatException;
-    invoke-virtual {v1}, Ljava/lang/NumberFormatException;->printStackTrace()V
-
-    goto :goto_0
 .end method
 
 .method public displayError(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
@@ -191,10 +177,10 @@
     .param p4, "exit"    # Z
 
     .prologue
-    .line 400
+    .line 390
     move-object v2, p0
 
-    .line 401
+    .line 391
     .local v2, "me":Lorg/apache/cordova/CordovaActivity;
     new-instance v0, Lorg/apache/cordova/CordovaActivity$4;
 
@@ -212,7 +198,7 @@
 
     invoke-virtual {v2, v0}, Lorg/apache/cordova/CordovaActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 424
+    .line 414
     return-void
 .end method
 
@@ -220,17 +206,17 @@
     .locals 5
 
     .prologue
-    .line 146
+    .line 141
     invoke-virtual {p0}, Lorg/apache/cordova/CordovaActivity;->makeWebView()Lorg/apache/cordova/CordovaWebView;
 
     move-result-object v1
 
     iput-object v1, p0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
 
-    .line 147
+    .line 142
     invoke-virtual {p0}, Lorg/apache/cordova/CordovaActivity;->createViews()V
 
-    .line 148
+    .line 143
     iget-object v1, p0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
 
     invoke-interface {v1}, Lorg/apache/cordova/CordovaWebView;->isInitialized()Z
@@ -239,7 +225,7 @@
 
     if-nez v1, :cond_0
 
-    .line 149
+    .line 144
     iget-object v1, p0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
 
     iget-object v2, p0, Lorg/apache/cordova/CordovaActivity;->cordovaInterface:Lorg/apache/cordova/CordovaInterfaceImpl;
@@ -250,7 +236,7 @@
 
     invoke-interface {v1, v2, v3, v4}, Lorg/apache/cordova/CordovaWebView;->init(Lorg/apache/cordova/CordovaInterface;Ljava/util/List;Lorg/apache/cordova/CordovaPreferences;)V
 
-    .line 151
+    .line 146
     :cond_0
     iget-object v1, p0, Lorg/apache/cordova/CordovaActivity;->cordovaInterface:Lorg/apache/cordova/CordovaInterfaceImpl;
 
@@ -262,7 +248,7 @@
 
     invoke-virtual {v1, v2}, Lorg/apache/cordova/CordovaInterfaceImpl;->onCordovaInit(Lorg/apache/cordova/PluginManager;)V
 
-    .line 154
+    .line 149
     iget-object v1, p0, Lorg/apache/cordova/CordovaActivity;->preferences:Lorg/apache/cordova/CordovaPreferences;
 
     const-string v2, "DefaultVolumeStream"
@@ -273,7 +259,7 @@
 
     move-result-object v0
 
-    .line 155
+    .line 150
     .local v0, "volumePref":Ljava/lang/String;
     const-string v1, "media"
 
@@ -289,12 +275,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 156
+    .line 151
     const/4 v1, 0x3
 
     invoke-virtual {p0, v1}, Lorg/apache/cordova/CordovaActivity;->setVolumeControlStream(I)V
 
-    .line 158
+    .line 153
     :cond_1
     return-void
 .end method
@@ -303,23 +289,23 @@
     .locals 3
 
     .prologue
-    .line 162
+    .line 157
     new-instance v0, Lorg/apache/cordova/ConfigXmlParser;
 
     invoke-direct {v0}, Lorg/apache/cordova/ConfigXmlParser;-><init>()V
 
-    .line 163
+    .line 158
     .local v0, "parser":Lorg/apache/cordova/ConfigXmlParser;
     invoke-virtual {v0, p0}, Lorg/apache/cordova/ConfigXmlParser;->parse(Landroid/content/Context;)V
 
-    .line 164
+    .line 159
     invoke-virtual {v0}, Lorg/apache/cordova/ConfigXmlParser;->getPreferences()Lorg/apache/cordova/CordovaPreferences;
 
     move-result-object v1
 
     iput-object v1, p0, Lorg/apache/cordova/CordovaActivity;->preferences:Lorg/apache/cordova/CordovaPreferences;
 
-    .line 165
+    .line 160
     iget-object v1, p0, Lorg/apache/cordova/CordovaActivity;->preferences:Lorg/apache/cordova/CordovaPreferences;
 
     invoke-virtual {p0}, Lorg/apache/cordova/CordovaActivity;->getIntent()Landroid/content/Intent;
@@ -332,24 +318,24 @@
 
     invoke-virtual {v1, v2}, Lorg/apache/cordova/CordovaPreferences;->setPreferencesBundle(Landroid/os/Bundle;)V
 
-    .line 166
+    .line 161
     invoke-virtual {v0}, Lorg/apache/cordova/ConfigXmlParser;->getLaunchUrl()Ljava/lang/String;
 
     move-result-object v1
 
     iput-object v1, p0, Lorg/apache/cordova/CordovaActivity;->launchUrl:Ljava/lang/String;
 
-    .line 167
+    .line 162
     invoke-virtual {v0}, Lorg/apache/cordova/ConfigXmlParser;->getPluginEntries()Ljava/util/ArrayList;
 
     move-result-object v1
 
     iput-object v1, p0, Lorg/apache/cordova/CordovaActivity;->pluginEntries:Ljava/util/ArrayList;
 
-    .line 168
+    .line 163
     sput-object v0, Lorg/apache/cordova/Config;->parser:Lorg/apache/cordova/ConfigXmlParser;
 
-    .line 169
+    .line 164
     return-void
 .end method
 
@@ -360,15 +346,15 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 223
+    .line 213
     iget-object v0, p0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
 
     if-nez v0, :cond_0
 
-    .line 224
+    .line 214
     invoke-virtual {p0}, Lorg/apache/cordova/CordovaActivity;->init()V
 
-    .line 228
+    .line 218
     :cond_0
     iget-object v0, p0, Lorg/apache/cordova/CordovaActivity;->preferences:Lorg/apache/cordova/CordovaPreferences;
 
@@ -380,12 +366,12 @@
 
     iput-boolean v0, p0, Lorg/apache/cordova/CordovaActivity;->keepRunning:Z
 
-    .line 230
+    .line 220
     iget-object v0, p0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
 
     invoke-interface {v0, p1, v2}, Lorg/apache/cordova/CordovaWebView;->loadUrlIntoView(Ljava/lang/String;Z)V
 
-    .line 231
+    .line 221
     return-void
 .end method
 
@@ -393,7 +379,7 @@
     .locals 1
 
     .prologue
-    .line 210
+    .line 200
     new-instance v0, Lorg/apache/cordova/CordovaActivity$1;
 
     invoke-direct {v0, p0, p0}, Lorg/apache/cordova/CordovaActivity$1;-><init>(Lorg/apache/cordova/CordovaActivity;Landroid/app/Activity;)V
@@ -405,7 +391,7 @@
     .locals 2
 
     .prologue
-    .line 202
+    .line 192
     new-instance v0, Lorg/apache/cordova/CordovaWebViewImpl;
 
     invoke-virtual {p0}, Lorg/apache/cordova/CordovaActivity;->makeWebViewEngine()Lorg/apache/cordova/CordovaWebViewEngine;
@@ -421,7 +407,7 @@
     .locals 1
 
     .prologue
-    .line 206
+    .line 196
     iget-object v0, p0, Lorg/apache/cordova/CordovaActivity;->preferences:Lorg/apache/cordova/CordovaPreferences;
 
     invoke-static {p0, v0}, Lorg/apache/cordova/CordovaWebViewImpl;->createEngine(Landroid/content/Context;Lorg/apache/cordova/CordovaPreferences;)Lorg/apache/cordova/CordovaWebViewEngine;
@@ -438,7 +424,7 @@
     .param p3, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 356
+    .line 346
     sget-object v0, Lorg/apache/cordova/CordovaActivity;->TAG:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -461,15 +447,15 @@
 
     invoke-static {v0, v1}, Lorg/apache/cordova/LOG;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 357
+    .line 347
     invoke-super {p0, p1, p2, p3}, Landroid/app/Activity;->onActivityResult(IILandroid/content/Intent;)V
 
-    .line 358
+    .line 348
     iget-object v0, p0, Lorg/apache/cordova/CordovaActivity;->cordovaInterface:Lorg/apache/cordova/CordovaInterfaceImpl;
 
     invoke-virtual {v0, p1, p2, p3}, Lorg/apache/cordova/CordovaInterfaceImpl;->onActivityResult(IILandroid/content/Intent;)Z
 
-    .line 359
+    .line 349
     return-void
 .end method
 
@@ -478,20 +464,20 @@
     .param p1, "newConfig"    # Landroid/content/res/Configuration;
 
     .prologue
-    .line 486
+    .line 476
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
-    .line 487
+    .line 477
     iget-object v1, p0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
 
     if-nez v1, :cond_1
 
-    .line 494
+    .line 484
     :cond_0
     :goto_0
     return-void
 
-    .line 490
+    .line 480
     :cond_1
     iget-object v1, p0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
 
@@ -499,177 +485,152 @@
 
     move-result-object v0
 
-    .line 491
+    .line 481
     .local v0, "pm":Lorg/apache/cordova/PluginManager;
     if-eqz v0, :cond_0
 
-    .line 492
+    .line 482
     invoke-virtual {v0, p1}, Lorg/apache/cordova/PluginManager;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
     goto :goto_0
 .end method
 
 .method public onCreate(Landroid/os/Bundle;)V
-    .locals 8
+    .locals 6
     .param p1, "savedInstanceState"    # Landroid/os/Bundle;
 
     .prologue
-    const/16 v7, 0x800
+    const/16 v5, 0x800
 
-    const/16 v6, 0x400
+    const/16 v4, 0x400
 
-    const/4 v5, 0x1
+    const/4 v3, 0x1
 
-    const/4 v4, 0x0
+    const/4 v2, 0x0
 
     .line 107
+    sget-object v0, Lorg/apache/cordova/CordovaActivity;->TAG:Ljava/lang/String;
+
+    const-string v1, "Apache Cordova native platform version 5.2.1 is starting"
+
+    invoke-static {v0, v1}, Lorg/apache/cordova/LOG;->i(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 108
+    sget-object v0, Lorg/apache/cordova/CordovaActivity;->TAG:Ljava/lang/String;
+
+    const-string v1, "CordovaActivity.onCreate()"
+
+    invoke-static {v0, v1}, Lorg/apache/cordova/LOG;->d(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 111
     invoke-virtual {p0}, Lorg/apache/cordova/CordovaActivity;->loadConfig()V
 
-    .line 109
-    iget-object v1, p0, Lorg/apache/cordova/CordovaActivity;->preferences:Lorg/apache/cordova/CordovaPreferences;
+    .line 112
+    iget-object v0, p0, Lorg/apache/cordova/CordovaActivity;->preferences:Lorg/apache/cordova/CordovaPreferences;
 
-    const-string v2, "loglevel"
+    const-string v1, "ShowTitle"
 
-    const-string v3, "ERROR"
+    invoke-virtual {v0, v1, v2}, Lorg/apache/cordova/CordovaPreferences;->getBoolean(Ljava/lang/String;Z)Z
 
-    invoke-virtual {v1, v2, v3}, Lorg/apache/cordova/CordovaPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 113
+    invoke-virtual {p0}, Lorg/apache/cordova/CordovaActivity;->getWindow()Landroid/view/Window;
 
     move-result-object v0
 
-    .line 110
-    .local v0, "logLevel":Ljava/lang/String;
-    invoke-static {v0}, Lorg/apache/cordova/LOG;->setLogLevel(Ljava/lang/String;)V
-
-    .line 112
-    sget-object v1, Lorg/apache/cordova/CordovaActivity;->TAG:Ljava/lang/String;
-
-    const-string v2, "Apache Cordova native platform version 6.1.0 is starting"
-
-    invoke-static {v1, v2}, Lorg/apache/cordova/LOG;->i(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 113
-    sget-object v1, Lorg/apache/cordova/CordovaActivity;->TAG:Ljava/lang/String;
-
-    const-string v2, "CordovaActivity.onCreate()"
-
-    invoke-static {v1, v2}, Lorg/apache/cordova/LOG;->d(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 115
-    iget-object v1, p0, Lorg/apache/cordova/CordovaActivity;->preferences:Lorg/apache/cordova/CordovaPreferences;
-
-    const-string v2, "ShowTitle"
-
-    invoke-virtual {v1, v2, v4}, Lorg/apache/cordova/CordovaPreferences;->getBoolean(Ljava/lang/String;Z)Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
+    invoke-virtual {v0, v3}, Landroid/view/Window;->requestFeature(I)Z
 
     .line 116
-    invoke-virtual {p0}, Lorg/apache/cordova/CordovaActivity;->getWindow()Landroid/view/Window;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v5}, Landroid/view/Window;->requestFeature(I)Z
-
-    .line 119
     :cond_0
-    iget-object v1, p0, Lorg/apache/cordova/CordovaActivity;->preferences:Lorg/apache/cordova/CordovaPreferences;
+    iget-object v0, p0, Lorg/apache/cordova/CordovaActivity;->preferences:Lorg/apache/cordova/CordovaPreferences;
 
-    const-string v2, "SetFullscreen"
+    const-string v1, "SetFullscreen"
 
-    invoke-virtual {v1, v2, v4}, Lorg/apache/cordova/CordovaPreferences;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-virtual {v0, v1, v2}, Lorg/apache/cordova/CordovaPreferences;->getBoolean(Ljava/lang/String;Z)Z
 
-    move-result v1
+    move-result v0
 
-    if-eqz v1, :cond_1
+    if-eqz v0, :cond_1
+
+    .line 117
+    sget-object v0, Lorg/apache/cordova/CordovaActivity;->TAG:Ljava/lang/String;
+
+    const-string v1, "The SetFullscreen configuration is deprecated in favor of Fullscreen, and will be removed in a future version."
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 118
+    iget-object v0, p0, Lorg/apache/cordova/CordovaActivity;->preferences:Lorg/apache/cordova/CordovaPreferences;
+
+    const-string v1, "Fullscreen"
+
+    invoke-virtual {v0, v1, v3}, Lorg/apache/cordova/CordovaPreferences;->set(Ljava/lang/String;Z)V
 
     .line 120
-    sget-object v1, Lorg/apache/cordova/CordovaActivity;->TAG:Ljava/lang/String;
+    :cond_1
+    iget-object v0, p0, Lorg/apache/cordova/CordovaActivity;->preferences:Lorg/apache/cordova/CordovaPreferences;
 
-    const-string v2, "The SetFullscreen configuration is deprecated in favor of Fullscreen, and will be removed in a future version."
+    const-string v1, "Fullscreen"
 
-    invoke-static {v1, v2}, Lorg/apache/cordova/LOG;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lorg/apache/cordova/CordovaPreferences;->getBoolean(Ljava/lang/String;Z)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
 
     .line 121
-    iget-object v1, p0, Lorg/apache/cordova/CordovaActivity;->preferences:Lorg/apache/cordova/CordovaPreferences;
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    const-string v2, "Fullscreen"
+    const/16 v1, 0x13
 
-    invoke-virtual {v1, v2, v5}, Lorg/apache/cordova/CordovaPreferences;->set(Ljava/lang/String;Z)V
+    if-lt v0, v1, :cond_3
 
-    .line 123
-    :cond_1
-    iget-object v1, p0, Lorg/apache/cordova/CordovaActivity;->preferences:Lorg/apache/cordova/CordovaPreferences;
+    .line 122
+    iput-boolean v3, p0, Lorg/apache/cordova/CordovaActivity;->immersiveMode:Z
 
-    const-string v2, "Fullscreen"
-
-    invoke-virtual {v1, v2, v4}, Lorg/apache/cordova/CordovaPreferences;->getBoolean(Ljava/lang/String;Z)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_4
-
-    .line 126
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v2, 0x13
-
-    if-lt v1, v2, :cond_3
-
-    iget-object v1, p0, Lorg/apache/cordova/CordovaActivity;->preferences:Lorg/apache/cordova/CordovaPreferences;
-
-    const-string v2, "FullscreenNotImmersive"
-
-    invoke-virtual {v1, v2, v4}, Lorg/apache/cordova/CordovaPreferences;->getBoolean(Ljava/lang/String;Z)Z
-
-    move-result v1
-
-    if-nez v1, :cond_3
-
-    .line 127
-    iput-boolean v5, p0, Lorg/apache/cordova/CordovaActivity;->immersiveMode:Z
-
-    .line 137
+    .line 132
     :goto_0
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 139
+    .line 134
     invoke-virtual {p0}, Lorg/apache/cordova/CordovaActivity;->makeCordovaInterface()Lorg/apache/cordova/CordovaInterfaceImpl;
 
-    move-result-object v1
+    move-result-object v0
 
-    iput-object v1, p0, Lorg/apache/cordova/CordovaActivity;->cordovaInterface:Lorg/apache/cordova/CordovaInterfaceImpl;
+    iput-object v0, p0, Lorg/apache/cordova/CordovaActivity;->cordovaInterface:Lorg/apache/cordova/CordovaInterfaceImpl;
 
-    .line 140
+    .line 135
     if-eqz p1, :cond_2
 
-    .line 141
-    iget-object v1, p0, Lorg/apache/cordova/CordovaActivity;->cordovaInterface:Lorg/apache/cordova/CordovaInterfaceImpl;
+    .line 136
+    iget-object v0, p0, Lorg/apache/cordova/CordovaActivity;->cordovaInterface:Lorg/apache/cordova/CordovaInterfaceImpl;
 
-    invoke-virtual {v1, p1}, Lorg/apache/cordova/CordovaInterfaceImpl;->restoreInstanceState(Landroid/os/Bundle;)V
+    invoke-virtual {v0, p1}, Lorg/apache/cordova/CordovaInterfaceImpl;->restoreInstanceState(Landroid/os/Bundle;)V
 
-    .line 143
+    .line 138
     :cond_2
     return-void
 
-    .line 129
+    .line 124
     :cond_3
     invoke-virtual {p0}, Lorg/apache/cordova/CordovaActivity;->getWindow()Landroid/view/Window;
 
-    move-result-object v1
+    move-result-object v0
 
-    invoke-virtual {v1, v6, v6}, Landroid/view/Window;->setFlags(II)V
+    invoke-virtual {v0, v4, v4}, Landroid/view/Window;->setFlags(II)V
 
     goto :goto_0
 
-    .line 133
+    .line 128
     :cond_4
     invoke-virtual {p0}, Lorg/apache/cordova/CordovaActivity;->getWindow()Landroid/view/Window;
 
-    move-result-object v1
+    move-result-object v0
 
-    invoke-virtual {v1, v7, v7}, Landroid/view/Window;->setFlags(II)V
+    invoke-virtual {v0, v5, v5}, Landroid/view/Window;->setFlags(II)V
 
     goto :goto_0
 .end method
@@ -679,12 +640,12 @@
     .param p1, "menu"    # Landroid/view/Menu;
 
     .prologue
-    .line 431
+    .line 421
     iget-object v0, p0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
 
     if-eqz v0, :cond_0
 
-    .line 432
+    .line 422
     iget-object v0, p0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
 
     invoke-interface {v0}, Lorg/apache/cordova/CordovaWebView;->getPluginManager()Lorg/apache/cordova/PluginManager;
@@ -695,7 +656,7 @@
 
     invoke-virtual {v0, v1, p1}, Lorg/apache/cordova/PluginManager;->postMessage(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 434
+    .line 424
     :cond_0
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
@@ -708,27 +669,27 @@
     .locals 2
 
     .prologue
-    .line 311
+    .line 301
     sget-object v0, Lorg/apache/cordova/CordovaActivity;->TAG:Ljava/lang/String;
 
     const-string v1, "CordovaActivity.onDestroy()"
 
     invoke-static {v0, v1}, Lorg/apache/cordova/LOG;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 312
+    .line 302
     invoke-super {p0}, Landroid/app/Activity;->onDestroy()V
 
-    .line 314
+    .line 304
     iget-object v0, p0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
 
     if-eqz v0, :cond_0
 
-    .line 315
+    .line 305
     iget-object v0, p0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
 
     invoke-interface {v0}, Lorg/apache/cordova/CordovaWebView;->handleDestroy()V
 
-    .line 317
+    .line 307
     :cond_0
     return-void
 .end method
@@ -739,7 +700,7 @@
     .param p2, "data"    # Ljava/lang/Object;
 
     .prologue
-    .line 461
+    .line 451
     const-string v2, "onReceivedError"
 
     invoke-virtual {v2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -750,10 +711,10 @@
 
     move-object v0, p2
 
-    .line 462
+    .line 452
     check-cast v0, Lorg/json/JSONObject;
 
-    .line 464
+    .line 454
     .local v0, "d":Lorg/json/JSONObject;
     :try_start_0
     const-string v2, "errorCode"
@@ -778,7 +739,7 @@
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 471
+    .line 461
     .end local v0    # "d":Lorg/json/JSONObject;
     :cond_0
     :goto_0
@@ -786,18 +747,18 @@
 
     return-object v2
 
-    .line 465
+    .line 455
     .restart local v0    # "d":Lorg/json/JSONObject;
     :catch_0
     move-exception v1
 
-    .line 466
+    .line 456
     .local v1, "e":Lorg/json/JSONException;
     invoke-virtual {v1}, Lorg/json/JSONException;->printStackTrace()V
 
     goto :goto_0
 
-    .line 468
+    .line 458
     .end local v0    # "d":Lorg/json/JSONObject;
     .end local v1    # "e":Lorg/json/JSONException;
     :cond_1
@@ -809,7 +770,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 469
+    .line 459
     invoke-virtual {p0}, Lorg/apache/cordova/CordovaActivity;->finish()V
 
     goto :goto_0
@@ -820,20 +781,20 @@
     .param p1, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 254
+    .line 244
     invoke-super {p0, p1}, Landroid/app/Activity;->onNewIntent(Landroid/content/Intent;)V
 
-    .line 256
+    .line 246
     iget-object v0, p0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
 
     if-eqz v0, :cond_0
 
-    .line 257
+    .line 247
     iget-object v0, p0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
 
     invoke-interface {v0, p1}, Lorg/apache/cordova/CordovaWebView;->onNewIntent(Landroid/content/Intent;)V
 
-    .line 258
+    .line 248
     :cond_0
     return-void
 .end method
@@ -843,12 +804,12 @@
     .param p1, "item"    # Landroid/view/MenuItem;
 
     .prologue
-    .line 447
+    .line 437
     iget-object v0, p0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
 
     if-eqz v0, :cond_0
 
-    .line 448
+    .line 438
     iget-object v0, p0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
 
     invoke-interface {v0}, Lorg/apache/cordova/CordovaWebView;->getPluginManager()Lorg/apache/cordova/PluginManager;
@@ -859,7 +820,7 @@
 
     invoke-virtual {v0, v1, p1}, Lorg/apache/cordova/PluginManager;->postMessage(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 450
+    .line 440
     :cond_0
     const/4 v0, 0x1
 
@@ -870,22 +831,22 @@
     .locals 3
 
     .prologue
-    .line 238
+    .line 228
     invoke-super {p0}, Landroid/app/Activity;->onPause()V
 
-    .line 239
+    .line 229
     sget-object v1, Lorg/apache/cordova/CordovaActivity;->TAG:Ljava/lang/String;
 
     const-string v2, "Paused the activity."
 
     invoke-static {v1, v2}, Lorg/apache/cordova/LOG;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 241
+    .line 231
     iget-object v1, p0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
 
     if-eqz v1, :cond_1
 
-    .line 244
+    .line 234
     iget-boolean v1, p0, Lorg/apache/cordova/CordovaActivity;->keepRunning:Z
 
     if-nez v1, :cond_0
@@ -899,19 +860,19 @@
     :cond_0
     const/4 v0, 0x1
 
-    .line 245
+    .line 235
     .local v0, "keepRunning":Z
     :goto_0
     iget-object v1, p0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
 
     invoke-interface {v1, v0}, Lorg/apache/cordova/CordovaWebView;->handlePause(Z)V
 
-    .line 247
+    .line 237
     .end local v0    # "keepRunning":Z
     :cond_1
     return-void
 
-    .line 244
+    .line 234
     :cond_2
     const/4 v0, 0x0
 
@@ -923,12 +884,12 @@
     .param p1, "menu"    # Landroid/view/Menu;
 
     .prologue
-    .line 439
+    .line 429
     iget-object v0, p0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
 
     if-eqz v0, :cond_0
 
-    .line 440
+    .line 430
     iget-object v0, p0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
 
     invoke-interface {v0}, Lorg/apache/cordova/CordovaWebView;->getPluginManager()Lorg/apache/cordova/PluginManager;
@@ -939,7 +900,7 @@
 
     invoke-virtual {v0, v1, p1}, Lorg/apache/cordova/PluginManager;->postMessage(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 442
+    .line 432
     :cond_0
     const/4 v0, 0x1
 
@@ -953,10 +914,10 @@
     .param p3, "failingUrl"    # Ljava/lang/String;
 
     .prologue
-    .line 370
+    .line 360
     move-object v3, p0
 
-    .line 373
+    .line 363
     .local v3, "me":Lorg/apache/cordova/CordovaActivity;
     iget-object v0, p0, Lorg/apache/cordova/CordovaActivity;->preferences:Lorg/apache/cordova/CordovaPreferences;
 
@@ -968,7 +929,7 @@
 
     move-result-object v6
 
-    .line 374
+    .line 364
     .local v6, "errorUrl":Ljava/lang/String;
     if-eqz v6, :cond_0
 
@@ -982,18 +943,18 @@
 
     if-eqz v0, :cond_0
 
-    .line 376
+    .line 366
     new-instance v0, Lorg/apache/cordova/CordovaActivity$2;
 
     invoke-direct {v0, p0, v3, v6}, Lorg/apache/cordova/CordovaActivity$2;-><init>(Lorg/apache/cordova/CordovaActivity;Lorg/apache/cordova/CordovaActivity;Ljava/lang/String;)V
 
     invoke-virtual {v3, v0}, Lorg/apache/cordova/CordovaActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 394
+    .line 384
     :goto_0
     return-void
 
-    .line 384
+    .line 374
     :cond_0
     const/4 v0, -0x2
 
@@ -1001,7 +962,7 @@
 
     const/4 v2, 0x1
 
-    .line 385
+    .line 375
     .local v2, "exit":Z
     :goto_1
     new-instance v0, Lorg/apache/cordova/CordovaActivity$3;
@@ -1018,7 +979,7 @@
 
     goto :goto_0
 
-    .line 384
+    .line 374
     .end local v2    # "exit":Z
     :cond_1
     const/4 v2, 0x0
@@ -1033,7 +994,7 @@
     .param p3, "grantResults"    # [I
 
     .prologue
-    .line 508
+    .line 498
     :try_start_0
     iget-object v1, p0, Lorg/apache/cordova/CordovaActivity;->cordovaInterface:Lorg/apache/cordova/CordovaInterfaceImpl;
 
@@ -1041,15 +1002,15 @@
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 516
+    .line 506
     :goto_0
     return-void
 
-    .line 510
+    .line 500
     :catch_0
     move-exception v0
 
-    .line 512
+    .line 502
     .local v0, "e":Lorg/json/JSONException;
     sget-object v1, Lorg/apache/cordova/CordovaActivity;->TAG:Ljava/lang/String;
 
@@ -1057,7 +1018,7 @@
 
     invoke-static {v1, v2}, Lorg/apache/cordova/LOG;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 513
+    .line 503
     invoke-virtual {v0}, Lorg/json/JSONException;->printStackTrace()V
 
     goto :goto_0
@@ -1067,26 +1028,26 @@
     .locals 2
 
     .prologue
-    .line 265
+    .line 255
     invoke-super {p0}, Landroid/app/Activity;->onResume()V
 
-    .line 266
+    .line 256
     sget-object v0, Lorg/apache/cordova/CordovaActivity;->TAG:Ljava/lang/String;
 
     const-string v1, "Resumed the activity."
 
     invoke-static {v0, v1}, Lorg/apache/cordova/LOG;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 268
+    .line 258
     iget-object v0, p0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
 
     if-nez v0, :cond_0
 
-    .line 276
+    .line 266
     :goto_0
     return-void
 
-    .line 273
+    .line 263
     :cond_0
     invoke-virtual {p0}, Lorg/apache/cordova/CordovaActivity;->getWindow()Landroid/view/Window;
 
@@ -1098,7 +1059,7 @@
 
     invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
 
-    .line 275
+    .line 265
     iget-object v0, p0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
 
     iget-boolean v1, p0, Lorg/apache/cordova/CordovaActivity;->keepRunning:Z
@@ -1113,15 +1074,15 @@
     .param p1, "outState"    # Landroid/os/Bundle;
 
     .prologue
-    .line 475
+    .line 465
     iget-object v0, p0, Lorg/apache/cordova/CordovaActivity;->cordovaInterface:Lorg/apache/cordova/CordovaInterfaceImpl;
 
     invoke-virtual {v0, p1}, Lorg/apache/cordova/CordovaInterfaceImpl;->onSaveInstanceState(Landroid/os/Bundle;)V
 
-    .line 476
+    .line 466
     invoke-super {p0, p1}, Landroid/app/Activity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
-    .line 477
+    .line 467
     return-void
 .end method
 
@@ -1129,26 +1090,26 @@
     .locals 2
 
     .prologue
-    .line 297
+    .line 287
     invoke-super {p0}, Landroid/app/Activity;->onStart()V
 
-    .line 298
+    .line 288
     sget-object v0, Lorg/apache/cordova/CordovaActivity;->TAG:Ljava/lang/String;
 
     const-string v1, "Started the activity."
 
     invoke-static {v0, v1}, Lorg/apache/cordova/LOG;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 300
+    .line 290
     iget-object v0, p0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
 
     if-nez v0, :cond_0
 
-    .line 304
+    .line 294
     :goto_0
     return-void
 
-    .line 303
+    .line 293
     :cond_0
     iget-object v0, p0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
 
@@ -1161,26 +1122,26 @@
     .locals 2
 
     .prologue
-    .line 283
+    .line 273
     invoke-super {p0}, Landroid/app/Activity;->onStop()V
 
-    .line 284
+    .line 274
     sget-object v0, Lorg/apache/cordova/CordovaActivity;->TAG:Ljava/lang/String;
 
     const-string v1, "Stopped the activity."
 
     invoke-static {v0, v1}, Lorg/apache/cordova/LOG;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 286
+    .line 276
     iget-object v0, p0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
 
     if-nez v0, :cond_0
 
-    .line 290
+    .line 280
     :goto_0
     return-void
 
-    .line 289
+    .line 279
     :cond_0
     iget-object v0, p0, Lorg/apache/cordova/CordovaActivity;->appView:Lorg/apache/cordova/CordovaWebView;
 
@@ -1194,20 +1155,20 @@
     .param p1, "hasFocus"    # Z
 
     .prologue
-    .line 324
+    .line 314
     invoke-super {p0, p1}, Landroid/app/Activity;->onWindowFocusChanged(Z)V
 
-    .line 325
+    .line 315
     if-eqz p1, :cond_0
 
     iget-boolean v1, p0, Lorg/apache/cordova/CordovaActivity;->immersiveMode:Z
 
     if-eqz v1, :cond_0
 
-    .line 326
+    .line 316
     const/16 v0, 0x1706
 
-    .line 333
+    .line 323
     .local v0, "uiOptions":I
     invoke-virtual {p0}, Lorg/apache/cordova/CordovaActivity;->getWindow()Landroid/view/Window;
 
@@ -1221,7 +1182,7 @@
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setSystemUiVisibility(I)V
 
-    .line 335
+    .line 325
     .end local v0    # "uiOptions":I
     :cond_0
     return-void
@@ -1239,14 +1200,14 @@
     .end annotation
 
     .prologue
-    .line 341
+    .line 331
     iget-object v0, p0, Lorg/apache/cordova/CordovaActivity;->cordovaInterface:Lorg/apache/cordova/CordovaInterfaceImpl;
 
     invoke-virtual {v0, p2}, Lorg/apache/cordova/CordovaInterfaceImpl;->setActivityResultRequestCode(I)V
 
-    .line 342
+    .line 332
     invoke-super {p0, p1, p2, p3}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;ILandroid/os/Bundle;)V
 
-    .line 343
+    .line 333
     return-void
 .end method

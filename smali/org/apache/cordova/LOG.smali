@@ -88,7 +88,7 @@
     .param p2, "args"    # [Ljava/lang/Object;
 
     .prologue
-    .line 208
+    .line 198
     const/4 v0, 0x3
 
     sget v1, Lorg/apache/cordova/LOG;->LOGLEVEL:I
@@ -101,7 +101,7 @@
 
     invoke-static {p0, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 209
+    .line 199
     :cond_0
     return-void
 .end method
@@ -133,7 +133,7 @@
     .param p2, "e"    # Ljava/lang/Throwable;
 
     .prologue
-    .line 186
+    .line 176
     const/4 v0, 0x6
 
     sget v1, Lorg/apache/cordova/LOG;->LOGLEVEL:I
@@ -142,7 +142,7 @@
 
     invoke-static {p0, p1, p2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 187
+    .line 177
     :cond_0
     return-void
 .end method
@@ -154,7 +154,7 @@
     .param p2, "args"    # [Ljava/lang/Object;
 
     .prologue
-    .line 241
+    .line 231
     const/4 v0, 0x6
 
     sget v1, Lorg/apache/cordova/LOG;->LOGLEVEL:I
@@ -167,7 +167,7 @@
 
     invoke-static {p0, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 242
+    .line 232
     :cond_0
     return-void
 .end method
@@ -220,7 +220,7 @@
     .param p2, "args"    # [Ljava/lang/Object;
 
     .prologue
-    .line 219
+    .line 209
     const/4 v0, 0x4
 
     sget v1, Lorg/apache/cordova/LOG;->LOGLEVEL:I
@@ -233,7 +233,7 @@
 
     invoke-static {p0, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 220
+    .line 210
     :cond_0
     return-void
 .end method
@@ -471,7 +471,7 @@
     .param p2, "args"    # [Ljava/lang/Object;
 
     .prologue
-    .line 197
+    .line 187
     const/4 v0, 0x2
 
     sget v1, Lorg/apache/cordova/LOG;->LOGLEVEL:I
@@ -484,7 +484,7 @@
 
     invoke-static {p0, v0}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 198
+    .line 188
     :cond_0
     return-void
 .end method
@@ -516,7 +516,7 @@
     .param p2, "e"    # Ljava/lang/Throwable;
 
     .prologue
-    .line 175
+    .line 165
     const/4 v0, 0x5
 
     sget v1, Lorg/apache/cordova/LOG;->LOGLEVEL:I
@@ -525,7 +525,7 @@
 
     invoke-static {p0, p1, p2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 176
+    .line 166
     :cond_0
     return-void
 .end method
@@ -537,7 +537,7 @@
     .param p2, "args"    # [Ljava/lang/Object;
 
     .prologue
-    .line 230
+    .line 220
     const/4 v0, 0x5
 
     sget v1, Lorg/apache/cordova/LOG;->LOGLEVEL:I
@@ -550,27 +550,7 @@
 
     invoke-static {p0, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 231
-    :cond_0
-    return-void
-.end method
-
-.method public static w(Ljava/lang/String;Ljava/lang/Throwable;)V
-    .locals 2
-    .param p0, "tag"    # Ljava/lang/String;
-    .param p1, "e"    # Ljava/lang/Throwable;
-
-    .prologue
-    .line 164
-    const/4 v0, 0x5
-
-    sget v1, Lorg/apache/cordova/LOG;->LOGLEVEL:I
-
-    if-lt v0, v1, :cond_0
-
-    invoke-static {p0, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/Throwable;)I
-
-    .line 165
+    .line 221
     :cond_0
     return-void
 .end method

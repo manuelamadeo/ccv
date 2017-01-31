@@ -25,7 +25,7 @@
     .param p2, "activity"    # Landroid/app/Activity;
 
     .prologue
-    .line 210
+    .line 200
     iput-object p1, p0, Lorg/apache/cordova/CordovaActivity$1;->this$0:Lorg/apache/cordova/CordovaActivity;
 
     invoke-direct {p0, p2}, Lorg/apache/cordova/CordovaInterfaceImpl;-><init>(Landroid/app/Activity;)V
@@ -41,7 +41,7 @@
     .param p2, "data"    # Ljava/lang/Object;
 
     .prologue
-    .line 214
+    .line 204
     iget-object v0, p0, Lorg/apache/cordova/CordovaActivity$1;->this$0:Lorg/apache/cordova/CordovaActivity;
 
     invoke-virtual {v0, p1, p2}, Lorg/apache/cordova/CordovaActivity;->onMessage(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;

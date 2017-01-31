@@ -1,23 +1,6 @@
 /* Some tablets mis-report orientation, leaving white at bottom: */
 body { background-color: #d1d1d1;}
 
-body .content {
-font-size: 14px;
-width: 720px;
-height: 1024px;
-text-align: center;
-border: 1px solid red;
-}
-
-@media only screen and (max-width: 480px) {
-body .content {
-font-size: 14px;
-width: 100%;
-min-height: 480px;
-border: 1px solid red;
-}
-}
-
 h2 {
 	border-bottom: 1px solid #b3b3b3;
 	font-size: 1.4em; /* 1.6em; */
@@ -86,29 +69,29 @@ blockquote::before {
 	border: 1px solid #0c4982;
 }
 #deviceinfo th {
-	font-size: 1.15em;
-	padding-top: 4px;
-	padding-bottom: 4px;
-	background-color: #7ba3c9;
-	color: #f0f0f0;
+	font-size:1.15em;
+	padding-top:4px;
+	padding-bottom:4px;
+	background-color:#7ba3c9;
+	color:#f0f0f0;
 	text-shadow: none;
 	height: 1.3em;
 }
 #deviceinfo td, #deviceinfo th {
-	padding: 3px 7px 2px 7px;
-	vertical-align: bottom;
-	text-align: right;
+	padding:3px 7px 2px 7px;
+	vertical-align:bottom;
+	text-align:right;
 }
 #cameraImage {
 	border: 2px solid #666;
 	display: block;
  	visibility: hidden; 
 	margin: 0.7em auto;
-	width: 200px;
-	height: 150px;
+	width:200px;
+	height:150px;
 }
 #eventOutput {
-	height: 1.5em;
+	height:1.5em;
 	display: block;
 }
 .ui-btn-inner { 
@@ -129,8 +112,8 @@ blockquote::before {
 	margin: 1.0em auto; 
 }
 .ui-header .ui-title {
-	margin-right: 20px;
-	margin-left: 20px;
+	margin-right:20px;
+	margin-left:20px;
 }
 .type-interior .content-secondary {
 	border-right: 0;
@@ -157,7 +140,7 @@ blockquote::before {
 }
 .footer-docs p {
 	float: left;
-	margin-left: 15px;
+	margin-left:15px;
 	font-weight: normal;
 	font-size: .9em !important;
 }
@@ -290,8 +273,8 @@ ul #listdivider {
 		width: 85%;
 	}
 	#cameraImage {
-		width: 400px;
-		height: 300px;
+		width:400px;
+		height:300px;
     }
     #map {
 		width: 360px; 
@@ -302,7 +285,7 @@ ul #listdivider {
  /*	h1 { color: #ff0; } FOR TESTING */
 		.content-secondary {
 		width: 30%;
-		padding-right: 6%;
+		padding-right:6%;
 		margin: 30px 0 20px 5%;
 	}
 	.type-interior .content-secondary {
@@ -318,14 +301,13 @@ ul #listdivider {
 		width: 60%;
 	}
 	#deviceinfo {
-		width: 60%;
+		width:60%;
 	}
 	#deviceinfo td, #deviceinfo th {
 		font-size: 1.1em;
 	}
 }
 .blink {
-    animation: fade 3000ms infinite;
-    -webkit-animation: fade 3000ms infinite;
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
 }
-

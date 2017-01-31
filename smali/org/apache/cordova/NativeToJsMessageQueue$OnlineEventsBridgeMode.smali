@@ -34,13 +34,13 @@
     .param p1, "delegate"    # Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$OnlineEventsBridgeModeDelegate;
 
     .prologue
-    .line 316
+    .line 318
     invoke-direct {p0}, Lorg/apache/cordova/NativeToJsMessageQueue$BridgeMode;-><init>()V
 
-    .line 317
+    .line 319
     iput-object p1, p0, Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode;->delegate:Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$OnlineEventsBridgeModeDelegate;
 
-    .line 318
+    .line 320
     return-void
 .end method
 
@@ -49,7 +49,7 @@
     .param p0, "x0"    # Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode;
 
     .prologue
-    .line 306
+    .line 308
     iget-boolean v0, p0, Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode;->online:Z
 
     return v0
@@ -61,7 +61,7 @@
     .param p1, "x1"    # Z
 
     .prologue
-    .line 306
+    .line 308
     iput-boolean p1, p0, Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode;->online:Z
 
     return p1
@@ -73,7 +73,7 @@
     .param p1, "x1"    # Z
 
     .prologue
-    .line 306
+    .line 308
     iput-boolean p1, p0, Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode;->ignoreNextFlush:Z
 
     return p1
@@ -84,7 +84,7 @@
     .param p0, "x0"    # Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode;
 
     .prologue
-    .line 306
+    .line 308
     iget-object v0, p0, Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode;->delegate:Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$OnlineEventsBridgeModeDelegate;
 
     return-object v0
@@ -98,14 +98,14 @@
     .param p2, "fromOnlineEvent"    # Z
 
     .prologue
-    .line 346
+    .line 348
     if-eqz p2, :cond_0
 
     iget-boolean v0, p0, Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode;->ignoreNextFlush:Z
 
     if-nez v0, :cond_0
 
-    .line 347
+    .line 349
     iget-boolean v0, p0, Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode;->online:Z
 
     if-nez v0, :cond_1
@@ -115,11 +115,11 @@
     :goto_0
     iput-boolean v0, p0, Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode;->online:Z
 
-    .line 349
+    .line 351
     :cond_0
     return-void
 
-    .line 347
+    .line 349
     :cond_1
     const/4 v0, 0x0
 
@@ -131,7 +131,7 @@
     .param p1, "queue"    # Lorg/apache/cordova/NativeToJsMessageQueue;
 
     .prologue
-    .line 334
+    .line 336
     iget-object v0, p0, Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode;->delegate:Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$OnlineEventsBridgeModeDelegate;
 
     new-instance v1, Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$2;
@@ -140,7 +140,7 @@
 
     invoke-interface {v0, v1}, Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$OnlineEventsBridgeModeDelegate;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 342
+    .line 344
     return-void
 .end method
 
@@ -148,7 +148,7 @@
     .locals 2
 
     .prologue
-    .line 322
+    .line 324
     iget-object v0, p0, Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode;->delegate:Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$OnlineEventsBridgeModeDelegate;
 
     new-instance v1, Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$1;
@@ -157,6 +157,6 @@
 
     invoke-interface {v0, v1}, Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$OnlineEventsBridgeModeDelegate;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 330
+    .line 332
     return-void
 .end method

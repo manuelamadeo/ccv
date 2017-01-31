@@ -41,14 +41,14 @@
     .param p2, "preferences"    # Lorg/apache/cordova/CordovaPreferences;
 
     .prologue
-    .line 76
+    .line 75
     new-instance v0, Lorg/apache/cordova/engine/SystemWebView;
 
     invoke-direct {v0, p1}, Lorg/apache/cordova/engine/SystemWebView;-><init>(Landroid/content/Context;)V
 
     invoke-direct {p0, v0, p2}, Lorg/apache/cordova/engine/SystemWebViewEngine;-><init>(Lorg/apache/cordova/engine/SystemWebView;Lorg/apache/cordova/CordovaPreferences;)V
 
-    .line 77
+    .line 76
     return-void
 .end method
 
@@ -57,12 +57,12 @@
     .param p1, "webView"    # Lorg/apache/cordova/engine/SystemWebView;
 
     .prologue
-    .line 80
+    .line 79
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, v0}, Lorg/apache/cordova/engine/SystemWebViewEngine;-><init>(Lorg/apache/cordova/engine/SystemWebView;Lorg/apache/cordova/CordovaPreferences;)V
 
-    .line 81
+    .line 80
     return-void
 .end method
 
@@ -72,23 +72,23 @@
     .param p2, "preferences"    # Lorg/apache/cordova/CordovaPreferences;
 
     .prologue
-    .line 83
+    .line 82
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 84
+    .line 83
     iput-object p2, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->preferences:Lorg/apache/cordova/CordovaPreferences;
 
-    .line 85
+    .line 84
     iput-object p1, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->webView:Lorg/apache/cordova/engine/SystemWebView;
 
-    .line 86
+    .line 85
     new-instance v0, Lorg/apache/cordova/engine/SystemCookieManager;
 
     invoke-direct {v0, p1}, Lorg/apache/cordova/engine/SystemCookieManager;-><init>(Landroid/webkit/WebView;)V
 
     iput-object v0, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->cookieManager:Lorg/apache/cordova/engine/SystemCookieManager;
 
-    .line 87
+    .line 86
     return-void
 .end method
 
@@ -99,7 +99,7 @@
     .end annotation
 
     .prologue
-    .line 246
+    .line 243
     const/4 v1, 0x1
 
     :try_start_0
@@ -107,23 +107,23 @@
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 251
+    .line 248
     :goto_0
     return-void
 
-    .line 247
+    .line 244
     :catch_0
     move-exception v0
 
-    .line 248
+    .line 245
     .local v0, "e":Ljava/lang/IllegalArgumentException;
     const-string v1, "SystemWebViewEngine"
 
     const-string v2, "You have one job! To turn on Remote Web Debugging! YOU HAVE FAILED! "
 
-    invoke-static {v1, v2}, Lorg/apache/cordova/LOG;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 249
+    .line 246
     invoke-virtual {v0}, Ljava/lang/IllegalArgumentException;->printStackTrace()V
 
     goto :goto_0
@@ -135,31 +135,31 @@
     .param p1, "bridge"    # Lorg/apache/cordova/CordovaBridge;
 
     .prologue
-    .line 254
+    .line 251
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v2, 0x11
 
     if-ge v1, v2, :cond_0
 
-    .line 255
+    .line 252
     const-string v1, "SystemWebViewEngine"
 
     const-string v2, "Disabled addJavascriptInterface() bridge since Android version is old."
 
-    invoke-static {v1, v2}, Lorg/apache/cordova/LOG;->i(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 263
+    .line 260
     :goto_0
     return-void
 
-    .line 261
+    .line 258
     :cond_0
     new-instance v0, Lorg/apache/cordova/engine/SystemExposedJsApi;
 
     invoke-direct {v0, p1}, Lorg/apache/cordova/engine/SystemExposedJsApi;-><init>(Lorg/apache/cordova/CordovaBridge;)V
 
-    .line 262
+    .line 259
     .local v0, "exposedJsApi":Lorg/apache/cordova/engine/SystemExposedJsApi;
     const-string v1, "_cordovaNative"
 
@@ -178,44 +178,44 @@
     .end annotation
 
     .prologue
-    .line 144
+    .line 141
     iget-object v10, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->webView:Lorg/apache/cordova/engine/SystemWebView;
 
     const/4 v11, 0x0
 
     invoke-virtual {v10, v11}, Lorg/apache/cordova/engine/SystemWebView;->setInitialScale(I)V
 
-    .line 145
+    .line 142
     iget-object v10, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->webView:Lorg/apache/cordova/engine/SystemWebView;
 
     const/4 v11, 0x0
 
     invoke-virtual {v10, v11}, Lorg/apache/cordova/engine/SystemWebView;->setVerticalScrollBarEnabled(Z)V
 
-    .line 147
+    .line 144
     iget-object v10, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->webView:Lorg/apache/cordova/engine/SystemWebView;
 
     invoke-virtual {v10}, Lorg/apache/cordova/engine/SystemWebView;->getSettings()Landroid/webkit/WebSettings;
 
     move-result-object v9
 
-    .line 148
+    .line 145
     .local v9, "settings":Landroid/webkit/WebSettings;
     const/4 v10, 0x1
 
     invoke-virtual {v9, v10}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
 
-    .line 149
+    .line 146
     const/4 v10, 0x1
 
     invoke-virtual {v9, v10}, Landroid/webkit/WebSettings;->setJavaScriptCanOpenWindowsAutomatically(Z)V
 
-    .line 150
+    .line 147
     sget-object v10, Landroid/webkit/WebSettings$LayoutAlgorithm;->NORMAL:Landroid/webkit/WebSettings$LayoutAlgorithm;
 
     invoke-virtual {v9, v10}, Landroid/webkit/WebSettings;->setLayoutAlgorithm(Landroid/webkit/WebSettings$LayoutAlgorithm;)V
 
-    .line 154
+    .line 151
     :try_start_0
     const-class v10, Landroid/webkit/WebSettings;
 
@@ -235,11 +235,11 @@
 
     move-result-object v5
 
-    .line 156
+    .line 153
     .local v5, "gingerbread_getMethod":Ljava/lang/reflect/Method;
     sget-object v7, Landroid/os/Build;->MANUFACTURER:Ljava/lang/String;
 
-    .line 157
+    .line 154
     .local v7, "manufacturer":Ljava/lang/String;
     const-string v10, "SystemWebViewEngine"
 
@@ -261,9 +261,9 @@
 
     move-result-object v11
 
-    invoke-static {v10, v11}, Lorg/apache/cordova/LOG;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 158
+    .line 155
     sget v10, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v11, 0xb
@@ -274,14 +274,14 @@
 
     const-string v11, "HTC"
 
-    .line 159
+    .line 156
     invoke-virtual {v10, v11}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v10
 
     if-eqz v10, :cond_0
 
-    .line 161
+    .line 158
     const/4 v10, 0x1
 
     new-array v10, v10, [Ljava/lang/Object;
@@ -303,7 +303,7 @@
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_2
     .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_3
 
-    .line 174
+    .line 171
     .end local v5    # "gingerbread_getMethod":Ljava/lang/reflect/Method;
     .end local v7    # "manufacturer":Ljava/lang/String;
     :cond_0
@@ -312,24 +312,24 @@
 
     invoke-virtual {v9, v10}, Landroid/webkit/WebSettings;->setSaveFormData(Z)V
 
-    .line 175
+    .line 172
     const/4 v10, 0x0
 
     invoke-virtual {v9, v10}, Landroid/webkit/WebSettings;->setSavePassword(Z)V
 
-    .line 179
+    .line 176
     sget v10, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v11, 0x10
 
     if-lt v10, v11, :cond_1
 
-    .line 180
+    .line 177
     const/4 v10, 0x1
 
     invoke-virtual {v9, v10}, Landroid/webkit/WebSettings;->setAllowUniversalAccessFromFileURLs(Z)V
 
-    .line 182
+    .line 179
     :cond_1
     sget v10, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -337,12 +337,12 @@
 
     if-lt v10, v11, :cond_2
 
-    .line 183
+    .line 180
     const/4 v10, 0x0
 
     invoke-virtual {v9, v10}, Landroid/webkit/WebSettings;->setMediaPlaybackRequiresUserGesture(Z)V
 
-    .line 187
+    .line 184
     :cond_2
     iget-object v10, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->webView:Lorg/apache/cordova/engine/SystemWebView;
 
@@ -366,16 +366,16 @@
 
     move-result-object v2
 
-    .line 188
+    .line 185
     .local v2, "databasePath":Ljava/lang/String;
     const/4 v10, 0x1
 
     invoke-virtual {v9, v10}, Landroid/webkit/WebSettings;->setDatabaseEnabled(Z)V
 
-    .line 189
+    .line 186
     invoke-virtual {v9, v2}, Landroid/webkit/WebSettings;->setDatabasePath(Ljava/lang/String;)V
 
-    .line 193
+    .line 190
     iget-object v10, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->webView:Lorg/apache/cordova/engine/SystemWebView;
 
     invoke-virtual {v10}, Lorg/apache/cordova/engine/SystemWebView;->getContext()Landroid/content/Context;
@@ -390,7 +390,7 @@
 
     move-result-object v0
 
-    .line 194
+    .line 191
     .local v0, "appInfo":Landroid/content/pm/ApplicationInfo;
     iget v10, v0, Landroid/content/pm/ApplicationInfo;->flags:I
 
@@ -404,42 +404,42 @@
 
     if-lt v10, v11, :cond_3
 
-    .line 196
+    .line 193
     invoke-direct {p0}, Lorg/apache/cordova/engine/SystemWebViewEngine;->enableRemoteDebugging()V
 
-    .line 199
+    .line 196
     :cond_3
     invoke-virtual {v9, v2}, Landroid/webkit/WebSettings;->setGeolocationDatabasePath(Ljava/lang/String;)V
 
-    .line 202
+    .line 199
     const/4 v10, 0x1
 
     invoke-virtual {v9, v10}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V
 
-    .line 205
+    .line 202
     const/4 v10, 0x1
 
     invoke-virtual {v9, v10}, Landroid/webkit/WebSettings;->setGeolocationEnabled(Z)V
 
-    .line 209
+    .line 206
     const-wide/32 v10, 0x500000
 
     invoke-virtual {v9, v10, v11}, Landroid/webkit/WebSettings;->setAppCacheMaxSize(J)V
 
-    .line 210
+    .line 207
     invoke-virtual {v9, v2}, Landroid/webkit/WebSettings;->setAppCachePath(Ljava/lang/String;)V
 
-    .line 211
+    .line 208
     const/4 v10, 0x1
 
     invoke-virtual {v9, v10}, Landroid/webkit/WebSettings;->setAppCacheEnabled(Z)V
 
-    .line 215
+    .line 212
     invoke-virtual {v9}, Landroid/webkit/WebSettings;->getUserAgentString()Ljava/lang/String;
 
     move-result-object v3
 
-    .line 218
+    .line 215
     .local v3, "defaultUserAgent":Ljava/lang/String;
     iget-object v10, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->preferences:Lorg/apache/cordova/CordovaPreferences;
 
@@ -451,39 +451,39 @@
 
     move-result-object v8
 
-    .line 219
+    .line 216
     .local v8, "overrideUserAgent":Ljava/lang/String;
     if-eqz v8, :cond_6
 
-    .line 220
+    .line 217
     invoke-virtual {v9, v8}, Landroid/webkit/WebSettings;->setUserAgentString(Ljava/lang/String;)V
 
-    .line 229
+    .line 226
     :cond_4
     :goto_1
     new-instance v6, Landroid/content/IntentFilter;
 
     invoke-direct {v6}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 230
+    .line 227
     .local v6, "intentFilter":Landroid/content/IntentFilter;
     const-string v10, "android.intent.action.CONFIGURATION_CHANGED"
 
     invoke-virtual {v6, v10}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 231
+    .line 228
     iget-object v10, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->receiver:Landroid/content/BroadcastReceiver;
 
     if-nez v10, :cond_5
 
-    .line 232
+    .line 229
     new-instance v10, Lorg/apache/cordova/engine/SystemWebViewEngine$2;
 
     invoke-direct {v10, p0, v9}, Lorg/apache/cordova/engine/SystemWebViewEngine$2;-><init>(Lorg/apache/cordova/engine/SystemWebViewEngine;Landroid/webkit/WebSettings;)V
 
     iput-object v10, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->receiver:Landroid/content/BroadcastReceiver;
 
-    .line 238
+    .line 235
     iget-object v10, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->webView:Lorg/apache/cordova/engine/SystemWebView;
 
     invoke-virtual {v10}, Lorg/apache/cordova/engine/SystemWebView;->getContext()Landroid/content/Context;
@@ -494,11 +494,11 @@
 
     invoke-virtual {v10, v11, v6}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 241
+    .line 238
     :cond_5
     return-void
 
-    .line 163
+    .line 160
     .end local v0    # "appInfo":Landroid/content/pm/ApplicationInfo;
     .end local v2    # "databasePath":Ljava/lang/String;
     .end local v3    # "defaultUserAgent":Ljava/lang/String;
@@ -507,62 +507,62 @@
     :catch_0
     move-exception v4
 
-    .line 164
+    .line 161
     .local v4, "e":Ljava/lang/NoSuchMethodException;
     const-string v10, "SystemWebViewEngine"
 
     const-string v11, "We are on a modern version of Android, we will deprecate HTC 2.3 devices in 2.8"
 
-    invoke-static {v10, v11}, Lorg/apache/cordova/LOG;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     goto/16 :goto_0
 
-    .line 165
+    .line 162
     .end local v4    # "e":Ljava/lang/NoSuchMethodException;
     :catch_1
     move-exception v4
 
-    .line 166
+    .line 163
     .local v4, "e":Ljava/lang/IllegalArgumentException;
     const-string v10, "SystemWebViewEngine"
 
     const-string v11, "Doing the NavDump failed with bad arguments"
 
-    invoke-static {v10, v11}, Lorg/apache/cordova/LOG;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     goto/16 :goto_0
 
-    .line 167
+    .line 164
     .end local v4    # "e":Ljava/lang/IllegalArgumentException;
     :catch_2
     move-exception v4
 
-    .line 168
+    .line 165
     .local v4, "e":Ljava/lang/IllegalAccessException;
     const-string v10, "SystemWebViewEngine"
 
     const-string v11, "This should never happen: IllegalAccessException means this isn\'t Android anymore"
 
-    invoke-static {v10, v11}, Lorg/apache/cordova/LOG;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     goto/16 :goto_0
 
-    .line 169
+    .line 166
     .end local v4    # "e":Ljava/lang/IllegalAccessException;
     :catch_3
     move-exception v4
 
-    .line 170
+    .line 167
     .local v4, "e":Ljava/lang/reflect/InvocationTargetException;
     const-string v10, "SystemWebViewEngine"
 
     const-string v11, "This should never happen: InvocationTargetException means this isn\'t Android anymore."
 
-    invoke-static {v10, v11}, Lorg/apache/cordova/LOG;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     goto/16 :goto_0
 
-    .line 222
+    .line 219
     .end local v4    # "e":Ljava/lang/reflect/InvocationTargetException;
     .restart local v0    # "appInfo":Landroid/content/pm/ApplicationInfo;
     .restart local v2    # "databasePath":Ljava/lang/String;
@@ -579,11 +579,11 @@
 
     move-result-object v1
 
-    .line 223
+    .line 220
     .local v1, "appendUserAgent":Ljava/lang/String;
     if-eqz v1, :cond_4
 
-    .line 224
+    .line 221
     new-instance v10, Ljava/lang/StringBuilder;
 
     invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
@@ -617,7 +617,7 @@
     .locals 1
 
     .prologue
-    .line 296
+    .line 293
     iget-object v0, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->webView:Lorg/apache/cordova/engine/SystemWebView;
 
     invoke-virtual {v0}, Lorg/apache/cordova/engine/SystemWebView;->canGoBack()Z
@@ -631,14 +631,14 @@
     .locals 2
 
     .prologue
-    .line 286
+    .line 283
     iget-object v0, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->webView:Lorg/apache/cordova/engine/SystemWebView;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lorg/apache/cordova/engine/SystemWebView;->clearCache(Z)V
 
-    .line 287
+    .line 284
     return-void
 .end method
 
@@ -646,12 +646,12 @@
     .locals 1
 
     .prologue
-    .line 291
+    .line 288
     iget-object v0, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->webView:Lorg/apache/cordova/engine/SystemWebView;
 
     invoke-virtual {v0}, Lorg/apache/cordova/engine/SystemWebView;->clearHistory()V
 
-    .line 292
+    .line 289
     return-void
 .end method
 
@@ -659,24 +659,24 @@
     .locals 4
 
     .prologue
-    .line 328
+    .line 323
     iget-object v1, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->webView:Lorg/apache/cordova/engine/SystemWebView;
 
     iget-object v1, v1, Lorg/apache/cordova/engine/SystemWebView;->chromeClient:Lorg/apache/cordova/engine/SystemWebChromeClient;
 
     invoke-virtual {v1}, Lorg/apache/cordova/engine/SystemWebChromeClient;->destroyLastDialog()V
 
-    .line 329
+    .line 324
     iget-object v1, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->webView:Lorg/apache/cordova/engine/SystemWebView;
 
     invoke-virtual {v1}, Lorg/apache/cordova/engine/SystemWebView;->destroy()V
 
-    .line 331
+    .line 326
     iget-object v1, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->receiver:Landroid/content/BroadcastReceiver;
 
     if-eqz v1, :cond_0
 
-    .line 333
+    .line 328
     :try_start_0
     iget-object v1, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->webView:Lorg/apache/cordova/engine/SystemWebView;
 
@@ -690,16 +690,16 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 338
+    .line 333
     :cond_0
     :goto_0
     return-void
 
-    .line 334
+    .line 329
     :catch_0
     move-exception v0
 
-    .line 335
+    .line 330
     .local v0, "e":Ljava/lang/Exception;
     const-string v1, "SystemWebViewEngine"
 
@@ -725,50 +725,7 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2, v0}, Lorg/apache/cordova/LOG;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    goto :goto_0
-.end method
-
-.method public evaluateJavascript(Ljava/lang/String;Landroid/webkit/ValueCallback;)V
-    .locals 2
-    .param p1, "js"    # Ljava/lang/String;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Landroid/webkit/ValueCallback",
-            "<",
-            "Ljava/lang/String;",
-            ">;)V"
-        }
-    .end annotation
-
-    .prologue
-    .line 342
-    .local p2, "callback":Landroid/webkit/ValueCallback;, "Landroid/webkit/ValueCallback<Ljava/lang/String;>;"
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x13
-
-    if-lt v0, v1, :cond_0
-
-    .line 343
-    iget-object v0, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->webView:Lorg/apache/cordova/engine/SystemWebView;
-
-    invoke-virtual {v0, p1, p2}, Lorg/apache/cordova/engine/SystemWebView;->evaluateJavascript(Ljava/lang/String;Landroid/webkit/ValueCallback;)V
-
-    .line 349
-    :goto_0
-    return-void
-
-    .line 347
-    :cond_0
-    const-string v0, "SystemWebViewEngine"
-
-    const-string v1, "This webview is using the old bridge"
-
-    invoke-static {v0, v1}, Lorg/apache/cordova/LOG;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     goto :goto_0
 .end method
@@ -777,7 +734,7 @@
     .locals 1
 
     .prologue
-    .line 133
+    .line 130
     iget-object v0, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->cookieManager:Lorg/apache/cordova/engine/SystemCookieManager;
 
     return-object v0
@@ -787,7 +744,7 @@
     .locals 1
 
     .prologue
-    .line 128
+    .line 125
     iget-object v0, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->parentWebView:Lorg/apache/cordova/CordovaWebView;
 
     return-object v0
@@ -797,7 +754,7 @@
     .locals 1
 
     .prologue
-    .line 276
+    .line 273
     iget-object v0, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->webView:Lorg/apache/cordova/engine/SystemWebView;
 
     invoke-virtual {v0}, Lorg/apache/cordova/engine/SystemWebView;->getUrl()Ljava/lang/String;
@@ -811,7 +768,7 @@
     .locals 1
 
     .prologue
-    .line 138
+    .line 135
     iget-object v0, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->webView:Lorg/apache/cordova/engine/SystemWebView;
 
     return-object v0
@@ -821,7 +778,7 @@
     .locals 1
 
     .prologue
-    .line 308
+    .line 305
     iget-object v0, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->webView:Lorg/apache/cordova/engine/SystemWebView;
 
     invoke-virtual {v0}, Lorg/apache/cordova/engine/SystemWebView;->canGoBack()Z
@@ -830,15 +787,15 @@
 
     if-eqz v0, :cond_0
 
-    .line 309
+    .line 306
     iget-object v0, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->webView:Lorg/apache/cordova/engine/SystemWebView;
 
     invoke-virtual {v0}, Lorg/apache/cordova/engine/SystemWebView;->goBack()V
 
-    .line 310
+    .line 307
     const/4 v0, 0x1
 
-    .line 312
+    .line 309
     :goto_0
     return v0
 
@@ -858,59 +815,59 @@
     .param p6, "nativeToJsMessageQueue"    # Lorg/apache/cordova/NativeToJsMessageQueue;
 
     .prologue
-    .line 93
+    .line 92
     iget-object v0, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->cordova:Lorg/apache/cordova/CordovaInterface;
 
     if-eqz v0, :cond_0
 
-    .line 94
+    .line 93
     new-instance v0, Ljava/lang/IllegalStateException;
 
     invoke-direct {v0}, Ljava/lang/IllegalStateException;-><init>()V
 
     throw v0
 
-    .line 97
+    .line 96
     :cond_0
     iget-object v0, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->preferences:Lorg/apache/cordova/CordovaPreferences;
 
     if-nez v0, :cond_1
 
-    .line 98
+    .line 97
     invoke-interface {p1}, Lorg/apache/cordova/CordovaWebView;->getPreferences()Lorg/apache/cordova/CordovaPreferences;
 
     move-result-object v0
 
     iput-object v0, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->preferences:Lorg/apache/cordova/CordovaPreferences;
 
-    .line 100
+    .line 99
     :cond_1
     iput-object p1, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->parentWebView:Lorg/apache/cordova/CordovaWebView;
 
-    .line 101
+    .line 100
     iput-object p2, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->cordova:Lorg/apache/cordova/CordovaInterface;
 
-    .line 102
+    .line 101
     iput-object p3, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->client:Lorg/apache/cordova/CordovaWebViewEngine$Client;
 
-    .line 103
+    .line 102
     iput-object p4, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->resourceApi:Lorg/apache/cordova/CordovaResourceApi;
 
-    .line 104
+    .line 103
     iput-object p5, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->pluginManager:Lorg/apache/cordova/PluginManager;
 
-    .line 105
+    .line 104
     iput-object p6, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->nativeToJsMessageQueue:Lorg/apache/cordova/NativeToJsMessageQueue;
 
-    .line 106
+    .line 105
     iget-object v0, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->webView:Lorg/apache/cordova/engine/SystemWebView;
 
     invoke-virtual {v0, p0, p2}, Lorg/apache/cordova/engine/SystemWebView;->init(Lorg/apache/cordova/engine/SystemWebViewEngine;Lorg/apache/cordova/CordovaInterface;)V
 
-    .line 108
+    .line 107
     invoke-direct {p0}, Lorg/apache/cordova/engine/SystemWebViewEngine;->initWebViewSettings()V
 
-    .line 110
+    .line 109
     new-instance v0, Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode;
 
     new-instance v1, Lorg/apache/cordova/engine/SystemWebViewEngine$1;
@@ -921,36 +878,21 @@
 
     invoke-virtual {p6, v0}, Lorg/apache/cordova/NativeToJsMessageQueue;->addBridgeMode(Lorg/apache/cordova/NativeToJsMessageQueue$BridgeMode;)V
 
-    .line 120
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x12
-
-    if-le v0, v1, :cond_2
-
-    .line 121
-    new-instance v0, Lorg/apache/cordova/NativeToJsMessageQueue$EvalBridgeMode;
-
-    invoke-direct {v0, p0, p2}, Lorg/apache/cordova/NativeToJsMessageQueue$EvalBridgeMode;-><init>(Lorg/apache/cordova/CordovaWebViewEngine;Lorg/apache/cordova/CordovaInterface;)V
-
-    invoke-virtual {p6, v0}, Lorg/apache/cordova/NativeToJsMessageQueue;->addBridgeMode(Lorg/apache/cordova/NativeToJsMessageQueue$BridgeMode;)V
-
-    .line 122
-    :cond_2
+    .line 119
     new-instance v0, Lorg/apache/cordova/CordovaBridge;
 
     invoke-direct {v0, p5, p6}, Lorg/apache/cordova/CordovaBridge;-><init>(Lorg/apache/cordova/PluginManager;Lorg/apache/cordova/NativeToJsMessageQueue;)V
 
     iput-object v0, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->bridge:Lorg/apache/cordova/CordovaBridge;
 
-    .line 123
+    .line 120
     iget-object v0, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->webView:Lorg/apache/cordova/engine/SystemWebView;
 
     iget-object v1, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->bridge:Lorg/apache/cordova/CordovaBridge;
 
     invoke-static {v0, v1}, Lorg/apache/cordova/engine/SystemWebViewEngine;->exposeJsInterface(Landroid/webkit/WebView;Lorg/apache/cordova/CordovaBridge;)V
 
-    .line 124
+    .line 121
     return-void
 .end method
 
@@ -960,12 +902,12 @@
     .param p2, "clearNavigationStack"    # Z
 
     .prologue
-    .line 271
+    .line 268
     iget-object v0, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->webView:Lorg/apache/cordova/engine/SystemWebView;
 
     invoke-virtual {v0, p1}, Lorg/apache/cordova/engine/SystemWebView;->loadUrl(Ljava/lang/String;)V
 
-    .line 272
+    .line 269
     return-void
 .end method
 
@@ -974,30 +916,20 @@
     .param p1, "value"    # Z
 
     .prologue
-    .line 317
+    .line 314
     if-eqz p1, :cond_0
 
-    .line 318
-    iget-object v0, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->webView:Lorg/apache/cordova/engine/SystemWebView;
-
-    invoke-virtual {v0}, Lorg/apache/cordova/engine/SystemWebView;->onPause()V
-
-    .line 319
+    .line 315
     iget-object v0, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->webView:Lorg/apache/cordova/engine/SystemWebView;
 
     invoke-virtual {v0}, Lorg/apache/cordova/engine/SystemWebView;->pauseTimers()V
 
-    .line 324
+    .line 319
     :goto_0
     return-void
 
-    .line 321
+    .line 317
     :cond_0
-    iget-object v0, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->webView:Lorg/apache/cordova/engine/SystemWebView;
-
-    invoke-virtual {v0}, Lorg/apache/cordova/engine/SystemWebView;->onResume()V
-
-    .line 322
     iget-object v0, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->webView:Lorg/apache/cordova/engine/SystemWebView;
 
     invoke-virtual {v0}, Lorg/apache/cordova/engine/SystemWebView;->resumeTimers()V
@@ -1009,11 +941,11 @@
     .locals 1
 
     .prologue
-    .line 281
+    .line 278
     iget-object v0, p0, Lorg/apache/cordova/engine/SystemWebViewEngine;->webView:Lorg/apache/cordova/engine/SystemWebView;
 
     invoke-virtual {v0}, Lorg/apache/cordova/engine/SystemWebView;->stopLoading()V
 
-    .line 282
+    .line 279
     return-void
 .end method

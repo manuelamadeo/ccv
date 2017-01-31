@@ -26,7 +26,7 @@
     .param p1, "this$0"    # Lorg/apache/cordova/engine/SystemWebChromeClient;
 
     .prologue
-    .line 252
+    .line 253
     iput-object p1, p0, Lorg/apache/cordova/engine/SystemWebChromeClient$4;->this$0:Lorg/apache/cordova/engine/SystemWebChromeClient;
 
     iput-object p2, p0, Lorg/apache/cordova/engine/SystemWebChromeClient$4;->val$uploadMsg:Landroid/webkit/ValueCallback;
@@ -45,7 +45,7 @@
     .param p3, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 255
+    .line 256
     if-eqz p3, :cond_0
 
     const/4 v1, -0x1
@@ -55,7 +55,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 256
+    .line 257
     .local v0, "result":Landroid/net/Uri;
     :goto_0
     const-string v1, "SystemWebChromeClient"
@@ -78,17 +78,17 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lorg/apache/cordova/LOG;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 257
+    .line 258
     iget-object v1, p0, Lorg/apache/cordova/engine/SystemWebChromeClient$4;->val$uploadMsg:Landroid/webkit/ValueCallback;
 
     invoke-interface {v1, v0}, Landroid/webkit/ValueCallback;->onReceiveValue(Ljava/lang/Object;)V
 
-    .line 258
+    .line 259
     return-void
 
-    .line 255
+    .line 256
     .end local v0    # "result":Landroid/net/Uri;
     :cond_1
     invoke-virtual {p3}, Landroid/content/Intent;->getData()Landroid/net/Uri;

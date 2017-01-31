@@ -64,7 +64,7 @@
     <feature name="Vibration">
         <param name="android-package" value="org.apache.cordova.vibration.Vibration" />
     </feature>
-    <preference name="phonegap-version" value="cli-6.4.0" />
+    <preference name="phonegap-version" value="cli-6.3.0" />
     <preference name="permissions" value="none" />
     <preference name="android-minSdkVersion" value="14" />
     <preference name="android-maxSdkVersion" value="25" />
@@ -99,7 +99,6 @@
     <preference name="BackupWebStorage" value="cloud" />
     <preference name="TopActivityIndicator" value="gray" />
     <preference name="KeyboardDisplayRequiresUserAction" value="false" />
-    <preference name="HideKeyboardFormAccessoryBar" value="false" />
     <preference name="SuppressesIncrementalRendering" value="false" />
     <allow-navigation href="*" />
     <allow-navigation href="http://*/*" />

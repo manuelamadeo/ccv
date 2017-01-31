@@ -27,16 +27,16 @@
     .param p2, "cordova"    # Lorg/apache/cordova/CordovaInterface;
 
     .prologue
-    .line 287
+    .line 289
     invoke-direct {p0}, Lorg/apache/cordova/NativeToJsMessageQueue$BridgeMode;-><init>()V
 
-    .line 288
+    .line 290
     iput-object p1, p0, Lorg/apache/cordova/NativeToJsMessageQueue$LoadUrlBridgeMode;->engine:Lorg/apache/cordova/CordovaWebViewEngine;
 
-    .line 289
+    .line 291
     iput-object p2, p0, Lorg/apache/cordova/NativeToJsMessageQueue$LoadUrlBridgeMode;->cordova:Lorg/apache/cordova/CordovaInterface;
 
-    .line 290
+    .line 292
     return-void
 .end method
 
@@ -45,7 +45,7 @@
     .param p0, "x0"    # Lorg/apache/cordova/NativeToJsMessageQueue$LoadUrlBridgeMode;
 
     .prologue
-    .line 283
+    .line 285
     iget-object v0, p0, Lorg/apache/cordova/NativeToJsMessageQueue$LoadUrlBridgeMode;->engine:Lorg/apache/cordova/CordovaWebViewEngine;
 
     return-object v0
@@ -58,7 +58,7 @@
     .param p1, "queue"    # Lorg/apache/cordova/NativeToJsMessageQueue;
 
     .prologue
-    .line 294
+    .line 296
     iget-object v0, p0, Lorg/apache/cordova/NativeToJsMessageQueue$LoadUrlBridgeMode;->cordova:Lorg/apache/cordova/CordovaInterface;
 
     invoke-interface {v0}, Lorg/apache/cordova/CordovaInterface;->getActivity()Landroid/app/Activity;
@@ -71,6 +71,6 @@
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 302
+    .line 304
     return-void
 .end method

@@ -26,7 +26,7 @@
     .param p1, "this$0"    # Lorg/apache/cordova/engine/SystemWebChromeClient;
 
     .prologue
-    .line 267
+    .line 268
     iput-object p1, p0, Lorg/apache/cordova/engine/SystemWebChromeClient$5;->this$0:Lorg/apache/cordova/engine/SystemWebChromeClient;
 
     iput-object p2, p0, Lorg/apache/cordova/engine/SystemWebChromeClient$5;->val$filePathsCallback:Landroid/webkit/ValueCallback;
@@ -45,12 +45,12 @@
     .param p3, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 270
+    .line 271
     invoke-static {p2, p3}, Landroid/webkit/WebChromeClient$FileChooserParams;->parseResult(ILandroid/content/Intent;)[Landroid/net/Uri;
 
     move-result-object v0
 
-    .line 271
+    .line 272
     .local v0, "result":[Landroid/net/Uri;
     const-string v1, "SystemWebChromeClient"
 
@@ -72,13 +72,13 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lorg/apache/cordova/LOG;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 272
+    .line 273
     iget-object v1, p0, Lorg/apache/cordova/engine/SystemWebChromeClient$5;->val$filePathsCallback:Landroid/webkit/ValueCallback;
 
     invoke-interface {v1, v0}, Landroid/webkit/ValueCallback;->onReceiveValue(Ljava/lang/Object;)V
 
-    .line 273
+    .line 274
     return-void
 .end method

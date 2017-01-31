@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode;
 
     .prologue
-    .line 334
+    .line 336
     iput-object p1, p0, Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$2;->this$0:Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode;
 
     iput-object p2, p0, Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$2;->val$queue:Lorg/apache/cordova/NativeToJsMessageQueue;
@@ -45,7 +45,7 @@
     .locals 2
 
     .prologue
-    .line 336
+    .line 338
     iget-object v0, p0, Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$2;->val$queue:Lorg/apache/cordova/NativeToJsMessageQueue;
 
     invoke-virtual {v0}, Lorg/apache/cordova/NativeToJsMessageQueue;->isEmpty()Z
@@ -54,7 +54,7 @@
 
     if-nez v0, :cond_0
 
-    .line 337
+    .line 339
     iget-object v0, p0, Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$2;->this$0:Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode;
 
     const/4 v1, 0x0
@@ -62,7 +62,7 @@
     # setter for: Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode;->ignoreNextFlush:Z
     invoke-static {v0, v1}, Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode;->access$202(Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode;Z)Z
 
-    .line 338
+    .line 340
     iget-object v0, p0, Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$2;->this$0:Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode;
 
     # getter for: Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode;->delegate:Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$OnlineEventsBridgeModeDelegate;
@@ -79,7 +79,7 @@
 
     invoke-interface {v0, v1}, Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$OnlineEventsBridgeModeDelegate;->setNetworkAvailable(Z)V
 
-    .line 340
+    .line 342
     :cond_0
     return-void
 .end method

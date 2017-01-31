@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lorg/apache/cordova/CoreAndroid;
 
     .prologue
-    .line 86
+    .line 85
     iput-object p1, p0, Lorg/apache/cordova/CoreAndroid$1;->this$0:Lorg/apache/cordova/CoreAndroid;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 3
 
     .prologue
-    .line 88
+    .line 87
     iget-object v0, p0, Lorg/apache/cordova/CoreAndroid$1;->this$0:Lorg/apache/cordova/CoreAndroid;
 
     iget-object v0, v0, Lorg/apache/cordova/CoreAndroid;->webView:Lorg/apache/cordova/CordovaWebView;
@@ -56,6 +56,6 @@
 
     invoke-virtual {v0, v1, v2}, Lorg/apache/cordova/PluginManager;->postMessage(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 89
+    .line 88
     return-void
 .end method
