@@ -1,133 +1,95 @@
-/*
- * Combined style sheet for the index pages and the slide pages, with classes that are common to both styles
- */
-
-html {
-	font-family: Verdana, Arial, sans-serif;
-	font-size: 16px;
-}
 body {
-	margin: 8px;
-	text-align: center;
+	background-color: #ffffff;
+	color: #333333;
 }
-a {
-	outline: 0;
+
+a:link,
+a:visited {
+	color: #9a9a9a;
 }
-a:link, a:visited, a:active {
-	text-decoration: none
+
+a:active,
+a:hover {
+	color: #606060;
 }
-img {
-	border: none;
+	
+#folders_container,
+#bottom_container,
+#top_container,
+.top_navigation {
+	border-width: 1px;	
 }
-#albumtitle {
-	font-size: 1.5rem;
-	margin: 0px auto 5px;
+	
+#right_arrow,
+#left_arrow,
+#right_fast_arrow,
+#left_fast_arrow {
+	height: 40px;
+	width: 20px;
 }
-#albumdescription {
-	font-size: 1.0rem;
-	max-width: 690px;
-	margin: 0px auto 5px;
+
+#right_fast_arrow,
+#left_fast_arrow {
+	margin: 0 20px;
 }
-#foldertitle {
-	font-size: 1.25rem;
-	margin: 0px auto 5px;
+
+#bottom_container {
+	margin-top: 30px;
 }
-#foldercomment {
-	font-size: 1.0rem;
-	max-width: 690px;
-	margin: 0px auto 5px;
+	
+#main_image .loader,
+#main_image img {
+	border: solid 3px #ababab;
 }
-#imagetitle {
-	font-size: 1.25rem;
-	margin: 0px auto 5px;
+	
+#extras {
+	border: solid 1px #ababab;
+	margin: 10px auto;		
+	padding: 5px;
 }
-#nav img {
-	margin: 15px;
+
+#extras ul li {
+	border-left-color: #333333;
 }
-#thumbnails {
-	max-width: 690px;
-	margin: 0px auto;
-	font-size: 0px; /* Hack to collapse whitespace between boxes */
+
+#bottom_container {
+	border-top-color: #ababab;	
 }
-#thumbnails > div {
-	display: inline-block;
-	margin: 7px;
-	vertical-align: top;
-	width: 124px;
+
+#folders_container,
+#top_container,
+.top_navigation {
+	border-bottom-color: #ababab;
 }
-#thumbnails > div img {
-	padding: 0px;
+
+.description {
+	color: #666666;
 }
-#thumbnails > div > div {
-	font-size: 0.8rem;
-	margin: 5px 0px;
+
+.caption {
+	color: #666666;
 }
-#thumbnav {
-	margin: 10px 0px 0px;
+
+.thumbnails li {
+	margin: 0 10px 10px 0;	
+	border: double 3px #ababab;
+	background-color: #ffffff;
 }
-#thumbnav img {
-	padding: 0px;
-	margin-bottom: 12px;
+
+.thumbnails li.active {
+  border: solid 3px #ababab;
 }
-#thumbnav > div {
-	position: relative;
-	display: inline-block;
-	line-height: 0px;
+
+.folders li a {
+	background-color: #ffffff;
+	border-style: double;
+	border-width: 3px;
+	border-color: #ababab;
+	margin-right: 10px;				
+	height: 90px; 
+	width: 90px;
 }
-#thumbcurrent::after {
-	content: ' ';
-	position: absolute;
-	border: 6px solid transparent;
-	top: 100%;
-	left: 50%;
-	margin-left: -6px;
-	margin-top: -16px;
-	-moz-transform: scale(.9999); /* To remove jagged edges in FF */
-}
-#slideimage {
-	position: relative;
-	display: inline-block;
-	max-width: 100%;
-	height: auto;
-	line-height: 0px;
-	margin-top: 10px;
-}
-#slideimage img {
-	padding: 0px;
-	max-width: 100%;
-	height: auto;
-	box-sizing: border-box;
-}
-#slide-prev {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 40%;
-	height: 100%;
-}
-#slide-next {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 60%;
-	height: 100%;
-}
-#slidecomment {
-	font-size: 0.9rem;
-	margin: 8px auto;
-}
-video {
-	padding: 0px;
-	outline: 0;
-	max-width: 100%;
-	height: auto;
-	box-sizing: border-box;
-	margin-top: 10px;
-}
-#creditlink {
-	font-size: 0.7rem;
-	margin: 8px 0px;
-}
-.noborder {
-	border: none !important;
+
+#slideshow {
+	font-size:0.8em;	
 }
