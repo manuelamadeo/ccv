@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:jalbum="http://jalbum.net/jalbumrss">
+    <channel>
+        <title>Mapas Offlinline</title>
+   	<link>.</link>
+        <generator>jAlbum 13</generator>
+   		<description>Podeis descargar mas abajo los mapas que ya cree yo tanto de carretera como montaña</description>
+        <jalbum:absolutePath></jalbum:absolutePath>
+        <item>
+            <title>SCR_20170201_000342_s01</title>
+            <link>slides/SCR_20170201_000342_s01.mp4</link>
+            <pubDate>Wed, 01 Feb 2017 13:11:43 +0100</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/SCR_20170201_000342_s01.jpg" width="124" height="124"/>
+            <media:content  url="slides/SCR_20170201_000342_s01.mp4" width="338" height="600"/>
+            <jalbum:original url="slides/SCR_20170201_000342_s01.mp4" width="477" height="848" fileSize="29040088"/>
+            <guid isPermaLink="false">slides/SCR_20170201_000342_s01.jpg</guid>
+        </item>
+    </channel>
+</rss>

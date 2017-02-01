@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:jalbum="http://jalbum.net/jalbumrss">
+    <channel>
+        <title>Crear Mapas Offiline</title>
+   	<link>.</link>
+        <generator>jAlbum 13</generator>
+   		<description>Podeis crearos vuestro propio mapa con una mayor resolución de Zoom</description>
+        <jalbum:absolutePath></jalbum:absolutePath>
+        <item>
+            <title>SCR_20170201_002758_s02</title>
+            <link>slides/SCR_20170201_002758_s02.html</link>
+            <pubDate>Wed, 01 Feb 2017 13:15:29 +0100</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/SCR_20170201_002758_s02.jpg" width="124" height="124"/>
+            <media:content  url="slides/SCR_20170201_002758_s02.mp4" width="338" height="600"/>
+            <jalbum:original url="slides/SCR_20170201_002758_s02.mp4" width="477" height="848" fileSize="34634346"/>
+            <guid isPermaLink="false">slides/SCR_20170201_002758_s02.jpg</guid>
+        </item>
+    </channel>
+</rss>
