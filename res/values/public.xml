@@ -51,6 +51,4 @@
     <public type="id" name="action_tag" id="0x7f0a0005" />
     <public type="id" name="action_exit" id="0x7f0a0006" />
     <public type="id" name="action_share" id="0x7f0a0007" />
-    <public type="xml" name="config" id="0x7f0b0000" />
-    <public type="xml" name="provider_paths" id="0x7f0b0001" />
 </resources>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="CacheMode">HighCache</string>
+    <string name="CacheMode">DefaultCache</string>
     <string name="action_exit">Exit</string>
     <string name="action_tag">About</string>
     <string name="app_name">CC.Valverde Del Júcar</string>
@@ -12,6 +12,6 @@
     <string name="sharesubject">CC.Valverde Del Júcar</string>
     <string name="sharetext">Hi there, Give this app a try.</string>
     <string name="start">false</string>
-    <string name="tag">App Creada por manuelamadeo</string>
+    <string name="tag">App Creada por Manuelamadeo</string>
     <string name="top">false</string>
 </resources>
