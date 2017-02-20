@@ -3,21 +3,32 @@
      xmlns:media="http://search.yahoo.com/mrss/"
      xmlns:jalbum="http://jalbum.net/jalbumrss">
     <channel>
-        <title>videos</title>
+        <title>Videos Etapa 3</title>
    	<link>.</link>
         <generator>jAlbum 13</generator>
    		<description></description>
         <jalbum:absolutePath></jalbum:absolutePath>
         <item>
-            <title>2015-05-30 10.42.00</title>
-            <link>slides/2015-05-30 10.42.00.mp4</link>
-            <pubDate>Thu, 17 Dec 2015 20:31:53 +0100</pubDate>
+            <title>VID-20170219-WA0036</title>
+            <link>slides/VID-20170219-WA0036.mp4</link>
+            <pubDate>Mon, 20 Feb 2017 14:35:41 +0100</pubDate>
             <description></description>
             <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/2015-05-30 10.42.00.jpg" width="124" height="124"/>
-            <media:content  url="slides/2015-05-30 10.42.00.mp4" width="640" height="480"/>
-            <jalbum:original url="slides/2015-05-30 10.42.00.mp4" width="640" height="480" fileSize="9041124"/>
-            <guid isPermaLink="false">slides/2015-05-30 10.42.00.jpg</guid>
+            <media:thumbnail url="thumbs/VID-20170219-WA0036.jpg" width="124" height="124"/>
+            <media:content  url="slides/VID-20170219-WA0036.mp4" width="330" height="600"/>
+            <jalbum:original url="slides/VID-20170219-WA0036.mp4" width="640" height="352" fileSize="11690120"/>
+            <guid isPermaLink="false">slides/VID-20170219-WA0036.jpg</guid>
+        </item>
+        <item>
+            <title>VID-20170219-WA0021</title>
+            <link>slides/VID-20170219-WA0021.mp4</link>
+            <pubDate>Mon, 20 Feb 2017 14:35:41 +0100</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/VID-20170219-WA0021.jpg" width="124" height="124"/>
+            <media:content  url="slides/VID-20170219-WA0021.mp4" width="848" height="480"/>
+            <jalbum:original url="slides/VID-20170219-WA0021.mp4" width="848" height="480" fileSize="7849201"/>
+            <guid isPermaLink="false">slides/VID-20170219-WA0021.jpg</guid>
         </item>
     </channel>
 </rss>
