@@ -336,20 +336,20 @@ td
 	text-align:center;
 	vertical-align:middle;
 	border-top:none;
-	border-right:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
 	border-bottom:.5pt solid windowtext;
 	border-left:.5pt solid windowtext;
-	background:red;
+	background:#FF3399;
 	mso-pattern:black none;}
 .xl100
 	{mso-style-parent:style0;
 	text-align:center;
 	vertical-align:middle;
 	border-top:none;
-	border-right:.5pt solid windowtext;
+	border-right:1.0pt solid windowtext;
 	border-bottom:.5pt solid windowtext;
 	border-left:.5pt solid windowtext;
-	background:#FF3399;
+	background:red;
 	mso-pattern:black none;}
 .xl101
 	{mso-style-parent:style0;
