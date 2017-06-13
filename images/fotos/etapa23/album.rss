@@ -3,20 +3,332 @@
      xmlns:media="http://search.yahoo.com/mrss/"
      xmlns:jalbum="http://jalbum.net/jalbumrss">
     <channel>
-        <title>Responsive222</title>
+        <title>Fotos Etapa 23</title>
    	<link>.</link>
         <generator>jAlbum 13</generator>
    		<description></description>
         <jalbum:absolutePath></jalbum:absolutePath>
         <item>
-            <title>IMG-20151217-WA0007</title>
-            <link>slides/IMG-20151217-WA0007.jpg</link>
-            <pubDate>Thu, 17 Dec 2015 20:35:42 +0100</pubDate>
+            <title>IMG-20170610-WA0055</title>
+            <link>slides/IMG-20170610-WA0055.jpg</link>
+            <pubDate>Tue, 13 Jun 2017 14:30:35 +0200</pubDate>
             <description></description>
             <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20151217-WA0007.jpg" width="124" height="124"/>
-            <media:content type="image/jpeg" url="slides/IMG-20151217-WA0007.jpg" width="565" height="510"/>
-            <guid isPermaLink="false">slides/IMG-20151217-WA0007.jpg</guid>
+            <media:thumbnail url="thumbs/IMG-20170610-WA0055.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20170610-WA0055.jpg" width="1069" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20170610-WA0055.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20170610-WA0015</title>
+            <link>slides/IMG-20170610-WA0015.jpg</link>
+            <pubDate>Tue, 13 Jun 2017 14:30:35 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20170610-WA0015.jpg" width="124" height="124"/>
+            <media:content  url="slides/IMG-20170610-WA0015.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20170610-WA0015.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20170610-WA0016</title>
+            <link>slides/IMG-20170610-WA0016.jpg</link>
+            <pubDate>Tue, 13 Jun 2017 14:30:35 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20170610-WA0016.jpg" width="124" height="124"/>
+            <media:content  url="slides/IMG-20170610-WA0016.jpg" width="337" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20170610-WA0016.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20170610-WA0017</title>
+            <link>slides/IMG-20170610-WA0017.jpg</link>
+            <pubDate>Tue, 13 Jun 2017 14:30:35 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20170610-WA0017.jpg" width="124" height="124"/>
+            <media:content  url="slides/IMG-20170610-WA0017.jpg" width="337" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20170610-WA0017.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20170610-WA0018</title>
+            <link>slides/IMG-20170610-WA0018.jpg</link>
+            <pubDate>Tue, 13 Jun 2017 14:30:35 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20170610-WA0018.jpg" width="124" height="124"/>
+            <media:content  url="slides/IMG-20170610-WA0018.jpg" width="450" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20170610-WA0018.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20170610-WA0020</title>
+            <link>slides/IMG-20170610-WA0020.jpg</link>
+            <pubDate>Tue, 13 Jun 2017 14:30:35 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20170610-WA0020.jpg" width="124" height="124"/>
+            <media:content  url="slides/IMG-20170610-WA0020.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20170610-WA0020.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20170610-WA0021</title>
+            <link>slides/IMG-20170610-WA0021.jpg</link>
+            <pubDate>Tue, 13 Jun 2017 14:30:35 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20170610-WA0021.jpg" width="124" height="124"/>
+            <media:content  url="slides/IMG-20170610-WA0021.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20170610-WA0021.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20170610-WA0022</title>
+            <link>slides/IMG-20170610-WA0022.jpg</link>
+            <pubDate>Tue, 13 Jun 2017 14:30:35 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20170610-WA0022.jpg" width="124" height="124"/>
+            <media:content  url="slides/IMG-20170610-WA0022.jpg" width="450" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20170610-WA0022.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20170610-WA0023</title>
+            <link>slides/IMG-20170610-WA0023.jpg</link>
+            <pubDate>Tue, 13 Jun 2017 14:30:35 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20170610-WA0023.jpg" width="124" height="124"/>
+            <media:content  url="slides/IMG-20170610-WA0023.jpg" width="450" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20170610-WA0023.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20170610-WA0024</title>
+            <link>slides/IMG-20170610-WA0024.jpg</link>
+            <pubDate>Tue, 13 Jun 2017 14:30:35 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20170610-WA0024.jpg" width="124" height="124"/>
+            <media:content  url="slides/IMG-20170610-WA0024.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20170610-WA0024.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20170610-WA0025</title>
+            <link>slides/IMG-20170610-WA0025.jpg</link>
+            <pubDate>Tue, 13 Jun 2017 14:30:35 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20170610-WA0025.jpg" width="124" height="124"/>
+            <media:content  url="slides/IMG-20170610-WA0025.jpg" width="450" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20170610-WA0025.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20170610-WA0026</title>
+            <link>slides/IMG-20170610-WA0026.jpg</link>
+            <pubDate>Tue, 13 Jun 2017 14:30:35 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20170610-WA0026.jpg" width="124" height="124"/>
+            <media:content  url="slides/IMG-20170610-WA0026.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20170610-WA0026.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20170610-WA0027</title>
+            <link>slides/IMG-20170610-WA0027.jpg</link>
+            <pubDate>Tue, 13 Jun 2017 14:30:35 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20170610-WA0027.jpg" width="124" height="124"/>
+            <media:content  url="slides/IMG-20170610-WA0027.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20170610-WA0027.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20170610-WA0028</title>
+            <link>slides/IMG-20170610-WA0028.jpg</link>
+            <pubDate>Tue, 13 Jun 2017 14:30:35 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20170610-WA0028.jpg" width="124" height="124"/>
+            <media:content  url="slides/IMG-20170610-WA0028.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20170610-WA0028.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20170610-WA0031</title>
+            <link>slides/IMG-20170610-WA0031.jpg</link>
+            <pubDate>Tue, 13 Jun 2017 14:30:35 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20170610-WA0031.jpg" width="124" height="124"/>
+            <media:content  url="slides/IMG-20170610-WA0031.jpg" width="1067" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20170610-WA0031.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20170610-WA0033</title>
+            <link>slides/IMG-20170610-WA0033.jpg</link>
+            <pubDate>Tue, 13 Jun 2017 14:30:35 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20170610-WA0033.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20170610-WA0033.jpg" width="338" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20170610-WA0033.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20170610-WA0041</title>
+            <link>slides/IMG-20170610-WA0041.jpg</link>
+            <pubDate>Tue, 13 Jun 2017 14:30:35 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20170610-WA0041.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20170610-WA0041.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20170610-WA0041.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20170610-WA0042</title>
+            <link>slides/IMG-20170610-WA0042.jpg</link>
+            <pubDate>Tue, 13 Jun 2017 14:30:35 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20170610-WA0042.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20170610-WA0042.jpg" width="1067" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20170610-WA0042.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20170610-WA0043</title>
+            <link>slides/IMG-20170610-WA0043.jpg</link>
+            <pubDate>Tue, 13 Jun 2017 14:30:35 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20170610-WA0043.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20170610-WA0043.jpg" width="1067" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20170610-WA0043.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20170610-WA0044</title>
+            <link>slides/IMG-20170610-WA0044.jpg</link>
+            <pubDate>Tue, 13 Jun 2017 14:30:35 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20170610-WA0044.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20170610-WA0044.jpg" width="338" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20170610-WA0044.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20170610-WA0045</title>
+            <link>slides/IMG-20170610-WA0045.jpg</link>
+            <pubDate>Tue, 13 Jun 2017 14:30:35 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20170610-WA0045.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20170610-WA0045.jpg" width="338" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20170610-WA0045.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20170610-WA0046</title>
+            <link>slides/IMG-20170610-WA0046.jpg</link>
+            <pubDate>Tue, 13 Jun 2017 14:30:35 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20170610-WA0046.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20170610-WA0046.jpg" width="338" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20170610-WA0046.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20170610-WA0047</title>
+            <link>slides/IMG-20170610-WA0047.jpg</link>
+            <pubDate>Tue, 13 Jun 2017 14:30:35 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20170610-WA0047.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20170610-WA0047.jpg" width="338" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20170610-WA0047.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20170610-WA0048</title>
+            <link>slides/IMG-20170610-WA0048.jpg</link>
+            <pubDate>Tue, 13 Jun 2017 14:30:35 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20170610-WA0048.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20170610-WA0048.jpg" width="1067" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20170610-WA0048.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20170610-WA0049</title>
+            <link>slides/IMG-20170610-WA0049.jpg</link>
+            <pubDate>Tue, 13 Jun 2017 14:30:35 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20170610-WA0049.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20170610-WA0049.jpg" width="1067" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20170610-WA0049.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20170610-WA0050</title>
+            <link>slides/IMG-20170610-WA0050.jpg</link>
+            <pubDate>Tue, 13 Jun 2017 14:30:35 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20170610-WA0050.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20170610-WA0050.jpg" width="1067" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20170610-WA0050.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20170610-WA0051</title>
+            <link>slides/IMG-20170610-WA0051.jpg</link>
+            <pubDate>Tue, 13 Jun 2017 14:30:35 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20170610-WA0051.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20170610-WA0051.jpg" width="1067" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20170610-WA0051.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20170610-WA0052</title>
+            <link>slides/IMG-20170610-WA0052.jpg</link>
+            <pubDate>Tue, 13 Jun 2017 14:30:35 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20170610-WA0052.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20170610-WA0052.jpg" width="338" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20170610-WA0052.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20170610-WA0053</title>
+            <link>slides/IMG-20170610-WA0053.jpg</link>
+            <pubDate>Tue, 13 Jun 2017 14:30:35 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20170610-WA0053.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20170610-WA0053.jpg" width="1067" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20170610-WA0053.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20170610-WA0054</title>
+            <link>slides/IMG-20170610-WA0054.jpg</link>
+            <pubDate>Tue, 13 Jun 2017 14:30:35 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20170610-WA0054.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20170610-WA0054.jpg" width="1067" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20170610-WA0054.jpg</guid>
+        </item>
+        <item>
+            <title>20170611_102132</title>
+            <link>slides/20170611_102132.jpg</link>
+            <pubDate>Tue, 13 Jun 2017 14:30:35 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/20170611_102132.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/20170611_102132.jpg" width="800" height="600"/>
+            <jalbum:exif originalDate="Sun, 11 Jun 2017 10:21:32 +0200" cameraMake="samsung" cameraModel="SM-A720F"/>
+            <guid isPermaLink="false">slides/20170611_102132.jpg</guid>
+        </item>
+        <item>
+            <title>20170611_102126</title>
+            <link>slides/20170611_102126.jpg</link>
+            <pubDate>Tue, 13 Jun 2017 14:30:35 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/20170611_102126.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/20170611_102126.jpg" width="800" height="600"/>
+            <jalbum:exif originalDate="Sun, 11 Jun 2017 10:21:26 +0200" cameraMake="samsung" cameraModel="SM-A720F"/>
+            <guid isPermaLink="false">slides/20170611_102126.jpg</guid>
         </item>
     </channel>
 </rss>
