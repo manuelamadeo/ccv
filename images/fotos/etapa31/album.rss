@@ -3,20 +3,60 @@
      xmlns:media="http://search.yahoo.com/mrss/"
      xmlns:jalbum="http://jalbum.net/jalbumrss">
     <channel>
-        <title>Responsive222</title>
+        <title>Fotos Etapa 31</title>
    	<link>.</link>
         <generator>jAlbum 13</generator>
    		<description></description>
         <jalbum:absolutePath></jalbum:absolutePath>
         <item>
-            <title>IMG-20151217-WA0007</title>
-            <link>slides/IMG-20151217-WA0007.jpg</link>
-            <pubDate>Thu, 17 Dec 2015 20:35:42 +0100</pubDate>
+            <title>IMG-20170730-WA0008</title>
+            <link>slides/IMG-20170730-WA0008.html</link>
+            <pubDate>Thu, 03 Aug 2017 15:03:29 +0200</pubDate>
             <description></description>
             <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20151217-WA0007.jpg" width="124" height="124"/>
-            <media:content type="image/jpeg" url="slides/IMG-20151217-WA0007.jpg" width="565" height="510"/>
-            <guid isPermaLink="false">slides/IMG-20151217-WA0007.jpg</guid>
+            <media:thumbnail url="thumbs/IMG-20170730-WA0008.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20170730-WA0008.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20170730-WA0008.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20170730-WA0009</title>
+            <link>slides/IMG-20170730-WA0009.html</link>
+            <pubDate>Thu, 03 Aug 2017 15:03:29 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20170730-WA0009.jpg" width="124" height="124"/>
+            <media:content  url="slides/IMG-20170730-WA0009.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20170730-WA0009.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20170730-WA0005</title>
+            <link>slides/IMG-20170730-WA0005.html</link>
+            <pubDate>Thu, 03 Aug 2017 15:03:29 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20170730-WA0005.jpg" width="124" height="124"/>
+            <media:content  url="slides/IMG-20170730-WA0005.jpg" width="1068" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20170730-WA0005.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20170730-WA0006</title>
+            <link>slides/IMG-20170730-WA0006.html</link>
+            <pubDate>Thu, 03 Aug 2017 15:03:29 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20170730-WA0006.jpg" width="124" height="124"/>
+            <media:content  url="slides/IMG-20170730-WA0006.jpg" width="337" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20170730-WA0006.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20170730-WA0007</title>
+            <link>slides/IMG-20170730-WA0007.html</link>
+            <pubDate>Thu, 03 Aug 2017 15:03:29 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20170730-WA0007.jpg" width="124" height="124"/>
+            <media:content  url="slides/IMG-20170730-WA0007.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20170730-WA0007.jpg</guid>
         </item>
     </channel>
 </rss>
