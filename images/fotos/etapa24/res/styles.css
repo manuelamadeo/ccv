@@ -21,6 +21,9 @@ a:hover {
 #thumbcurrent::after {
 	border-bottom-color: #111111;
 }
-#slideimage {
+#slideimage img {
+	border: 0px solid #111111;
+}
+video {
 	border: 0px solid #111111;
 }

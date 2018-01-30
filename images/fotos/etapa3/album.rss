@@ -3,170 +3,20 @@
      xmlns:media="http://search.yahoo.com/mrss/"
      xmlns:jalbum="http://jalbum.net/jalbumrss">
     <channel>
-        <title>Fotos Etapa 3</title>
+        <title>Responsive222</title>
    	<link>.</link>
         <generator>jAlbum 13</generator>
    		<description></description>
         <jalbum:absolutePath></jalbum:absolutePath>
         <item>
-            <title>IMG-20170219-WA0035</title>
-            <link>slides/IMG-20170219-WA0035.jpg</link>
-            <pubDate>Mon, 20 Feb 2017 14:32:35 +0100</pubDate>
+            <title>IMG-20151217-WA0007</title>
+            <link>slides/IMG-20151217-WA0007.jpg</link>
+            <pubDate>Thu, 17 Dec 2015 20:35:42 +0100</pubDate>
             <description></description>
             <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20170219-WA0035.jpg" width="124" height="124"/>
-            <media:content type="image/jpeg" url="slides/IMG-20170219-WA0035.jpg" width="1068" height="600"/>
-            <guid isPermaLink="false">slides/IMG-20170219-WA0035.jpg</guid>
-        </item>
-        <item>
-            <title>IMG-20170219-WA0008</title>
-            <link>slides/IMG-20170219-WA0008.jpg</link>
-            <pubDate>Mon, 20 Feb 2017 14:32:35 +0100</pubDate>
-            <description></description>
-            <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20170219-WA0008.jpg" width="124" height="124"/>
-            <media:content  url="slides/IMG-20170219-WA0008.jpg" width="800" height="600"/>
-            <guid isPermaLink="false">slides/IMG-20170219-WA0008.jpg</guid>
-        </item>
-        <item>
-            <title>IMG-20170219-WA0010</title>
-            <link>slides/IMG-20170219-WA0010.jpg</link>
-            <pubDate>Mon, 20 Feb 2017 14:32:35 +0100</pubDate>
-            <description></description>
-            <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20170219-WA0010.jpg" width="124" height="124"/>
-            <media:content  url="slides/IMG-20170219-WA0010.jpg" width="1067" height="600"/>
-            <guid isPermaLink="false">slides/IMG-20170219-WA0010.jpg</guid>
-        </item>
-        <item>
-            <title>IMG-20170219-WA0011</title>
-            <link>slides/IMG-20170219-WA0011.jpg</link>
-            <pubDate>Mon, 20 Feb 2017 14:32:35 +0100</pubDate>
-            <description></description>
-            <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20170219-WA0011.jpg" width="124" height="124"/>
-            <media:content  url="slides/IMG-20170219-WA0011.jpg" width="1067" height="600"/>
-            <guid isPermaLink="false">slides/IMG-20170219-WA0011.jpg</guid>
-        </item>
-        <item>
-            <title>IMG-20170219-WA0012</title>
-            <link>slides/IMG-20170219-WA0012.jpg</link>
-            <pubDate>Mon, 20 Feb 2017 14:32:35 +0100</pubDate>
-            <description></description>
-            <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20170219-WA0012.jpg" width="124" height="124"/>
-            <media:content  url="slides/IMG-20170219-WA0012.jpg" width="800" height="600"/>
-            <guid isPermaLink="false">slides/IMG-20170219-WA0012.jpg</guid>
-        </item>
-        <item>
-            <title>IMG-20170219-WA0013</title>
-            <link>slides/IMG-20170219-WA0013.jpg</link>
-            <pubDate>Mon, 20 Feb 2017 14:32:35 +0100</pubDate>
-            <description></description>
-            <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20170219-WA0013.jpg" width="124" height="124"/>
-            <media:content  url="slides/IMG-20170219-WA0013.jpg" width="800" height="600"/>
-            <guid isPermaLink="false">slides/IMG-20170219-WA0013.jpg</guid>
-        </item>
-        <item>
-            <title>IMG-20170219-WA0014</title>
-            <link>slides/IMG-20170219-WA0014.jpg</link>
-            <pubDate>Mon, 20 Feb 2017 14:32:35 +0100</pubDate>
-            <description></description>
-            <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20170219-WA0014.jpg" width="124" height="124"/>
-            <media:content  url="slides/IMG-20170219-WA0014.jpg" width="800" height="600"/>
-            <guid isPermaLink="false">slides/IMG-20170219-WA0014.jpg</guid>
-        </item>
-        <item>
-            <title>IMG-20170219-WA0015</title>
-            <link>slides/IMG-20170219-WA0015.jpg</link>
-            <pubDate>Mon, 20 Feb 2017 14:32:35 +0100</pubDate>
-            <description></description>
-            <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20170219-WA0015.jpg" width="124" height="124"/>
-            <media:content  url="slides/IMG-20170219-WA0015.jpg" width="800" height="600"/>
-            <guid isPermaLink="false">slides/IMG-20170219-WA0015.jpg</guid>
-        </item>
-        <item>
-            <title>IMG-20170219-WA0016</title>
-            <link>slides/IMG-20170219-WA0016.jpg</link>
-            <pubDate>Mon, 20 Feb 2017 14:32:35 +0100</pubDate>
-            <description></description>
-            <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20170219-WA0016.jpg" width="124" height="124"/>
-            <media:content  url="slides/IMG-20170219-WA0016.jpg" width="800" height="600"/>
-            <guid isPermaLink="false">slides/IMG-20170219-WA0016.jpg</guid>
-        </item>
-        <item>
-            <title>IMG-20170219-WA0017</title>
-            <link>slides/IMG-20170219-WA0017.jpg</link>
-            <pubDate>Mon, 20 Feb 2017 14:32:35 +0100</pubDate>
-            <description></description>
-            <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20170219-WA0017.jpg" width="124" height="124"/>
-            <media:content  url="slides/IMG-20170219-WA0017.jpg" width="800" height="600"/>
-            <guid isPermaLink="false">slides/IMG-20170219-WA0017.jpg</guid>
-        </item>
-        <item>
-            <title>IMG-20170219-WA0018</title>
-            <link>slides/IMG-20170219-WA0018.jpg</link>
-            <pubDate>Mon, 20 Feb 2017 14:32:35 +0100</pubDate>
-            <description></description>
-            <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20170219-WA0018.jpg" width="124" height="124"/>
-            <media:content type="image/jpeg" url="slides/IMG-20170219-WA0018.jpg" width="800" height="600"/>
-            <guid isPermaLink="false">slides/IMG-20170219-WA0018.jpg</guid>
-        </item>
-        <item>
-            <title>IMG-20170219-WA0019</title>
-            <link>slides/IMG-20170219-WA0019.jpg</link>
-            <pubDate>Mon, 20 Feb 2017 14:32:35 +0100</pubDate>
-            <description></description>
-            <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20170219-WA0019.jpg" width="124" height="124"/>
-            <media:content type="image/jpeg" url="slides/IMG-20170219-WA0019.jpg" width="800" height="600"/>
-            <guid isPermaLink="false">slides/IMG-20170219-WA0019.jpg</guid>
-        </item>
-        <item>
-            <title>IMG-20170219-WA0030</title>
-            <link>slides/IMG-20170219-WA0030.jpg</link>
-            <pubDate>Mon, 20 Feb 2017 14:32:35 +0100</pubDate>
-            <description></description>
-            <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20170219-WA0030.jpg" width="124" height="124"/>
-            <media:content type="image/jpeg" url="slides/IMG-20170219-WA0030.jpg" width="1068" height="600"/>
-            <guid isPermaLink="false">slides/IMG-20170219-WA0030.jpg</guid>
-        </item>
-        <item>
-            <title>IMG-20170219-WA0032</title>
-            <link>slides/IMG-20170219-WA0032.jpg</link>
-            <pubDate>Mon, 20 Feb 2017 14:32:35 +0100</pubDate>
-            <description></description>
-            <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20170219-WA0032.jpg" width="124" height="124"/>
-            <media:content type="image/jpeg" url="slides/IMG-20170219-WA0032.jpg" width="1069" height="600"/>
-            <guid isPermaLink="false">slides/IMG-20170219-WA0032.jpg</guid>
-        </item>
-        <item>
-            <title>IMG-20170219-WA0033</title>
-            <link>slides/IMG-20170219-WA0033.jpg</link>
-            <pubDate>Mon, 20 Feb 2017 14:32:35 +0100</pubDate>
-            <description></description>
-            <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20170219-WA0033.jpg" width="124" height="124"/>
-            <media:content type="image/jpeg" url="slides/IMG-20170219-WA0033.jpg" width="1068" height="600"/>
-            <guid isPermaLink="false">slides/IMG-20170219-WA0033.jpg</guid>
-        </item>
-        <item>
-            <title>IMG-20170219-WA0034</title>
-            <link>slides/IMG-20170219-WA0034.jpg</link>
-            <pubDate>Mon, 20 Feb 2017 14:32:35 +0100</pubDate>
-            <description></description>
-            <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20170219-WA0034.jpg" width="124" height="124"/>
-            <media:content type="image/jpeg" url="slides/IMG-20170219-WA0034.jpg" width="1069" height="600"/>
-            <guid isPermaLink="false">slides/IMG-20170219-WA0034.jpg</guid>
+            <media:thumbnail url="thumbs/IMG-20151217-WA0007.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20151217-WA0007.jpg" width="565" height="510"/>
+            <guid isPermaLink="false">slides/IMG-20151217-WA0007.jpg</guid>
         </item>
     </channel>
 </rss>

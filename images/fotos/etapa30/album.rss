@@ -3,140 +3,20 @@
      xmlns:media="http://search.yahoo.com/mrss/"
      xmlns:jalbum="http://jalbum.net/jalbumrss">
     <channel>
-        <title>Fotos Etapa 30</title>
+        <title>Responsive222</title>
    	<link>.</link>
         <generator>jAlbum 13</generator>
    		<description></description>
         <jalbum:absolutePath></jalbum:absolutePath>
         <item>
-            <title>IMG-20170724-WA0083</title>
-            <link>slides/IMG-20170724-WA0083.html</link>
-            <pubDate>Fri, 28 Jul 2017 14:46:44 +0200</pubDate>
+            <title>IMG-20151217-WA0007</title>
+            <link>slides/IMG-20151217-WA0007.jpg</link>
+            <pubDate>Thu, 17 Dec 2015 20:35:42 +0100</pubDate>
             <description></description>
             <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20170724-WA0083.jpg" width="124" height="124"/>
-            <media:content  url="slides/IMG-20170724-WA0083.jpg" width="1067" height="600"/>
-            <guid isPermaLink="false">slides/IMG-20170724-WA0083.jpg</guid>
-        </item>
-        <item>
-            <title>IMG-20170724-WA0084</title>
-            <link>slides/IMG-20170724-WA0084.html</link>
-            <pubDate>Fri, 28 Jul 2017 14:46:44 +0200</pubDate>
-            <description></description>
-            <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20170724-WA0084.jpg" width="124" height="124"/>
-            <media:content type="image/jpeg" url="slides/IMG-20170724-WA0084.jpg" width="338" height="600"/>
-            <guid isPermaLink="false">slides/IMG-20170724-WA0084.jpg</guid>
-        </item>
-        <item>
-            <title>IMG-20170722-WA0007</title>
-            <link>slides/IMG-20170722-WA0007.html</link>
-            <pubDate>Fri, 28 Jul 2017 14:46:44 +0200</pubDate>
-            <description></description>
-            <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20170722-WA0007.jpg" width="124" height="124"/>
-            <media:content  url="slides/IMG-20170722-WA0007.jpg" width="1067" height="600"/>
-            <guid isPermaLink="false">slides/IMG-20170722-WA0007.jpg</guid>
-        </item>
-        <item>
-            <title>IMG-20170722-WA0008</title>
-            <link>slides/IMG-20170722-WA0008.html</link>
-            <pubDate>Fri, 28 Jul 2017 14:46:44 +0200</pubDate>
-            <description></description>
-            <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20170722-WA0008.jpg" width="124" height="124"/>
-            <media:content  url="slides/IMG-20170722-WA0008.jpg" width="338" height="600"/>
-            <guid isPermaLink="false">slides/IMG-20170722-WA0008.jpg</guid>
-        </item>
-        <item>
-            <title>IMG-20170722-WA0009</title>
-            <link>slides/IMG-20170722-WA0009.html</link>
-            <pubDate>Fri, 28 Jul 2017 14:46:44 +0200</pubDate>
-            <description></description>
-            <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20170722-WA0009.jpg" width="124" height="124"/>
-            <media:content  url="slides/IMG-20170722-WA0009.jpg" width="800" height="600"/>
-            <guid isPermaLink="false">slides/IMG-20170722-WA0009.jpg</guid>
-        </item>
-        <item>
-            <title>IMG-20170722-WA0012</title>
-            <link>slides/IMG-20170722-WA0012.html</link>
-            <pubDate>Fri, 28 Jul 2017 14:46:44 +0200</pubDate>
-            <description></description>
-            <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20170722-WA0012.jpg" width="124" height="124"/>
-            <media:content  url="slides/IMG-20170722-WA0012.jpg" width="960" height="539"/>
-            <guid isPermaLink="false">slides/IMG-20170722-WA0012.jpg</guid>
-        </item>
-        <item>
-            <title>IMG-20170724-WA0006</title>
-            <link>slides/IMG-20170724-WA0006.html</link>
-            <pubDate>Fri, 28 Jul 2017 14:46:44 +0200</pubDate>
-            <description></description>
-            <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20170724-WA0006.jpg" width="124" height="124"/>
-            <media:content type="image/jpeg" url="slides/IMG-20170724-WA0006.jpg" width="800" height="600"/>
-            <guid isPermaLink="false">slides/IMG-20170724-WA0006.jpg</guid>
-        </item>
-        <item>
-            <title>IMG-20170724-WA0007</title>
-            <link>slides/IMG-20170724-WA0007.html</link>
-            <pubDate>Fri, 28 Jul 2017 14:46:44 +0200</pubDate>
-            <description></description>
-            <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20170724-WA0007.jpg" width="124" height="124"/>
-            <media:content type="image/jpeg" url="slides/IMG-20170724-WA0007.jpg" width="800" height="600"/>
-            <guid isPermaLink="false">slides/IMG-20170724-WA0007.jpg</guid>
-        </item>
-        <item>
-            <title>IMG-20170724-WA0027</title>
-            <link>slides/IMG-20170724-WA0027.html</link>
-            <pubDate>Fri, 28 Jul 2017 14:46:44 +0200</pubDate>
-            <description></description>
-            <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20170724-WA0027.jpg" width="124" height="124"/>
-            <media:content type="image/jpeg" url="slides/IMG-20170724-WA0027.jpg" width="800" height="600"/>
-            <guid isPermaLink="false">slides/IMG-20170724-WA0027.jpg</guid>
-        </item>
-        <item>
-            <title>IMG-20170724-WA0057</title>
-            <link>slides/IMG-20170724-WA0057.html</link>
-            <pubDate>Fri, 28 Jul 2017 14:46:44 +0200</pubDate>
-            <description></description>
-            <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20170724-WA0057.jpg" width="124" height="124"/>
-            <media:content type="image/jpeg" url="slides/IMG-20170724-WA0057.jpg" width="1069" height="600"/>
-            <guid isPermaLink="false">slides/IMG-20170724-WA0057.jpg</guid>
-        </item>
-        <item>
-            <title>IMG-20170724-WA0058</title>
-            <link>slides/IMG-20170724-WA0058.html</link>
-            <pubDate>Fri, 28 Jul 2017 14:46:44 +0200</pubDate>
-            <description></description>
-            <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20170724-WA0058.jpg" width="124" height="124"/>
-            <media:content type="image/jpeg" url="slides/IMG-20170724-WA0058.jpg" width="1069" height="600"/>
-            <guid isPermaLink="false">slides/IMG-20170724-WA0058.jpg</guid>
-        </item>
-        <item>
-            <title>IMG-20170724-WA0081</title>
-            <link>slides/IMG-20170724-WA0081.html</link>
-            <pubDate>Fri, 28 Jul 2017 14:46:44 +0200</pubDate>
-            <description></description>
-            <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20170724-WA0081.jpg" width="124" height="124"/>
-            <media:content type="image/jpeg" url="slides/IMG-20170724-WA0081.jpg" width="1067" height="600"/>
-            <guid isPermaLink="false">slides/IMG-20170724-WA0081.jpg</guid>
-        </item>
-        <item>
-            <title>IMG-20170724-WA0082</title>
-            <link>slides/IMG-20170724-WA0082.html</link>
-            <pubDate>Fri, 28 Jul 2017 14:46:44 +0200</pubDate>
-            <description></description>
-            <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20170724-WA0082.jpg" width="124" height="124"/>
-            <media:content type="image/jpeg" url="slides/IMG-20170724-WA0082.jpg" width="960" height="539"/>
-            <guid isPermaLink="false">slides/IMG-20170724-WA0082.jpg</guid>
+            <media:thumbnail url="thumbs/IMG-20151217-WA0007.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20151217-WA0007.jpg" width="565" height="510"/>
+            <guid isPermaLink="false">slides/IMG-20151217-WA0007.jpg</guid>
         </item>
     </channel>
 </rss>
