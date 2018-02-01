@@ -318,8 +318,8 @@ ul #listdivider {
 }
 
 .blink {
-    animation:fade 1000ms infinite;
-    -webkit-animation:fade 1000ms infinite;
+    animation:fade 5000ms infinite;
+    -webkit-animation:fade 5000ms infinite;
 	-webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
 }
