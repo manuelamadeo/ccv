@@ -3,21 +3,21 @@
      xmlns:media="http://search.yahoo.com/mrss/"
      xmlns:jalbum="http://jalbum.net/jalbumrss">
     <channel>
-        <title>Iportar Rutas Wikilock</title>
+        <title>Importar y seguir rutas con Wikiloc</title>
    	<link>.</link>
-        <generator>jAlbum 13</generator>
+        <generator>jAlbum 15.1</generator>
    		<description></description>
         <jalbum:absolutePath></jalbum:absolutePath>
         <item>
-            <title>SCR_20170131_232255_s01</title>
-            <link>slides/SCR_20170131_232255_s01.mp4</link>
-            <pubDate>Wed, 01 Feb 2017 13:06:31 +0100</pubDate>
+            <title>wikiloc</title>
+            <link>slides/wikiloc.html</link>
+            <pubDate>Thu, 08 Feb 2018 21:07:34 +0100</pubDate>
             <description></description>
             <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/SCR_20170131_232255_s01.jpg" width="124" height="124"/>
-            <media:content  url="slides/SCR_20170131_232255_s01.mp4" width="338" height="600"/>
-            <jalbum:original url="slides/SCR_20170131_232255_s01.mp4" width="477" height="848" fileSize="23557386"/>
-            <guid isPermaLink="false">slides/SCR_20170131_232255_s01.jpg</guid>
+            <media:thumbnail url="thumbs/wikiloc.jpg" width="124" height="124"/>
+            <media:content  url="slides/wikiloc.mp4" width="338" height="600"/>
+            <jalbum:original url="slides/wikiloc.mp4" width="720" height="1280" fileSize="72747629"/>
+            <guid isPermaLink="false">slides/wikiloc.jpg</guid>
         </item>
     </channel>
 </rss>
