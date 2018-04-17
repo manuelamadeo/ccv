@@ -3,20 +3,230 @@
      xmlns:media="http://search.yahoo.com/mrss/"
      xmlns:jalbum="http://jalbum.net/jalbumrss">
     <channel>
-        <title>Responsive222</title>
+        <title>Fotos etapa 11</title>
    	<link>.</link>
-        <generator>jAlbum 13</generator>
+        <generator>jAlbum 15.1</generator>
    		<description></description>
         <jalbum:absolutePath></jalbum:absolutePath>
         <item>
-            <title>IMG-20151217-WA0007</title>
-            <link>slides/IMG-20151217-WA0007.jpg</link>
-            <pubDate>Thu, 17 Dec 2015 20:35:42 +0100</pubDate>
+            <title>IMG-20180415-WA0001</title>
+            <link>slides/IMG-20180415-WA0001.jpg</link>
+            <pubDate>Tue, 17 Apr 2018 14:30:45 +0200</pubDate>
             <description></description>
             <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20151217-WA0007.jpg" width="124" height="124"/>
-            <media:content type="image/jpeg" url="slides/IMG-20151217-WA0007.jpg" width="565" height="510"/>
-            <guid isPermaLink="false">slides/IMG-20151217-WA0007.jpg</guid>
+            <media:thumbnail url="thumbs/IMG-20180415-WA0001.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180415-WA0001.jpg" width="1067" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180415-WA0001.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180415-WA0002</title>
+            <link>slides/IMG-20180415-WA0002.jpg</link>
+            <pubDate>Tue, 17 Apr 2018 14:30:45 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180415-WA0002.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180415-WA0002.jpg" width="1067" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180415-WA0002.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180415-WA0005</title>
+            <link>slides/IMG-20180415-WA0005.jpg</link>
+            <pubDate>Tue, 17 Apr 2018 14:30:45 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180415-WA0005.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180415-WA0005.jpg" width="1067" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180415-WA0005.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180415-WA0006</title>
+            <link>slides/IMG-20180415-WA0006.jpg</link>
+            <pubDate>Tue, 17 Apr 2018 14:30:45 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180415-WA0006.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180415-WA0006.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180415-WA0006.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180415-WA0007</title>
+            <link>slides/IMG-20180415-WA0007.jpg</link>
+            <pubDate>Tue, 17 Apr 2018 14:30:45 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180415-WA0007.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180415-WA0007.jpg" width="338" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180415-WA0007.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180415-WA0010</title>
+            <link>slides/IMG-20180415-WA0010.jpg</link>
+            <pubDate>Tue, 17 Apr 2018 14:30:45 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180415-WA0010.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180415-WA0010.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180415-WA0010.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180415-WA0011</title>
+            <link>slides/IMG-20180415-WA0011.jpg</link>
+            <pubDate>Tue, 17 Apr 2018 14:30:45 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180415-WA0011.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180415-WA0011.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180415-WA0011.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180415-WA0014</title>
+            <link>slides/IMG-20180415-WA0014.jpg</link>
+            <pubDate>Tue, 17 Apr 2018 14:30:45 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180415-WA0014.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180415-WA0014.jpg" width="337" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180415-WA0014.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180415-WA0015</title>
+            <link>slides/IMG-20180415-WA0015.jpg</link>
+            <pubDate>Tue, 17 Apr 2018 14:30:45 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180415-WA0015.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180415-WA0015.jpg" width="337" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180415-WA0015.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180415-WA0016</title>
+            <link>slides/IMG-20180415-WA0016.jpg</link>
+            <pubDate>Tue, 17 Apr 2018 14:30:45 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180415-WA0016.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180415-WA0016.jpg" width="1069" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180415-WA0016.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180415-WA0017</title>
+            <link>slides/IMG-20180415-WA0017.jpg</link>
+            <pubDate>Tue, 17 Apr 2018 14:30:45 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180415-WA0017.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180415-WA0017.jpg" width="1069" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180415-WA0017.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180415-WA0018</title>
+            <link>slides/IMG-20180415-WA0018.jpg</link>
+            <pubDate>Tue, 17 Apr 2018 14:30:45 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180415-WA0018.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180415-WA0018.jpg" width="1069" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180415-WA0018.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180415-WA0025</title>
+            <link>slides/IMG-20180415-WA0025.jpg</link>
+            <pubDate>Tue, 17 Apr 2018 14:30:45 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180415-WA0025.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180415-WA0025.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180415-WA0025.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180415-WA0026</title>
+            <link>slides/IMG-20180415-WA0026.jpg</link>
+            <pubDate>Tue, 17 Apr 2018 14:30:45 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180415-WA0026.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180415-WA0026.jpg" width="799" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180415-WA0026.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180415-WA0027</title>
+            <link>slides/IMG-20180415-WA0027.jpg</link>
+            <pubDate>Tue, 17 Apr 2018 14:30:45 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180415-WA0027.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180415-WA0027.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180415-WA0027.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180415-WA0032</title>
+            <link>slides/IMG-20180415-WA0032.jpg</link>
+            <pubDate>Tue, 17 Apr 2018 14:30:45 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180415-WA0032.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180415-WA0032.jpg" width="337" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180415-WA0032.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180415-WA0048</title>
+            <link>slides/IMG-20180415-WA0048.jpg</link>
+            <pubDate>Tue, 17 Apr 2018 14:30:45 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180415-WA0048.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180415-WA0048.jpg" width="900" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180415-WA0048.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180415-WA0049</title>
+            <link>slides/IMG-20180415-WA0049.jpg</link>
+            <pubDate>Tue, 17 Apr 2018 14:30:45 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180415-WA0049.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180415-WA0049.jpg" width="900" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180415-WA0049.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180415-WA0050</title>
+            <link>slides/IMG-20180415-WA0050.jpg</link>
+            <pubDate>Tue, 17 Apr 2018 14:30:45 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180415-WA0050.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180415-WA0050.jpg" width="900" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180415-WA0050.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180415-WA0051</title>
+            <link>slides/IMG-20180415-WA0051.jpg</link>
+            <pubDate>Tue, 17 Apr 2018 14:30:45 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180415-WA0051.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180415-WA0051.jpg" width="900" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180415-WA0051.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180417-WA0005</title>
+            <link>slides/IMG-20180417-WA0005.jpg</link>
+            <pubDate>Tue, 17 Apr 2018 14:30:45 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180417-WA0005.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180417-WA0005.jpg" width="900" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180417-WA0005.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180417-WA0006</title>
+            <link>slides/IMG-20180417-WA0006.jpg</link>
+            <pubDate>Tue, 17 Apr 2018 14:30:45 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180417-WA0006.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180417-WA0006.jpg" width="841" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180417-WA0006.jpg</guid>
         </item>
     </channel>
 </rss>
