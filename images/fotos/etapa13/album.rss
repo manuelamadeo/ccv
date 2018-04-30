@@ -3,20 +3,170 @@
      xmlns:media="http://search.yahoo.com/mrss/"
      xmlns:jalbum="http://jalbum.net/jalbumrss">
     <channel>
-        <title>Responsive222</title>
+        <title>Fotos Etapa 13</title>
    	<link>.</link>
-        <generator>jAlbum 13</generator>
+        <generator>jAlbum 15.1</generator>
    		<description></description>
         <jalbum:absolutePath></jalbum:absolutePath>
         <item>
-            <title>IMG-20151217-WA0007</title>
-            <link>slides/IMG-20151217-WA0007.jpg</link>
-            <pubDate>Thu, 17 Dec 2015 20:35:42 +0100</pubDate>
+            <title>IMG-20180429-WA0008</title>
+            <link>slides/IMG-20180429-WA0008.jpg</link>
+            <pubDate>Mon, 30 Apr 2018 14:55:30 +0200</pubDate>
             <description></description>
             <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20151217-WA0007.jpg" width="124" height="124"/>
-            <media:content type="image/jpeg" url="slides/IMG-20151217-WA0007.jpg" width="565" height="510"/>
-            <guid isPermaLink="false">slides/IMG-20151217-WA0007.jpg</guid>
+            <media:thumbnail url="thumbs/IMG-20180429-WA0008.jpg" width="124" height="124"/>
+            <media:content  url="slides/IMG-20180429-WA0008.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180429-WA0008.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180429-WA0009</title>
+            <link>slides/IMG-20180429-WA0009.jpg</link>
+            <pubDate>Mon, 30 Apr 2018 14:55:30 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180429-WA0009.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180429-WA0009.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180429-WA0009.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180429-WA0010</title>
+            <link>slides/IMG-20180429-WA0010.jpg</link>
+            <pubDate>Mon, 30 Apr 2018 14:55:30 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180429-WA0010.jpg" width="124" height="124"/>
+            <media:content  url="slides/IMG-20180429-WA0010.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180429-WA0010.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180429-WA0011</title>
+            <link>slides/IMG-20180429-WA0011.jpg</link>
+            <pubDate>Mon, 30 Apr 2018 14:55:30 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180429-WA0011.jpg" width="124" height="124"/>
+            <media:content  url="slides/IMG-20180429-WA0011.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180429-WA0011.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180429-WA0012</title>
+            <link>slides/IMG-20180429-WA0012.jpg</link>
+            <pubDate>Mon, 30 Apr 2018 14:55:30 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180429-WA0012.jpg" width="124" height="124"/>
+            <media:content  url="slides/IMG-20180429-WA0012.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180429-WA0012.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180429-WA0013</title>
+            <link>slides/IMG-20180429-WA0013.jpg</link>
+            <pubDate>Mon, 30 Apr 2018 14:55:30 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180429-WA0013.jpg" width="124" height="124"/>
+            <media:content  url="slides/IMG-20180429-WA0013.jpg" width="450" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180429-WA0013.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180429-WA0014</title>
+            <link>slides/IMG-20180429-WA0014.jpg</link>
+            <pubDate>Mon, 30 Apr 2018 14:55:30 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180429-WA0014.jpg" width="124" height="124"/>
+            <media:content  url="slides/IMG-20180429-WA0014.jpg" width="450" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180429-WA0014.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180429-WA0015</title>
+            <link>slides/IMG-20180429-WA0015.jpg</link>
+            <pubDate>Mon, 30 Apr 2018 14:55:30 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180429-WA0015.jpg" width="124" height="124"/>
+            <media:content  url="slides/IMG-20180429-WA0015.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180429-WA0015.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180429-WA0016</title>
+            <link>slides/IMG-20180429-WA0016.jpg</link>
+            <pubDate>Mon, 30 Apr 2018 14:55:30 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180429-WA0016.jpg" width="124" height="124"/>
+            <media:content  url="slides/IMG-20180429-WA0016.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180429-WA0016.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180429-WA0017</title>
+            <link>slides/IMG-20180429-WA0017.jpg</link>
+            <pubDate>Mon, 30 Apr 2018 14:55:30 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180429-WA0017.jpg" width="124" height="124"/>
+            <media:content  url="slides/IMG-20180429-WA0017.jpg" width="450" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180429-WA0017.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180429-WA0018</title>
+            <link>slides/IMG-20180429-WA0018.jpg</link>
+            <pubDate>Mon, 30 Apr 2018 14:55:30 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180429-WA0018.jpg" width="124" height="124"/>
+            <media:content  url="slides/IMG-20180429-WA0018.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180429-WA0018.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180429-WA0019</title>
+            <link>slides/IMG-20180429-WA0019.jpg</link>
+            <pubDate>Mon, 30 Apr 2018 14:55:30 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180429-WA0019.jpg" width="124" height="124"/>
+            <media:content  url="slides/IMG-20180429-WA0019.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180429-WA0019.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180429-WA0020</title>
+            <link>slides/IMG-20180429-WA0020.jpg</link>
+            <pubDate>Mon, 30 Apr 2018 14:55:30 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180429-WA0020.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180429-WA0020.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180429-WA0020.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180429-WA0021</title>
+            <link>slides/IMG-20180429-WA0021.jpg</link>
+            <pubDate>Mon, 30 Apr 2018 14:55:30 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180429-WA0021.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180429-WA0021.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180429-WA0021.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180429-WA0022</title>
+            <link>slides/IMG-20180429-WA0022.jpg</link>
+            <pubDate>Mon, 30 Apr 2018 14:55:30 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180429-WA0022.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180429-WA0022.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180429-WA0022.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180429-WA0023</title>
+            <link>slides/IMG-20180429-WA0023.jpg</link>
+            <pubDate>Mon, 30 Apr 2018 14:55:30 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180429-WA0023.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180429-WA0023.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180429-WA0023.jpg</guid>
         </item>
     </channel>
 </rss>
