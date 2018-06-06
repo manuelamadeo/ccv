@@ -25,7 +25,7 @@ img {
 }
 #albumdescription {
 	font-size: 1.0rem;
-	max-width: 720px;
+	max-width: 690px;
 	margin: 0px auto 5px;
 }
 #foldertitle {
@@ -34,7 +34,7 @@ img {
 }
 #foldercomment {
 	font-size: 1.0rem;
-	max-width: 720px;
+	max-width: 690px;
 	margin: 0px auto 5px;
 }
 #imagetitle {
@@ -45,7 +45,7 @@ img {
 	margin: 15px;
 }
 #thumbnails {
-	max-width: 720px;
+	max-width: 690px;
 	margin: 0px auto;
 	font-size: 0px; /* Hack to collapse whitespace between boxes */
 }
@@ -53,10 +53,10 @@ img {
 	display: inline-block;
 	margin: 7px;
 	vertical-align: top;
-	width: 130px;
+	width: 124px;
 }
 #thumbnails > div img {
-	padding: 2px;
+	padding: 0px;
 }
 #thumbnails > div > div {
 	font-size: 0.8rem;
@@ -66,7 +66,7 @@ img {
 	margin: 10px 0px 0px;
 }
 #thumbnav img {
-	padding: 2px;
+	padding: 0px;
 	margin-bottom: 12px;
 }
 #thumbnav > div {
@@ -87,18 +87,16 @@ img {
 #slideimage {
 	position: relative;
 	display: inline-block;
+	max-width: 100%;
+	height: auto;
 	line-height: 0px;
-	padding: 2px;
 	margin-top: 10px;
 }
 #slideimage img {
+	padding: 0px;
 	max-width: 100%;
 	height: auto;
-}
-#slideimage video {
-	outline: 0;
-	max-width: 100%;
-	height: auto;
+	box-sizing: border-box;
 }
 #slide-prev {
 	position: absolute;
@@ -117,6 +115,14 @@ img {
 #slidecomment {
 	font-size: 0.9rem;
 	margin: 8px auto;
+}
+video {
+	padding: 0px;
+	outline: 0;
+	max-width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	margin-top: 10px;
 }
 #creditlink {
 	font-size: 0.7rem;

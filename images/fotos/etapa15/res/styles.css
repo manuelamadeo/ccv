@@ -13,14 +13,17 @@ a:hover {
 	color: red;
 }
 #thumbnails > div img {
-	border: 1px solid #111111;
+	border: 0px solid #111111;
 }
 #thumbnav img {
-	border: 1px solid #111111;
+	border: 0px solid #111111;
 }
 #thumbcurrent::after {
 	border-bottom-color: #111111;
 }
-#slideimage {
-	border: 1px solid #111111;
+#slideimage img {
+	border: 0px solid #111111;
+}
+video {
+	border: 0px solid #111111;
 }
