@@ -3,20 +3,171 @@
      xmlns:media="http://search.yahoo.com/mrss/"
      xmlns:jalbum="http://jalbum.net/jalbumrss">
     <channel>
-        <title>Responsive222</title>
+        <title>Fotos Etapa 27</title>
    	<link>.</link>
-        <generator>jAlbum 13</generator>
+        <generator>jAlbum 15.1</generator>
    		<description></description>
         <jalbum:absolutePath></jalbum:absolutePath>
         <item>
-            <title>IMG-20151217-WA0007</title>
-            <link>slides/IMG-20151217-WA0007.jpg</link>
-            <pubDate>Thu, 17 Dec 2015 20:35:42 +0100</pubDate>
+            <title>IMG_20180708_122922</title>
+            <link>slides/IMG_20180708_122922.jpg</link>
+            <pubDate>Tue, 10 Jul 2018 21:49:10 +0200</pubDate>
             <description></description>
             <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20151217-WA0007.jpg" width="124" height="124"/>
-            <media:content type="image/jpeg" url="slides/IMG-20151217-WA0007.jpg" width="565" height="510"/>
-            <guid isPermaLink="false">slides/IMG-20151217-WA0007.jpg</guid>
+            <media:thumbnail url="thumbs/IMG_20180708_122922.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG_20180708_122922.jpg" width="800" height="600"/>
+            <jalbum:exif originalDate="Sun, 08 Jul 2018 12:29:22 +0200" cameraMake="HUAWEI" cameraModel="HUAWEI TAG-L21"/>
+            <guid isPermaLink="false">slides/IMG_20180708_122922.jpg</guid>
+        </item>
+        <item>
+            <title>IMG_20180708_122927</title>
+            <link>slides/IMG_20180708_122927.jpg</link>
+            <pubDate>Tue, 10 Jul 2018 21:49:10 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG_20180708_122927.jpg" width="124" height="124"/>
+            <media:content  url="slides/IMG_20180708_122927.jpg" width="800" height="600"/>
+            <jalbum:exif originalDate="Sun, 08 Jul 2018 12:29:28 +0200" cameraMake="HUAWEI" cameraModel="HUAWEI TAG-L21"/>
+            <guid isPermaLink="false">slides/IMG_20180708_122927.jpg</guid>
+        </item>
+        <item>
+            <title>IMG_20180708_125512</title>
+            <link>slides/IMG_20180708_125512.jpg</link>
+            <pubDate>Tue, 10 Jul 2018 21:49:10 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG_20180708_125512.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG_20180708_125512.jpg" width="800" height="600"/>
+            <jalbum:exif originalDate="Sun, 08 Jul 2018 12:55:12 +0200" cameraMake="HUAWEI" cameraModel="HUAWEI TAG-L21"/>
+            <guid isPermaLink="false">slides/IMG_20180708_125512.jpg</guid>
+        </item>
+        <item>
+            <title>IMG_20180708_125514</title>
+            <link>slides/IMG_20180708_125514.jpg</link>
+            <pubDate>Tue, 10 Jul 2018 21:49:10 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG_20180708_125514.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG_20180708_125514.jpg" width="800" height="600"/>
+            <jalbum:exif originalDate="Sun, 08 Jul 2018 12:55:14 +0200" cameraMake="HUAWEI" cameraModel="HUAWEI TAG-L21"/>
+            <guid isPermaLink="false">slides/IMG_20180708_125514.jpg</guid>
+        </item>
+        <item>
+            <title>IMG_20180708_125538</title>
+            <link>slides/IMG_20180708_125538.jpg</link>
+            <pubDate>Tue, 10 Jul 2018 21:49:10 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG_20180708_125538.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG_20180708_125538.jpg" width="800" height="600"/>
+            <jalbum:exif originalDate="Sun, 08 Jul 2018 12:55:38 +0200" cameraMake="HUAWEI" cameraModel="HUAWEI TAG-L21"/>
+            <guid isPermaLink="false">slides/IMG_20180708_125538.jpg</guid>
+        </item>
+        <item>
+            <title>IMG_20180708_125539</title>
+            <link>slides/IMG_20180708_125539.jpg</link>
+            <pubDate>Tue, 10 Jul 2018 21:49:10 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG_20180708_125539.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG_20180708_125539.jpg" width="800" height="600"/>
+            <jalbum:exif originalDate="Sun, 08 Jul 2018 12:55:40 +0200" cameraMake="HUAWEI" cameraModel="HUAWEI TAG-L21"/>
+            <guid isPermaLink="false">slides/IMG_20180708_125539.jpg</guid>
+        </item>
+        <item>
+            <title>IMG_20180708_125540</title>
+            <link>slides/IMG_20180708_125540.jpg</link>
+            <pubDate>Tue, 10 Jul 2018 21:49:10 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG_20180708_125540.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG_20180708_125540.jpg" width="800" height="600"/>
+            <jalbum:exif originalDate="Sun, 08 Jul 2018 12:55:41 +0200" cameraMake="HUAWEI" cameraModel="HUAWEI TAG-L21"/>
+            <guid isPermaLink="false">slides/IMG_20180708_125540.jpg</guid>
+        </item>
+        <item>
+            <title>IMG_20180708_125852</title>
+            <link>slides/IMG_20180708_125852.jpg</link>
+            <pubDate>Tue, 10 Jul 2018 21:49:10 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG_20180708_125852.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG_20180708_125852.jpg" width="800" height="600"/>
+            <jalbum:exif originalDate="Sun, 08 Jul 2018 12:58:53 +0200" cameraMake="HUAWEI" cameraModel="HUAWEI TAG-L21"/>
+            <guid isPermaLink="false">slides/IMG_20180708_125852.jpg</guid>
+        </item>
+        <item>
+            <title>IMG_20180708_125854</title>
+            <link>slides/IMG_20180708_125854.jpg</link>
+            <pubDate>Tue, 10 Jul 2018 21:49:10 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG_20180708_125854.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG_20180708_125854.jpg" width="800" height="600"/>
+            <jalbum:exif originalDate="Sun, 08 Jul 2018 12:58:54 +0200" cameraMake="HUAWEI" cameraModel="HUAWEI TAG-L21"/>
+            <guid isPermaLink="false">slides/IMG_20180708_125854.jpg</guid>
+        </item>
+        <item>
+            <title>IMG_20180708_125914</title>
+            <link>slides/IMG_20180708_125914.jpg</link>
+            <pubDate>Tue, 10 Jul 2018 21:49:10 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG_20180708_125914.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG_20180708_125914.jpg" width="800" height="600"/>
+            <jalbum:exif originalDate="Sun, 08 Jul 2018 12:59:15 +0200" cameraMake="HUAWEI" cameraModel="HUAWEI TAG-L21"/>
+            <guid isPermaLink="false">slides/IMG_20180708_125914.jpg</guid>
+        </item>
+        <item>
+            <title>IMG_20180708_125920</title>
+            <link>slides/IMG_20180708_125920.jpg</link>
+            <pubDate>Tue, 10 Jul 2018 21:49:10 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG_20180708_125920.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG_20180708_125920.jpg" width="800" height="600"/>
+            <jalbum:exif originalDate="Sun, 08 Jul 2018 12:59:20 +0200" cameraMake="HUAWEI" cameraModel="HUAWEI TAG-L21"/>
+            <guid isPermaLink="false">slides/IMG_20180708_125920.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180709-WA0012</title>
+            <link>slides/IMG-20180709-WA0012.jpg</link>
+            <pubDate>Tue, 10 Jul 2018 21:49:10 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180709-WA0012.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180709-WA0012.jpg" width="900" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180709-WA0012.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180709-WA0010</title>
+            <link>slides/IMG-20180709-WA0010.jpg</link>
+            <pubDate>Tue, 10 Jul 2018 21:49:10 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180709-WA0010.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180709-WA0010.jpg" width="900" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180709-WA0010.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180709-WA0011</title>
+            <link>slides/IMG-20180709-WA0011.jpg</link>
+            <pubDate>Tue, 10 Jul 2018 21:49:10 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180709-WA0011.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180709-WA0011.jpg" width="900" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180709-WA0011.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180709-WA0013</title>
+            <link>slides/IMG-20180709-WA0013.jpg</link>
+            <pubDate>Tue, 10 Jul 2018 21:49:10 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180709-WA0013.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180709-WA0013.jpg" width="900" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180709-WA0013.jpg</guid>
         </item>
     </channel>
 </rss>
