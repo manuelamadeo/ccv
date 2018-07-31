@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:jalbum="http://jalbum.net/jalbumrss">
+    <channel>
+        <title>Fotos Etapa 30</title>
+   	<link>.</link>
+        <generator>jAlbum 15.1</generator>
+   		<description></description>
+        <jalbum:absolutePath></jalbum:absolutePath>
+        <item>
+            <title>IMG-20180729-WA0023</title>
+            <link>slides/IMG-20180729-WA0023.jpg</link>
+            <pubDate>Tue, 31 Jul 2018 21:18:13 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180729-WA0023.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180729-WA0023.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180729-WA0023.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180729-WA0024</title>
+            <link>slides/IMG-20180729-WA0024.jpg</link>
+            <pubDate>Tue, 31 Jul 2018 21:18:13 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180729-WA0024.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180729-WA0024.jpg" width="1067" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180729-WA0024.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180729-WA0025</title>
+            <link>slides/IMG-20180729-WA0025.jpg</link>
+            <pubDate>Tue, 31 Jul 2018 21:18:13 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180729-WA0025.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180729-WA0025.jpg" width="1067" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180729-WA0025.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180729-WA0026</title>
+            <link>slides/IMG-20180729-WA0026.jpg</link>
+            <pubDate>Tue, 31 Jul 2018 21:18:13 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180729-WA0026.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180729-WA0026.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180729-WA0026.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180730-WA0024</title>
+            <link>slides/IMG-20180730-WA0024.jpg</link>
+            <pubDate>Tue, 31 Jul 2018 21:18:13 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180730-WA0024.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180730-WA0024.jpg" width="900" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180730-WA0024.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180730-WA0025</title>
+            <link>slides/IMG-20180730-WA0025.jpg</link>
+            <pubDate>Tue, 31 Jul 2018 21:18:13 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180730-WA0025.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180730-WA0025.jpg" width="900" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180730-WA0025.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180730-WA0035</title>
+            <link>slides/IMG-20180730-WA0035.jpg</link>
+            <pubDate>Tue, 31 Jul 2018 21:18:13 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180730-WA0035.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180730-WA0035.jpg" width="591" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180730-WA0035.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20180730-WA0036</title>
+            <link>slides/IMG-20180730-WA0036.jpg</link>
+            <pubDate>Tue, 31 Jul 2018 21:18:13 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20180730-WA0036.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20180730-WA0036.jpg" width="597" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20180730-WA0036.jpg</guid>
+        </item>
+    </channel>
+</rss>
