@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:jalbum="http://jalbum.net/jalbumrss">
+    <channel>
+        <title>Videos Etapa 1</title>
+   	<link>.</link>
+        <generator>jAlbum 13</generator>
+   		<description>El repaso....</description>
+        <jalbum:absolutePath></jalbum:absolutePath>
+        <item>
+            <title>VID-20160612-WA0023</title>
+            <link>slides/VID-20160612-WA0023.mp4</link>
+            <pubDate>Wed, 01 Feb 2017 12:19:56 +0100</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/VID-20160612-WA0023.jpg" width="124" height="124"/>
+            <media:content  url="slides/VID-20160612-WA0023.mp4" width="640" height="352"/>
+            <jalbum:original url="slides/VID-20160612-WA0023.mp4" width="640" height="352" fileSize="25634281"/>
+            <guid isPermaLink="false">slides/VID-20160612-WA0023.jpg</guid>
+        </item>
+    </channel>
+</rss>

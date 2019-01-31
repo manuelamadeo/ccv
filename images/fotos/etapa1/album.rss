@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:jalbum="http://jalbum.net/jalbumrss">
+    <channel>
+        <title>Fotos Etapa 1</title>
+   	<link>.</link>
+        <generator>jAlbum 13</generator>
+   		<description></description>
+        <jalbum:absolutePath></jalbum:absolutePath>
+        <item>
+            <title>Screenshot_2017-02-01-23-38-17-217_com.google.android.apps.docs</title>
+            <link>slides/Screenshot_2017-02-01-23-38-17-217_com.google.android.apps.docs.png</link>
+            <pubDate>Thu, 02 Feb 2017 01:12:39 +0100</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/Screenshot_2017-02-01-23-38-17-217_com.google.android.apps.docs.png" width="124" height="124"/>
+            <media:content type="image/png" url="slides/Screenshot_2017-02-01-23-38-17-217_com.google.android.apps.docs.png" width="420" height="600"/>
+            <guid isPermaLink="false">slides/Screenshot_2017-02-01-23-38-17-217_com.google.android.apps.docs.png</guid>
+        </item>
+        <item>
+            <title>Screenshot_2017-02-01-23-38-28-295_com.google.android.apps.docs</title>
+            <link>slides/Screenshot_2017-02-01-23-38-28-295_com.google.android.apps.docs.png</link>
+            <pubDate>Thu, 02 Feb 2017 01:12:39 +0100</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/Screenshot_2017-02-01-23-38-28-295_com.google.android.apps.docs.png" width="124" height="124"/>
+            <media:content  url="slides/Screenshot_2017-02-01-23-38-28-295_com.google.android.apps.docs.png" width="421" height="600"/>
+            <guid isPermaLink="false">slides/Screenshot_2017-02-01-23-38-28-295_com.google.android.apps.docs.png</guid>
+        </item>
+        <item>
+            <title>Screenshot_2017-02-01-23-37-42-709_com.google.android.apps.docs</title>
+            <link>slides/Screenshot_2017-02-01-23-37-42-709_com.google.android.apps.docs.png</link>
+            <pubDate>Thu, 02 Feb 2017 01:12:39 +0100</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/Screenshot_2017-02-01-23-37-42-709_com.google.android.apps.docs.png" width="124" height="124"/>
+            <media:content  url="slides/Screenshot_2017-02-01-23-37-42-709_com.google.android.apps.docs.png" width="421" height="600"/>
+            <guid isPermaLink="false">slides/Screenshot_2017-02-01-23-37-42-709_com.google.android.apps.docs.png</guid>
+        </item>
+        <item>
+            <title>Screenshot_2017-02-01-23-38-02-928_com.google.android.apps.docs</title>
+            <link>slides/Screenshot_2017-02-01-23-38-02-928_com.google.android.apps.docs.png</link>
+            <pubDate>Thu, 02 Feb 2017 01:12:39 +0100</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/Screenshot_2017-02-01-23-38-02-928_com.google.android.apps.docs.png" width="124" height="124"/>
+            <media:content  url="slides/Screenshot_2017-02-01-23-38-02-928_com.google.android.apps.docs.png" width="420" height="600"/>
+            <guid isPermaLink="false">slides/Screenshot_2017-02-01-23-38-02-928_com.google.android.apps.docs.png</guid>
+        </item>
+    </channel>
+</rss>
