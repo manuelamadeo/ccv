@@ -35,15 +35,12 @@
   <script type="text/javascript" charset="utf-8" src="phonegap-1.4.1.js"></script>
   <script type="text/javascript" charset="utf-8" src="js/index.js"></script>
   <script type="text/javascript" charset="utf-8" src="fastclick.js"></script>
-  <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-  <script type="text/javascript" charset="utf-8" src="cordova_plugins.js"></script>
-  <script type="text/javascript" charset="utf-8" src="plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js"></script>
+  <script type="text/javascript" charset="utf-8" src="inappbrowser.js"></script>
   <!-- CDN Respositories: For production, replace lines above with these uncommented minified versions -->
   <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />-->
   <!-- <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>-->
   <!-- <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>-->
   <script type="text/javascript" src="fastclick.js"></script>
-  <script type="text/javascript" src="cordova.js"></script>
   <script type="text/javascript">
     function onLoad() {document.addEventListener("deviceready", onDeviceReady,false);}function onDeviceReady() {alert('Hurray,This app is build and packaged by PhoneGap Build Service');}
   </script>
@@ -105,8 +102,8 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="#busquedaCarretera"><font color="#01DF01">Carretera</font></a></li>    
-                <li><a href="#busquedaMtb"><font color="#FF4000">Montaña</font></a></li>
+				<li><a href="#busquedaCarretera"><font color="#00AC69">Carretera</font></a></li>    
+                <li><a href="#busquedaMtb"><font color="#FFF47300">Montaña</font></a></li>
  			</ul>
 		</div>
 		<div data-role="footer">
@@ -122,39 +119,39 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview" data-inset="true" data-filter="true">
-				<div class="enlace"><a href="#Etapa1Carretera"><font color="#01DF01"><h1>Etapa 1 RUTA CARRETERA (VALVERDEJO):</h1>  SALIDA: Silo  IDA: Buenache De Alacón, Olmedilla, por CM-2100, Valverdejo. <h1>VUELTA: Por el mismo recorrido. (61 km)</h1></font></a><br />Domingo 4 de Febrero 9:30 Horas</div>
-	            <div class="enlace"><a href="#Etapa2Carretera"><font color="#01DF01"><h1>Etapa 2 RUTA CARRETERA (CASTILLO DE GARCIMUÑOZ):</h1>  SALIDA: Silo  IDA: La Almarcha , Via de servicio (autovia del este, segundo puente), Castillo Garcimuñoz.  <h1>VUELTA: C/ San Bartolome hasta La Almarcha, Olivares, Valverde. (66 km)</h1></font></a><br />Domingo 11 de Febrero 9:30 Horas</div>
-				<div class="enlace"><a href="#Etapa3Carretera"><font color="#01DF01"><h1>Etapa 3 RUTA CARRETERA (ALARCÓN):</h1>  SALIDA: Silo  IDA: Buenache, Olmedilla (Hasta cruce CUV-7143), N-III Hasta cruce CUV-8033, Alarcón.  <h1>VUELTA: Por el mismo recorrido. (77 km)</h1></font></a><br />Domingo 18 de Febrero 9:30 Horas</div>
-	            <div class="enlace"><a href="#Etapa4Carretera"><font color="#01DF01"><h1>Etapa 4 RUTA CARRETERA (TÓRTOLA):</h1>  SALIDA: Silo  IDA: Valeria , Tórtola.  <h1>VUELTA: Por el mismo recorrido (60 km)</h1></font></a><br />Domingo 25 de Febrero 9:30 Horas</div>
-				<div class="enlace"><a href="#Etapa5Carretera"><font color="#01DF01"><h1>Etapa 5 RUTA CARRETERA (MONTALBANEJO):</h1>  SALIDA: Silo  IDA: Olivares, Cruce a la hinojosa (CUV-3231), Hinojosa, Montalbanejo.  <h1>VUELTA: Por el mismo recorrido (67 km)</h1></font></a><br />Domingo 4 de Marzo 9:30 Horas</div>
-	            <div class="enlace"><a href="#Etapa6Carretera"><font color="#01DF01"><h1>Etapa 6 RUTA CARRETERA (SOLERA DE GALBALDÓN):</h1>  SALIDA: Silo  IDA: Valeria, Olmeda Del Rey, Chumillas, Solera De Gabaldón.  <h1>VUELTA: Por el mismo recorrido. (66 km)</h1></font></a><br />Domingo 11 de Febrero 9:30 Horas</div>
-	            <div class="enlace"><a href="#Etapa7Carretera"><font color="#01DF01"><h1>Etapa 7 RUTA CARRETERA (VALDEGANGA):</h1>  SALIDA: Silo  IDA: Valeria , Tórtola, Valdeganga.  <h1>VUELTA: Por la parra y Villaverde. (73 km)</h1></font></a><br />Domingo 18 de Marzo 9:30 Horas</div>
-				<div class="enlace"><a href="#Etapa8Carretera"><font color="#01DF01"><h1>Etapa 8 RUTA CARRETERA (CHUMILLAS):</h1>  SALIDA: Silo  IDA: Valeria, Olmeda Del Rey, Chumillas. <h1>VUELTA: Por el mismo recorrido. (56 km)</h1></font></a><br />Domingo 25 de Marzo 9:30 Horas</div>
-	            <div class="enlace"><a href="#Etapa9Carretera"><font color="#01DF01"><h1>Etapa 9 RUTA CARRETERA (SAN LORENZO DE LA PARRILLA):</h1>  SALIDA: Silo  IDA: Olivares (Subida N420a, hasta N420), Belmontejo, San Lorenzo De La Parrilla.  <h1>VUELTA: N420 (Dirección Mota De Altarejos, hasta Cruce CUV-7123), La Parra, Albaladejo, Villaverde, Valverde. (76 km)</h1></font></a><br />Domingo 1 de Abril 9:00 Horas</div>
-				<div class="enlace"><a href="#Etapa10Carretera"><font color="#01DF01"><h1>Etapa 10 RUTA CARRETERA (MOTILLA DEL PALANCAR):</h1>  SALIDA: Silo  IDA: Buenache, Olmedilla, Motilla Del Palancar (Ultima rotonda).  <h1>VUELTA: Por el mismo recorrido. (82 km)</h1></font></a><br />Domingo 8 de Abril 9:00 Horas</div>
-	            <div class="enlace"><a href="#Etapa11Carretera"><font color="#01DF01"><h1>Etapa 11 RUTA CARRETERA (RECORRIDO MANCOMUNIDAD):</h1>  SALIDA: Silo  IDA: Valera De Abajo, Piqueras Del Castillo, Barchín Del Hoyo, Olmedilla De Alarcón, Poligono (Valverde De Júcar), Valera De Abajo, Valeria.  <h1>VUELTA: Tórtola, Valdeganga, Nacional hasta desvío (La parra De Las Vegas), Albaladejo, Villaverde, Valverde. (123 km)</h1></font></a><br />Domingo 15 de Abril 8:00 Horas</div>
-	            <div class="enlace"><a href="#Etapa12Carretera"><font color="#01DF01"><h1>Etapa 12 RUTA CARRETERA (VILLALGORDO DEL MARQUESADO):</h1>  SALIDA: Silo  IDA: Olivares, La Almarcha (N-420), Villalgordo Del Marquesado. <h1>VUELTA: Por el mismo recorrido. (81 km)</h1></font></a><br />Domingo 22 de Abril 9:00 Horas</div>
-				<div class="enlace"><a href="#Etapa13Carretera"><font color="#01DF01"><h1>Etapa 13 RUTA CARRETERA (ARCAS):</h1>  SALIDA: Silo  IDA: Valeria, Tórtola, Arcas.  <h1>VUELTA: Por el mismo recorrido. (77 km)</h1></font></a><br />Domingo 29 de Abril 9:00 Horas</div>
-				<div class="enlace"><a href="#Etapa14Carretera"><font color="#FE2E64"><h1>Etapa 14 RUTA CARRETERA (NEUTRALIZADA ENGUIDANOS):</h1>  SALIDA: Motilla Del Palacar  IDA: Campillo De Altobuey, Paracuellos, Yemeda, Cardenete, Las Chorreras, Enguidanos.  <h1>VUELTA: Enguidanos, Campillo De Altobuey, Motilla Del Palancar. (96 km)</h1></font></a><br />Martes 1 de Mayo (Hora por Determinar)</div>
-	            <div class="enlace"><a href="#Etapa15Carretera"><font color="#01DF01"><h1>Etapa 15 RUTA CARRETERA (ALMODOVAR DEL PINAR):</h1>  SALIDA: Silo  IDA: Valeria, Olmeda, Chumillas, Almodovar Del Pinar.  <h1>VUELTA: Por el mismo recorrido. (80 km)</h1></font></a><br />Domingo 6 de Mayo 8:30 Horas</div>
-				<div class="enlace"><a href="#Etapa16Carretera"><font color="#01DF01"><h1>Etapa 16 RUTA CARRETERA (ALARCÓN):</h1>  SALIDA: Silo  IDA: Buenache, Olmedilla (Hasta cruce CUV-7143), N-III Hasta cruce CUV-8033, Alarcón.  <h1>VUELTA: Por el mismo recorrido. (77 km)</h1></font></a><br />Domingo 13 de Mayo 8:30 Horas</div>
-				<div class="enlace"><a href="#Etapa17Carretera"><font color="#01DF01"><h1>Etapa 17 RUTA CARRETERA (VALDEGANGA):</h1>  SALIDA: Silo  IDA: Villaverde y Pasaconsol , Albaladejo, La Parra De Las Vegas, Valdeganga.  <h1>VUELTA: Por Tortóla, Valeria, Valera, Valverde. (71 km)</h1></font></a><br />Domingo 20 de Mayo 8:30 Horas</div>
-				<div class="enlace"><a href="#Etapa19Carretera"><font color="#01DF01"><h1>Etapa 19 RUTA CARRETERA (ZAFRA DE ZÁNCARA):</h1>  SALIDA: Silo  IDA: Olivares, La Parrilla, Villarejo, CUV-7031, cruce CUV-7032, Zafra de Záncara.  <h1>VUELTA: Por el mismo recorrido. (110 km)</h1></font></a><br />Domingo 27 de Mayo 8:30 Horas</div>
-	            <div class="enlace"><a href="#Etapa21Carretera"><font color="#01DF01"><h1>Etapa 21 RUTA CARRETERA (CERRO SOCORRO):</h1>  SALIDA: Silo  IDA: Valeria, Arcas, Cuenca (Puente San Pablo CUV-9144), Barranco Chotos (Subida Cerro Socorro).  <h1>VUELTA: CUV-9144 (Puente San Pablo, hasta C/ Dr. Ferrón, C/ Cañete, AV. Mediterráneo, C/ Rio del Chillaron, N-320a, Arcas, Valverde. (120 km)</h1></font></a><br />Domingo 3 de Junio 8:00 Horas</div>
-				<div class="enlace"><a href="#Etapa22Carretera"><font color="#01DF01"><h1>Etapa 22 RUTA CARRETERA (TÓRTOLA):</h1>  SALIDA: Silo  IDA: Valeria , Tórtola.  <h1>VUELTA: Por el mismo recorrido (60 km)</h1></font></a><br />Domingo 10 de Junio 8:30 Horas</div>
-	            <div class="enlace"><a href="#Etapa23Carretera"><font color="#01DF01"><h1>Etapa 23 RUTA CARRETERA (VILLAREJO PERIESTEBAN):</h1>  SALIDA: Silo  IDA: Villaverde, Olivares, La Parrilla, Villarejo Periesteban.  <h1>VUELTA: Por el mismo recorrido. (77 km)</h1></font></a><br />Domingo 17 de Junio 8:30 Horas</div>
-	            <div class="enlace"><a href="#Etapa25Carretera"><font color="#01DF01"><h1>Etapa 25 RUTA CARRETERA (PINAREJO):</h1>  SALIDA: Silo  IDA: Villaverde, Olivares, La Almarcha (Via de servicio), Castillo De Garcimuñoz, Pinarejo.  <h1>VUELTA: Por el mismo recorrido. (82 km)</h1></font></a><br />Domingo 24 de Junio 8:30 Horas</div>
-	            <div class="enlace"><a href="#Etapa26Carretera"><font color="#01DF01"><h1>Etapa 26 RUTA CARRETERA (LA TORDIGA):</h1>  SALIDA: Silo  IDA: Valeria, Olmeda (CUV-7124 hasta CM-220), Villar Del Saz De Arcas (La Tordiga).  <h1>VUELTA: Cruce CM-2100 (Arcas), Tórtola, Valeria, Valverde. (91 km)</h1></font></a><br />Domingo 1 de Julio 8:00 Horas</div>
-				<div class="enlace"><a href="#Etapa27Carretera"><font color="#01DF01"><h1>Etapa 27 RUTA CARRETERA (CHUMILLAS):</h1>  SALIDA: Silo  IDA: Valeria, Olmeda Del Rey, Chumillas. <h1>VUELTA: Por el mismo recorrido. (56 km)</h1></font></a><br />Domingo 8 de Julio 8:00 Horas</div>
-				<div class="enlace"><a href="#Etapa28Carretera"><font color="#01DF01"><h1>Etapa 28 RUTA CARRETERA (VALVERDEJO):</h1>  SALIDA: Silo  IDA: Buenache De Alacón, Olmedilla, por CM-2100, Valverdejo. <h1>VUELTA: Por el mismo recorrido. (61 km)</h1></font></a><br />Domingo 15 de Julio 8:00 Horas</div>
-	            <div class="enlace"><a href="#Etapa29Carretera"><font color="#FE2E64"><h1>Etapa 29 RUTA CARRETERA (MARCHA DEL CLUB LA HINOJOSA):</h1>  SALIDA: Silo  IDA: Villaverde, Olivares (Hasta cruce crta: 3231) La Hinojosa.  <h1>VUELTA: Por  mismo recorrido. (52 km)</h1></font></a><br />Domingo 22 de Julio (Hora por Determinar), (Al terminar ruta, el club pagará el almuerzo a todos los socios asistentes)</div>
-			    <div class="enlace"><a href="#Etapa31Carretera"><font color="#01DF01"><h1>Etapa 31 RUTA CARRETERA (ARCAS):</h1>  SALIDA: Silo  IDA: Valeria, Tórtola, Arcas.  <h1>VUELTA: Por el mismo recorrido. (77 km)</h1></font></a><br />Domingo 29 de Julio 8:00 Horas</div>
-				<div class="enlace"><a href="#Etapa32Carretera"><font color="#01DF01"><h1>Etapa 32 RUTA CARRETERA (CASTILLO DE GARCIMUÑOZ):</h1>  SALIDA: Silo  IDA: La Almarcha , Via de servicio (autovia del este, segundo puente), Castillo Garcimuñoz.  <h1>VUELTA: C/ San Bartolome hasta La Almarcha, Olivares, Valverde. (66 km)</h1></font></a><br />Domingo 5 de Agosto 8:30 Horas</div>
-	            <div class="enlace"><a href="#Etapa34Carretera"><font color="#01DF01"><h1>Etapa 34 RUTA CARRETERA (MOTILLA DEL PALANCAR):</h1>  SALIDA: Silo  IDA: Buenache, Olmedilla, Motilla Del Palancar (Ultima rotonda).  <h1>VUELTA: Por el mismo recorrido. (82 km)</h1></font></a><br />Domingo 12 de Agosto 8:30 Horas</div>
-				<div class="enlace"><a href="#Etapa35Carretera"><font color="#FE2E64"><h1>Etapa 35 RUTA CARRETERA (DIA DE LA BICICLETA):</h1>  SALIDA: Plaza Mayor  IDA: Plaza de la verdura, C/Peso, C/La Yedra, C/Leones, Parque D.Arsenio.  <h1>VUELTA: Carretera de Cuenca, Carretera Madrid-Valencia, Paseo del Santo Niño, Parque Tomas Bux, C/Fuente de la zarza, C/Endrino, C/Juan Pérez, C/Leones, Parque D.Arsenio Triguero. (4 km)</h1></font></a><br />Domingo 20 de Agosto (Hora por Determinar)</div>
-				<div class="enlace"><a href="#Etapa36Carretera"><font color="#01DF01"><h1>Etapa 36 RUTA CARRETERA (SAN LORENZO DE LA PARRILLA):</h1>  SALIDA: Silo  IDA: Villaverde, Albaladejo, La Parra De Las Vegas, N-420, San Lorenzo De La Parrilla.  <h1>VUELTA: Por Belmontejo, Olivares, Villaverde, Valverde. (72 km)</h1></font></a><br />Domingo 26 de Agosto 8:30 Horas</div>
-				<div class="enlace"><a href="#Etapa37Carretera"><font color="#01DF01"><h1>Etapa 37 RUTA CARRETERA (MONTALBANEJO):</h1>  SALIDA: Silo  IDA: Olivares, Cruce a la hinojosa (CUV-3231), Hinojosa, Montalbanejo.  <h1>VUELTA: Por el mismo recorrido (67 km)</h1></font></a><br />Domingo 2 de Septiembre 9:00 Horas</div>
-				<div class="enlace"><a href="#Etapa38Carretera"><font color="#01DF01"><h1>Etapa 38 RUTA CARRETERA (SOLERA DE GALBALDÓN):</h1>  SALIDA: Silo  IDA: Valeria, Olmeda Del Rey, Chumillas, Solera De Gabaldón.  <h1>VUELTA: Por el mismo recorrido. (66 km)</h1></font></a><br />Domingo 9 de Septiembre 9:00 Horas</div>
+				<div class="enlace"><a href="#Etapa1Carretera"><font color="#00AC69"><h1>Etapa 1 RUTA CARRETERA (VALVERDEJO):</h1>  SALIDA: Silo  IDA: Buenache De Alacón, Olmedilla, por CM-2100, Valverdejo. <h1>VUELTA: Por el mismo recorrido. (61 km)</h1></font></a><br />Domingo 3 de Febrero 9:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa2Carretera"><font color="#00AC69"><h1>Etapa 2 RUTA CARRETERA (CASTILLO DE GARCIMUÑOZ):</h1>  SALIDA: Silo  IDA: La Almarcha , Via de servicio (autovia del este, segundo puente), Castillo Garcimuñoz.  <h1>VUELTA: C/ San Bartolome hasta La Almarcha, Olivares, Valverde. (66 km)</h1></font></a><br />Domingo 10 de Febrero 9:30 Horas</div>
+				<div class="enlace"><a href="#Etapa3Carretera"><font color="#00AC69"><h1>Etapa 3 RUTA CARRETERA (ALARCÓN):</h1>  SALIDA: Silo  IDA: Buenache, Olmedilla (Hasta cruce CUV-7143), N-III Hasta cruce CUV-8033, Alarcón.  <h1>VUELTA: Por el mismo recorrido. (77 km)</h1></font></a><br />Domingo 17 de Febrero 9:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa4Carretera"><font color="#00AC69"><h1>Etapa 4 RUTA CARRETERA (TÓRTOLA):</h1>  SALIDA: Silo  IDA: Valeria , Tórtola.  <h1>VUELTA: Por el mismo recorrido (60 km)</h1></font></a><br />Domingo 24 de Febrero 9:30 Horas</div>
+				<div class="enlace"><a href="#Etapa5Carretera"><font color="#00AC69"><h1>Etapa 5 RUTA CARRETERA (MONTALBANEJO):</h1>  SALIDA: Silo  IDA: Olivares, Cruce a la hinojosa (CUV-3231), Hinojosa, Montalbanejo.  <h1>VUELTA: Por el mismo recorrido (67 km)</h1></font></a><br />Domingo 3 de Marzo 9:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa6Carretera"><font color="#00AC69"><h1>Etapa 6 RUTA CARRETERA (SOLERA DE GALBALDÓN):</h1>  SALIDA: Silo  IDA: Valeria, Olmeda Del Rey, Chumillas, Solera De Gabaldón.  <h1>VUELTA: Por el mismo recorrido. (66 km)</h1></font></a><br />Domingo 10 de Febrero 9:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa7Carretera"><font color="#00AC69"><h1>Etapa 7 RUTA CARRETERA (VALDEGANGA):</h1>  SALIDA: Silo  IDA: Valeria , Tórtola, Valdeganga.  <h1>VUELTA: Por la parra y Villaverde. (73 km)</h1></font></a><br />Domingo 17 de Marzo 9:30 Horas</div>
+				<div class="enlace"><a href="#Etapa8Carretera"><font color="#00AC69"><h1>Etapa 8 RUTA CARRETERA (CHUMILLAS):</h1>  SALIDA: Silo  IDA: Valeria, Olmeda Del Rey, Chumillas. <h1>VUELTA: Por el mismo recorrido. (56 km)</h1></font></a><br />Domingo 24 de Marzo 9:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa9Carretera"><font color="#00AC69"><h1>Etapa 9 RUTA CARRETERA (SAN LORENZO DE LA PARRILLA):</h1>  SALIDA: Silo  IDA: Olivares (Subida N420a, hasta N420), Belmontejo, San Lorenzo De La Parrilla.  <h1>VUELTA: N420 (Dirección Mota De Altarejos, hasta Cruce CUV-7123), La Parra, Albaladejo, Villaverde, Valverde. (76 km)</h1></font></a><br />Domingo 31 de Marzo 9:30 Horas</div>
+				<div class="enlace"><a href="#Etapa10Carretera"><font color="#00AC69"><h1>Etapa 10 RUTA CARRETERA (MOTILLA DEL PALANCAR):</h1>  SALIDA: Silo  IDA: Buenache, Olmedilla, Motilla Del Palancar (Ultima rotonda).  <h1>VUELTA: Por el mismo recorrido. (82 km)</h1></font></a><br />Domingo 7 de Abril 9:00 Horas</div>
+	            <div class="enlace"><a href="#Etapa11Carretera"><font color="#00AC69"><h1>Etapa 11 RUTA CARRETERA (RECORRIDO MANCOMUNIDAD):</h1>  SALIDA: Silo  IDA: Valera De Abajo, Piqueras Del Castillo, Barchín Del Hoyo, Olmedilla De Alarcón, Poligono (Valverde De Júcar), Valera De Abajo, Valeria.  <h1>VUELTA: Tórtola, Valdeganga, Nacional hasta desvío (La parra De Las Vegas), Albaladejo, Villaverde, Valverde. (123 km)</h1></font></a><br />Domingo 14 de Abril 8:00 Horas</div>
+	            <div class="enlace"><a href="#Etapa12Carretera"><font color="#00AC69"><h1>Etapa 12 RUTA CARRETERA (VILLALGORDO DEL MARQUESADO):</h1>  SALIDA: Silo  IDA: Olivares, La Almarcha (N-420), Villalgordo Del Marquesado. <h1>VUELTA: Por el mismo recorrido. (81 km)</h1></font></a><br />Domingo 21 de Abril 9:00 Horas</div>
+				<div class="enlace"><a href="#Etapa13Carretera"><font color="#00AC69"><h1>Etapa 13 RUTA CARRETERA (ARCAS):</h1>  SALIDA: Silo  IDA: Valeria, Tórtola, Arcas.  <h1>VUELTA: Por el mismo recorrido. (77 km)</h1></font></a><br />Domingo 28 de Abril 9:00 Horas</div>
+				<div class="enlace"><a href="#Etapa14Carretera"><font color="#FB4ABF"><h1>Etapa 14 RUTA CARRETERA (NEUTRALIZADA PINAR DE JABAGA):</h1>  SALIDA: Pinar De Jabaga  IDA: Cuevas De Velasco, Naharros.  <h1>VUELTA: Abia De la Obispalía, pinar De Jabaga. (90 km)</h1></font></a><br />Miercoles 1 de Mayo (Hora por Determinar)</div>
+	            <div class="enlace"><a href="#Etapa15Carretera"><font color="#00AC69"><h1>Etapa 15 RUTA CARRETERA (ALMODOVAR DEL PINAR):</h1>  SALIDA: Silo  IDA: Valeria, Olmeda, Chumillas, Almodovar Del Pinar.  <h1>VUELTA: Por el mismo recorrido. (80 km)</h1></font></a><br />Domingo 5 de Mayo 8:30 Horas</div>
+				<div class="enlace"><a href="#Etapa16Carretera"><font color="#00AC69"><h1>Etapa 16 RUTA CARRETERA (ALARCÓN):</h1>  SALIDA: Silo  IDA: Buenache, Olmedilla (Hasta cruce CUV-7143), N-III Hasta cruce CUV-8033, Alarcón.  <h1>VUELTA: Por el mismo recorrido. (77 km)</h1></font></a><br />Domingo 12 de Mayo 8:30 Horas</div>
+				<div class="enlace"><a href="#Etapa17Carretera"><font color="#00AC69"><h1>Etapa 17 RUTA CARRETERA (VALDEGANGA):</h1>  SALIDA: Silo  IDA: Villaverde y Pasaconsol , Albaladejo, La Parra De Las Vegas, Valdeganga.  <h1>VUELTA: Por Tortóla, Valeria, Valera, Valverde. (71 km)</h1></font></a><br />Domingo 19 de Mayo 8:30 Horas</div>
+				<div class="enlace"><a href="#Etapa19Carretera"><font color="#00AC69"><h1>Etapa 19 RUTA CARRETERA (EL CAÑAVATE):</h1>  SALIDA: Silo  IDA: Olivares, La Almarcha, Crta. Madrid-Valencia, Vía de servicio (autovia del este hasta cruce CUV-7221), Torrubia, Honrrubia (CM-3112) El Cañavate (C/ Poeta Rafael Allaro, Hasta el Calvario).  <h1>VUELTA: Por el mismo recorrido. (116 km)</h1></font></a><br />Domingo 26 de Mayo 8:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa21Carretera"><font color="#00AC69"><h1>Etapa 21 RUTA CARRETERA (YEMEDA):</h1>  SALIDA: Silo  IDA: Valeria, Olmeda (CUV-7124 hasta CM-220), Almodovar (CUV-5043 Cruce a la izquierda CUV-5042) Yemeda.  <h1>VUELTA: CUV-5042 (Hasta cruce CUV-5043), Almodovar, Chumillas, Olmeda, Valeria, Valverde. (128 km)</h1></font></a><br />Domingo 2 de Junio 8:00 Horas</div>
+				<div class="enlace"><a href="#Etapa22Carretera"><font color="#00AC69"><h1>Etapa 22 RUTA CARRETERA (TÓRTOLA):</h1>  SALIDA: Silo  IDA: Valeria , Tórtola.  <h1>VUELTA: Por el mismo recorrido (60 km)</h1></font></a><br />Domingo 9 de Junio 8:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa23Carretera"><font color="#00AC69"><h1>Etapa 23 RUTA CARRETERA (VILLAREJO PERIESTEBAN):</h1>  SALIDA: Silo  IDA: Villaverde, Olivares, La Parrilla, Villarejo Periesteban.  <h1>VUELTA: Por el mismo recorrido. (77 km)</h1></font></a><br />Domingo 16 de Junio 8:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa25Carretera"><font color="#00AC69"><h1>Etapa 25 RUTA CARRETERA (PINAREJO):</h1>  SALIDA: Silo  IDA: Villaverde, Olivares, La Almarcha (Via de servicio), Castillo De Garcimuñoz, Pinarejo.  <h1>VUELTA: Por el mismo recorrido. (82 km)</h1></font></a><br />Domingo 23 de Junio 8:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa26Carretera"><font color="#00AC69"><h1>Etapa 26 RUTA CARRETERA (LA TORDIGA):</h1>  SALIDA: Silo  IDA: Valeria, Olmeda (CUV-7124 hasta CM-220), Villar Del Saz De Arcas (La Tordiga).  <h1>VUELTA: Cruce CM-2100 (Arcas), Tórtola, Valeria, Valverde. (91 km)</h1></font></a><br />Domingo 30 de Junio 8:30 Horas</div>
+				<div class="enlace"><a href="#Etapa27Carretera"><font color="#00AC69"><h1>Etapa 27 RUTA CARRETERA (CHUMILLAS):</h1>  SALIDA: Silo  IDA: Valeria, Olmeda Del Rey, Chumillas. <h1>VUELTA: Por el mismo recorrido. (56 km)</h1></font></a><br />Domingo 7 de Julio 8:00 Horas</div>
+				<div class="enlace"><a href="#Etapa28Carretera"><font color="#00AC69"><h1>Etapa 28 RUTA CARRETERA (MONTALBANEJO):</h1>  SALIDA: Silo  IDA: Olivares, Cruce a la hinojosa (CUV-3231), Hinojosa, Montalbanejo.  <h1>VUELTA: Por el mismo recorrido (67 km)</h1></font></a><br />Domingo 14 de Julio 8:00 Horas</div>
+	            <div class="enlace"><a href="#Etapa29Carretera"><font color="#FB4ABF"><h1>Etapa 29 RUTA CARRETERA (MARCHA DEL CLUB VALVERDEJO):</h1>  SALIDA: Silo  IDA: Buenache De Alacón, Olmedilla, por CM-2100, Valverdejo. <h1>VUELTA: Por el mismo recorrido.(56 km)</h1></font></a><br />Domingo 21 de Julio (Hora por Determinar), (Al terminar ruta, el club pagará el almuerzo a todos los socios asistentes)</div>
+			    <div class="enlace"><a href="#Etapa31Carretera"><font color="#00AC69"><h1>Etapa 31 RUTA CARRETERA (ARCAS):</h1>  SALIDA: Silo  IDA: Valeria, Tórtola, Arcas.  <h1>VUELTA: Por el mismo recorrido. (77 km)</h1></font></a><br />Domingo 28 de Julio 8:00 Horas</div>
+				<div class="enlace"><a href="#Etapa32Carretera"><font color="#00AC69"><h1>Etapa 32 RUTA CARRETERA (CASTILLO DE GARCIMUÑOZ):</h1>  SALIDA: Silo  IDA: La Almarcha , Via de servicio (autovia del este, segundo puente), Castillo Garcimuñoz.  <h1>VUELTA: C/ San Bartolome hasta La Almarcha, Olivares, Valverde. (66 km)</h1></font></a><br />Domingo 4 de Agosto 8:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa34Carretera"><font color="#00AC69"><h1>Etapa 34 RUTA CARRETERA (MOTILLA DEL PALANCAR):</h1>  SALIDA: Silo  IDA: Buenache, Olmedilla, Motilla Del Palancar (Ultima rotonda).  <h1>VUELTA: Por el mismo recorrido. (82 km)</h1></font></a><br />Domingo 11 de Agosto 8:30 Horas</div>
+				<div class="enlace"><a href="#Etapa35Carretera"><font color="#FB4ABF"><h1>Etapa 35 RUTA CARRETERA (DIA DE LA BICICLETA):</h1>  SALIDA: Plaza Mayor  IDA: Plaza de la verdura, C/Peso, C/La Yedra, C/Leones, Parque D.Arsenio.  <h1>VUELTA: Carretera de Cuenca, Carretera Madrid-Valencia, Paseo del Santo Niño, Parque Tomas Bux, C/Fuente de la zarza, C/Endrino, C/Juan Pérez, C/Leones, Parque D.Arsenio Triguero. (4 km)</h1></font></a><br />Domingo 18 de Agosto (Hora por Determinar)</div>
+				<div class="enlace"><a href="#Etapa36Carretera"><font color="#00AC69"><h1>Etapa 36 RUTA CARRETERA (SAN LORENZO DE LA PARRILLA):</h1>  SALIDA: Silo  IDA: Villaverde, Albaladejo, La Parra De Las Vegas, N-420, San Lorenzo De La Parrilla.  <h1>VUELTA: Por Belmontejo, Olivares, Villaverde, Valverde. (72 km)</h1></font></a><br />Domingo 25 de Agosto 8:30 Horas</div>
+				<div class="enlace"><a href="#Etapa37Carretera"><font color="#00AC69"><h1>Etapa 37 RUTA CARRETERA (MONTALBANEJO):</h1>  SALIDA: Silo  IDA: Olivares, Cruce a la hinojosa (CUV-3231), Hinojosa, Montalbanejo.  <h1>VUELTA: Por el mismo recorrido (67 km)</h1></font></a><br />Domingo 1 de Septiembre 9:00 Horas</div>
+				<div class="enlace"><a href="#Etapa38Carretera"><font color="#00AC69"><h1>Etapa 38 RUTA CARRETERA (SOLERA DE GALBALDÓN):</h1>  SALIDA: Silo  IDA: Valeria, Olmeda Del Rey, Chumillas, Solera De Gabaldón.  <h1>VUELTA: Por el mismo recorrido. (66 km)</h1></font></a><br />Domingo 8 de Septiembre 9:00 Horas</div>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -167,45 +164,45 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview" data-inset="true" data-filter="true">
-				<div class="enlace"><a href="#Etapa1MTB"><font color="#FF4000"><h1>Etapa 1 RUTA BTT (VALVERDE-CANAL-VALVERDE):</h1>  SALIDA: Silo  IDA: Valverde, Camino paralelo a carretera de Villaverde, bajada pantano, Villaverde, gravera, Villaverde, Canal. <h1>VUELTA: Canal, Carretera vieja Villaverde, Viña emparrada, Corral martin, Cuesta cárnicas. (29 km)</h1></font></a><br />Domingo 4 de Febrero 9:30 Horas</div>
-	            <div class="enlace"><a href="#Etapa2MTB"><font color="#FF4000"><h1>Etapa 2 RUTA BTT (VALVERDE-ALBALADEJO-VALERA-VALVERDE):</h1>  SALIDA: Silo  IDA: Valverde, Camino Albaladejo, Albaladejo.  <h1>VUELTA: Albaladejo, Camino asfaltado, Valera, Nave Candi, Camino Albaladejo, Valverde. (31 km)</h1></font></a><br />Domingo 11 de Febrero 9:30 Horas</div>
-				<div class="enlace"><a href="#Etapa3MTB"><font color="#FF4000"><h1>Etapa 3 RUTA BTT (VALVERDE-CUEVA LA JUDIA-VALVERDE):</h1>  SALIDA: Silo  IDA: Camino San Cristobal, Arroyo la Dehesa, Cueva la judia.  <h1>VUELTA: Por la Cañada, Fuente ladron, Cruzar cementera, Camino S/Isisdro. (24 km)</h1></font></a><br />Domingo 18 de Febrero 9:30 Horas</div>
-	            <div class="enlace"><a href="#Etapa4MTB"><font color="#FF4000"><h1>Etapa 4 RUTA BTT (VALVERDE-ALBALADEJO-VILLAVERDE-VALVERDE):</h1>  SALIDA: Silo  IDA: Camino del Cementerio, Albaladejo, Piscina de Albaladejo, Camino Villaverde, Punto limpio.  <h1>VUELTA: Villaverde, Camino Manchamar, Oncenero. (30 km)</h1></font></a><br />Domingo 25 de Febrero 9:30 Horas</div>
-				<div class="enlace"><a href="#Etapa5MTB"><font color="#FF4000"><h1>Etapa 5 RUTA BTT (CIRCUITO MTB VALVERDE):</h1>  SALIDA: Silo  IDA: Camino del Camping, Oncenero (Parte de atras), Cerro Telégrafos, Subida Camping, Bajar cuesta Carnica, Quintanar, Piedra Hueca, Macuquero.  <h1>VUELTA: Los Cabezos, Los Torneses, Corral de Martín, Cuesta Carnica, Camping. (37 km)</h1></font></a><br />Domingo 4 de Marzo 9:30 Horas</div>
-	            <div class="enlace"><a href="#Etapa6MTB"><font color="#FF4000"><h1>Etapa 6 RUTA BTT (VALVERDE-CERRO LAS TORCAS-PANTANO-HONTECILLAS-CUEVA LA JUDIA):</h1>  SALIDA: Silo  IDA: Cerro las Torcas, Hontecillas, Subida cuesta blanca, Finca La Goya.  <h1>VUELTA: Camino cueva la judia, Camino S/Cristobal, Camino S/Isidro. (31 km)</h1></font></a><br />Domingo 11 de Marzo 9:30 Horas</div>
-	            <div class="enlace"><a href="#Etapa7MTB"><font color="#FF4000"><h1>Etapa 7 RUTA BTT (VALVERDE-VILLAVERDE-ALBALADEJO-VALERA):</h1>  SALIDA: Silo  IDA: Valverde, Camino Albaladejo hasta viña garri, Villaverde, Punto limpio, Albaladejo, Valera.  <h1>VUELTA: Valera, Subida sierra, S/Cristobal, Valverde. (38 km)</h1></font></a><br />Domingo 18 de Marzo 9:30 Horas</div>
-				<div class="enlace"><a href="#Etapa8MTB"><font color="#FF4000"><h1>Etapa 8 RUTA BTT (SAN CRISTOBAL-SUBIDA A LOS MORENA-PASAR POR SIERRA VALERA-ANTENAS-LLANOS LA PARRA-ALBALDEJO VALVERDE):</h1>  SALIDA: Silo  IDA: Camino S/Cristobal, Subida Los Morenas, Sierra Valera, Las Antenas, Llanos de La Parra.  <h1>VUELTA: Albaladejo, Camino Cementerio. (38 km)</h1></font></a><br />Domingo 25 de Marzo 9:30 Horas</div>
-	            <div class="enlace"><a href="#Etapa9MTB"><font color="#FF4000"><h1>Etapa 9 RUTA BTT (TERMINO VALVERDE DE JÚCAR):</h1>  SALIDA: Silo  IDA: Valverde, Camino Albaladejo, Puente Carretera Villaverde, Los Cabezos.  <h1>VUELTA: Los Torneses, Pantano, Chalet romero. (45 km)</h1></font></a><br />Domingo 1 de Abril 9:00 Horas</div>
-				<div class="enlace"><a href="#Etapa10MTB"><font color="#FF4000"><h1>Etapa 10 RUTA BTT (VALVERDE-VALERIA-VALERA-VALVERDE):</h1>  SALIDA: Silo  IDA: Valverde, S/Isidro, Subida Sierra, Valeria.  <h1>VUELTA: Valeria, Subida llanos de la Olmeda, Valera, Camino Albaladejo, Valverde. (46 km)</h1></font></a><br />Domingo 8 de Abril 9:00 Horas</div>
-	            <div class="enlace"><a href="#Etapa11MTB"><font color="#FF4000"><h1>Etapa 11 RUTA BTT (VALVERDE-BELMONTEJO-VALVERDE):</h1>  SALIDA: Silo  IDA: Manchamar, Orilla canal, Belmontejo.  <h1>VUELTA: Belmontejo, Villaverde, Camino lado carretera, Macuquero, Valverde. (47 km)</h1></font></a><br />Domingo 15 de Abril 8:30 Horas</div>
-	            <div class="enlace"><a href="#Etapa12MTB"><font color="#FF4000"><h1>Etapa 12 RUTA BTT (VALVERDE-ALBALADEJO-LA PARRA-VALVERDE):</h1>  SALIDA: Silo  IDA: Valverde, Albaladejo, Subida Sierra, La Parra.  <h1>VUELTA: La Parra, Albaladejo, Villaverde, Camino lado carretera, Valverde. (46 km)</h1></font></a><br />Domingo 22 de Abril 9:00 Horas</div>
-				<div class="enlace"><a href="#Etapa13MTB"><font color="#FF4000"><h1>Etapa 13 RUTA BTT (VALVERDE-BELMONTEJO-LA CEÑA-VALVERDE):</h1> SALIDA: Silo  IDA: Valverde, Belmontejo, La Ceña.  <h1>VUELTA: La ceña, Albaladejo, Villaverde, Valverde. (50 km).</h1></font></a><br />Domingo 29 de Abril 9:00 Horas</div>
-	            <div class="enlace"><a href="#Etapa15MTB"><font color="#FF4000"><h1>Etapa 15 RUTA BTT (VALVERDE-VALERIA-VALERA-VALVERDE):</h1>  SALIDA: Silo  IDA: Valverde, Albaladejo, Subida Sierra, Valeria.  <h1>VUELTA: Valeria, Subida Sierra, Valera, Valverde. (44 km)</h1></font></a><br />Domingo 6 de Mayo 8:30 Horas</div>
-				<div class="enlace"><a href="#Etapa16MTB"><font color="#FF4000"><h1>Etapa 16 RUTA BTT (VALVERDE-PIQUERAS-VALERA-VALVERDE):</h1>  SALIDA: Silo  IDA: Valverde, S/Cristobal, Subida Sierra, Piqueras.  <h1>VUELTA: Piqueras, Subida Molinos Chumillas, Llanos de la Olmeda, Valera, Camino Albaladejo, Valverde. (52 km)</h1></font></a><br />Domingo 13 de Mayo 8:30 Horas</div>
-				<div class="enlace"><a href="#Etapa17MTB"><font color="#FF4000"><h1>Etapa 17 RUTA BTT (BUENACHE-BARCHÍN-PIQUERAS-VALERA):</h1>  SALIDA: Silo  IDA: Hontecillas, Buenache, Camino a Barchin.  <h1>VUELTA: Piqueras, Camino Ruena, Santa Subida la sierra, Camino S/Cristobal, Camino S/Isisdro. (52 km)</h1></font></a><br />Domingo 20 de Mayo 8:30 Horas</div>
-				<div class="enlace"><a href="#Etapa18MTB"><font color="#FFBF00"><h1>Etapa 18 RUTA BTT (NOCTURNA ALBALADEJO-VILLAVERDE):</h1>  SALIDA: Silo  IDA: Camino Albaladejo (CUV-7131 hasta Albaladejo), Camino Vallejo Molar (hasta Villaverde).  <h1>VUELTA: CUV-7132 Hasta C/ Oncenero, C/ coto (hasta calle la playa, AV. Madrid-Valencia). (30 km)</h1></font></a><br />Sábado 26 de Mayo 21:30 Horas</div>
-				<div class="enlace"><a href="#Etapa19MTB"><font color="#FF4000"><h1>Etapa 19 RUTA BTT (VALVERDE-PIQUERAS-SOLERA DE GABALDÓN-CARBONERA DE PIQUERAS-VALERA-VALVERDE):</h1>  SALIDA: Silo  IDA: Sierra Valera, Piqueras (Carbonera), Camino Molinos, Solera.  <h1>VUELTA: Marroman, Alto Nava, Valera, Valverde. (66 km)</h1></font></a><br />Domingo 27 de Mayo 8:30 Horas</div>
-				<div class="enlace"><a href="#Etapa20MTB"><font color="#FE2E64"><h1>Etapa 20 RUTA BTT (NEUTRALIZADA OLMEDILLA-EL PICAZO):</h1>  SALIDA: Olmedilla De Alarcón, El Picazo.  <h1>VUELTA: Por el mismo recorrido (45 km)</h1></font></a><br />Jueves 31 de Mayo (Hora por Determinar)</div>
-	            <div class="enlace"><a href="#Etapa21MTB"><font color="#FF4000"><h1>Etapa 21 RUTA BTT (VALVERDE-TRASVASE-VILLAVERDE-ALBALADEJO-LA PARRA-VALERIA-VALERA):</h1>  SALIDA: Silo  IDA: Valverde, Trasvase, Villaverde, Albaladejo, La Parra.  <h1>VUELTA: La parra, Llanos de la parra, Valeria, Valera, Valverde. (80 km)</h1></font></a><br />Domingo 3 de Junio 8:00 Horas</div>
-				<div class="enlace"><a href="#Etapa22MTB"><font color="#FF4000"><h1>Etapa 22 RUTA BTT (VALVERDE-VILLAVERDE-ALBALADEJO-VALERA):</h1>  SALIDA: Silo  IDA: Valverde, Camino Albaladejo hasta viña garri, Villaverde, Punto limpio, Albaladejo, Valera.  <h1>VUELTA: Valera, Subida sierra, S/Cristobal, Valverde. (38 km)</h1></font></a><br />Domingo 10 de Junio 9:00 Horas</div>
-	            <div class="enlace"><a href="#Etapa23MTB"><font color="#FF4000"><h1>Etapa 23 RUTA BTT (VALVERDE-BELMONTEJO-VALVERDE):</h1>  SALIDA: Silo  IDA: Manchamar, Orilla canal, Belmontejo.  <h1>VUELTA: Belmontejo, Villaverde, Camino lado carretera, Macuquero, Valverde. (47 km)</h1></font></a><br />Domingo 17 de Junio 8:30 Horas</div>
-				<div class="enlace"><a href="#Etapa24MTB"><font color="#FFBF00"><h1>Etapa 24 RUTA BTT (NOCTURNA VALVERDE-VILLAVERDE):</h1>  SALIDA: Silo  IDA: Camino Albaladejo, Villaverde.  <h1>VUELTA: CUV-7132, C/ Oncenero, Valverde. (24 km)</h1></font></a><br />Sábado 23 de Junio 22:00 Horas</div>
-	            <div class="enlace"><a href="#Etapa25MTB"><font color="#FF4000"><h1>Etapa 25 RUTA BTT (CUEVA LA JUDIA-HONTECILLAS-BUENACHE-LAS TORCAS-VALVERDE):</h1>  SALIDA: Silo  IDA: Subida Camino S/Cristobal, Cuesta Blanca, Hontecillas, Camino Buenache. <h1>VUELTA: Las Torcas, Camino Hontecillas. (35)</h1></font></a><br />Domingo 24 de Junio 9:00 Horas</div>
-	            <div class="enlace"><a href="#Etapa26MTB"><font color="#FF4000"><h1>Etapa 26 RUTA BTT (VALVERDE-TORRETA DE VALDEGANGA-VALVERDE):</h1>  SALIDA: Silo  IDA: Valverde, Albaladejo, La Parra, Torreta Valdeganga.  <h1>VUELTA: Torreta Valdeganga, Toboganes Nogueron, Valverde. (63 km)</h1></font></a><br />Domingo 1 de Julio 8:00 Horas</div>
-				<div class="enlace"><a href="#Etapa27MTB"><font color="#FF4000"><h1>Etapa 27 RUTA BTT (VALVERDE-ALBALADEJO-VILLAVERDE-VALVERDE):</h1>  SALIDA: Silo  IDA: Camino del Cementerio, Albaladejo, Piscina de Albaladejo, Camino Villaverde, Punto limpio.  <h1>VUELTA: Villaverde, Camino Manchamar, Oncenero. (30 km)</h1></font></a><br />Domingo 8 de Julio 8:30 Horas</div>
-				<div class="enlace"><a href="#Etapa28MTB"><font color="#FF4000"><h1>Etapa 28 RUTA BTT (VALVERDE-HONTECILLAS-BUENACHE-BARCHIN-PIQUERAS-VALERA-VALVERDE):</h1>  SALIDA: Silo  IDA: Camino Hontecillas, Buenache, Camino Barchin, Piqueras.  <h1>VUELTA: Piqueras, Camino Ruena, La Santa, Subida al corral de la Sierra, Valla (Finca Goya), Camino S/Cristobal, Camino S/Isisdro. (50 km)</h1></font></a><br />Domingo 15 de Julio 8:00 Horas</div>
-	            <div class="enlace"><a href="#Etapa29MTB"><font color="#FE2E64"><h1>Etapa 29 RUTA BTT (MARCHA DEL CLUB LA HINOJOSA):</h1>  SALIDA: Silo  IDA: Villaverde, Olivares (Hasta cruce crta: 3231) La Hinojosa.  <h1>VUELTA: Por  mismo recorrido. (52 km)</h1></font></a><br />Domingo 22 de Julio (Hora por Determinar), (Al terminar ruta, el club pagará el almuerzo a todos los socios asistentes)</div>
-	            <div class="enlace"><a href="#Etapa30MTB"><font color="#FFBF00"><h1>Etapa 30 RUTA BTT (NOCTURNA ALBALADEO-VALERA):</h1>  SALIDA: Silo  IDA: Camino Albaladejo, Albaladejo, Camino Valera (Hasta cruce CM-2100).  <h1>VUELTA: Camino Arroyo De La Cañadilla (Hasta Camino Albaladejo), Valverde. (30 km)</h1></font></a><br />Sábado 28 de Julio 22:00 Horas</div>
-			    <div class="enlace"><a href="#Etapa31MTB"><font color="#FF4000"><h1>Etapa 31 RUTA BTT (CUEVA LA JUDIA-HONTECILLAS-BUENACHE-LAS TORCAS-VALVERDE):</h1>  SALIDA: Silo  IDA: Subida Camino S/Cristobal, Cuesta Blanca, Hontecillas, Camino Buenache. <h1>VUELTA: Las Torcas, Camino Hontecillas. (35)</h1></font></a><br />Domingo 29 de Julio 8:30 Horas</div>
-				<div class="enlace"><a href="#Etapa32MTB"><font color="#FF4000"><h1>Etapa 32 RUTA BTT (VALVERDE-ALBALADEJO-VILLAVERDE-VALVERDE):</h1>  SALIDA: Silo  IDA: Camino del Cementerio, Albaladejo, Piscina de Albaladejo, Camino Villaverde, Punto limpio.  <h1>VUELTA: Villaverde, Camino Manchamar, Oncenero. (30 km)</h1></font></a><br />Domingo 5 de Agosto 8:30 Horas</div>
-	            <div class="enlace"><a href="#Etapa33MTB"><font color="#FFBF00"><h1>Etapa 33 RUTA BTT (NOCTURNA VIÑA EMPARRADA):</h1>  SALIDA: Silo  IDA: Camping, Vallejazo, Torneses.  <h1>VUELTA: Viña emparrada, Cuesta Carnica. (18 km)</h1></font></a><br />Sábado 11 de Agosto 21:30 Horas</div>
-	            <div class="enlace"><a href="#Etapa34MTB"><font color="#FF4000"><h1>Etapa 34 RUTA BTT (VALVERDE-MACUQUERO-CASERNA-TORRUBIA-HONRUBIA-CASERNA-CERRO GORDO):</h1>  SALIDA: Silo  IDA: Camino Cementerio, Macuquero, Caserna, Camino Torrubia, Honrrubia.  <h1>VUELTA: Caserna, Cerro Gordo, Camino Camping. (56 km)</h1></font></a><br />Domingo 12 de Agosto 8:00 Horas</div>
-				<div class="enlace"><a href="#Etapa35MTB"><font color="#FE2E64"><h1>Etapa 35 RUTA BTT (DIA DE LA BICICLETA):</h1>  SALIDA: Plaza Mayor  IDA: Plaza de la verdura, C/Peso, C/La Yedra, C/Leones, Parque D.Arsenio.  <h1>VUELTA: Carretera de Cuenca, Carretera Madrid-Valencia, Paseo del Santo Niño, Parque Tomas Bux, C/Fuente de la zarza, C/Endrino, C/Juan Pérez, C/Leones, Parque D.Arsenio Triguero. (4 km)</h1></font></a><br />Domingo 20 de Agosto (Hora por Determinar)</div>
-				<div class="enlace"><a href="#Etapa36MTB"><font color="#FF4000"><h1>Etapa 36 RUTA BTT (VALVERDE-LA CEÑA "INVERSA"-VALVERDE):</h1>  SALIDA: Silo  IDA: Valverde, Albaladejo, La Ceña.  <h1>VUELTA: La Ceña, Belmontejo, Villaverde, Valverde. (50 km)</h1></font></a><br />Domingo 26 de Agosto 8:30 Horas</div>
-				<div class="enlace"><a href="#Etapa37MTB"><font color="#FF4000"><h1>Etapa 37 RUTA BTT (CIRCUITO DE VALVERDE A LA INVERSA):</h1>  SALIDA: Silo  IDA: Camino camping, Subida Camping, Cuesta Carnica, Camino Corral Martín, Los Torneses, Los Cabezos, Sendas Macuquero.  <h1>VUELTA: Piedra Hueca, Quintanar, Cuesta Carnica, Camping, Cerro Telégrafo, Parte de atras Oncenero, Camino Camping. (37 km)</h1></font></a><br />Domingo 2 de Septiembre 9:30 Horas</div>
-				<div class="enlace"><a href="#Etapa38MTB"><font color="#FF4000"><h1>Etapa 38 RUTA BTT (VALVERDE-CUEVA LA JUDIA-VALVERDE):</h1>  SALIDA: Silo  IDA: Camino San Cristobal, Arroyo la Dehesa, Cueva la judia.  <h1>VUELTA: Por la Cañada, Fuente ladron, Cruzar cementera, Camino S/Isisdro. (24 km)</h1></font></a><br />Domingo 9 de Septiembre 9:30 Horas</div>
-				<div class="enlace"><a href="#Etapa39MTB"><font color="#FF4000"><h1>Etapa RUTA BTT (Lluvia-Valverde-canal- belmontejo-valverde):</h1>  SALIDA: Silo  IDA: Camping, Manchamar, Caserna, Gravera, Villaverde, Canal, Belmontejo.  <h1>VUELTA: Por el mismo recorrido hasta Crta.Vieja de Villaverde, Carretera vieja, Villafranca, Valverde. (44 km)</h1></font></a><br />Dia y Hora correspondiente a su etapa</div>
-				<div class="enlace"><a href="#Etapa40MTB"><font color="#FF4000"><h1>Etapa RUTA BTT (Lluvia-Valverde-villaverde albaladejo-valera-valverde):</h1>  SALIDA: Silo  IDA: Valverde, Crta.vieja a Villaverde, Albaladejo.  <h1>VUELTA: Albaladejo, Camino asfaltado hasta Valera, Valverde. (32 km)</h1></font></a><br />Dia y Hora correspondiente a su etapa</div>
+				<div class="enlace"><a href="#Etapa1MTB"><font color="#FFF47300"><h1>Etapa 1 RUTA BTT (VALVERDE-CANAL-VALVERDE):</h1>  SALIDA: Silo  IDA: Valverde, Camino paralelo a carretera de Villaverde, bajada pantano, Villaverde, gravera, Villaverde, Canal. <h1>VUELTA: Canal, Carretera vieja Villaverde, Viña emparrada, Corral martin, Cuesta cárnicas. (29 km)</h1></font></a><br />Domingo 3 de Febrero 9:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa2MTB"><font color="#FFF47300"><h1>Etapa 2 RUTA BTT (VALVERDE-ALBALADEJO-VALERA-VALVERDE):</h1>  SALIDA: Silo  IDA: Valverde, Camino Albaladejo, Albaladejo.  <h1>VUELTA: Albaladejo, Camino asfaltado, Valera, Nave Candi, Camino Albaladejo, Valverde. (31 km)</h1></font></a><br />Domingo 10 de Febrero 9:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa3MTB"><font color="#FFF47300"><h1>Etapa 3 RUTA BTT (VALVERDE-ALBALADEJO-VILLAVERDE-VALVERDE):</h1>  SALIDA: Silo  IDA: Camino del Cementerio, Albaladejo, Piscina de Albaladejo, Camino Villaverde, Punto limpio.  <h1>VUELTA: Villaverde, Camino Manchamar, Oncenero. (30 km)</h1></font></a><br />Domingo 17 de Febrero 9:30 Horas</div>
+				<div class="enlace"><a href="#Etapa4MTB"><font color="#FFF47300"><h1>Etapa 4 RUTA BTT (VALVERDE-CUEVA LA JUDIA-VALVERDE):</h1>  SALIDA: Silo  IDA: Camino San Cristobal, Arroyo la Dehesa, Cueva la judia.  <h1>VUELTA: Por la Cañada, Fuente ladron, Cruzar cementera, Camino S/Isisdro. (24 km)</h1></font></a><br />Domingo 24 de Febrero 9:30 Horas</div>
+				<div class="enlace"><a href="#Etapa5MTB"><font color="#FFF47300"><h1>Etapa 5 RUTA BTT (CIRCUITO MTB VALVERDE):</h1>  SALIDA: Silo  IDA: Camino del Camping, Oncenero (Parte de atras), Cerro Telégrafos, Subida Camping, Bajar cuesta Carnica, Quintanar, Piedra Hueca, Macuquero.  <h1>VUELTA: Los Cabezos, Los Torneses, Corral de Martín, Cuesta Carnica, Camping. (37 km)</h1></font></a><br />Domingo 3 de Marzo 9:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa6MTB"><font color="#FFF47300"><h1>Etapa 6 RUTA BTT (VALVERDE-CERRO LAS TORCAS-PANTANO-HONTECILLAS-CUEVA LA JUDIA):</h1>  SALIDA: Silo  IDA: Cerro las Torcas, Hontecillas, Subida cuesta blanca, Finca La Goya.  <h1>VUELTA: Camino cueva la judia, Camino S/Cristobal, Camino S/Isidro. (31 km)</h1></font></a><br />Domingo 10 de Marzo 9:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa7MTB"><font color="#FFF47300"><h1>Etapa 7 RUTA BTT (VALVERDE-VILLAVERDE-ALBALADEJO-VALERA):</h1>  SALIDA: Silo  IDA: Valverde, Camino Albaladejo hasta viña garri, Villaverde, Punto limpio, Albaladejo, Valera.  <h1>VUELTA: Valera, Subida sierra, S/Cristobal, Valverde. (38 km)</h1></font></a><br />Domingo 17 de Marzo 9:30 Horas</div>
+				<div class="enlace"><a href="#Etapa8MTB"><font color="#FFF47300"><h1>Etapa 8 RUTA BTT (SAN CRISTOBAL-SUBIDA A LOS MORENA-PASAR POR SIERRA VALERA-ANTENAS-LLANOS LA PARRA-ALBALDEJO VALVERDE):</h1>  SALIDA: Silo  IDA: Camino S/Cristobal, Subida Los Morenas, Sierra Valera, Las Antenas, Llanos de La Parra.  <h1>VUELTA: Albaladejo, Camino Cementerio. (38 km)</h1></font></a><br />Domingo 24 de Marzo 9:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa9MTB"><font color="#FFF47300"><h1>Etapa 9 RUTA BTT (TERMINO VALVERDE DE JÚCAR):</h1>  SALIDA: Silo  IDA: Valverde, Camino Albaladejo, Puente Carretera Villaverde, Los Cabezos.  <h1>VUELTA: Los Torneses, Pantano, Chalet romero. (45 km)</h1></font></a><br />Domingo 31 de Marzo 9:30 Horas</div>
+				<div class="enlace"><a href="#Etapa10MTB"><font color="#FFF47300"><h1>Etapa 10 RUTA BTT (VALVERDE-VALERIA-VALERA-VALVERDE):</h1>  SALIDA: Silo  IDA: Valverde, S/Isidro, Subida Sierra, Valeria.  <h1>VUELTA: Valeria, Subida llanos de la Olmeda, Valera, Camino Albaladejo, Valverde. (46 km)</h1></font></a><br />Domingo 7 de Abril 9:00 Horas</div>
+				<div class="enlace"><a href="#Etapa11MTB"><font color="#FFF47300"><h1>Etapa 11 RUTA BTT (VALVERDE-PIQUERAS-SOLERA DE GABALDÓN-CARBONERA DE PIQUERAS-VALERA-VALVERDE):</h1>  SALIDA: Silo  IDA: Sierra Valera, Piqueras (Carbonera), Camino Molinos, Solera.  <h1>VUELTA: Marroman, Alto Nava, Valera, Valverde. (66 km)</h1></font></a><br />Domingo 14 de Abril 8:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa12MTB"><font color="#FFF47300"><h1>Etapa 12 RUTA BTT (VALVERDE-ALBALADEJO-LA PARRA-VALVERDE):</h1>  SALIDA: Silo  IDA: Valverde, Albaladejo, Subida Sierra, La Parra.  <h1>VUELTA: La Parra, Albaladejo, Villaverde, Camino lado carretera, Valverde. (46 km)</h1></font></a><br />Domingo 21 de Abril 9:00 Horas</div>
+				<div class="enlace"><a href="#Etapa13MTB"><font color="#FFF47300"><h1>Etapa 13 RUTA BTT (VALVERDE-BELMONTEJO-LA CEÑA-VALVERDE):</h1> SALIDA: Silo  IDA: Valverde, Belmontejo, La Ceña.  <h1>VUELTA: La ceña, Albaladejo, Villaverde, Valverde. (50 km).</h1></font></a><br />Domingo 28 de Abril 9:00 Horas</div>
+	            <div class="enlace"><a href="#Etapa15MTB"><font color="#FFF47300"><h1>Etapa 15 RUTA BTT (VALVERDE-VALERIA-VALERA-VALVERDE):</h1>  SALIDA: Silo  IDA: Valverde, Albaladejo, Subida Sierra, Valeria.  <h1>VUELTA: Valeria, Subida Sierra, Valera, Valverde. (44 km)</h1></font></a><br />Domingo 5 de Mayo 8:30 Horas</div>
+				<div class="enlace"><a href="#Etapa16MTB"><font color="#FFF47300"><h1>Etapa 16 RUTA BTT (BUENACHE-BARCHÍN-PIQUERAS-VALERA):</h1>  SALIDA: Silo  IDA: Hontecillas, Buenache, Camino a Barchin.  <h1>VUELTA: Piqueras, Camino Ruena, Santa Subida la sierra, Camino S/Cristobal, Camino S/Isisdro. (52 km)</h1></font></a><br />Domingo 12 de Mayo 8:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa17MTB"><font color="#FFF47300"><h1>Etapa 17 RUTA BTT (VALVERDE-BELMONTEJO-VALVERDE):</h1>  SALIDA: Silo  IDA: Manchamar, Orilla canal, Belmontejo.  <h1>VUELTA: Belmontejo, Villaverde, Camino lado carretera, Macuquero, Valverde. (47 km)</h1></font></a><br />Domingo 19 Mayo 8:30 Horas</div>
+				<div class="enlace"><a href="#Etapa18MTB"><font color="#FFBF00"><h1>Etapa 18 RUTA BTT (NOCTURNA ALBALADEJO-VILLAVERDE):</h1>  SALIDA: Silo  IDA: Camino Albaladejo (CUV-7131 hasta Albaladejo), Camino Vallejo Molar (hasta Villaverde).  <h1>VUELTA: CUV-7132 Hasta C/ Oncenero, C/ coto (hasta calle la playa, AV. Madrid-Valencia). (30 km)</h1></font></a><br />Viernes 24 de Mayo 21:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa19MTB"><font color="#FFF47300"><h1>Etapa 19 RUTA BTT (VALVERDE-TORRETA DE VALDEGANGA-VALVERDE):</h1>  SALIDA: Silo  IDA: Valverde, Albaladejo, La Parra, Torreta Valdeganga.  <h1>VUELTA: Torreta Valdeganga, Toboganes Nogueron, Valverde. (63 km)</h1></font></a><br />Domingo 26 de Mayo 8:30 Horas</div>
+				<div class="enlace"><a href="#Etapa20MTB"><font color="#FB4ABF"><h1>Etapa 20 RUTA BTT (NEUTRALIZADA OLMEDILLA-EL PICAZO):</h1>  SALIDA: Olmedilla De Alarcón, El Picazo.  <h1>VUELTA: Por el mismo recorrido (45 km)</h1></font></a><br />Jueves 31 de Mayo (Hora por Determinar)</div>
+	            <div class="enlace"><a href="#Etapa21MTB"><font color="#FFF47300"><h1>Etapa 21 RUTA BTT (VALVERDE-TRASVASE-VILLAVERDE-ALBALADEJO-LA PARRA-VALERIA-VALERA):</h1>  SALIDA: Silo  IDA: Valverde, Trasvase, Villaverde, Albaladejo, La Parra.  <h1>VUELTA: La parra, Llanos de la parra, Valeria, Valera, Valverde. (80 km)</h1></font></a><br />Domingo 2 de Junio 8:00 Horas</div>
+				<div class="enlace"><a href="#Etapa22MTB"><font color="#FFF47300"><h1>Etapa 22 RUTA BTT (VALVERDE-VILLAVERDE-ALBALADEJO-VALERA):</h1>  SALIDA: Silo  IDA: Valverde, Camino Albaladejo hasta viña garri, Villaverde, Punto limpio, Albaladejo, Valera.  <h1>VUELTA: Valera, Subida sierra, S/Cristobal, Valverde. (38 km)</h1></font></a><br />Domingo 9 de Junio 8:30 Horas</div>
+				<div class="enlace"><a href="#Etapa23MTB"><font color="#FFF47300"><h1>Etapa 23 RUTA BTT (VALVERDE-PIQUERAS-VALERA-VALVERDE):</h1>  SALIDA: Silo  IDA: Valverde, S/Cristobal, Subida Sierra, Piqueras.  <h1>VUELTA: Piqueras, Subida Molinos Chumillas, Llanos de la Olmeda, Valera, Camino Albaladejo, Valverde. (52 km)</h1></font></a><br />Domingo 16 de Junio 8:30 Horas</div>
+				<div class="enlace"><a href="#Etapa24MTB"><font color="#FFBF00"><h1>Etapa 24 RUTA BTT (NOCTURNA VALVERDE-VILLAVERDE):</h1>  SALIDA: Silo  IDA: Camino Albaladejo, Villaverde.  <h1>VUELTA: CUV-7132, C/ Oncenero, Valverde. (24 km)</h1></font></a><br />Viernes 21 de Junio 22:00 Horas</div>
+	            <div class="enlace"><a href="#Etapa25MTB"><font color="#FFF47300"><h1>Etapa 25 RUTA BTT (CUEVA LA JUDIA-HONTECILLAS-BUENACHE-LAS TORCAS-VALVERDE):</h1>  SALIDA: Silo  IDA: Subida Camino S/Cristobal, Cuesta Blanca, Hontecillas, Camino Buenache. <h1>VUELTA: Las Torcas, Camino Hontecillas. (35)</h1></font></a><br />Domingo 23 de Junio 8:30 Horas</div>
+				<div class="enlace"><a href="#Etapa26MTB"><font color="#FFF47300"><h1>Etapa 26 RUTA BTT (VALVERDE-HONTECILLAS-BUENACHE-BARCHIN-PIQUERAS-VALERA-VALVERDE):</h1>  SALIDA: Silo  IDA: Camino Hontecillas, Buenache, Camino Barchin, Piqueras.  <h1>VUELTA: Piqueras, Camino Ruena, La Santa, Subida al corral de la Sierra, Valla (Finca Goya), Camino S/Cristobal, Camino S/Isisdro. (50 km)</h1></font></a><br />Domingo 30 de Junio 8:30 Horas</div>
+				<div class="enlace"><a href="#Etapa27MTB"><font color="#FFF47300"><h1>Etapa 27 RUTA BTT (VALVERDE-ALBALADEJO-VILLAVERDE-VALVERDE):</h1>  SALIDA: Silo  IDA: Camino del Cementerio, Albaladejo, Piscina de Albaladejo, Camino Villaverde, Punto limpio.  <h1>VUELTA: Villaverde, Camino Manchamar, Oncenero. (30 km)</h1></font></a><br />Domingo 7 de Julio 8:30 Horas</div>
+				<div class="enlace"><a href="#Etapa28MTB"><font color="#FFF47300"><h1>Etapa 28 RUTA BTT (VALVERDE-CERRO LAS TORCAS-PANTANO-HONTECILLAS-CUEVA LA JUDIA):</h1>  SALIDA: Silo  IDA: Cerro las Torcas, Hontecillas, Subida cuesta blanca, Finca La Goya.  <h1>VUELTA: Camino cueva la judia, Camino S/Cristobal, Camino S/Isidro. (31 km)</h1></font></a><br />Domingo 14 de Julio 8:00 Horas</div>
+	            <div class="enlace"><a href="#Etapa29MTB"><font color="#FB4ABF"><h1>Etapa 29 RUTA BTT (MARCHA DEL CLUB VALVERDEJO):</h1>  SALIDA: Silo  IDA: Buenache De Alacón, Olmedilla, por CM-2100, Valverdejo. <h1>VUELTA: Por el mismo recorrido.(56 km)</h1></font></a><br />Domingo 21 de Julio (Hora por Determinar), (Al terminar ruta, el club pagará el almuerzo a todos los socios asistentes)</div>
+	            <div class="enlace"><a href="#Etapa30MTB"><font color="#FFBF00"><h1>Etapa 30 RUTA BTT (NOCTURNA ALBALADEO-VALERA):</h1>  SALIDA: Silo  IDA: Camino Albaladejo, Albaladejo, Camino Valera (Hasta cruce CM-2100).  <h1>VUELTA: Camino Arroyo De La Cañadilla (Hasta Camino Albaladejo), Valverde. (30 km)</h1></font></a><br />Viernes 28 de Julio 22:00 Horas</div>
+			    <div class="enlace"><a href="#Etapa31MTB"><font color="#FFF47300"><h1>Etapa 31 RUTA BTT (VALVERDE-BELMONTEJO-VALVERDE):</h1>  SALIDA: Silo  IDA: Manchamar, Orilla canal, Belmontejo.  <h1>VUELTA: Belmontejo, Villaverde, Camino lado carretera, Macuquero, Valverde. (47 km)</h1></font></a><br />Domingo 28 de Julio 8:30 Horas</div>
+				<div class="enlace"><a href="#Etapa32MTB"><font color="#FFF47300"><h1>Etapa 32 RUTA BTT (VALVERDE-ALBALADEJO-VILLAVERDE-VALVERDE):</h1>  SALIDA: Silo  IDA: Camino del Cementerio, Albaladejo, Piscina de Albaladejo, Camino Villaverde, Punto limpio.  <h1>VUELTA: Villaverde, Camino Manchamar, Oncenero. (30 km)</h1></font></a><br />Domingo 4 de Agosto 8:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa33MTB"><font color="#FFBF00"><h1>Etapa 33 RUTA BTT (NOCTURNA VIÑA EMPARRADA):</h1>  SALIDA: Silo  IDA: Camping, Vallejazo, Torneses.  <h1>VUELTA: Viña emparrada, Cuesta Carnica. (18 km)</h1></font></a><br />Viernes 9 de Agosto 21:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa34MTB"><font color="#FFF47300"><h1>Etapa 34 RUTA BTT (VALVERDE-MACUQUERO-CASERNA-TORRUBIA-HONRUBIA-CASERNA-CERRO GORDO):</h1>  SALIDA: Silo  IDA: Camino Cementerio, Macuquero, Caserna, Camino Torrubia, Honrrubia.  <h1>VUELTA: Caserna, Cerro Gordo, Camino Camping. (56 km)</h1></font></a><br />Domingo 11 de Agosto 8:30 Horas</div>
+				<div class="enlace"><a href="#Etapa35MTB"><font color="#FB4ABF"><h1>Etapa 35 RUTA BTT (DIA DE LA BICICLETA):</h1>  SALIDA: Plaza Mayor  IDA: Plaza de la verdura, C/Peso, C/La Yedra, C/Leones, Parque D.Arsenio.  <h1>VUELTA: Carretera de Cuenca, Carretera Madrid-Valencia, Paseo del Santo Niño, Parque Tomas Bux, C/Fuente de la zarza, C/Endrino, C/Juan Pérez, C/Leones, Parque D.Arsenio Triguero. (4 km)</h1></font></a><br />Domingo 18 de Agosto (Hora por Determinar)</div>
+				<div class="enlace"><a href="#Etapa36MTB"><font color="#FFF47300"><h1>Etapa 36 RUTA BTT (VALVERDE-LA CEÑA "INVERSA"-VALVERDE):</h1>  SALIDA: Silo  IDA: Valverde, Albaladejo, La Ceña.  <h1>VUELTA: La Ceña, Belmontejo, Villaverde, Valverde. (50 km)</h1></font></a><br />Domingo 25 de Agosto 8:30 Horas</div>
+				<div class="enlace"><a href="#Etapa37MTB"><font color="#FFF47300"><h1>Etapa 37 RUTA BTT (CIRCUITO DE VALVERDE A LA INVERSA):</h1>  SALIDA: Silo  IDA: Camino camping, Subida Camping, Cuesta Carnica, Camino Corral Martín, Los Torneses, Los Cabezos, Sendas Macuquero.  <h1>VUELTA: Piedra Hueca, Quintanar, Cuesta Carnica, Camping, Cerro Telégrafo, Parte de atras Oncenero, Camino Camping. (37 km)</h1></font></a><br />Domingo 1 de Septiembre 9:30 Horas</div>
+				<div class="enlace"><a href="#Etapa38MTB"><font color="#FFF47300"><h1>Etapa 38 RUTA BTT (VALVERDE-CUEVA LA JUDIA-VALVERDE):</h1>  SALIDA: Silo  IDA: Camino San Cristobal, Arroyo la Dehesa, Cueva la judia.  <h1>VUELTA: Por la Cañada, Fuente ladron, Cruzar cementera, Camino S/Isisdro. (24 km)</h1></font></a><br />Domingo 8 de Septiembre 9:00 Horas</div>
+				<div class="enlace"><a href="#Etapa39MTB"><font color="#FFF47300"><h1>Etapa RUTA BTT (Lluvia-Valverde-canal- belmontejo-valverde):</h1>  SALIDA: Silo  IDA: Camping, Manchamar, Caserna, Gravera, Villaverde, Canal, Belmontejo.  <h1>VUELTA: Por el mismo recorrido hasta Crta.Vieja de Villaverde, Carretera vieja, Villafranca, Valverde. (44 km)</h1></font></a><br />Dia y Hora correspondiente a su etapa</div>
+				<div class="enlace"><a href="#Etapa40MTB"><font color="#FFF47300"><h1>Etapa RUTA BTT (Lluvia-Valverde-villaverde albaladejo-valera-valverde):</h1>  SALIDA: Silo  IDA: Valverde, Crta.vieja a Villaverde, Albaladejo.  <h1>VUELTA: Albaladejo, Camino asfaltado hasta Valera, Valverde. (32 km)</h1></font></a><br />Dia y Hora correspondiente a su etapa</div>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -221,14 +218,14 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<div class="enlace"><a href="#Etapa1Carretera"><font color="#01DF01"><h1>Etapa 1 RUTA CARRETERA (VALVERDEJO):</h1>  SALIDA: Silo  IDA: Buenache De Alacón, Olmedilla, por CM-2100, Valverdejo. <h1>VUELTA: Por el mismo recorrido. (61 km)</h1></font></a><br />Domingo 4 de Febrero 9:30 Horas</div>
-				<div class="enlace"><a href="#Etapa1MTB"><font color="#FF4000"><h1>Etapa 1 RUTA BTT (VALVERDE-CANAL-VALVERDE):</h1>  SALIDA: Silo  IDA: Valverde, Camino paralelo a carretera de Villaverde, bajada pantano, Villaverde, gravera, Villaverde, Canal. <h1>VUELTA: Canal, Carretera vieja Villaverde, Viña emparrada, Corral martin, Cuesta cárnicas. (29 km)</h1></font></a><br />Domingo 4 de Febrero 9:30 Horas</div>
-	            <div class="enlace"><a href="#Etapa2Carretera"><font color="#01DF01"><h1>Etapa 2 RUTA CARRETERA (CASTILLO DE GARCIMUÑOZ):</h1>  SALIDA: Silo  IDA: La Almarcha , Via de servicio (autovia del este, segundo puente), Castillo Garcimuñoz.  <h1>VUELTA: C/ San Bartolome hasta La Almarcha, Olivares, Valverde. (66 km)</h1></font></a><br />Domingo 11 de Febrero 9:30 Horas</div>
-	            <div class="enlace"><a href="#Etapa2MTB"><font color="#FF4000"><h1>Etapa 2 RUTA BTT (VALVERDE-ALBALADEJO-VALERA-VALVERDE):</h1>  SALIDA: Silo  IDA: Valverde, Camino Albaladejo, Albaladejo.  <h1>VUELTA: Albaladejo, Camino asfaltado, Valera, Nave Candi, Camino Albaladejo, Valverde. (31 km)</h1></font></a><br />Domingo 11 de Febrero 9:30 Horas</div>
-				<div class="enlace"><a href="#Etapa3Carretera"><font color="#01DF01"><h1>Etapa 3 RUTA CARRETERA (ALARCÓN):</h1>  SALIDA: Silo  IDA: Buenache, Olmedilla (Hasta cruce CUV-7143), N-III Hasta cruce CUV-8033, Alarcón.  <h1>VUELTA: Por el mismo recorrido. (77 km)</h1></font></a><br />Domingo 18 de Febrero 9:30 Horas</div>
-				<div class="enlace"><a href="#Etapa3MTB"><font color="#FF4000"><h1>Etapa 3 RUTA BTT (VALVERDE-CUEVA LA JUDIA-VALVERDE):</h1>  SALIDA: Silo  IDA: Camino San Cristobal, Arroyo la Dehesa, Cueva la judia.  <h1>VUELTA: Por la Cañada, Fuente ladron, Cruzar cementera, Camino S/Isisdro. (24 km)</h1></font></a><br />Domingo 18 de Febrero 9:30 Horas</div>
-	            <div class="enlace"><a href="#Etapa4Carretera"><font color="#01DF01"><h1>Etapa 4 RUTA CARRETERA (TÓRTOLA):</h1>  SALIDA: Silo  IDA: Valeria , Tórtola.  <h1>VUELTA: Por el mismo recorrido (60 km)</h1></font></a><br />Domingo 25 de Febrero 9:30 Horas</div>
-	            <div class="enlace"><a href="#Etapa4MTB"><font color="#FF4000"><h1>Etapa 4 RUTA BTT (VALVERDE-ALBALADEJO-VILLAVERDE-VALVERDE):</h1>  SALIDA: Silo  IDA: Camino del Cementerio, Albaladejo, Piscina de Albaladejo, Camino Villaverde, Punto limpio.  <h1>VUELTA: Villaverde, Camino Manchamar, Oncenero. (30 km)</h1></font></a><br />Domingo 25 de Febrero 9:30 Horas</div>
+				<div class="enlace"><a href="#Etapa1Carretera"><font color="#00AC69"><h1>Etapa 1 RUTA CARRETERA (VALVERDEJO):</h1>  SALIDA: Silo  IDA: Buenache De Alacón, Olmedilla, por CM-2100, Valverdejo. <h1>VUELTA: Por el mismo recorrido. (61 km)</h1></font></a><br />Domingo 3 de Febrero 9:30 Horas</div>
+				<div class="enlace"><a href="#Etapa1MTB"><font color="#FFF47300"><h1>Etapa 1 RUTA BTT (VALVERDE-CANAL-VALVERDE):</h1>  SALIDA: Silo  IDA: Valverde, Camino paralelo a carretera de Villaverde, bajada pantano, Villaverde, gravera, Villaverde, Canal. <h1>VUELTA: Canal, Carretera vieja Villaverde, Viña emparrada, Corral martin, Cuesta cárnicas. (29 km)</h1></font></a><br />Domingo 3 de Febrero 9:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa2Carretera"><font color="#00AC69"><h1>Etapa 2 RUTA CARRETERA (CASTILLO DE GARCIMUÑOZ):</h1>  SALIDA: Silo  IDA: La Almarcha , Via de servicio (autovia del este, segundo puente), Castillo Garcimuñoz.  <h1>VUELTA: C/ San Bartolome hasta La Almarcha, Olivares, Valverde. (66 km)</h1></font></a><br />Domingo 10 de Febrero 9:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa2MTB"><font color="#FFF47300"><h1>Etapa 2 RUTA BTT (VALVERDE-ALBALADEJO-VALERA-VALVERDE):</h1>  SALIDA: Silo  IDA: Valverde, Camino Albaladejo, Albaladejo.  <h1>VUELTA: Albaladejo, Camino asfaltado, Valera, Nave Candi, Camino Albaladejo, Valverde. (31 km)</h1></font></a><br />Domingo 10 de Febrero 9:30 Horas</div>
+				<div class="enlace"><a href="#Etapa3Carretera"><font color="#00AC69"><h1>Etapa 3 RUTA CARRETERA (ALARCÓN):</h1>  SALIDA: Silo  IDA: Buenache, Olmedilla (Hasta cruce CUV-7143), N-III Hasta cruce CUV-8033, Alarcón.  <h1>VUELTA: Por el mismo recorrido. (77 km)</h1></font></a><br />Domingo 17 de Febrero 9:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa3MTB"><font color="#FFF47300"><h1>Etapa 3 RUTA BTT (VALVERDE-ALBALADEJO-VILLAVERDE-VALVERDE):</h1>  SALIDA: Silo  IDA: Camino del Cementerio, Albaladejo, Piscina de Albaladejo, Camino Villaverde, Punto limpio.  <h1>VUELTA: Villaverde, Camino Manchamar, Oncenero. (30 km)</h1></font></a><br />Domingo 17 de Febrero 9:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa4Carretera"><font color="#00AC69"><h1>Etapa 4 RUTA CARRETERA (TÓRTOLA):</h1>  SALIDA: Silo  IDA: Valeria , Tórtola.  <h1>VUELTA: Por el mismo recorrido (60 km)</h1></font></a><br />Domingo 24 de Febrero 9:30 Horas</div>
+				<div class="enlace"><a href="#Etapa4MTB"><font color="#FFF47300"><h1>Etapa 4 RUTA BTT (VALVERDE-CUEVA LA JUDIA-VALVERDE):</h1>  SALIDA: Silo  IDA: Camino San Cristobal, Arroyo la Dehesa, Cueva la judia.  <h1>VUELTA: Por la Cañada, Fuente ladron, Cruzar cementera, Camino S/Isisdro. (24 km)</h1></font></a><br />Domingo 24 de Febrero 9:30 Horas</div>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -241,14 +238,16 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<div class="enlace"><a href="#Etapa5Carretera"><font color="#01DF01"><h1>Etapa 5 RUTA CARRETERA (MONTALBANEJO):</h1>  SALIDA: Silo  IDA: Olivares, Cruce a la hinojosa (CUV-3231), Hinojosa, Montalbanejo.  <h1>VUELTA: Por el mismo recorrido (67 km)</h1></font></a><br />Domingo 4 de Marzo 9:30 Horas</div>
-				<div class="enlace"><a href="#Etapa5MTB"><font color="#FF4000"><h1>Etapa 5 RUTA BTT (CIRCUITO MTB VALVERDE):</h1>  SALIDA: Silo  IDA: Camino del Camping, Oncenero (Parte de atras), Cerro Telégrafos, Subida Camping, Bajar cuesta Carnica, Quintanar, Piedra Hueca, Macuquero.  <h1>VUELTA: Los Cabezos, Los Torneses, Corral de Martín, Cuesta Carnica, Camping. (37 km)</h1></font></a><br />Domingo 4 de Marzo 9:30 Horas</div>
-	            <div class="enlace"><a href="#Etapa6Carretera"><font color="#01DF01"><h1>Etapa 6 RUTA CARRETERA (SOLERA DE GALBALDÓN):</h1>  SALIDA: Silo  IDA: Valeria, Olmeda Del Rey, Chumillas, Solera De Gabaldón.  <h1>VUELTA: Por el mismo recorrido. (66 km)</h1></font></a><br />Domingo 11 de Febrero 9:30 Horas</div>
-	            <div class="enlace"><a href="#Etapa6MTB"><font color="#FF4000"><h1>Etapa 6 RUTA BTT (VALVERDE-CERRO LAS TORCAS-PANTANO-HONTECILLAS-CUEVA LA JUDIA):</h1>  SALIDA: Silo  IDA: Cerro las Torcas, Hontecillas, Subida cuesta blanca, Finca La Goya.  <h1>VUELTA: Camino cueva la judia, Camino S/Cristobal, Camino S/Isidro. (31 km)</h1></font></a><br />Domingo 11 de Marzo 9:30 Horas</div>
-	            <div class="enlace"><a href="#Etapa7Carretera"><font color="#01DF01"><h1>Etapa 7 RUTA CARRETERA (VALDEGANGA):</h1>  SALIDA: Silo  IDA: Valeria , Tórtola, Valdeganga.  <h1>VUELTA: Por la parra y Villaverde. (73 km)</h1></font></a><br />Domingo 18 de Marzo 9:30 Horas</div>
-	            <div class="enlace"><a href="#Etapa7MTB"><font color="#FF4000"><h1>Etapa 7 RUTA BTT (VALVERDE-VILLAVERDE-ALBALADEJO-VALERA):</h1>  SALIDA: Silo  IDA: Valverde, Camino Albaladejo hasta viña garri, Villaverde, Punto limpio, Albaladejo, Valera.  <h1>VUELTA: Valera, Subida sierra, S/Cristobal, Valverde. (38 km)</h1></font></a><br />Domingo 18 de Marzo 9:30 Horas</div>
-				<div class="enlace"><a href="#Etapa8Carretera"><font color="#01DF01"><h1>Etapa 8 RUTA CARRETERA (CHUMILLAS):</h1>  SALIDA: Silo  IDA: Valeria, Olmeda Del Rey, Chumillas. <h1>VUELTA: Por el mismo recorrido. (56 km)</h1></font></a><br />Domingo 25 de Marzo 9:30 Horas</div>
-				<div class="enlace"><a href="#Etapa8MTB"><font color="#FF4000"><h1>Etapa 8 RUTA BTT (SAN CRISTOBAL-SUBIDA A LOS MORENA-PASAR POR SIERRA VALERA-ANTENAS-LLANOS LA PARRA-ALBALDEJO VALVERDE):</h1>  SALIDA: Silo  IDA: Camino S/Cristobal, Subida Los Morenas, Sierra Valera, Las Antenas, Llanos de La Parra.  <h1>VUELTA: Albaladejo, Camino Cementerio. (38 km)</h1></font></a><br />Domingo 25 de Marzo 9:30 Horas</div>
+				<div class="enlace"><a href="#Etapa5Carretera"><font color="#00AC69"><h1>Etapa 5 RUTA CARRETERA (MONTALBANEJO):</h1>  SALIDA: Silo  IDA: Olivares, Cruce a la hinojosa (CUV-3231), Hinojosa, Montalbanejo.  <h1>VUELTA: Por el mismo recorrido (67 km)</h1></font></a><br />Domingo 3 de Marzo 9:30 Horas</div>
+				<div class="enlace"><a href="#Etapa5MTB"><font color="#FFF47300"><h1>Etapa 5 RUTA BTT (CIRCUITO MTB VALVERDE):</h1>  SALIDA: Silo  IDA: Camino del Camping, Oncenero (Parte de atras), Cerro Telégrafos, Subida Camping, Bajar cuesta Carnica, Quintanar, Piedra Hueca, Macuquero.  <h1>VUELTA: Los Cabezos, Los Torneses, Corral de Martín, Cuesta Carnica, Camping. (37 km)</h1></font></a><br />Domingo 3 de Marzo 9:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa6Carretera"><font color="#00AC69"><h1>Etapa 6 RUTA CARRETERA (SOLERA DE GALBALDÓN):</h1>  SALIDA: Silo  IDA: Valeria, Olmeda Del Rey, Chumillas, Solera De Gabaldón.  <h1>VUELTA: Por el mismo recorrido. (66 km)</h1></font></a><br />Domingo 10 de Febrero 9:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa6MTB"><font color="#FFF47300"><h1>Etapa 6 RUTA BTT (VALVERDE-CERRO LAS TORCAS-PANTANO-HONTECILLAS-CUEVA LA JUDIA):</h1>  SALIDA: Silo  IDA: Cerro las Torcas, Hontecillas, Subida cuesta blanca, Finca La Goya.  <h1>VUELTA: Camino cueva la judia, Camino S/Cristobal, Camino S/Isidro. (31 km)</h1></font></a><br />Domingo 10 de Marzo 9:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa7Carretera"><font color="#00AC69"><h1>Etapa 7 RUTA CARRETERA (VALDEGANGA):</h1>  SALIDA: Silo  IDA: Valeria , Tórtola, Valdeganga.  <h1>VUELTA: Por la parra y Villaverde. (73 km)</h1></font></a><br />Domingo 17 de Marzo 9:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa7MTB"><font color="#FFF47300"><h1>Etapa 7 RUTA BTT (VALVERDE-VILLAVERDE-ALBALADEJO-VALERA):</h1>  SALIDA: Silo  IDA: Valverde, Camino Albaladejo hasta viña garri, Villaverde, Punto limpio, Albaladejo, Valera.  <h1>VUELTA: Valera, Subida sierra, S/Cristobal, Valverde. (38 km)</h1></font></a><br />Domingo 17 de Marzo 9:30 Horas</div>
+				<div class="enlace"><a href="#Etapa8Carretera"><font color="#00AC69"><h1>Etapa 8 RUTA CARRETERA (CHUMILLAS):</h1>  SALIDA: Silo  IDA: Valeria, Olmeda Del Rey, Chumillas. <h1>VUELTA: Por el mismo recorrido. (56 km)</h1></font></a><br />Domingo 24 de Marzo 9:30 Horas</div>
+				<div class="enlace"><a href="#Etapa8MTB"><font color="#FFF47300"><h1>Etapa 8 RUTA BTT (SAN CRISTOBAL-SUBIDA A LOS MORENA-PASAR POR SIERRA VALERA-ANTENAS-LLANOS LA PARRA-ALBALDEJO VALVERDE):</h1>  SALIDA: Silo  IDA: Camino S/Cristobal, Subida Los Morenas, Sierra Valera, Las Antenas, Llanos de La Parra.  <h1>VUELTA: Albaladejo, Camino Cementerio. (38 km)</h1></font></a><br />Domingo 24 de Marzo 9:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa9Carretera"><font color="#00AC69"><h1>Etapa 9 RUTA CARRETERA (SAN LORENZO DE LA PARRILLA):</h1>  SALIDA: Silo  IDA: Olivares (Subida N420a, hasta N420), Belmontejo, San Lorenzo De La Parrilla.  <h1>VUELTA: N420 (Dirección Mota De Altarejos, hasta Cruce CUV-7123), La Parra, Albaladejo, Villaverde, Valverde. (76 km)</h1></font></a><br />Domingo 31 de Marzo 9:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa9MTB"><font color="#FFF47300"><h1>Etapa 9 RUTA BTT (TERMINO VALVERDE DE JÚCAR):</h1>  SALIDA: Silo  IDA: Valverde, Camino Albaladejo, Puente Carretera Villaverde, Los Cabezos.  <h1>VUELTA: Los Torneses, Pantano, Chalet romero. (45 km)</h1></font></a><br />Domingo 31 de Marzo 9:30 Horas</div>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -261,16 +260,14 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-	            <div class="enlace"><a href="#Etapa9Carretera"><font color="#01DF01"><h1>Etapa 9 RUTA CARRETERA (SAN LORENZO DE LA PARRILLA):</h1>  SALIDA: Silo  IDA: Olivares (Subida N420a, hasta N420), Belmontejo, San Lorenzo De La Parrilla.  <h1>VUELTA: N420 (Dirección Mota De Altarejos, hasta Cruce CUV-7123), La Parra, Albaladejo, Villaverde, Valverde. (76 km)</h1></font></a><br />Domingo 1 de Abril 9:00 Horas</div>
-	            <div class="enlace"><a href="#Etapa9MTB"><font color="#FF4000"><h1>Etapa 9 RUTA BTT (TERMINO VALVERDE DE JÚCAR):</h1>  SALIDA: Silo  IDA: Valverde, Camino Albaladejo, Puente Carretera Villaverde, Los Cabezos.  <h1>VUELTA: Los Torneses, Pantano, Chalet romero. (45 km)</h1></font></a><br />Domingo 1 de Abril 9:00 Horas</div>
-				<div class="enlace"><a href="#Etapa10Carretera"><font color="#01DF01"><h1>Etapa 10 RUTA CARRETERA (MOTILLA DEL PALANCAR):</h1>  SALIDA: Silo  IDA: Buenache, Olmedilla, Motilla Del Palancar (Ultima rotonda).  <h1>VUELTA: Por el mismo recorrido. (82 km)</h1></font></a><br />Domingo 8 de Abril 9:00 Horas</div>
-				<div class="enlace"><a href="#Etapa10MTB"><font color="#FF4000"><h1>Etapa 10 RUTA BTT (VALVERDE-VALERIA-VALERA-VALVERDE):</h1>  SALIDA: Silo  IDA: Valverde, S/Isidro, Subida Sierra, Valeria.  <h1>VUELTA: Valeria, Subida llanos de la Olmeda, Valera, Camino Albaladejo, Valverde. (46 km)</h1></font></a><br />Domingo 8 de Abril 9:00 Horas</div>
-	            <div class="enlace"><a href="#Etapa11Carretera"><font color="#01DF01"><h1>Etapa 11 RUTA CARRETERA (RECORRIDO MANCOMUNIDAD):</h1>  SALIDA: Silo  IDA: Valera De Abajo, Piqueras Del Castillo, Barchín Del Hoyo, Olmedilla De Alarcón, Poligono (Valverde De Júcar), Valera De Abajo, Valeria.  <h1>VUELTA: Tórtola, Valdeganga, Nacional hasta desvío (La parra De Las Vegas), Albaladejo, Villaverde, Valverde. (123 km)</h1></font></a><br />Domingo 15 de Abril 8:00 Horas</div>
-	            <div class="enlace"><a href="#Etapa11MTB"><font color="#FF4000"><h1>Etapa 11 RUTA BTT (VALVERDE-BELMONTEJO-VALVERDE):</h1>  SALIDA: Silo  IDA: Manchamar, Orilla canal, Belmontejo.  <h1>VUELTA: Belmontejo, Villaverde, Camino lado carretera, Macuquero, Valverde. (47 km)</h1></font></a><br />Domingo 15 de Abril 8:30 Horas</div>
-	            <div class="enlace"><a href="#Etapa12Carretera"><font color="#01DF01"><h1>Etapa 12 RUTA CARRETERA (VILLALGORDO DEL MARQUESADO):</h1>  SALIDA: Silo  IDA: Olivares, La Almarcha (N-420), Villalgordo Del Marquesado. <h1>VUELTA: Por el mismo recorrido. (81 km)</h1></font></a><br />Domingo 22 de Abril 9:00 Horas</div>
-	            <div class="enlace"><a href="#Etapa12MTB"><font color="#FF4000"><h1>Etapa 12 RUTA BTT (VALVERDE-ALBALADEJO-LA PARRA-VALVERDE):</h1>  SALIDA: Silo  IDA: Valverde, Albaladejo, Subida Sierra, La Parra.  <h1>VUELTA: La Parra, Albaladejo, Villaverde, Camino lado carretera, Valverde. (46 km)</h1></font></a><br />Domingo 22 de Abril 9:00 Horas</div>
-				<div class="enlace"><a href="#Etapa13Carretera"><font color="#01DF01"><h1>Etapa 13 RUTA CARRETERA (ARCAS):</h1>  SALIDA: Silo  IDA: Valeria, Tórtola, Arcas.  <h1>VUELTA: Por el mismo recorrido. (77 km)</h1></font></a><br />Domingo 29 de Abril 9:00 Horas</div>
-				<div class="enlace"><a href="#Etapa13MTB"><font color="#FF4000"><h1>Etapa 13 RUTA BTT (VALVERDE-BELMONTEJO-LA CEÑA-VALVERDE):</h1> SALIDA: Silo  IDA: Valverde, Belmontejo, La Ceña.  <h1>VUELTA: La ceña, Albaladejo, Villaverde, Valverde. (50 km).</h1></font></a><br />Domingo 29 de Abril 9:00 Horas</div>
+				<div class="enlace"><a href="#Etapa10Carretera"><font color="#00AC69"><h1>Etapa 10 RUTA CARRETERA (MOTILLA DEL PALANCAR):</h1>  SALIDA: Silo  IDA: Buenache, Olmedilla, Motilla Del Palancar (Ultima rotonda).  <h1>VUELTA: Por el mismo recorrido. (82 km)</h1></font></a><br />Domingo 7 de Abril 9:00 Horas</div>
+				<div class="enlace"><a href="#Etapa10MTB"><font color="#FFF47300"><h1>Etapa 10 RUTA BTT (VALVERDE-VALERIA-VALERA-VALVERDE):</h1>  SALIDA: Silo  IDA: Valverde, S/Isidro, Subida Sierra, Valeria.  <h1>VUELTA: Valeria, Subida llanos de la Olmeda, Valera, Camino Albaladejo, Valverde. (46 km)</h1></font></a><br />Domingo 7 de Abril 9:00 Horas</div>
+	            <div class="enlace"><a href="#Etapa11Carretera"><font color="#00AC69"><h1>Etapa 11 RUTA CARRETERA (RECORRIDO MANCOMUNIDAD):</h1>  SALIDA: Silo  IDA: Valera De Abajo, Piqueras Del Castillo, Barchín Del Hoyo, Olmedilla De Alarcón, Poligono (Valverde De Júcar), Valera De Abajo, Valeria.  <h1>VUELTA: Tórtola, Valdeganga, Nacional hasta desvío (La parra De Las Vegas), Albaladejo, Villaverde, Valverde. (123 km)</h1></font></a><br />Domingo 14 de Abril 8:00 Horas</div>
+				<div class="enlace"><a href="#Etapa11MTB"><font color="#FFF47300"><h1>Etapa 11 RUTA BTT (VALVERDE-PIQUERAS-SOLERA DE GABALDÓN-CARBONERA DE PIQUERAS-VALERA-VALVERDE):</h1>  SALIDA: Silo  IDA: Sierra Valera, Piqueras (Carbonera), Camino Molinos, Solera.  <h1>VUELTA: Marroman, Alto Nava, Valera, Valverde. (66 km)</h1></font></a><br />Domingo 14 de Abril 8:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa12Carretera"><font color="#00AC69"><h1>Etapa 12 RUTA CARRETERA (VILLALGORDO DEL MARQUESADO):</h1>  SALIDA: Silo  IDA: Olivares, La Almarcha (N-420), Villalgordo Del Marquesado. <h1>VUELTA: Por el mismo recorrido. (81 km)</h1></font></a><br />Domingo 21 de Abril 9:00 Horas</div>
+	            <div class="enlace"><a href="#Etapa12MTB"><font color="#FFF47300"><h1>Etapa 12 RUTA BTT (VALVERDE-ALBALADEJO-LA PARRA-VALVERDE):</h1>  SALIDA: Silo  IDA: Valverde, Albaladejo, Subida Sierra, La Parra.  <h1>VUELTA: La Parra, Albaladejo, Villaverde, Camino lado carretera, Valverde. (46 km)</h1></font></a><br />Domingo 21 de Abril 9:00 Horas</div>
+				<div class="enlace"><a href="#Etapa13Carretera"><font color="#00AC69"><h1>Etapa 13 RUTA CARRETERA (ARCAS):</h1>  SALIDA: Silo  IDA: Valeria, Tórtola, Arcas.  <h1>VUELTA: Por el mismo recorrido. (77 km)</h1></font></a><br />Domingo 28 de Abril 9:00 Horas</div>
+				<div class="enlace"><a href="#Etapa13MTB"><font color="#FFF47300"><h1>Etapa 13 RUTA BTT (VALVERDE-BELMONTEJO-LA CEÑA-VALVERDE):</h1> SALIDA: Silo  IDA: Valverde, Belmontejo, La Ceña.  <h1>VUELTA: La ceña, Albaladejo, Villaverde, Valverde. (50 km).</h1></font></a><br />Domingo 28 de Abril 9:00 Horas</div>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -283,17 +280,17 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<div class="enlace"><a href="#Etapa14Carretera"><font color="#FE2E64"><h1>Etapa 14 RUTA CARRETERA (NEUTRALIZADA ENGUIDANOS):</h1>  SALIDA: Motilla Del Palacar  IDA: Campillo De Altobuey, Paracuellos, Yemeda, Cardenete, Las Chorreras, Enguidanos.  <h1>VUELTA: Enguidanos, Campillo De Altobuey, Motilla Del Palancar. (96 km)</h1></font></a><br />Martes 1 de Mayo (Hora por Determinar)</div>
-	            <div class="enlace"><a href="#Etapa15Carretera"><font color="#01DF01"><h1>Etapa 15 RUTA CARRETERA (ALMODOVAR DEL PINAR):</h1>  SALIDA: Silo  IDA: Valeria, Olmeda, Chumillas, Almodovar Del Pinar.  <h1>VUELTA: Por el mismo recorrido. (80 km)</h1></font></a><br />Domingo 6 de Mayo 8:30 Horas</div>
-	            <div class="enlace"><a href="#Etapa15MTB"><font color="#FF4000"><h1>Etapa 15 RUTA BTT (VALVERDE-VALERIA-VALERA-VALVERDE):</h1>  SALIDA: Silo  IDA: Valverde, Albaladejo, Subida Sierra, Valeria.  <h1>VUELTA: Valeria, Subida Sierra, Valera, Valverde. (44 km)</h1></font></a><br />Domingo 6 de Mayo 8:30 Horas</div>
-				<div class="enlace"><a href="#Etapa16Carretera"><font color="#01DF01"><h1>Etapa 16 RUTA CARRETERA (ALARCÓN):</h1>  SALIDA: Silo  IDA: Buenache, Olmedilla (Hasta cruce CUV-7143), N-III Hasta cruce CUV-8033, Alarcón.  <h1>VUELTA: Por el mismo recorrido. (77 km)</h1></font></a><br />Domingo 13 de Mayo 8:30 Horas</div>
-				<div class="enlace"><a href="#Etapa16MTB"><font color="#FF4000"><h1>Etapa 16 RUTA BTT (VALVERDE-PIQUERAS-VALERA-VALVERDE):</h1>  SALIDA: Silo  IDA: Valverde, S/Cristobal, Subida Sierra, Piqueras.  <h1>VUELTA: Piqueras, Subida Molinos Chumillas, Llanos de la Olmeda, Valera, Camino Albaladejo, Valverde. (52 km)</h1></font></a><br />Domingo 13 de Mayo 8:30 Horas</div>
-				<div class="enlace"><a href="#Etapa17Carretera"><font color="#01DF01"><h1>Etapa 17 RUTA CARRETERA (VALDEGANGA):</h1>  SALIDA: Silo  IDA: Villaverde y Pasaconsol , Albaladejo, La Parra De Las Vegas, Valdeganga.  <h1>VUELTA: Por Tortóla, Valeria, Valera, Valverde. (71 km)</h1></font></a><br />Domingo 20 de Mayo 8:30 Horas</div>
-				<div class="enlace"><a href="#Etapa17MTB"><font color="#FF4000"><h1>Etapa 17 RUTA BTT (BUENACHE-BARCHÍN-PIQUERAS-VALERA):</h1>  SALIDA: Silo  IDA: Hontecillas, Buenache, Camino a Barchin.  <h1>VUELTA: Piqueras, Camino Ruena, Santa Subida la sierra, Camino S/Cristobal, Camino S/Isisdro. (52 km)</h1></font></a><br />Domingo 20 de Mayo 8:30 Horas</div>
-				<div class="enlace"><a href="#Etapa18MTB"><font color="#FFBF00"><h1>Etapa 18 RUTA BTT (NOCTURNA ALBALADEJO-VILLAVERDE):</h1>  SALIDA: Silo  IDA: Camino Albaladejo (CUV-7131 hasta Albaladejo), Camino Vallejo Molar (hasta Villaverde).  <h1>VUELTA: CUV-7132 Hasta C/ Oncenero, C/ coto (hasta calle la playa, AV. Madrid-Valencia). (30 km)</h1></font></a><br />Sábado 26 de Mayo 21:30 Horas</div>
-				<div class="enlace"><a href="#Etapa19Carretera"><font color="#01DF01"><h1>Etapa 19 RUTA CARRETERA (ZAFRA DE ZÁNCARA):</h1>  SALIDA: Silo  IDA: Olivares, La Parrilla, Villarejo, CUV-7031, cruce CUV-7032, Zafra de Záncara.  <h1>VUELTA: Por el mismo recorrido. (110 km)</h1></font></a><br />Domingo 27 de Mayo 8:30 Horas</div>
-				<div class="enlace"><a href="#Etapa19MTB"><font color="#FF4000"><h1>Etapa 19 RUTA BTT (VALVERDE-PIQUERAS-SOLERA DE GABALDÓN-CARBONERA DE PIQUERAS-VALERA-VALVERDE):</h1>  SALIDA: Silo  IDA: Sierra Valera, Piqueras (Carbonera), Camino Molinos, Solera.  <h1>VUELTA: Marroman, Alto Nava, Valera, Valverde. (66 km)</h1></font></a><br />Domingo 27 de Mayo 8:30 Horas</div>
-				<div class="enlace"><a href="#Etapa20MTB"><font color="#FE2E64"><h1>Etapa 20 RUTA BTT (NEUTRALIZADA OLMEDILLA-EL PICAZO):</h1>  SALIDA: Olmedilla De Alarcón, El Picazo.  <h1>VUELTA: Por el mismo recorrido (45 km)</h1></font></a><br />Jueves 31 de Mayo (Hora por Determinar)</div>
+				<div class="enlace"><a href="#Etapa14Carretera"><font color="#FB4ABF"><h1>Etapa 14 RUTA CARRETERA (NEUTRALIZADA PINAR DE JABAGA):</h1>  SALIDA: Pinar De Jabaga  IDA: Cuevas De Velasco, Naharros.  <h1>VUELTA: Abia De la Obispalía, pinar De Jabaga. (90 km)</h1></font></a><br />Miercoles 1 de Mayo (Hora por Determinar)</div>
+	            <div class="enlace"><a href="#Etapa15Carretera"><font color="#00AC69"><h1>Etapa 15 RUTA CARRETERA (ALMODOVAR DEL PINAR):</h1>  SALIDA: Silo  IDA: Valeria, Olmeda, Chumillas, Almodovar Del Pinar.  <h1>VUELTA: Por el mismo recorrido. (80 km)</h1></font></a><br />Domingo 5 de Mayo 8:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa15MTB"><font color="#FFF47300"><h1>Etapa 15 RUTA BTT (VALVERDE-VALERIA-VALERA-VALVERDE):</h1>  SALIDA: Silo  IDA: Valverde, Albaladejo, Subida Sierra, Valeria.  <h1>VUELTA: Valeria, Subida Sierra, Valera, Valverde. (44 km)</h1></font></a><br />Domingo 5 de Mayo 8:30 Horas</div>
+				<div class="enlace"><a href="#Etapa16Carretera"><font color="#00AC69"><h1>Etapa 16 RUTA CARRETERA (ALARCÓN):</h1>  SALIDA: Silo  IDA: Buenache, Olmedilla (Hasta cruce CUV-7143), N-III Hasta cruce CUV-8033, Alarcón.  <h1>VUELTA: Por el mismo recorrido. (77 km)</h1></font></a><br />Domingo 12 de Mayo 8:30 Horas</div>
+				<div class="enlace"><a href="#Etapa16MTB"><font color="#FFF47300"><h1>Etapa 16 RUTA BTT (BUENACHE-BARCHÍN-PIQUERAS-VALERA):</h1>  SALIDA: Silo  IDA: Hontecillas, Buenache, Camino a Barchin.  <h1>VUELTA: Piqueras, Camino Ruena, Santa Subida la sierra, Camino S/Cristobal, Camino S/Isisdro. (52 km)</h1></font></a><br />Domingo 12 de Mayo 8:30 Horas</div>
+				<div class="enlace"><a href="#Etapa17Carretera"><font color="#00AC69"><h1>Etapa 17 RUTA CARRETERA (VALDEGANGA):</h1>  SALIDA: Silo  IDA: Villaverde y Pasaconsol , Albaladejo, La Parra De Las Vegas, Valdeganga.  <h1>VUELTA: Por Tortóla, Valeria, Valera, Valverde. (71 km)</h1></font></a><br />Domingo 19 de Mayo 8:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa17MTB"><font color="#FFF47300"><h1>Etapa 17 RUTA BTT (VALVERDE-BELMONTEJO-VALVERDE):</h1>  SALIDA: Silo  IDA: Manchamar, Orilla canal, Belmontejo.  <h1>VUELTA: Belmontejo, Villaverde, Camino lado carretera, Macuquero, Valverde. (47 km)</h1></font></a><br />Domingo 19 Mayo 8:30 Horas</div>
+				<div class="enlace"><a href="#Etapa18MTB"><font color="#FFBF00"><h1>Etapa 18 RUTA BTT (NOCTURNA ALBALADEJO-VILLAVERDE):</h1>  SALIDA: Silo  IDA: Camino Albaladejo (CUV-7131 hasta Albaladejo), Camino Vallejo Molar (hasta Villaverde).  <h1>VUELTA: CUV-7132 Hasta C/ Oncenero, C/ coto (hasta calle la playa, AV. Madrid-Valencia). (30 km)</h1></font></a><br />Viernes 24 de Mayo 21:30 Horas</div>
+				<div class="enlace"><a href="#Etapa19Carretera"><font color="#00AC69"><h1>Etapa 19 RUTA CARRETERA (EL CAÑAVATE):</h1>  SALIDA: Silo  IDA: Olivares, La Almarcha, Crta. Madrid-Valencia, Vía de servicio (autovia del este hasta cruce CUV-7221), Torrubia, Honrrubia (CM-3112) El Cañavate (C/ Poeta Rafael Allaro, Hasta el Calvario).  <h1>VUELTA: Por el mismo recorrido. (116 km)</h1></font></a><br />Domingo 26 de Mayo 8:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa19MTB"><font color="#FFF47300"><h1>Etapa 19 RUTA BTT (VALVERDE-TORRETA DE VALDEGANGA-VALVERDE):</h1>  SALIDA: Silo  IDA: Valverde, Albaladejo, La Parra, Torreta Valdeganga.  <h1>VUELTA: Torreta Valdeganga, Toboganes Nogueron, Valverde. (63 km)</h1></font></a><br />Domingo 26 de Mayo 8:30 Horas</div>
+				<div class="enlace"><a href="#Etapa20MTB"><font color="#FB4ABF"><h1>Etapa 20 RUTA BTT (NEUTRALIZADA OLMEDILLA-EL PICAZO):</h1>  SALIDA: Olmedilla De Alarcón, El Picazo.  <h1>VUELTA: Por el mismo recorrido (45 km)</h1></font></a><br />Jueves 31 de Mayo (Hora por Determinar)</div>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -306,15 +303,17 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-	            <div class="enlace"><a href="#Etapa21Carretera"><font color="#01DF01"><h1>Etapa 21 RUTA CARRETERA (CERRO SOCORRO):</h1>  SALIDA: Silo  IDA: Valeria, Arcas, Cuenca (Puente San Pablo CUV-9144), Barranco Chotos (Subida Cerro Socorro).  <h1>VUELTA: CUV-9144 (Puente San Pablo, hasta C/ Dr. Ferrón, C/ Cañete, AV. Mediterráneo, C/ Rio del Chillaron, N-320a, Arcas, Valverde. (120 km)</h1></font></a><br />Domingo 3 de Junio 8:00 Horas</div>
-	            <div class="enlace"><a href="#Etapa21MTB"><font color="#FF4000"><h1>Etapa 21 RUTA BTT (VALVERDE-TRASVASE-VILLAVERDE-ALBALADEJO-LA PARRA-VALERIA-VALERA):</h1>  SALIDA: Silo  IDA: Valverde, Trasvase, Villaverde, Albaladejo, La Parra.  <h1>VUELTA: La parra, Llanos de la parra, Valeria, Valera, Valverde. (80 km)</h1></font></a><br />Domingo 3 de Junio 8:00 Horas</div>
-				<div class="enlace"><a href="#Etapa22Carretera"><font color="#01DF01"><h1>Etapa 22 RUTA CARRETERA (TÓRTOLA):</h1>  SALIDA: Silo  IDA: Valeria , Tórtola.  <h1>VUELTA: Por el mismo recorrido (60 km)</h1></font></a><br />Domingo 10 de Junio 8:30 Horas</div>
-				<div class="enlace"><a href="#Etapa22MTB"><font color="#FF4000"><h1>Etapa 22 RUTA BTT (VALVERDE-VILLAVERDE-ALBALADEJO-VALERA):</h1>  SALIDA: Silo  IDA: Valverde, Camino Albaladejo hasta viña garri, Villaverde, Punto limpio, Albaladejo, Valera.  <h1>VUELTA: Valera, Subida sierra, S/Cristobal, Valverde. (38 km)</h1></font></a><br />Domingo 10 de Junio 9:00 Horas</div>
-	            <div class="enlace"><a href="#Etapa23Carretera"><font color="#01DF01"><h1>Etapa 23 RUTA CARRETERA (VILLAREJO PERIESTEBAN):</h1>  SALIDA: Silo  IDA: Villaverde, Olivares, La Parrilla, Villarejo Periesteban.  <h1>VUELTA: Por el mismo recorrido. (77 km)</h1></font></a><br />Domingo 17 de Junio 8:30 Horas</div>
-	            <div class="enlace"><a href="#Etapa23MTB"><font color="#FF4000"><h1>Etapa 23 RUTA BTT (VALVERDE-BELMONTEJO-VALVERDE):</h1>  SALIDA: Silo  IDA: Manchamar, Orilla canal, Belmontejo.  <h1>VUELTA: Belmontejo, Villaverde, Camino lado carretera, Macuquero, Valverde. (47 km)</h1></font></a><br />Domingo 17 de Junio 8:30 Horas</div>
-				<div class="enlace"><a href="#Etapa24MTB"><font color="#FFBF00"><h1>Etapa 24 RUTA BTT (NOCTURNA VALVERDE-VILLAVERDE):</h1>  SALIDA: Silo  IDA: Camino Albaladejo, Villaverde.  <h1>VUELTA: CUV-7132, C/ Oncenero, Valverde. (24 km)</h1></font></a><br />Sábado 23 de Junio 22:00 Horas</div>
-	            <div class="enlace"><a href="#Etapa25Carretera"><font color="#01DF01"><h1>Etapa 25 RUTA CARRETERA (PINAREJO):</h1>  SALIDA: Silo  IDA: Villaverde, Olivares, La Almarcha (Via de servicio), Castillo De Garcimuñoz, Pinarejo.  <h1>VUELTA: Por el mismo recorrido. (82 km)</h1></font></a><br />Domingo 24 de Junio 8:30 Horas</div>
-	            <div class="enlace"><a href="#Etapa25MTB"><font color="#FF4000"><h1>Etapa 25 RUTA BTT (CUEVA LA JUDIA-HONTECILLAS-BUENACHE-LAS TORCAS-VALVERDE):</h1>  SALIDA: Silo  IDA: Subida Camino S/Cristobal, Cuesta Blanca, Hontecillas, Camino Buenache. <h1>VUELTA: Las Torcas, Camino Hontecillas. (35)</h1></font></a><br />Domingo 24 de Junio 9:00 Horas</div>
+	            <div class="enlace"><a href="#Etapa21Carretera"><font color="#00AC69"><h1>Etapa 21 RUTA CARRETERA (YEMEDA):</h1>  SALIDA: Silo  IDA: Valeria, Olmeda (CUV-7124 hasta CM-220), Almodovar (CUV-5043 Cruce a la izquierda CUV-5042) Yemeda.  <h1>VUELTA: CUV-5042 (Hasta cruce CUV-5043), Almodovar, Chumillas, Olmeda, Valeria, Valverde. (128 km)</h1></font></a><br />Domingo 2 de Junio 8:00 Horas</div>
+	            <div class="enlace"><a href="#Etapa21MTB"><font color="#FFF47300"><h1>Etapa 21 RUTA BTT (VALVERDE-TRASVASE-VILLAVERDE-ALBALADEJO-LA PARRA-VALERIA-VALERA):</h1>  SALIDA: Silo  IDA: Valverde, Trasvase, Villaverde, Albaladejo, La Parra.  <h1>VUELTA: La parra, Llanos de la parra, Valeria, Valera, Valverde. (80 km)</h1></font></a><br />Domingo 2 de Junio 8:00 Horas</div>
+				<div class="enlace"><a href="#Etapa22Carretera"><font color="#00AC69"><h1>Etapa 22 RUTA CARRETERA (TÓRTOLA):</h1>  SALIDA: Silo  IDA: Valeria , Tórtola.  <h1>VUELTA: Por el mismo recorrido (60 km)</h1></font></a><br />Domingo 9 de Junio 8:30 Horas</div>
+				<div class="enlace"><a href="#Etapa22MTB"><font color="#FFF47300"><h1>Etapa 22 RUTA BTT (VALVERDE-VILLAVERDE-ALBALADEJO-VALERA):</h1>  SALIDA: Silo  IDA: Valverde, Camino Albaladejo hasta viña garri, Villaverde, Punto limpio, Albaladejo, Valera.  <h1>VUELTA: Valera, Subida sierra, S/Cristobal, Valverde. (38 km)</h1></font></a><br />Domingo 9 de Junio 8:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa23Carretera"><font color="#00AC69"><h1>Etapa 23 RUTA CARRETERA (VILLAREJO PERIESTEBAN):</h1>  SALIDA: Silo  IDA: Villaverde, Olivares, La Parrilla, Villarejo Periesteban.  <h1>VUELTA: Por el mismo recorrido. (77 km)</h1></font></a><br />Domingo 16 de Junio 8:30 Horas</div>
+				<div class="enlace"><a href="#Etapa23MTB"><font color="#FFF47300"><h1>Etapa 23 RUTA BTT (VALVERDE-PIQUERAS-VALERA-VALVERDE):</h1>  SALIDA: Silo  IDA: Valverde, S/Cristobal, Subida Sierra, Piqueras.  <h1>VUELTA: Piqueras, Subida Molinos Chumillas, Llanos de la Olmeda, Valera, Camino Albaladejo, Valverde. (52 km)</h1></font></a><br />Domingo 16 de Junio 8:30 Horas</div>
+				<div class="enlace"><a href="#Etapa24MTB"><font color="#FFBF00"><h1>Etapa 24 RUTA BTT (NOCTURNA VALVERDE-VILLAVERDE):</h1>  SALIDA: Silo  IDA: Camino Albaladejo, Villaverde.  <h1>VUELTA: CUV-7132, C/ Oncenero, Valverde. (24 km)</h1></font></a><br />Viernes 21 de Junio 22:00 Horas</div>
+	            <div class="enlace"><a href="#Etapa25Carretera"><font color="#00AC69"><h1>Etapa 25 RUTA CARRETERA (PINAREJO):</h1>  SALIDA: Silo  IDA: Villaverde, Olivares, La Almarcha (Via de servicio), Castillo De Garcimuñoz, Pinarejo.  <h1>VUELTA: Por el mismo recorrido. (82 km)</h1></font></a><br />Domingo 23 de Junio 8:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa25MTB"><font color="#FFF47300"><h1>Etapa 25 RUTA BTT (CUEVA LA JUDIA-HONTECILLAS-BUENACHE-LAS TORCAS-VALVERDE):</h1>  SALIDA: Silo  IDA: Subida Camino S/Cristobal, Cuesta Blanca, Hontecillas, Camino Buenache. <h1>VUELTA: Las Torcas, Camino Hontecillas. (35)</h1></font></a><br />Domingo 23 de Junio 8:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa26Carretera"><font color="#00AC69"><h1>Etapa 26 RUTA CARRETERA (LA TORDIGA):</h1>  SALIDA: Silo  IDA: Valeria, Olmeda (CUV-7124 hasta CM-220), Villar Del Saz De Arcas (La Tordiga).  <h1>VUELTA: Cruce CM-2100 (Arcas), Tórtola, Valeria, Valverde. (91 km)</h1></font></a><br />Domingo 30 de Junio 8:30 Horas</div>
+				<div class="enlace"><a href="#Etapa26MTB"><font color="#FFF47300"><h1>Etapa 26 RUTA BTT (VALVERDE-HONTECILLAS-BUENACHE-BARCHIN-PIQUERAS-VALERA-VALVERDE):</h1>  SALIDA: Silo  IDA: Camino Hontecillas, Buenache, Camino Barchin, Piqueras.  <h1>VUELTA: Piqueras, Camino Ruena, La Santa, Subida al corral de la Sierra, Valla (Finca Goya), Camino S/Cristobal, Camino S/Isisdro. (50 km)</h1></font></a><br />Domingo 30 de Junio 8:30 Horas</div>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -327,17 +326,15 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-	            <div class="enlace"><a href="#Etapa26Carretera"><font color="#01DF01"><h1>Etapa 26 RUTA CARRETERA (LA TORDIGA):</h1>  SALIDA: Silo  IDA: Valeria, Olmeda (CUV-7124 hasta CM-220), Villar Del Saz De Arcas (La Tordiga).  <h1>VUELTA: Cruce CM-2100 (Arcas), Tórtola, Valeria, Valverde. (91 km)</h1></font></a><br />Domingo 1 de Julio 8:00 Horas</div>
-	            <div class="enlace"><a href="#Etapa26MTB"><font color="#FF4000"><h1>Etapa 26 RUTA BTT (VALVERDE-TORRETA DE VALDEGANGA-VALVERDE):</h1>  SALIDA: Silo  IDA: Valverde, Albaladejo, La Parra, Torreta Valdeganga.  <h1>VUELTA: Torreta Valdeganga, Toboganes Nogueron, Valverde. (63 km)</h1></font></a><br />Domingo 1 de Julio 8:00 Horas</div>
-				<div class="enlace"><a href="#Etapa27Carretera"><font color="#01DF01"><h1>Etapa 27 RUTA CARRETERA (CHUMILLAS):</h1>  SALIDA: Silo  IDA: Valeria, Olmeda Del Rey, Chumillas. <h1>VUELTA: Por el mismo recorrido. (56 km)</h1></font></a><br />Domingo 8 de Julio 8:00 Horas</div>
-				<div class="enlace"><a href="#Etapa27MTB"><font color="#FF4000"><h1>Etapa 27 RUTA BTT (VALVERDE-ALBALADEJO-VILLAVERDE-VALVERDE):</h1>  SALIDA: Silo  IDA: Camino del Cementerio, Albaladejo, Piscina de Albaladejo, Camino Villaverde, Punto limpio.  <h1>VUELTA: Villaverde, Camino Manchamar, Oncenero. (30 km)</h1></font></a><br />Domingo 8 de Julio 8:30 Horas</div>
-				<div class="enlace"><a href="#Etapa28Carretera"><font color="#01DF01"><h1>Etapa 28 RUTA CARRETERA (VALVERDEJO):</h1>  SALIDA: Silo  IDA: Buenache De Alacón, Olmedilla, por CM-2100, Valverdejo. <h1>VUELTA: Por el mismo recorrido. (61 km)</h1></font></a><br />Domingo 15 de Julio 8:00 Horas</div>
-				<div class="enlace"><a href="#Etapa28MTB"><font color="#FF4000"><h1>Etapa 28 RUTA BTT (VALVERDE-HONTECILLAS-BUENACHE-BARCHIN-PIQUERAS-VALERA-VALVERDE):</h1>  SALIDA: Silo  IDA: Camino Hontecillas, Buenache, Camino Barchin, Piqueras.  <h1>VUELTA: Piqueras, Camino Ruena, La Santa, Subida al corral de la Sierra, Valla (Finca Goya), Camino S/Cristobal, Camino S/Isisdro. (50 km)</h1></font></a><br />Domingo 15 de Julio 8:00 Horas</div>
-	            <div class="enlace"><a href="#Etapa29Carretera"><font color="#FE2E64"><h1>Etapa 29 RUTA CARRETERA (MARCHA DEL CLUB LA HINOJOSA):</h1>  SALIDA: Silo  IDA: Villaverde, Olivares (Hasta cruce crta: 3231) La Hinojosa.  <h1>VUELTA: Por  mismo recorrido. (52 km)</h1></font></a><br />Domingo 22 de Julio (Hora por Determinar), (Al terminar ruta, el club pagará el almuerzo a todos los socios asistentes)</div>
-	            <div class="enlace"><a href="#Etapa29MTB"><font color="#FE2E64"><h1>Etapa 29 RUTA BTT (MARCHA DEL CLUB LA HINOJOSA):</h1>  SALIDA: Silo  IDA: Villaverde, Olivares (Hasta cruce crta: 3231) La Hinojosa.  <h1>VUELTA: Por  mismo recorrido. (52 km)</h1></font></a><br />Domingo 22 de Julio (Hora por Determinar), (Al terminar ruta, el club pagará el almuerzo a todos los socios asistentes)</div>
-	            <div class="enlace"><a href="#Etapa30MTB"><font color="#FFBF00"><h1>Etapa 30 RUTA BTT (NOCTURNA ALBALADEO-VALERA):</h1>  SALIDA: Silo  IDA: Camino Albaladejo, Albaladejo, Camino Valera (Hasta cruce CM-2100).  <h1>VUELTA: Camino Arroyo De La Cañadilla (Hasta Camino Albaladejo), Valverde. (30 km)</h1></font></a><br />Sábado 28 de Julio 22:00 Horas</div>
-			    <div class="enlace"><a href="#Etapa31Carretera"><font color="#01DF01"><h1>Etapa 31 RUTA CARRETERA (ARCAS):</h1>  SALIDA: Silo  IDA: Valeria, Tórtola, Arcas.  <h1>VUELTA: Por el mismo recorrido. (77 km)</h1></font></a><br />Domingo 29 de Julio 8:00 Horas</div>
-			    <div class="enlace"><a href="#Etapa31MTB"><font color="#FF4000"><h1>Etapa 31 RUTA BTT (CUEVA LA JUDIA-HONTECILLAS-BUENACHE-LAS TORCAS-VALVERDE):</h1>  SALIDA: Silo  IDA: Subida Camino S/Cristobal, Cuesta Blanca, Hontecillas, Camino Buenache. <h1>VUELTA: Las Torcas, Camino Hontecillas. (35)</h1></font></a><br />Domingo 29 de Julio 8:30 Horas</div>
+				<div class="enlace"><a href="#Etapa27Carretera"><font color="#00AC69"><h1>Etapa 27 RUTA CARRETERA (CHUMILLAS):</h1>  SALIDA: Silo  IDA: Valeria, Olmeda Del Rey, Chumillas. <h1>VUELTA: Por el mismo recorrido. (56 km)</h1></font></a><br />Domingo 7 de Julio 8:00 Horas</div>
+				<div class="enlace"><a href="#Etapa27MTB"><font color="#FFF47300"><h1>Etapa 27 RUTA BTT (VALVERDE-ALBALADEJO-VILLAVERDE-VALVERDE):</h1>  SALIDA: Silo  IDA: Camino del Cementerio, Albaladejo, Piscina de Albaladejo, Camino Villaverde, Punto limpio.  <h1>VUELTA: Villaverde, Camino Manchamar, Oncenero. (30 km)</h1></font></a><br />Domingo 7 de Julio 8:30 Horas</div>
+				<div class="enlace"><a href="#Etapa28Carretera"><font color="#00AC69"><h1>Etapa 28 RUTA CARRETERA (MONTALBANEJO):</h1>  SALIDA: Silo  IDA: Olivares, Cruce a la hinojosa (CUV-3231), Hinojosa, Montalbanejo.  <h1>VUELTA: Por el mismo recorrido (67 km)</h1></font></a><br />Domingo 14 de Julio 8:00 Horas</div>
+				<div class="enlace"><a href="#Etapa28MTB"><font color="#FFF47300"><h1>Etapa 28 RUTA BTT (VALVERDE-CERRO LAS TORCAS-PANTANO-HONTECILLAS-CUEVA LA JUDIA):</h1>  SALIDA: Silo  IDA: Cerro las Torcas, Hontecillas, Subida cuesta blanca, Finca La Goya.  <h1>VUELTA: Camino cueva la judia, Camino S/Cristobal, Camino S/Isidro. (31 km)</h1></font></a><br />Domingo 14 de Julio 8:00 Horas</div>
+	            <div class="enlace"><a href="#Etapa29Carretera"><font color="#FB4ABF"><h1>Etapa 29 RUTA CARRETERA (MARCHA DEL CLUB VALVERDEJO):</h1>  SALIDA: Silo  IDA: Buenache De Alacón, Olmedilla, por CM-2100, Valverdejo. <h1>VUELTA: Por el mismo recorrido.(56 km)</h1></font></a><br />Domingo 21 de Julio (Hora por Determinar), (Al terminar ruta, el club pagará el almuerzo a todos los socios asistentes)</div>
+	            <div class="enlace"><a href="#Etapa29MTB"><font color="#FB4ABF"><h1>Etapa 29 RUTA BTT (MARCHA DEL CLUB VALVERDEJO):</h1>  SALIDA: Silo  IDA: Buenache De Alacón, Olmedilla, por CM-2100, Valverdejo. <h1>VUELTA: Por el mismo recorrido.(56 km)</h1></font></a><br />Domingo 21 de Julio (Hora por Determinar), (Al terminar ruta, el club pagará el almuerzo a todos los socios asistentes)</div>
+	            <div class="enlace"><a href="#Etapa30MTB"><font color="#FFBF00"><h1>Etapa 30 RUTA BTT (NOCTURNA ALBALADEO-VALERA):</h1>  SALIDA: Silo  IDA: Camino Albaladejo, Albaladejo, Camino Valera (Hasta cruce CM-2100).  <h1>VUELTA: Camino Arroyo De La Cañadilla (Hasta Camino Albaladejo), Valverde. (30 km)</h1></font></a><br />Viernes 28 de Julio 22:00 Horas</div>
+			    <div class="enlace"><a href="#Etapa31Carretera"><font color="#00AC69"><h1>Etapa 31 RUTA CARRETERA (ARCAS):</h1>  SALIDA: Silo  IDA: Valeria, Tórtola, Arcas.  <h1>VUELTA: Por el mismo recorrido. (77 km)</h1></font></a><br />Domingo 28 de Julio 8:00 Horas</div>
+			    <div class="enlace"><a href="#Etapa31MTB"><font color="#FFF47300"><h1>Etapa 31 RUTA BTT (VALVERDE-BELMONTEJO-VALVERDE):</h1>  SALIDA: Silo  IDA: Manchamar, Orilla canal, Belmontejo.  <h1>VUELTA: Belmontejo, Villaverde, Camino lado carretera, Macuquero, Valverde. (47 km)</h1></font></a><br />Domingo 28 de Julio 8:30 Horas</div>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -350,15 +347,15 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<div class="enlace"><a href="#Etapa32Carretera"><font color="#01DF01"><h1>Etapa 32 RUTA CARRETERA (CASTILLO DE GARCIMUÑOZ):</h1>  SALIDA: Silo  IDA: La Almarcha , Via de servicio (autovia del este, segundo puente), Castillo Garcimuñoz.  <h1>VUELTA: C/ San Bartolome hasta La Almarcha, Olivares, Valverde. (66 km)</h1></font></a><br />Domingo 5 de Agosto 8:30 Horas</div>
-				<div class="enlace"><a href="#Etapa32MTB"><font color="#FF4000"><h1>Etapa 32 RUTA BTT (VALVERDE-ALBALADEJO-VILLAVERDE-VALVERDE):</h1>  SALIDA: Silo  IDA: Camino del Cementerio, Albaladejo, Piscina de Albaladejo, Camino Villaverde, Punto limpio.  <h1>VUELTA: Villaverde, Camino Manchamar, Oncenero. (30 km)</h1></font></a><br />Domingo 5 de Agosto 8:30 Horas</div>
-	            <div class="enlace"><a href="#Etapa33MTB"><font color="#FFBF00"><h1>Etapa 33 RUTA BTT (NOCTURNA VIÑA EMPARRADA):</h1>  SALIDA: Silo  IDA: Camping, Vallejazo, Torneses.  <h1>VUELTA: Viña emparrada, Cuesta Carnica. (18 km)</h1></font></a><br />Sábado 11 de Agosto 21:30 Horas</div>
-	            <div class="enlace"><a href="#Etapa34Carretera"><font color="#01DF01"><h1>Etapa 34 RUTA CARRETERA (MOTILLA DEL PALANCAR):</h1>  SALIDA: Silo  IDA: Buenache, Olmedilla, Motilla Del Palancar (Ultima rotonda).  <h1>VUELTA: Por el mismo recorrido. (82 km)</h1></font></a><br />Domingo 12 de Agosto 8:30 Horas</div>
-	            <div class="enlace"><a href="#Etapa34MTB"><font color="#FF4000"><h1>Etapa 34 RUTA BTT (VALVERDE-MACUQUERO-CASERNA-TORRUBIA-HONRUBIA-CASERNA-CERRO GORDO):</h1>  SALIDA: Silo  IDA: Camino Cementerio, Macuquero, Caserna, Camino Torrubia, Honrrubia.  <h1>VUELTA: Caserna, Cerro Gordo, Camino Camping. (56 km)</h1></font></a><br />Domingo 12 de Agosto 8:00 Horas</div>
-				<div class="enlace"><a href="#Etapa35Carretera"><font color="#FE2E64"><h1>Etapa 35 RUTA CARRETERA (DIA DE LA BICICLETA):</h1>  SALIDA: Plaza Mayor  IDA: Plaza de la verdura, C/Peso, C/La Yedra, C/Leones, Parque D.Arsenio.  <h1>VUELTA: Carretera de Cuenca, Carretera Madrid-Valencia, Paseo del Santo Niño, Parque Tomas Bux, C/Fuente de la zarza, C/Endrino, C/Juan Pérez, C/Leones, Parque D.Arsenio Triguero. (4 km)</h1></font></a><br />Domingo 20 de Agosto (Hora por Determinar)</div>
-				<div class="enlace"><a href="#Etapa35MTB"><font color="#FE2E64"><h1>Etapa 35 RUTA BTT (DIA DE LA BICICLETA):</h1>  SALIDA: Plaza Mayor  IDA: Plaza de la verdura, C/Peso, C/La Yedra, C/Leones, Parque D.Arsenio.  <h1>VUELTA: Carretera de Cuenca, Carretera Madrid-Valencia, Paseo del Santo Niño, Parque Tomas Bux, C/Fuente de la zarza, C/Endrino, C/Juan Pérez, C/Leones, Parque D.Arsenio Triguero. (4 km)</h1></font></a><br />Domingo 20 de Agosto (Hora por Determinar)</div>
-				<div class="enlace"><a href="#Etapa36Carretera"><font color="#01DF01"><h1>Etapa 36 RUTA CARRETERA (SAN LORENZO DE LA PARRILLA):</h1>  SALIDA: Silo  IDA: Villaverde, Albaladejo, La Parra De Las Vegas, N-420, San Lorenzo De La Parrilla.  <h1>VUELTA: Por Belmontejo, Olivares, Villaverde, Valverde. (72 km)</h1></font></a><br />Domingo 26 de Agosto 8:30 Horas</div>
-				<div class="enlace"><a href="#Etapa36MTB"><font color="#FF4000"><h1>Etapa 36 RUTA BTT (VALVERDE-LA CEÑA "INVERSA"-VALVERDE):</h1>  SALIDA: Silo  IDA: Valverde, Albaladejo, La Ceña.  <h1>VUELTA: La Ceña, Belmontejo, Villaverde, Valverde. (50 km)</h1></font></a><br />Domingo 26 de Agosto 8:30 Horas</div>
+				<div class="enlace"><a href="#Etapa32Carretera"><font color="#00AC69"><h1>Etapa 32 RUTA CARRETERA (CASTILLO DE GARCIMUÑOZ):</h1>  SALIDA: Silo  IDA: La Almarcha , Via de servicio (autovia del este, segundo puente), Castillo Garcimuñoz.  <h1>VUELTA: C/ San Bartolome hasta La Almarcha, Olivares, Valverde. (66 km)</h1></font></a><br />Domingo 4 de Agosto 8:30 Horas</div>
+				<div class="enlace"><a href="#Etapa32MTB"><font color="#FFF47300"><h1>Etapa 32 RUTA BTT (VALVERDE-ALBALADEJO-VILLAVERDE-VALVERDE):</h1>  SALIDA: Silo  IDA: Camino del Cementerio, Albaladejo, Piscina de Albaladejo, Camino Villaverde, Punto limpio.  <h1>VUELTA: Villaverde, Camino Manchamar, Oncenero. (30 km)</h1></font></a><br />Domingo 4 de Agosto 8:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa33MTB"><font color="#FFBF00"><h1>Etapa 33 RUTA BTT (NOCTURNA VIÑA EMPARRADA):</h1>  SALIDA: Silo  IDA: Camping, Vallejazo, Torneses.  <h1>VUELTA: Viña emparrada, Cuesta Carnica. (18 km)</h1></font></a><br />Viernes 9 de Agosto 21:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa34Carretera"><font color="#00AC69"><h1>Etapa 34 RUTA CARRETERA (MOTILLA DEL PALANCAR):</h1>  SALIDA: Silo  IDA: Buenache, Olmedilla, Motilla Del Palancar (Ultima rotonda).  <h1>VUELTA: Por el mismo recorrido. (82 km)</h1></font></a><br />Domingo 11 de Agosto 8:30 Horas</div>
+	            <div class="enlace"><a href="#Etapa34MTB"><font color="#FFF47300"><h1>Etapa 34 RUTA BTT (VALVERDE-MACUQUERO-CASERNA-TORRUBIA-HONRUBIA-CASERNA-CERRO GORDO):</h1>  SALIDA: Silo  IDA: Camino Cementerio, Macuquero, Caserna, Camino Torrubia, Honrrubia.  <h1>VUELTA: Caserna, Cerro Gordo, Camino Camping. (56 km)</h1></font></a><br />Domingo 11 de Agosto 8:30 Horas</div>
+				<div class="enlace"><a href="#Etapa35Carretera"><font color="#FB4ABF"><h1>Etapa 35 RUTA CARRETERA (DIA DE LA BICICLETA):</h1>  SALIDA: Plaza Mayor  IDA: Plaza de la verdura, C/Peso, C/La Yedra, C/Leones, Parque D.Arsenio.  <h1>VUELTA: Carretera de Cuenca, Carretera Madrid-Valencia, Paseo del Santo Niño, Parque Tomas Bux, C/Fuente de la zarza, C/Endrino, C/Juan Pérez, C/Leones, Parque D.Arsenio Triguero. (4 km)</h1></font></a><br />Domingo 18 de Agosto (Hora por Determinar)</div>
+				<div class="enlace"><a href="#Etapa35MTB"><font color="#FB4ABF"><h1>Etapa 35 RUTA BTT (DIA DE LA BICICLETA):</h1>  SALIDA: Plaza Mayor  IDA: Plaza de la verdura, C/Peso, C/La Yedra, C/Leones, Parque D.Arsenio.  <h1>VUELTA: Carretera de Cuenca, Carretera Madrid-Valencia, Paseo del Santo Niño, Parque Tomas Bux, C/Fuente de la zarza, C/Endrino, C/Juan Pérez, C/Leones, Parque D.Arsenio Triguero. (4 km)</h1></font></a><br />Domingo 18 de Agosto (Hora por Determinar)</div>
+				<div class="enlace"><a href="#Etapa36Carretera"><font color="#00AC69"><h1>Etapa 36 RUTA CARRETERA (SAN LORENZO DE LA PARRILLA):</h1>  SALIDA: Silo  IDA: Villaverde, Albaladejo, La Parra De Las Vegas, N-420, San Lorenzo De La Parrilla.  <h1>VUELTA: Por Belmontejo, Olivares, Villaverde, Valverde. (72 km)</h1></font></a><br />Domingo 25 de Agosto 8:30 Horas</div>
+				<div class="enlace"><a href="#Etapa36MTB"><font color="#FFF47300"><h1>Etapa 36 RUTA BTT (VALVERDE-LA CEÑA "INVERSA"-VALVERDE):</h1>  SALIDA: Silo  IDA: Valverde, Albaladejo, La Ceña.  <h1>VUELTA: La Ceña, Belmontejo, Villaverde, Valverde. (50 km)</h1></font></a><br />Domingo 25 de Agosto 8:30 Horas</div>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -371,10 +368,10 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<div class="enlace"><a href="#Etapa37Carretera"><font color="#01DF01"><h1>Etapa 37 RUTA CARRETERA (MONTALBANEJO):</h1>  SALIDA: Silo  IDA: Olivares, Cruce a la hinojosa (CUV-3231), Hinojosa, Montalbanejo.  <h1>VUELTA: Por el mismo recorrido (67 km)</h1></font></a><br />Domingo 2 de Septiembre 9:00 Horas</div>
-				<div class="enlace"><a href="#Etapa37MTB"><font color="#FF4000"><h1>Etapa 37 RUTA BTT (CIRCUITO DE VALVERDE A LA INVERSA):</h1>  SALIDA: Silo  IDA: Camino camping, Subida Camping, Cuesta Carnica, Camino Corral Martín, Los Torneses, Los Cabezos, Sendas Macuquero.  <h1>VUELTA: Piedra Hueca, Quintanar, Cuesta Carnica, Camping, Cerro Telégrafo, Parte de atras Oncenero, Camino Camping. (37 km)</h1></font></a><br />Domingo 2 de Septiembre 9:30 Horas</div>
-				<div class="enlace"><a href="#Etapa38Carretera"><font color="#01DF01"><h1>Etapa 38 RUTA CARRETERA (SOLERA DE GALBALDÓN):</h1>  SALIDA: Silo  IDA: Valeria, Olmeda Del Rey, Chumillas, Solera De Gabaldón.  <h1>VUELTA: Por el mismo recorrido. (66 km)</h1></font></a><br />Domingo 9 de Septiembre 9:00 Horas</div>
-				<div class="enlace"><a href="#Etapa38MTB"><font color="#FF4000"><h1>Etapa 38 RUTA BTT (VALVERDE-CUEVA LA JUDIA-VALVERDE):</h1>  SALIDA: Silo  IDA: Camino San Cristobal, Arroyo la Dehesa, Cueva la judia.  <h1>VUELTA: Por la Cañada, Fuente ladron, Cruzar cementera, Camino S/Isisdro. (24 km)</h1></font></a><br />Domingo 9 de Septiembre 9:30 Horas</div>
+				<div class="enlace"><a href="#Etapa37Carretera"><font color="#00AC69"><h1>Etapa 37 RUTA CARRETERA (MONTALBANEJO):</h1>  SALIDA: Silo  IDA: Olivares, Cruce a la hinojosa (CUV-3231), Hinojosa, Montalbanejo.  <h1>VUELTA: Por el mismo recorrido (67 km)</h1></font></a><br />Domingo 1 de Septiembre 9:00 Horas</div>
+				<div class="enlace"><a href="#Etapa37MTB"><font color="#FFF47300"><h1>Etapa 37 RUTA BTT (CIRCUITO DE VALVERDE A LA INVERSA):</h1>  SALIDA: Silo  IDA: Camino camping, Subida Camping, Cuesta Carnica, Camino Corral Martín, Los Torneses, Los Cabezos, Sendas Macuquero.  <h1>VUELTA: Piedra Hueca, Quintanar, Cuesta Carnica, Camping, Cerro Telégrafo, Parte de atras Oncenero, Camino Camping. (37 km)</h1></font></a><br />Domingo 1 de Septiembre 9:30 Horas</div>
+				<div class="enlace"><a href="#Etapa38Carretera"><font color="#00AC69"><h1>Etapa 38 RUTA CARRETERA (SOLERA DE GALBALDÓN):</h1>  SALIDA: Silo  IDA: Valeria, Olmeda Del Rey, Chumillas, Solera De Gabaldón.  <h1>VUELTA: Por el mismo recorrido. (66 km)</h1></font></a><br />Domingo 8 de Septiembre 9:00 Horas</div>
+				<div class="enlace"><a href="#Etapa38MTB"><font color="#FFF47300"><h1>Etapa 38 RUTA BTT (VALVERDE-CUEVA LA JUDIA-VALVERDE):</h1>  SALIDA: Silo  IDA: Camino San Cristobal, Arroyo la Dehesa, Cueva la judia.  <h1>VUELTA: Por la Cañada, Fuente ladron, Cruzar cementera, Camino S/Isisdro. (24 km)</h1></font></a><br />Domingo 8 de Septiembre 9:00 Horas</div>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -387,8 +384,8 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<div class="enlace"><a href="#Etapa39MTB"><font color="#FF4000"><h1>Etapa RUTA BTT (Lluvia-Valverde-canal- belmontejo-valverde):</h1>  SALIDA: Silo  IDA: Camping, Manchamar, Caserna, Gravera, Villaverde, Canal, Belmontejo.  <h1>VUELTA: Por el mismo recorrido hasta Crta.Vieja de Villaverde, Carretera vieja, Villafranca, Valverde. (44 km)</h1></font></a><br />Dia y Hora correspondiente a su etapa</div>
-				<div class="enlace"><a href="#Etapa40MTB"><font color="#FF4000"><h1>Etapa RUTA BTT (Lluvia-Valverde-villaverde albaladejo-valera-valverde):</h1>  SALIDA: Silo  IDA: Valverde, Crta.vieja a Villaverde, Albaladejo.  <h1>VUELTA: Albaladejo, Camino asfaltado hasta Valera, Valverde. (32 km)</h1></font></a><br />Dia y Hora correspondiente a su etapa</div>
+				<div class="enlace"><a href="#Etapa39MTB"><font color="#FFF47300"><h1>Etapa RUTA BTT (Lluvia-Valverde-canal- belmontejo-valverde):</h1>  SALIDA: Silo  IDA: Camping, Manchamar, Caserna, Gravera, Villaverde, Canal, Belmontejo.  <h1>VUELTA: Por el mismo recorrido hasta Crta.Vieja de Villaverde, Carretera vieja, Villafranca, Valverde. (44 km)</h1></font></a><br />Dia y Hora correspondiente a su etapa</div>
+				<div class="enlace"><a href="#Etapa40MTB"><font color="#FFF47300"><h1>Etapa RUTA BTT (Lluvia-Valverde-villaverde albaladejo-valera-valverde):</h1>  SALIDA: Silo  IDA: Valverde, Crta.vieja a Villaverde, Albaladejo.  <h1>VUELTA: Albaladejo, Camino asfaltado hasta Valera, Valverde. (32 km)</h1></font></a><br />Dia y Hora correspondiente a su etapa</div>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -405,7 +402,7 @@
 		</div>
 		<div data-role="content">
 			<table border="1" align="center" cellspacing="0" cellpadding="4px">
-			  <tr bgcolor="#01DF01"><td width="14%"></td><td width="14%"></td><td width="14%"><b>Excursión</b></td><td width="14%"><b>Ctra&Mtb </b></td><td width="14%"><b>Nocturna</b></td><td width="14%"></td><td width="14%"></td></tr>
+			  <tr bgcolor="#61FF8C"><td width="14%"></td><td width="14%"></td><td width="14%"><b>Excursión</b></td><td width="14%"><b>Ctra&Mtb </b></td><td width="14%"><b>Nocturna</b></td><td width="14%"></td><td width="14%"></td></tr>
 	        <tr>
 	        	<td></td>
 	            <td></td>
@@ -421,265 +418,247 @@
 		  <table border="1" align="center" cellspacing="0" cellpadding="2px">
 	 		<tr bgcolor="#FFFF00"><td width="14%"><b>L</b></td><td width="14%"><b>M</b></td><td width="14%"><b>X</b></td><td width="14%"><b>J</b></td><td width="14%"><b>V</b></td><td width="14%"><b>S</b></td><td width="14%"><b>D</b></td></tr>
 	        <tr>
-	        	<td colspan="7" bgcolor="#FE2E64"><b>Febrero</b></td>
+	        	<td colspan="7" bgcolor="#2ECBFE"><b>Febrero</b></td>
 			</tr>
 	        <tr>
 	            <td></td>
 	            <td></td>
 	            <td></td>
+	            <td></td>
 	            <td><img src="images/calendario/1-feb.png" alt="1 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/2-feb.png" alt="2 de Febrero" width="100%" /></td>
-	            <td><img src="images/calendario/3-feb.png" alt="3 de Febrero" width="100%" /></td>
-			    <td><a href="#Etapa1"><img src="images/calendario/4-feb.png" alt="4 de Febrero - Etapa 1" width="100%" /></a></td>
+			    <td><a href="#Etapa1"><img src="images/calendario/3-feb.png" alt="3 de Febrero - Etapa 1" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/4-feb.png" alt="4 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/5-feb.png" alt="5 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/6-feb.png" alt="6 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/7-feb.png" alt="7 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/8-feb.png" alt="8 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/9-feb.png" alt="9 de Febrero" width="100%" /></td>
-	            <td><img src="images/calendario/10-feb.png" alt="10 de Febrero" width="100%" /></td>
-			    <td><a href="#Etapa2"><img src="images/calendario/11-feb.png" alt="11 de Febrero - Etapa 2" width="100%" /></a></td>
+			    <td><a href="#Etapa2"><img src="images/calendario/10-feb.png" alt="10 de Febrero - Etapa 2" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/11-feb.png" alt="11 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/12-feb.png" alt="12 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/13-feb.png" alt="13 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/14-feb.png" alt="14 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/15-feb.png" alt="15 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/16-feb.png" alt="16 de Febrero" width="100%" /></td>
-	            <td><img src="images/calendario/17-feb.png" alt="17 de Febrero" width="100%" /></td>
-	            <td><a href="#Etapa3"><img src="images/calendario/18-feb.png" alt="18 de Febrero - Etapa 3" width="100%" /></a></td>
+	            <td><a href="#Etapa3"><img src="images/calendario/17-feb.png" alt="17 de Febrero - Etapa 3" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/18-feb.png" alt="18 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/19-feb.png" alt="19 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/20-feb.png" alt="20 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/21-feb.png" alt="21 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/22-feb.png" alt="22 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/23-feb.png" alt="23 de Febrero" width="100%" /></td>
-	            <td><img src="images/calendario/24-feb.png" alt="24 de Febrero" width="100%" /></td>
-	            <td><a href="#Etapa4"><img src="images/calendario/25-feb.png" alt="25 de Febrero - Etapa 4" width="100%" /></a></td>
+	            <td><a href="#Etapa4"><img src="images/calendario/24-feb.png" alt="24 de Febrero - Etapa 4" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/25-feb.png" alt="25 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/26-feb.png" alt="26 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/27-feb.png" alt="27 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/28-feb.png" alt="28 de Febrero" width="100%" /></td>
 	            <td></td>
 	            <td></td>
 	        	<td></td>
-	        	<td></td>
 	        </tr>
 	        <tr>
-	        	<td colspan="7" bgcolor="#FE2E64"><b>Marzo</b></td>
+	        	<td colspan="7" bgcolor="#2ECBFE"><b>Marzo</b></td>
 			</tr>
 	        <tr>
+	        	<td></td>
 	        	<td></td>
 	        	<td></td>
 	        	<td></td>
 	            <td><img src="images/calendario/1-mar.png" alt="1 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/2-mar.png" alt="2 de Marzo" width="100%" /></td>
-	            <td><img src="images/calendario/3-mar.png" alt="3 de Marzo" width="100%" /></td>
-	            <td><a href="#Etapa5"><img src="images/calendario/4-mar.png" alt="4 de Marzo - Etapa 5" width="100%" /></a></td>
+	            <td><a href="#Etapa5"><img src="images/calendario/3-mar.png" alt="3 de Marzo - Etapa 5" width="100%" /></a></td>
 			</tr>
 	        <tr>
+	            <td><img src="images/calendario/4-mar.png" alt="4 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/5-mar.png" alt="5 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/6-mar.png" alt="6 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/7-mar.png" alt="7 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/8-mar.png" alt="8 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/9-mar.png" alt="9 de Marzo" width="100%" /></td>
-	            <td><img src="images/calendario/10-mar.png" alt="10 de Marzo" width="100%" /></td>
-	            <td><a href="#Etapa6"><img src="images/calendario/11-mar.png" alt="11 de Marzo - Etapa 6" width="100%" /></a></td>
+	            <td><a href="#Etapa6"><img src="images/calendario/10-mar.png" alt="10 de Marzo - Etapa 6" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/11-mar.png" alt="11 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/12-mar.png" alt="12 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/13-mar.png" alt="13 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/14-mar.png" alt="14 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/15-mar.png" alt="15 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/16-mar.png" alt="16 de Marzo" width="100%" /></td>
-	            <td><img src="images/calendario/17-mar.png" alt="17 de Marzo" width="100%" /></td>
-	            <td><a href="#Etapa7"><img src="images/calendario/18-mar.png" alt="18 de Marzo - Etapa 7" width="100%" /></a></td>
+	            <td><a href="#Etapa7"><img src="images/calendario/17-mar.png" alt="17 de Marzo - Etapa 7" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/18-mar.png" alt="18 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/19-mar.png" alt="19 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/20-mar.png" alt="20 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/21-mar.png" alt="21 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/22-mar.png" alt="22 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/23-mar.png" alt="23 de Marzo" width="100%" /></td>
-	            <td><img src="images/calendario/24-mar.png" alt="24 de Marzo" width="100%" /></td>
-	            <td><a href="#Etapa8"><img src="images/calendario/25-mar.png" alt="25 de Marzo - Etapa 8" width="100%" /></a></td>
+	            <td><a href="#Etapa8"><img src="images/calendario/24-mar.png" alt="24 de Marzo - Etapa 8" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/25-mar.png" alt="25 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/26-mar.png" alt="26 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/27-mar.png" alt="27 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/28-mar.png" alt="28 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/29-mar.png" alt="29 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/30-mar.png" alt="30 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/31-mar.png" alt="31 de Marzo" width="100%" /></td>
-	            <td></td>
 	        </tr>
 	        <tr>
-	        	<td colspan="7" bgcolor="#FE2E64"><b>Abril</b></td>
+	        	<td colspan="7" bgcolor="#2ECBFE"><b>Abril</b></td>
 			</tr>
 	        <tr>
-	            <td></td>
-	            <td></td>
-	            <td></td>
-	            <td></td>
-	            <td></td>
-	            <td></td>
-	            <td><a href="#Etapa9"><img src="images/calendario/1-abr.png" alt="1 de Abril - Etapa 9" width="100%" /></a></td>
-			</tr>
-	        <tr>
+	        	<td><img src="images/calendario/1-abr.png" alt="1 de Abril" width="100%" /></td>
 	        	<td><img src="images/calendario/2-abr.png" alt="2 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/3-abr.png" alt="3 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/4-abr.png" alt="4 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/5-abr.png" alt="5 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/6-abr.png" alt="6 de Abril" width="100%" /></td>
-	            <td><img src="images/calendario/7-abr.png" alt="7 de Abril" width="100%" /></td>
-	            <td><a href="#Etapa10"><img src="images/calendario/8-abr.png" alt="8 de Abril - Etapa 10" width="100%" /></a></td>
-	        </tr>
+	            <td><a href="#Etapa9"><img src="images/calendario/7-abr.png" alt="7 de Abril - Etapa 9" width="100%" /></a></td>
+			</tr>
 	        <tr>
+	        	<td><img src="images/calendario/8-abr.png" alt="8 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/9-abr.png" alt="9 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/10-abr.png" alt="10 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/11-abr.png" alt="11 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/12-abr.png" alt="12 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/13-abr.png" alt="13 de Abril" width="100%" /></td>
-	            <td><img src="images/calendario/14-abr.png" alt="14 de Abril" width="100%" /></td>
-	            <td><a href="#Etapa11"><img src="images/calendario/15-abr.png" alt="15 de Abril - Etapa 11" width="100%" /></a></td>
+	            <td><a href="#Etapa10"><img src="images/calendario/14-abr.png" alt="14 de Abril - Etapa 10" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/15-abr.png" alt="15 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/16-abr.png" alt="16 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/17-abr.png" alt="17 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/18-abr.png" alt="18 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/19-abr.png" alt="19 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/20-abr.png" alt="20 de Abril" width="100%" /></td>
-	            <td><img src="images/calendario/21-abr.png" alt="21 de Abril" width="100%" /></td>
-	            <td><a href="#Etapa12"><img src="images/calendario/22-abr.png" alt="22 de Abril - Etapa 12" width="100%" /></a></td>
+	            <td><a href="#Etapa11"><img src="images/calendario/21-abr.png" alt="21 de Abril - Etapa 11" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/22-abr.png" alt="22 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/23-abr.png" alt="23 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/24-abr.png" alt="24 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/25-abr.png" alt="25 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/26-abr.png" alt="26 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/27-abr.png" alt="27 de Abril" width="100%" /></td>
-	            <td><img src="images/calendario/28-abr.png" alt="28 de Abril" width="100%" /></td>
-	        	<td><a href="#Etapa13"><img src="images/calendario/29-abr.png" alt="29 de Abril - Etapa 13" width="100%" /></a></td>
+	            <td><a href="#Etapa12"><img src="images/calendario/28-abr.png" alt="28 de Abril - Etapa 12" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/29-abr.png" alt="29 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/30-abr.png" alt="30 de Abril" width="100%" /></td>
 	            <td></td>
 	            <td></td>
 	            <td></td>
 	            <td></td>
 	            <td></td>
-	            <td></td>
 	        </tr>
 	        <tr>
-	        	<td colspan="7" bgcolor="#FE2E64"><b>Mayo</b></td>
+	        	<td colspan="7" bgcolor="#2ECBFE"><b>Mayo</b></td>
 			</tr>
 	        <tr>
+	            <td></td>
 	            <td></td>
 	            <td><a href="#Etapa14"><img src="images/calendario/1-may.png" alt="1 de Mayo - Etapa 14" width="100%" /></a></td>
 	        	<td><img src="images/calendario/2-may.png" alt="2 de Mayo" width="100%" /></td>
 	        	<td><img src="images/calendario/3-may.png" alt="3 de Mayo" width="100%" /></td>
 	            <td><img src="images/calendario/4-may.png" alt="4 de Mayo" width="100%" /></td>
-	            <td><img src="images/calendario/5-may.png" alt="5 de Mayo" width="100%" /></td>
-	            <td><a href="#Etapa15"><img src="images/calendario/6-may.png" alt="6 de Mayo - Etapa 15" width="100%" /></a></td>
+	            <td><a href="#Etapa15"><img src="images/calendario/5-may.png" alt="5 de Mayo - Etapa 15" width="100%" /></a></td>
 			</tr>
 	        <tr>
+	            <td><img src="images/calendario/6-may.png" alt="6 de Mayo" width="100%" /></td>
 	            <td><img src="images/calendario/7-may.png" alt="7 de Mayo" width="100%" /></td>
 	        	<td><img src="images/calendario/8-may.png" alt="8 de Mayo" width="100%" /></td>
 	        	<td><img src="images/calendario/9-may.png" alt="9 de Mayo" width="100%" /></td>
 	            <td><img src="images/calendario/10-may.png" alt="10 de Mayo" width="100%" /></td>
 	            <td><img src="images/calendario/11-may.png" alt="11 de Mayo" width="100%" /></td>
-	            <td><img src="images/calendario/12-may.png" alt="12 de Mayo" width="100%" /></td>
-	            <td><a href="#Etapa16"><img src="images/calendario/13-may.png" alt="13 de Mayo - Etapa 16" width="100%" /></a></td>
+	            <td><a href="#Etapa16"><img src="images/calendario/12-may.png" alt="12 de Mayo - Etapa 16" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/13-may.png" alt="13 de Mayo" width="100%" /></td>
 	            <td><img src="images/calendario/14-may.png" alt="14 de Mayo" width="100%" /></td>
 	            <td><img src="images/calendario/15-may.png" alt="15 de Mayo" width="100%" /></td>
 	            <td><img src="images/calendario/16-may.png" alt="16 de Mayo" width="100%" /></td>
 	            <td><img src="images/calendario/17-may.png" alt="17 de Mayo" width="100%" /></td>
 	            <td><img src="images/calendario/18-may.png" alt="18 de Mayo" width="100%" /></td>
-	            <td><img src="images/calendario/19-may.png" alt="19 de Mayo" width="100%" /></td>
-	            <td><a href="#Etapa17"><img src="images/calendario/20-may.png" alt="20 de Mayo - Etapa 17" width="100%" /></a></td>
+	            <td><a href="#Etapa17"><img src="images/calendario/19-may.png" alt="19 de Mayo - Etapa 17" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/20-may.png" alt="20 de Mayo" width="100%" /></td>
 	            <td><img src="images/calendario/21-may.png" alt="21 de Mayo" width="100%" /></td>
 	            <td><img src="images/calendario/22-may.png" alt="22 de Mayo" width="100%" /></td>
 	            <td><img src="images/calendario/23-may.png" alt="23 de Mayo" width="100%" /></td>
-	            <td><img src="images/calendario/24-may.png" alt="24 de Mayo" width="100%" /></td>
+	            <td><a href="#Etapa18"><img src="images/calendario/24-may.png" alt="24 de Mayo - Etapa 18" width="100%" /></a></td>
 	            <td><img src="images/calendario/25-may.png" alt="25 de Mayo" width="100%" /></td>
-	            <td><a href="#Etapa18"><img src="images/calendario/26-may.png" alt="26 de Mayo - Etapa 18" width="100%" /></a></td>
-	            <td><a href="#Etapa19"><img src="images/calendario/27-may.png" alt="27 de Mayo - Etapa 19" width="100%" /></a></td>
+	            <td><a href="#Etapa19"><img src="images/calendario/26-may.png" alt="26 de Mayo - Etapa 19" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/27-may.png" alt="27 de Mayo" width="100%" /></td>
 	            <td><img src="images/calendario/28-may.png" alt="28 de Mayo" width="100%" /></td>
 	            <td><img src="images/calendario/29-may.png" alt="29 de Mayo" width="100%" /></td>
 	            <td><img src="images/calendario/30-may.png" alt="30 de Mayo" width="100%" /></td>
 	            <td><a href="#Etapa20"><img src="images/calendario/31-may.png" alt="31 de Mayo - Etapa 20" width="100%" /></a></td>
 	            <td></td>
 	            <td></td>
-	            <td></td>
 	        </tr>
 	        <tr>
-	        	<td colspan="7" bgcolor="#FE2E64"><b>Junio</b></td>
+	        	<td colspan="7" bgcolor="#2ECBFE"><b>Junio</b></td>
 			</tr>
 	        <tr>
+	            <td></td>
 	            <td></td>
 	            <td></td>
 	            <td></td>
 	            <td></td>
 	            <td><img src="images/calendario/1-jun.png" alt="1 de Junio" width="100%" /></td>
-	            <td><img src="images/calendario/2-jun.png" alt="2 de Junio" width="100%" /></td>
-	            <td><a href="#Etapa21"><img src="images/calendario/3-jun.png" alt="3 de Junio - Etapa 21" width="100%" /></a></td>
+	            <td><a href="#Etapa21"><img src="images/calendario/2-jun.png" alt="2 de Junio - Etapa 21" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/3-jun.png" alt="3 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/4-jun.png" alt="4 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/5-jun.png" alt="5 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/6-jun.png" alt="6 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/7-jun.png" alt="7 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/8-jun.png" alt="8 de Junio" width="100%" /></td>
-	            <td><img src="images/calendario/9-jun.png" alt="9 de Junio" width="100%" /></td>
-	            <td><a href="#Etapa22"><img src="images/calendario/10-jun.png" alt="10 de Junio - Etapa 22" width="100%" /></a></td>
+	            <td><a href="#Etapa22"><img src="images/calendario/9-jun.png" alt="9 de Junio - Etapa 22" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/10-jun.png" alt="10 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/11-jun.png" alt="11 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/12-jun.png" alt="12 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/13-jun.png" alt="13 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/14-jun.png" alt="14 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/15-jun.png" alt="15 de Junio" width="100%" /></td>
-	            <td><img src="images/calendario/16-jun.png" alt="16 de Junio" width="100%" /></td>
-	            <td><a href="#Etapa23"><img src="images/calendario/17-jun.png" alt="17 de Junio - Etapa 23" width="100%" /></a></td>
+	            <td><a href="#Etapa23"><img src="images/calendario/16-jun.png" alt="16 de Junio - Etapa 23" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/17-jun.png" alt="17 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/18-jun.png" alt="18 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/19-jun.png" alt="19 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/20-jun.png" alt="20 de Junio" width="100%" /></td>
-	            <td><img src="images/calendario/21-jun.png" alt="21 de Junio" width="100%" /></td>
+	            <td><a href="#Etapa24"><img src="images/calendario/21-jun.png" alt="21 de Junio - Etapa 24" width="100%" /></a></td>
 	            <td><img src="images/calendario/22-jun.png" alt="22 de Junio" width="100%" /></td>
-	            <td><a href="#Etapa24"><img src="images/calendario/23-jun.png" alt="23 de Junio - Etapa 24" width="100%" /></a></td>
-	            <td><a href="#Etapa25"><img src="images/calendario/24-jun.png" alt="24 de Junio - Etapa 25" width="100%" /></a></td>
+	            <td><a href="#Etapa25"><img src="images/calendario/23-jun.png" alt="23 de Junio - Etapa 25" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/24-jun.png" alt="24 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/25-jun.png" alt="25 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/26-jun.png" alt="26 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/27-jun.png" alt="27 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/28-jun.png" alt="28 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/29-jun.png" alt="29 de Junio" width="100%" /></td>
-	            <td><img src="images/calendario/30-jun.png" alt="30 de Junio" width="100%" /></td>
-	            <td></td>
+	            <td><a href="#Etapa26"><img src="images/calendario/30-jun.png" alt="30 de Junio - Etapa 26" width="100%" /></a></td>
 	        </tr>
 	        <tr>
-	        	<td colspan="7" bgcolor="#FE2E64"><b>Julio</b></td>
-			</tr>
-	        <tr>
-	            <td></td>
-	            <td></td>
-	        	<td></td>
-	            <td></td>
-	        	<td></td>
-	        	<td></td>
-	            <td><a href="#Etapa26"><img src="images/calendario/1-jul.png" alt="1 de Julio - Etapa 26" width="100%" /></a></td>
+	        	<td colspan="7" bgcolor="#2ECBFE"><b>Julio</b></td>
 	        </tr>
 	        <tr>
 	            <td><img src="images/calendario/2-jul.png" alt="2 de Julio" width="100%" /></td>
@@ -687,95 +666,94 @@
 	            <td><img src="images/calendario/4-jul.png" alt="4 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/5-jul.png" alt="5 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/6-jul.png" alt="6 de Julio" width="100%" /></td>
-	            <td><img src="images/calendario/7-jul.png" alt="7 de Julio" width="100%" /></td>
-	            <td><a href="#Etapa27"><img src="images/calendario/8-jul.png" alt="8 de Julio - Etapa 27" width="100%" /></a></td>
+	            <td><a href="#Etapa27"><img src="images/calendario/7-jul.png" alt="7 de Julio - Etapa 27" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/8-jul.png" alt="8 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/9-jul.png" alt="9 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/10-jul.png" alt="10 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/11-jul.png" alt="11 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/12-jul.png" alt="12 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/13-jul.png" alt="13 de Julio" width="100%" /></td>
-	            <td><img src="images/calendario/14-jul.png" alt="14 de Julio" width="100%" /></td>
-	        	<td><a href="#Etapa28"><img src="images/calendario/15-jul.png" alt="15 de Julio - Etapa 28" width="100%" /></a></td>
+	        	<td><a href="#Etapa28"><img src="images/calendario/14-jul.png" alt="14 de Julio - Etapa 28" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/15-jul.png" alt="15 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/16-jul.png" alt="16 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/17-jul.png" alt="17 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/18-jul.png" alt="18 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/19-jul.png" alt="19 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/20-jul.png" alt="20 de Julio" width="100%" /></td>
-	            <td><img src="images/calendario/21-jul.png" alt="21 de Julio" width="100%" /></td>
-	        	<td><a href="#Etapa29"><img src="images/calendario/22-jul.png" alt="22 de Julio - Etapa 29" width="100%" /></a></td>
+	        	<td><a href="#Etapa29"><img src="images/calendario/21-jul.png" alt="21 de Julio - Etapa 29" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/22-jul.png" alt="22 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/23-jul.png" alt="23 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/24-jul.png" alt="24 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/25-jul.png" alt="25 de Julio" width="100%" /></td>
-	            <td><img src="images/calendario/26-jul.png" alt="26 de Julio" width="100%" /></td>
+	            <td><a href="#Etapa30"><img src="images/calendario/26-jul.png" alt="26 de Julio - Etapa 30" width="100%" /></a></td>
 	            <td><img src="images/calendario/27-jul.png" alt="27 de Julio" width="100%" /></td>
-	            <td><a href="#Etapa30"><img src="images/calendario/28-jul.png" alt="28 de Julio - Etapa 30" width="100%" /></a></td>
-	            <td><a href="#Etapa31"><img src="images/calendario/29-jul.png" alt="29 de Julio - Etapa 31" width="100%" /></a></td>
+	            <td><a href="#Etapa31"><img src="images/calendario/28-jul.png" alt="28 de Julio - Etapa 31" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/29-jul.png" alt="29 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/30-jul.png" alt="30 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/31-jul.png" alt="31 de Julio" width="100%" /></td>
 	            <td></td>
 	            <td></td>
 	        	<td></td>
-	            <td></td>
 	        	<td></td>
 	        </tr>
 	        <tr>
-	        	<td colspan="7" bgcolor="#FE2E64"><b>Agosto</b></td>
+	        	<td colspan="7" bgcolor="#2ECBFE"><b>Agosto</b></td>
 			</tr>
 	        <tr>
+	            <td></td>
 	            <td></td>
 	            <td></td>
 	        	<td><img src="images/calendario/1-ago.png" alt="1 de Agosto" width="100%" /></td>
 	        	<td><img src="images/calendario/2-ago.png" alt="2 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/3-ago.png" alt="3 de Agosto" width="100%" /></td>
-	            <td><img src="images/calendario/4-ago.png" alt="4 de Agosto" width="100%" /></td>
-	            <td><a href="#Etapa32"><img src="images/calendario/5-ago.png" alt="5 de Agosto - Etapa 32" width="100%" /></a></td>
+	            <td><a href="#Etapa32"><img src="images/calendario/4-ago.png" alt="4 de Agosto - Etapa 32" width="100%" /></a></td>
 			</tr>
 	        <tr>
+	            <td><img src="images/calendario/5-ago.png" alt="5 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/6-ago.png" alt="6 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/7-ago.png" alt="7 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/8-ago.png" alt="8 de Agosto" width="100%" /></td>
-	            <td><img src="images/calendario/9-ago.png" alt="9 de Agosto" width="100%" /></td>
+	            <td><a href="#Etapa33"><img src="images/calendario/9-ago.png" alt="9 de Agosto - Etapa 33" width="100%" /></a></td>
 	            <td><img src="images/calendario/10-ago.png" alt="10 de Agosto" width="100%" /></td>
-	            <td><a href="#Etapa33"><img src="images/calendario/11-ago.png" alt="11 de Agosto - Etapa 33" width="100%" /></a></td>
-	            <td><a href="#Etapa34"><img src="images/calendario/12-ago.png" alt="12 de Agosto - Etapa 34" width="100%" /></a></td>
+	            <td><a href="#Etapa34"><img src="images/calendario/11-ago.png" alt="11 de Agosto - Etapa 34" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/12-ago.png" alt="12 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/13-ago.png" alt="13 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/14-ago.png" alt="14 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/15-ago.png" alt="15 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/16-ago.png" alt="16 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/17-ago.png" alt="17 de Agosto" width="100%" /></td>
-	            <td><img src="images/calendario/18-ago.png" alt="18 de Agosto" width="100%" /></td>
-	            <td><a href="#Etapa35"><img src="images/calendario/19-ago.png" alt="19 de Agosto - Etapa 35" width="100%" /></a></td>
+	            <td><a href="#Etapa35"><img src="images/calendario/18-ago.png" alt="18 de Agosto - Etapa 35" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/19-ago.png" alt="19 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/20-ago.png" alt="20 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/21-ago.png" alt="21 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/22-ago.png" alt="22 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/23-ago.png" alt="23 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/24-ago.png" alt="24 de Agosto" width="100%" /></td>
-	            <td><img src="images/calendario/25-ago.png" alt="25 de Agosto" width="100%" /></td>
-	            <td><a href="#Etapa36"><img src="images/calendario/26-ago.png" alt="26 de Agosto - Etapa 36" width="100%" /></a></td>
+	            <td><a href="#Etapa36"><img src="images/calendario/25-ago.png" alt="25 de Agosto - Etapa 36" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/26-ago.png" alt="26 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/27-ago.png" alt="27 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/28-ago.png" alt="28 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/29-ago.png" alt="29 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/30-ago.png" alt="30 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/31-ago.png" alt="31 de Agosto" width="100%" /></td>
 	        	<td></td>
-	            <td></td>
 	        </tr>
 	        <tr>
-	        	<td colspan="7" bgcolor="#FE2E64"><b>Septiembre</b></td>
+	        	<td colspan="7" bgcolor="#2ECBFE"><b>Septiembre</b></td>
 			</tr>
 	        <tr>
 	        	<td></td>
@@ -783,44 +761,53 @@
 	        	<td></td>
 	        	<td></td>
 	        	<td></td>
-	            <td><img src="images/calendario/1-sep.png" alt="1 de Septiembre" width="100%" /></td>
-	        	<td><a href="#Etapa37"><img src="images/calendario/2-sep.png" alt="2 de Septiembre - Etapa 37" width="100%" /></a></td>
+	        	<td></td>
+	        	<td><a href="#Etapa37"><img src="images/calendario/1-sep.png" alt="1 de Septiembre - Etapa 37" width="100%" /></a></td>
 			</tr>
 	        <tr>
+	            <td><img src="images/calendario/2-sep.png" alt="2 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/3-sep.png" alt="3 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/4-sep.png" alt="4 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/5-sep.png" alt="5 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/6-sep.png" alt="6 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/7-sep.png" alt="7 de Septiembre" width="100%" /></td>
-	            <td><img src="images/calendario/8-sep.png" alt="8 de Septiembre" width="100%" /></td>
-	        	<td><a href="#Etapa38"><img src="images/calendario/9-sep.png" alt="9 de Septiembre - Etapa 38" width="100%" /></a></td>
+	        	<td><a href="#Etapa38"><img src="images/calendario/8-sep.png" alt="8 de Septiembre - Etapa 38" width="100%" /></a></td>
 			</tr>
 	        <tr>
+	            <td><img src="images/calendario/9-sep.png" alt="9 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/10-sep.png" alt="10 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/11-sep.png" alt="11 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/12-sep.png" alt="12 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/13-sep.png" alt="13 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/14-sep.png" alt="14 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/15-sep.png" alt="15 de Septiembre" width="100%" /></td>
-	            <td><img src="images/calendario/16-sep.png" alt="16 de Septiembre" width="100%" /></td>
 			</tr>
 	        <tr>
+	            <td><img src="images/calendario/16-sep.png" alt="16 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/17-sep.png" alt="17 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/18-sep.png" alt="18 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/19-sep.png" alt="19 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/20-sep.png" alt="20 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/21-sep.png" alt="21 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/22-sep.png" alt="22 de Septiembre" width="100%" /></td>
-	            <td><img src="images/calendario/23-sep.png" alt="23 de Septiembre" width="100%" /></td>
 			</tr>
 	        <tr>
+	            <td><img src="images/calendario/23-sep.png" alt="23 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/24-sep.png" alt="24 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/25-sep.png" alt="25 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/26-sep.png" alt="26 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/27-sep.png" alt="27 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/28-sep.png" alt="28 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/29-sep.png" alt="29 de Septiembre" width="100%" /></td>
+			</tr>
+	        <tr>
 	            <td><img src="images/calendario/30-sep.png" alt="30 de Septiembre" width="100%" /></td>
+	        	<td></td>
+	        	<td></td>
+	        	<td></td>
+	        	<td></td>
+	        	<td></td>
+	        	<td></td>
 			</tr>
 	    	</table>
 	    	<br /><br />Pinche sobre cualquier d&iacute;a para ver el perfil de la etapa correspondiente
@@ -844,8 +831,8 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="#Etapa1Carretera"><font color="#01DF01">Carretera</font></a></li>    
-                <li><a href="#Etapa1MTB"><font color="#FF4000">Montaña</font></a></li>
+				<li><a href="#Etapa1Carretera"><font color="#00AC69">Carretera</font></a></li>    
+                <li><a href="#Etapa1MTB"><font color="#FFF47300">Montaña</font></a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -944,8 +931,8 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="#Etapa2Carretera"><font color="#01DF01">Carretera</font></a></li>     
-                <li><a href="#Etapa2MTB"><font color="#FF4000">Montaña</font></a></li>
+				<li><a href="#Etapa2Carretera"><font color="#00AC69">Carretera</font></a></li>     
+                <li><a href="#Etapa2MTB"><font color="#FFF47300">Montaña</font></a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -1060,8 +1047,8 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="#Etapa3Carretera"><font color="#01DF01">Carretera</font></a></li>    
-                <li><a href="#Etapa3MTB"><font color="#FF4000">Montaña</font></a></li>
+				<li><a href="#Etapa3Carretera"><font color="#00AC69">Carretera</font></a></li>    
+                <li><a href="#Etapa3MTB"><font color="#FFF47300">Montaña</font></a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -1131,7 +1118,7 @@
 				<li><a href="#pClima3MTB">Precisión Meterologica</a></li>     
 				<li><a href="#pgaleria3">Galeria</a></li>
 			    <li><a href="http://manuelamadeo.github.io/ccv/images/perfil/MTB/etapa3/etapa3.htm">Detalles de puertos</a></li>
-				<li><a href="http://www.cronoescalada.com/index.php/tracks/iframe/248974">Mapa</a></li>
+				<li><a href="http://www.cronoescalada.com/index.php/tracks/iframe/248969">Mapa</a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -1146,6 +1133,7 @@
 		<div data-role="content">
 	    	<ul data-role="listview">
                 <li><a href="http://m.accuweather.com/es/es/valverde-de-jucar/304019/hourly-weather-forecast/304019">Valverde De Júcar</a></li>
+                <li><a href="http://m.accuweather.com/es/es/villaverde-y-pasaconsol/1448628/hourly-weather-forecast/1448628">Villaverde Y Pasaconsol</a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -1175,8 +1163,8 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="#Etapa4Carretera"><font color="#01DF01">Carretera</font></a></li>     
-                <li><a href="#Etapa4MTB"><font color="#FF4000">Montaña</font></a></li>
+				<li><a href="#Etapa4Carretera"><font color="#00AC69">Carretera</font></a></li>     
+                <li><a href="#Etapa4MTB"><font color="#FFF47300">Montaña</font></a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -1246,7 +1234,7 @@
 				<li><a href="#pClima4MTB">Precisión Meterologica</a></li>     
 				<li><a href="#pgaleria4">Galeria</a></li>
 				<li><a href="http://manuelamadeo.github.io/ccv/images/perfil/MTB/etapa4/etapa4.htm">Detalles de puertos</a></li>
-				<li><a href="http://www.cronoescalada.com/index.php/tracks/iframe/248969">Mapa</a></li>
+				<li><a href="http://www.cronoescalada.com/index.php/tracks/iframe/248974">Mapa</a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -1261,7 +1249,6 @@
 		<div data-role="content">
 	    	<ul data-role="listview">
                 <li><a href="http://m.accuweather.com/es/es/valverde-de-jucar/304019/hourly-weather-forecast/304019">Valverde De Júcar</a></li>
-                <li><a href="http://m.accuweather.com/es/es/villaverde-y-pasaconsol/1448628/hourly-weather-forecast/1448628">Villaverde Y Pasaconsol</a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -1291,8 +1278,8 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="#Etapa5Carretera"><font color="#01DF01">Carretera</font></a></li>     
-                <li><a href="#Etapa5MTB"><font color="#FF4000">Montaña</font></a></li>
+				<li><a href="#Etapa5Carretera"><font color="#00AC69">Carretera</font></a></li>     
+                <li><a href="#Etapa5MTB"><font color="#FFF47300">Montaña</font></a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -1406,8 +1393,8 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="#Etapa6Carretera"><font color="#01DF01">Carretera</font></a></li>    
-                <li><a href="#Etapa6MTB"><font color="#FF4000">Montaña</font></a></li>
+				<li><a href="#Etapa6Carretera"><font color="#00AC69">Carretera</font></a></li>    
+                <li><a href="#Etapa6MTB"><font color="#FFF47300">Montaña</font></a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -1522,8 +1509,8 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="#Etapa7Carretera"><font color="#01DF01">Carretera</font></a></li>     
-                <li><a href="#Etapa7MTB"><font color="#FF4000">Montaña</font></a></li>
+				<li><a href="#Etapa7Carretera"><font color="#00AC69">Carretera</font></a></li>     
+                <li><a href="#Etapa7MTB"><font color="#FFF47300">Montaña</font></a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -1638,8 +1625,8 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="#Etapa8Carretera"><font color="#01DF01">Carretera</font></a></li>     
-                <li><a href="#Etapa8MTB"><font color="#FF4000">Montaña</font></a></li>
+				<li><a href="#Etapa8Carretera"><font color="#00AC69">Carretera</font></a></li>     
+                <li><a href="#Etapa8MTB"><font color="#FFF47300">Montaña</font></a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -1754,8 +1741,8 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="#Etapa9Carretera"><font color="#01DF01">Carretera</font></a></li>     
-                <li><a href="#Etapa9MTB"><font color="#FF4000">Montaña</font></a></li>
+				<li><a href="#Etapa9Carretera"><font color="#00AC69">Carretera</font></a></li>     
+                <li><a href="#Etapa9MTB"><font color="#FFF47300">Montaña</font></a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -1869,8 +1856,8 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="#Etapa10Carretera"><font color="#01DF01">Carretera</font></a></li>     
-                <li><a href="#Etapa10MTB"><font color="#FF4000">Montaña</font></a></li>
+				<li><a href="#Etapa10Carretera"><font color="#00AC69">Carretera</font></a></li>     
+                <li><a href="#Etapa10MTB"><font color="#FFF47300">Montaña</font></a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -1985,8 +1972,8 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="#Etapa11Carretera"><font color="#01DF01">Carretera</font></a></li>     
-                <li><a href="#Etapa11MTB"><font color="#FF4000">Montaña</font></a></li>
+				<li><a href="#Etapa11Carretera"><font color="#00AC69">Carretera</font></a></li>     
+                <li><a href="#Etapa11MTB"><font color="#FFF47300">Montaña</font></a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -2056,7 +2043,7 @@
 				<li><a href="#pClima11MTB">Precisión Meterologica</a></li>     
 				<li><a href="#pgaleria11">Galeria</a></li>
 				<li><a href="http://manuelamadeo.github.io/ccv/images/perfil/MTB/etapa11/etapa11.htm">Detalles de puertos</a></li>
-				<li><a href="http://www.cronoescalada.com/index.php/tracks/iframe/248992">Mapa</a></li>
+				<li><a href="http://www.cronoescalada.com/index.php/tracks/iframe/249321">Mapa</a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -2071,7 +2058,7 @@
 		<div data-role="content">
 	    	<ul data-role="listview">
                 <li><a href="http://m.accuweather.com/es/es/valverde-de-jucar/304019/hourly-weather-forecast/304019">Valverde De Júcar</a></li>
-                <li><a href="http://m.accuweather.com/es/es/belmontejo/1466478/hourly-weather-forecast/1466478">Belmontejo</a></li>
+                <li><a href="http://m.accuweather.com/es/es/piqueras-del-castillo/1454637/hourly-weather-forecast/1454637">Piqueras Del Castillo</a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -2101,8 +2088,8 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="#Etapa12Carretera"><font color="#01DF01">Carretera</font></a></li>     
-                <li><a href="#Etapa12MTB"><font color="#FF4000">Montaña</font></a></li>
+				<li><a href="#Etapa12Carretera"><font color="#00AC69">Carretera</font></a></li>     
+                <li><a href="#Etapa12MTB"><font color="#FFF47300">Montaña</font></a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -2217,8 +2204,8 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="#Etapa13Carretera"><font color="#01DF01">Carretera</font></a></li>     
-                <li><a href="#Etapa13MTB"><font color="#FF4000">Montaña</font></a></li>
+				<li><a href="#Etapa13Carretera"><font color="#00AC69">Carretera</font></a></li>     
+                <li><a href="#Etapa13MTB"><font color="#FFF47300">Montaña</font></a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -2333,7 +2320,7 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="#Etapa14Carretera"><font color="#FE2E64">Carretera</font></a></li>     
+				<li><a href="#Etapa14Carretera"><font color="#FB4ABF">Carretera</font></a></li>     
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -2353,7 +2340,7 @@
 				<li><a href="#pClima14">Precisión Meterologica</a></li>     
 				<li><a href="#pgaleria14">Galeria</a></li>
 				<li><a href="http://manuelamadeo.github.io/ccv/images/perfil/etapa14/etapa14.htm">Detalles de puertos</a></li>
-				<li><a href="http://www.cronoescalada.com/index.php/tracks/iframe/396321">Mapa</a></li>
+				<li><a href="http://www.cronoescalada.com/index.php/tracks/iframe/521342">Mapa</a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -2448,8 +2435,8 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="#Etapa15Carretera"><font color="#01DF01">Carretera</font></a></li>     
-                <li><a href="#Etapa15MTB"><font color="#FF4000">Montaña</font></a></li>
+				<li><a href="#Etapa15Carretera"><font color="#00AC69">Carretera</font></a></li>     
+                <li><a href="#Etapa15MTB"><font color="#FFF47300">Montaña</font></a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -2564,8 +2551,8 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="#Etapa16Carretera"><font color="#01DF01">Carretera</font></a></li>     
-                <li><a href="#Etapa16MTB"><font color="#FF4000">Montaña</font></a></li>
+				<li><a href="#Etapa16Carretera"><font color="#00AC69">Carretera</font></a></li>     
+                <li><a href="#Etapa16MTB"><font color="#FFF47300">Montaña</font></a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -2635,7 +2622,7 @@
 				<li><a href="#pClima16MTB">Precisión Meterologica</a></li>     
 				<li><a href="#pgaleria16">Galeria</a></li>
 				<li><a href="http://manuelamadeo.github.io/ccv/images/perfil/MTB/etapa16/etapa16.htm">Detalles de puertos</a></li>
-				<li><a href="http://www.cronoescalada.com/index.php/tracks/iframe/248984">Mapa</a></li>
+				<li><a href="http://www.cronoescalada.com/index.php/tracks/iframe/248954">Mapa</a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -2650,7 +2637,7 @@
 		<div data-role="content">
 	    	<ul data-role="listview">
                 <li><a href="http://m.accuweather.com/es/es/valverde-de-jucar/304019/hourly-weather-forecast/304019">Valverde De Júcar</a></li>
-                <li><a href="http://m.accuweather.com/es/es/piqueras-del-castillo/1454637/hourly-weather-forecast/1454637">Piqueras Del Castillo</a></li>
+                <li><a href="http://m.accuweather.com/es/es/barchin-del-hoyo/1466802/hourly-weather-forecast/1466802">Barchín Del Hoyo</a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -2680,8 +2667,8 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="#Etapa17Carretera"><font color="#01DF01">Carretera</font></a></li>     
-                <li><a href="#Etapa17MTB"><font color="#FF4000">Montaña</font></a></li>
+				<li><a href="#Etapa17Carretera"><font color="#00AC69">Carretera</font></a></li>     
+                <li><a href="#Etapa17MTB"><font color="#FFF47300">Montaña</font></a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -2751,7 +2738,7 @@
 				<li><a href="#pClima17MTB">Precisión Meterologica</a></li>     
 				<li><a href="#pgaleria17">Galeria</a></li>
 				<li><a href="http://manuelamadeo.github.io/ccv/images/perfil/MTB/etapa17/etapa17.htm">Detalles de puertos</a></li>
-				<li><a href="http://www.cronoescalada.com/index.php/tracks/iframe/248954">Mapa</a></li>
+				<li><a href="http://www.cronoescalada.com/index.php/tracks/iframe/248992">Mapa</a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -2766,7 +2753,7 @@
 		<div data-role="content">
 	    	<ul data-role="listview">
                 <li><a href="http://m.accuweather.com/es/es/valverde-de-jucar/304019/hourly-weather-forecast/304019">Valverde De Júcar</a></li>
-                <li><a href="http://m.accuweather.com/es/es/barchin-del-hoyo/1466802/hourly-weather-forecast/1466802">Barchín Del Hoyo</a></li>
+                <li><a href="http://m.accuweather.com/es/es/belmontejo/1466478/hourly-weather-forecast/1466478">Belmontejo</a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -2911,8 +2898,8 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="#Etapa19Carretera"><font color="#01DF01">Carretera</font></a></li>     
-                <li><a href="#Etapa19MTB"><font color="#FF4000">Montaña</font></a></li>
+				<li><a href="#Etapa19Carretera"><font color="#00AC69">Carretera</font></a></li>     
+                <li><a href="#Etapa19MTB"><font color="#FFF47300">Montaña</font></a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -2932,7 +2919,7 @@
 				<li><a href="#pClima19">Precisión Meterologica</a></li>     
 				<li><a href="#pgaleria19">Galeria</a></li>
 				<li><a href="http://manuelamadeo.github.io/ccv/images/perfil/etapa19/etapa19.htm">Detalles de puertos</a></li>
-				<li><a href="http://www.cronoescalada.com/index.php/tracks/iframe/244680">Mapa</a></li>
+				<li><a href="http://www.cronoescalada.com/index.php/tracks/iframe/244656">Mapa</a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -2947,7 +2934,7 @@
 		<div data-role="content">
 	    	<ul data-role="listview">
                 <li><a href="http://m.accuweather.com/es/es/valverde-de-jucar/304019/hourly-weather-forecast/304019">Valverde De Júcar</a></li>
-                <li><a href="http://m.accuweather.com/es/es/zafra-de-zancara/1448366/hourly-weather-forecast/1448366">Zafra De Záncara</a></li>
+                <li><a href="http://m.accuweather.com/es/es/el-canavate/304149/hourly-weather-forecast/304149">El Cañavate</a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -2982,7 +2969,7 @@
 				<li><a href="#pClima19MTB">Precisión Meterologica</a></li>     
 				<li><a href="#pgaleria19">Galeria</a></li>
 				<li><a href="http://manuelamadeo.github.io/ccv/images/perfil/MTB/etapa19/etapa19.htm">Detalles de puertos</a></li>
-				<li><a href="http://www.cronoescalada.com/index.php/tracks/iframe/249321">Mapa</a></li>
+				<li><a href="http://www.cronoescalada.com/index.php/tracks/iframe/248981">Mapa</a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -2997,7 +2984,7 @@
 		<div data-role="content">
 	    	<ul data-role="listview">
                 <li><a href="http://m.accuweather.com/es/es/valverde-de-jucar/304019/hourly-weather-forecast/304019">Valverde De Júcar</a></li>
-                <li><a href="http://m.accuweather.com/es/es/piqueras-del-castillo/1454637/hourly-weather-forecast/1454637">Piqueras Del Castillo</a></li>
+                <li><a href="http://m.accuweather.com/es/es/valdeganga/304017/hourly-weather-forecast/304017">Valdeganga</a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -3027,7 +3014,7 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-                <li><a href="#Etapa20MTB"><font color="#FE2E64">Montaña</font></a></li>
+                <li><a href="#Etapa20MTB"><font color="#FB4ABF">Montaña</font></a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -3092,8 +3079,8 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="#Etapa21Carretera"><font color="#01DF01">Carretera</font></a></li>     
-                <li><a href="#Etapa21MTB"><font color="#FF4000">Montaña</font></a></li>
+				<li><a href="#Etapa21Carretera"><font color="#00AC69">Carretera</font></a></li>     
+                <li><a href="#Etapa21MTB"><font color="#FFF47300">Montaña</font></a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -3113,7 +3100,7 @@
 				<li><a href="#pClima21">Precisión Meterologica</a></li>     
 				<li><a href="#pgaleria21">Galeria</a></li>
 				<li><a href="http://manuelamadeo.github.io/ccv/images/perfil/etapa21/etapa21.htm">Detalles de puertos</a></li>
-				<li><a href="http://www.cronoescalada.com/index.php/tracks/iframe/244659">Mapa</a></li>
+				<li><a href="http://www.cronoescalada.com/index.php/tracks/iframe/244679">Mapa</a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -3128,7 +3115,7 @@
 		<div data-role="content">
 	    	<ul data-role="listview">
                 <li><a href="http://m.accuweather.com/es/es/valverde-de-jucar/304019/hourly-weather-forecast/304019">Valverde De Júcar</a></li>
-                <li><a href="http://m.accuweather.com/es/es/cuenca/303869/hourly-weather-forecast/303869">Cuenca</a></li>
+                <li><a href="http://m.accuweather.com/es/es/yemeda/1448403/hourly-weather-forecast/1448403">Yemeda</a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -3324,8 +3311,8 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="#Etapa23Carretera"><font color="#01DF01">Carretera</font></a></li>     
-                <li><a href="#Etapa23MTB"><font color="#FF4000">Montaña</font></a></li>
+				<li><a href="#Etapa23Carretera"><font color="#00AC69">Carretera</font></a></li>     
+                <li><a href="#Etapa23MTB"><font color="#FFF47300">Montaña</font></a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -3395,7 +3382,7 @@
 				<li><a href="#pClima23MTB">Precisión Meterologica</a></li>     
 				<li><a href="#pgaleria23">Galeria</a></li>
 				<li><a href="http://manuelamadeo.github.io/ccv/images/perfil/MTB/etapa23/etapa23.htm">Detalles de puertos</a></li>
-				<li><a href="http://www.cronoescalada.com/index.php/tracks/iframe/248992">Mapa</a></li>
+				<li><a href="http://www.cronoescalada.com/index.php/tracks/iframe/248984">Mapa</a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -3410,7 +3397,7 @@
 		<div data-role="content">
 	    	<ul data-role="listview">
                 <li><a href="http://m.accuweather.com/es/es/valverde-de-jucar/304019/hourly-weather-forecast/304019">Valverde De Júcar</a></li>
-                <li><a href="http://m.accuweather.com/es/es/belmontejo/1466478/hourly-weather-forecast/1466478">Belmontejo</a></li>
+                <li><a href="http://m.accuweather.com/es/es/piqueras-del-castillo/1454637/hourly-weather-forecast/1454637">Piqueras Del Castillo</a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -3555,8 +3542,8 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="#Etapa25Carretera"><font color="#01DF01">Carretera</font></a></li>     
-                <li><a href="#Etapa25MTB"><font color="#FF4000">Montaña</font></a></li>
+				<li><a href="#Etapa25Carretera"><font color="#00AC69">Carretera</font></a></li>     
+                <li><a href="#Etapa25MTB"><font color="#FFF47300">Montaña</font></a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -3671,8 +3658,8 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="#Etapa26Carretera"><font color="#01DF01">Carretera</font></a></li>     
-                <li><a href="#Etapa26MTB"><font color="#FF4000">Montaña</font></a></li>
+				<li><a href="#Etapa26Carretera"><font color="#00AC69">Carretera</font></a></li>     
+                <li><a href="#Etapa26MTB"><font color="#FFF47300">Montaña</font></a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -3742,7 +3729,7 @@
 				<li><a href="#pClima26MTB">Precisión Meterologica</a></li>     
 				<li><a href="#pgaleria26">Galeria</a></li>
 				<li><a href="http://manuelamadeo.github.io/ccv/images/perfil/MTB/etapa26/etapa26.htm">Detalles de puertos</a></li>
-				<li><a href="http://www.cronoescalada.com/index.php/tracks/iframe/248981">Mapa</a></li>
+				<li><a href="http://www.cronoescalada.com/index.php/tracks/iframe/248982">Mapa</a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -3757,7 +3744,7 @@
 		<div data-role="content">
 	    	<ul data-role="listview">
                 <li><a href="http://m.accuweather.com/es/es/valverde-de-jucar/304019/hourly-weather-forecast/304019">Valverde De Júcar</a></li>
-                <li><a href="http://m.accuweather.com/es/es/valdeganga/304017/hourly-weather-forecast/304017">Valdeganga</a></li>
+                <li><a href="http://m.accuweather.com/es/es/barchin-del-hoyo/1466802/hourly-weather-forecast/1466802">Barchín Del Hoyo</a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -3787,8 +3774,8 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="#Etapa27Carretera"><font color="#01DF01">Carretera</font></a></li>     
-                <li><a href="#Etapa27MTB"><font color="#FF4000">Montaña</font></a></li>
+				<li><a href="#Etapa27Carretera"><font color="#00AC69">Carretera</font></a></li>     
+                <li><a href="#Etapa27MTB"><font color="#FFF47300">Montaña</font></a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -3903,7 +3890,7 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="#Etapa28Carretera"><font color="#01DF01">Carretera</font></a></li>     
+				<li><a href="#Etapa28Carretera"><font color="#00AC69">Carretera</font></a></li>     
                 <li><a href="#Etapa28MTB"><font color="#ffc107">Montaña</font></a></li>
 			</ul>
 		</div>
@@ -3924,7 +3911,7 @@
 				<li><a href="#pClima28">Precisión Meterologica</a></li>     
 				<li><a href="#pgaleria28">Galeria</a></li>
 				<li><a href="http://manuelamadeo.github.io/ccv/images/perfil/etapa28/etapa28.htm">Detalles de puertos</a></li>
-				<li><a href="http://www.cronoescalada.com/index.php/tracks/iframe/244650">Mapa</a></li>
+				<li><a href="http://www.cronoescalada.com/index.php/tracks/iframe/244667">Mapa</a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -3939,7 +3926,7 @@
 		<div data-role="content">
 	    	<ul data-role="listview">
                 <li><a href="http://m.accuweather.com/es/es/valverde-de-jucar/304019/hourly-weather-forecast/304019">Valverde De Júcar</a></li>
-                <li><a href="http://m.accuweather.com/es/es/valverdejo/1449875/hourly-weather-forecast/1449875">Valverdejo</a></li>
+                <li><a href="http://m.accuweather.com/es/es/montalbanejo/1456602/hourly-weather-forecast/1456602">Montalbanejo</a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -3974,7 +3961,7 @@
 				<li><a href="#pClima28MTB">Precisión Meterologica</a></li>     
 				<li><a href="#pgaleria28">Galeria</a></li>
 				<li><a href="http://manuelamadeo.github.io/ccv/images/perfil/MTB/etapa28/etapa28.htm">Detalles de puertos</a></li>
-				<li><a href="http://www.cronoescalada.com/index.php/tracks/iframe/248982">Mapa</a></li>
+				<li><a href="http://www.cronoescalada.com/index.php/tracks/iframe/248971">Mapa</a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -3989,7 +3976,7 @@
 		<div data-role="content">
 	    	<ul data-role="listview">
                 <li><a href="http://m.accuweather.com/es/es/valverde-de-jucar/304019/hourly-weather-forecast/304019">Valverde De Júcar</a></li>
-                <li><a href="http://m.accuweather.com/es/es/barchin-del-hoyo/1466802/hourly-weather-forecast/1466802">Barchín Del Hoyo</a></li>
+                <li><a href="http://m.accuweather.com/es/es/hontecillas/1460562/hourly-weather-forecast/1460562">Hontecillas</a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -4019,8 +4006,8 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="#Etapa29Carretera"><font color="#01DF01">Carretera</font></a></li>    
-                <li><a href="#Etapa29MTB"><font color="#FF4000">Montaña</font></a></li>
+				<li><a href="#Etapa29Carretera"><font color="#00AC69">Carretera</font></a></li>    
+                <li><a href="#Etapa29MTB"><font color="#FFF47300">Montaña</font></a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -4040,7 +4027,7 @@
 				<li><a href="#pClima29">Precisión Meterologica</a></li>     
 				<li><a href="#pgaleria29">Galeria</a></li>
 				<li><a href="http://manuelamadeo.github.io/ccv/images/perfil/etapa29/etapa29.htm">Detalles de puertos</a></li>
-				<li><a href="http://www.cronoescalada.com/index.php/tracks/iframe/396313">Mapa</a></li>
+				<li><a href="http://www.cronoescalada.com/index.php/tracks/iframe/244650">Mapa</a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -4055,7 +4042,7 @@
 		<div data-role="content">
 	    	<ul data-role="listview">
                 <li><a href="http://m.accuweather.com/es/es/valverde-de-jucar/304019/hourly-weather-forecast/304019">Valverde De Júcar</a></li>
-                <li><a href="http://m.accuweather.com/es/es/la-hinojosa/1459573/hourly-weather-forecast/1459573">La Hinojosa</a></li>
+                <li><a href="http://m.accuweather.com/es/es/valverdejo/1449875/hourly-weather-forecast/1449875">Valverdejo</a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -4090,7 +4077,7 @@
 				<li><a href="#pClima29MTB">Precisión Meterologica</a></li>     
 				<li><a href="#pgaleria29">Galeria</a></li>
 				<li><a href="http://manuelamadeo.github.io/ccv/images/perfil/MTB/etapa29/etapa29.htm">Detalles de puertos</a></li>
-				<li><a href="http://www.cronoescalada.com/index.php/tracks/iframe/396313">Mapa</a></li>
+				<li><a href="http://www.cronoescalada.com/index.php/tracks/iframe/244650">Mapa</a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -4105,7 +4092,7 @@
 		<div data-role="content">
 	    	<ul data-role="listview">
                 <li><a href="http://m.accuweather.com/es/es/valverde-de-jucar/304019/hourly-weather-forecast/304019">Valverde De Júcar</a></li>
-                <li><a href="http://m.accuweather.com/es/es/la-hinojosa/1459573/hourly-weather-forecast/1459573">La Hinojosa</a></li>
+                <li><a href="http://m.accuweather.com/es/es/valverdejo/1449875/hourly-weather-forecast/1449875">Valverdejo</a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -4250,8 +4237,8 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="#Etapa31Carretera"><font color="#01DF01">Carretera</font></a></li>     
-                <li><a href="#Etapa31MTB"><font color="#FF4000">Montaña</font></a></li>
+				<li><a href="#Etapa31Carretera"><font color="#00AC69">Carretera</font></a></li>     
+                <li><a href="#Etapa31MTB"><font color="#FFF47300">Montaña</font></a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -4321,7 +4308,7 @@
 				<li><a href="#pClima31MTB">Precisión Meterologica</a></li>     
 				<li><a href="#pgaleria31">Galeria</a></li>
 				<li><a href="http://manuelamadeo.github.io/ccv/images/perfil/MTB/etapa31/etapa31.htm">Detalles de puertos</a></li>
-				<li><a href="http://www.cronoescalada.com/index.php/tracks/iframe/248957">Mapa</a></li>
+				<li><a href="http://www.cronoescalada.com/index.php/tracks/iframe/248992">Mapa</a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -4336,7 +4323,7 @@
 		<div data-role="content">
 	    	<ul data-role="listview">
                 <li><a href="http://m.accuweather.com/es/es/valverde-de-jucar/304019/hourly-weather-forecast/304019">Valverde De Júcar</a></li>
-                <li><a href="http://m.accuweather.com/es/es/buenache-de-alarcon/304092/hourly-weather-forecast/304092">Buenache De Alarcón</a></li>
+                <li><a href="http://m.accuweather.com/es/es/belmontejo/1466478/hourly-weather-forecast/1466478">Belmontejo</a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -4366,7 +4353,7 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="#Etapa32Carretera"><font color="#01DF01">Carretera</font></a></li>     
+				<li><a href="#Etapa32Carretera"><font color="#00AC69">Carretera</font></a></li>     
                 <li><a href="#Etapa32MTB"><font color="#ffc107">Montaña</font></a></li>
 			</ul>
 		</div>
@@ -4595,8 +4582,8 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="#Etapa34Carretera"><font color="#01DF01">Carretera</font></a></li>     
-                <li><a href="#Etapa34MTB"><font color="#FF4000">Montaña</font></a></li>
+				<li><a href="#Etapa34Carretera"><font color="#00AC69">Carretera</font></a></li>     
+                <li><a href="#Etapa34MTB"><font color="#FFF47300">Montaña</font></a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -4825,8 +4812,8 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="#Etapa36Carretera"><font color="#01DF01">Carretera</font></a></li>     
-                <li><a href="#Etapa36MTB"><font color="#FF4000">Montaña</font></a></li>
+				<li><a href="#Etapa36Carretera"><font color="#00AC69">Carretera</font></a></li>     
+                <li><a href="#Etapa36MTB"><font color="#FFF47300">Montaña</font></a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -4941,8 +4928,8 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="#Etapa37Carretera"><font color="#01DF01">Carretera</font></a></li>     
-                <li><a href="#Etapa37MTB"><font color="#FF4000">Montaña</font></a></li>
+				<li><a href="#Etapa37Carretera"><font color="#00AC69">Carretera</font></a></li>     
+                <li><a href="#Etapa37MTB"><font color="#FFF47300">Montaña</font></a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -5056,8 +5043,8 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="#Etapa38Carretera"><font color="#01DF01">Carretera</font></a></li>     
-                <li><a href="#Etapa38MTB"><font color="#FF4000">Montaña</font></a></li>
+				<li><a href="#Etapa38Carretera"><font color="#00AC69">Carretera</font></a></li>     
+                <li><a href="#Etapa38MTB"><font color="#FFF47300">Montaña</font></a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -5649,6 +5636,7 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
+                <li><a href="https://manuelamadeo.github.io/ccv/images/clasificaciongeneral/anteriores/2018.htm">Año 2018</a></li>
                 <li><a href="https://manuelamadeo.github.io/ccv/images/clasificaciongeneral/anteriores/2017.htm">Año 2017</a></li>
                 <li><a href="https://manuelamadeo.github.io/ccv/images/clasificaciongeneral/anteriores/2016.jpg">Año 2016</a></li>
                 <li><a href="https://manuelamadeo.github.io/ccv/images/clasificaciongeneral/anteriores/2015.jpg">Año 2015</a></li>
@@ -5827,6 +5815,7 @@
 				<li><a href="https://manuelamadeo.github.io/ccv/images/fotos/etapa6/index.html">Etapa 6</a></li>
 				<li><a href="https://manuelamadeo.github.io/ccv/images/fotos/etapa7/index.html">Etapa 7</a></li>
 				<li><a href="https://manuelamadeo.github.io/ccv/images/fotos/etapa8/index.html">Etapa 8</a></li>
+				<li><a href="https://manuelamadeo.github.io/ccv/images/fotos/etapa9/index.html">Etapa 9</a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -5839,7 +5828,6 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="https://manuelamadeo.github.io/ccv/images/fotos/etapa9/index.html">Etapa 9</a></li>
 				<li><a href="https://manuelamadeo.github.io/ccv/images/fotos/etapa10/index.html">Etapa 10</a></li>
 				<li><a href="https://manuelamadeo.github.io/ccv/images/fotos/etapa11/index.html">Etapa 11</a></li>
 				<li><a href="https://manuelamadeo.github.io/ccv/images/fotos/etapa12/index.html">Etapa 12</a></li>
@@ -5880,6 +5868,7 @@
 				<li><a href="https://manuelamadeo.github.io/ccv/images/fotos/etapa23/index.html">Etapa 23</a></li>
 				<li><a href="https://manuelamadeo.github.io/ccv/images/fotos/etapa24/index.html">Etapa 24</a></li>
 				<li><a href="https://manuelamadeo.github.io/ccv/images/fotos/etapa25/index.html">Etapa 25</a></li>
+				<li><a href="https://manuelamadeo.github.io/ccv/images/fotos/etapa26/index.html">Etapa 26</a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -5892,7 +5881,6 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="https://manuelamadeo.github.io/ccv/images/fotos/etapa26/index.html">Etapa 26</a></li>
 				<li><a href="https://manuelamadeo.github.io/ccv/images/fotos/etapa27/index.html">Etapa 27</a></li>
 				<li><a href="https://manuelamadeo.github.io/ccv/images/fotos/etapa28/index.html">Etapa 28</a></li>
 				<li><a href="https://manuelamadeo.github.io/ccv/images/fotos/etapa29/index.html">Etapa 29</a></li>
@@ -5983,6 +5971,7 @@
 				<li><a href="https://manuelamadeo.github.io/ccv/images/videos/etapa6/index.html">Etapa 6</a></li>
 				<li><a href="https://manuelamadeo.github.io/ccv/images/videos/etapa7/index.html">Etapa 7</a></li>
 				<li><a href="https://manuelamadeo.github.io/ccv/images/videos/etapa8/index.html">Etapa 8</a></li>
+				<li><a href="https://manuelamadeo.github.io/ccv/images/videos/etapa9/index.html">Etapa 9</a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -5995,7 +5984,6 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="https://manuelamadeo.github.io/ccv/images/videos/etapa9/index.html">Etapa 9</a></li>
 				<li><a href="https://manuelamadeo.github.io/ccv/images/videos/etapa10/index.html">Etapa 10</a></li>
 				<li><a href="https://manuelamadeo.github.io/ccv/images/videos/etapa11/index.html">Etapa 11</a></li>
 				<li><a href="https://manuelamadeo.github.io/ccv/images/videos/etapa12/index.html">Etapa 12</a></li>
@@ -6036,6 +6024,7 @@
 				<li><a href="https://manuelamadeo.github.io/ccv/images/videos/etapa23/index.html">Etapa 23</a></li>
 				<li><a href="https://manuelamadeo.github.io/ccv/images/videos/etapa24/index.html">Etapa 24</a></li>
 				<li><a href="https://manuelamadeo.github.io/ccv/images/videos/etapa25/index.html">Etapa 25</a></li>
+				<li><a href="https://manuelamadeo.github.io/ccv/images/videos/etapa26/index.html">Etapa 26</a></li>
 			</ul>
 		</div>
 		<div data-role="footer">
@@ -6048,7 +6037,6 @@
 		</div>
 		<div data-role="content">
 	    	<ul data-role="listview">
-				<li><a href="https://manuelamadeo.github.io/ccv/images/videos/etapa26/index.html">Etapa 26</a></li>
 				<li><a href="https://manuelamadeo.github.io/ccv/images/videos/etapa27/index.html">Etapa 27</a></li>
 				<li><a href="https://manuelamadeo.github.io/ccv/images/videos/etapa28/index.html">Etapa 28</a></li>
 				<li><a href="https://manuelamadeo.github.io/ccv/images/videos/etapa29/index.html">Etapa 29</a></li>
