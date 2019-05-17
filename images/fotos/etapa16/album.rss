@@ -3,20 +3,50 @@
      xmlns:media="http://search.yahoo.com/mrss/"
      xmlns:jalbum="http://jalbum.net/jalbumrss">
     <channel>
-        <title>Responsive222</title>
+        <title>Fotos Etapa 16</title>
    	<link>.</link>
-        <generator>jAlbum 13</generator>
+        <generator>jAlbum 15.1</generator>
    		<description></description>
         <jalbum:absolutePath></jalbum:absolutePath>
         <item>
-            <title>IMG-20151217-WA0007</title>
-            <link>slides/IMG-20151217-WA0007.jpg</link>
-            <pubDate>Thu, 17 Dec 2015 20:35:42 +0100</pubDate>
+            <title>IMG-20190512-WA0008</title>
+            <link>slides/IMG-20190512-WA0008.html</link>
+            <pubDate>Sat, 18 May 2019 01:09:54 +0200</pubDate>
             <description></description>
             <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20151217-WA0007.jpg" width="124" height="124"/>
-            <media:content type="image/jpeg" url="slides/IMG-20151217-WA0007.jpg" width="565" height="510"/>
-            <guid isPermaLink="false">slides/IMG-20151217-WA0007.jpg</guid>
+            <media:thumbnail url="thumbs/IMG-20190512-WA0008.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20190512-WA0008.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20190512-WA0008.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20190512-WA0013</title>
+            <link>slides/IMG-20190512-WA0013.html</link>
+            <pubDate>Sat, 18 May 2019 01:09:54 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20190512-WA0013.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20190512-WA0013.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20190512-WA0013.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20190512-WA0014</title>
+            <link>slides/IMG-20190512-WA0014.html</link>
+            <pubDate>Sat, 18 May 2019 01:09:54 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20190512-WA0014.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20190512-WA0014.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20190512-WA0014.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20190512-WA0012</title>
+            <link>slides/IMG-20190512-WA0012.html</link>
+            <pubDate>Sat, 18 May 2019 01:09:54 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20190512-WA0012.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20190512-WA0012.jpg" width="450" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20190512-WA0012.jpg</guid>
         </item>
     </channel>
 </rss>
