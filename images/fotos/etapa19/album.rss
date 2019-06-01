@@ -3,20 +3,110 @@
      xmlns:media="http://search.yahoo.com/mrss/"
      xmlns:jalbum="http://jalbum.net/jalbumrss">
     <channel>
-        <title>Responsive222</title>
+        <title>Fotos Etapa 19</title>
    	<link>.</link>
-        <generator>jAlbum 13</generator>
+        <generator>jAlbum 15.1</generator>
    		<description></description>
         <jalbum:absolutePath></jalbum:absolutePath>
         <item>
-            <title>IMG-20151217-WA0007</title>
-            <link>slides/IMG-20151217-WA0007.jpg</link>
-            <pubDate>Thu, 17 Dec 2015 20:35:42 +0100</pubDate>
+            <title>IMG-20190526-WA0004</title>
+            <link>slides/IMG-20190526-WA0004.html</link>
+            <pubDate>Sat, 01 Jun 2019 09:56:57 +0200</pubDate>
             <description></description>
             <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20151217-WA0007.jpg" width="124" height="124"/>
-            <media:content type="image/jpeg" url="slides/IMG-20151217-WA0007.jpg" width="565" height="510"/>
-            <guid isPermaLink="false">slides/IMG-20151217-WA0007.jpg</guid>
+            <media:thumbnail url="thumbs/IMG-20190526-WA0004.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20190526-WA0004.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20190526-WA0004.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20190526-WA0005</title>
+            <link>slides/IMG-20190526-WA0005.html</link>
+            <pubDate>Sat, 01 Jun 2019 09:56:57 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20190526-WA0005.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20190526-WA0005.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20190526-WA0005.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20190526-WA0006</title>
+            <link>slides/IMG-20190526-WA0006.html</link>
+            <pubDate>Sat, 01 Jun 2019 09:56:57 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20190526-WA0006.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20190526-WA0006.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20190526-WA0006.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20190526-WA0007</title>
+            <link>slides/IMG-20190526-WA0007.html</link>
+            <pubDate>Sat, 01 Jun 2019 09:56:57 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20190526-WA0007.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20190526-WA0007.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20190526-WA0007.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20190526-WA0015</title>
+            <link>slides/IMG-20190526-WA0015.html</link>
+            <pubDate>Sat, 01 Jun 2019 09:56:57 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20190526-WA0015.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20190526-WA0015.jpg" width="450" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20190526-WA0015.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20190526-WA0016</title>
+            <link>slides/IMG-20190526-WA0016.html</link>
+            <pubDate>Sat, 01 Jun 2019 09:56:57 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20190526-WA0016.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20190526-WA0016.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20190526-WA0016.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20190526-WA0017</title>
+            <link>slides/IMG-20190526-WA0017.html</link>
+            <pubDate>Sat, 01 Jun 2019 09:56:57 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20190526-WA0017.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20190526-WA0017.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20190526-WA0017.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20190526-WA0018</title>
+            <link>slides/IMG-20190526-WA0018.html</link>
+            <pubDate>Sat, 01 Jun 2019 09:56:57 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20190526-WA0018.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20190526-WA0018.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20190526-WA0018.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20190526-WA0020</title>
+            <link>slides/IMG-20190526-WA0020.html</link>
+            <pubDate>Sat, 01 Jun 2019 09:56:57 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20190526-WA0020.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20190526-WA0020.jpg" width="450" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20190526-WA0020.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20190526-WA0019</title>
+            <link>slides/IMG-20190526-WA0019.html</link>
+            <pubDate>Sat, 01 Jun 2019 09:56:57 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20190526-WA0019.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20190526-WA0019.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20190526-WA0019.jpg</guid>
         </item>
     </channel>
 </rss>
