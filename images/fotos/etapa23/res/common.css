@@ -87,16 +87,18 @@ img {
 #slideimage {
 	position: relative;
 	display: inline-block;
-	max-width: 100%;
-	height: auto;
 	line-height: 0px;
+	padding: 0px;
 	margin-top: 10px;
 }
 #slideimage img {
-	padding: 0px;
 	max-width: 100%;
 	height: auto;
-	box-sizing: border-box;
+}
+#slideimage video {
+	outline: 0;
+	max-width: 100%;
+	height: auto;
 }
 #slide-prev {
 	position: absolute;
@@ -115,14 +117,6 @@ img {
 #slidecomment {
 	font-size: 0.9rem;
 	margin: 8px auto;
-}
-video {
-	padding: 0px;
-	outline: 0;
-	max-width: 100%;
-	height: auto;
-	box-sizing: border-box;
-	margin-top: 10px;
 }
 #creditlink {
 	font-size: 0.7rem;

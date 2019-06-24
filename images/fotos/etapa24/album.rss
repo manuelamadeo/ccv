@@ -3,20 +3,40 @@
      xmlns:media="http://search.yahoo.com/mrss/"
      xmlns:jalbum="http://jalbum.net/jalbumrss">
     <channel>
-        <title>Responsive222</title>
+        <title>Fotos Etapa 24</title>
    	<link>.</link>
-        <generator>jAlbum 13</generator>
+        <generator>jAlbum 15</generator>
    		<description></description>
         <jalbum:absolutePath></jalbum:absolutePath>
         <item>
-            <title>IMG-20151217-WA0007</title>
-            <link>slides/IMG-20151217-WA0007.jpg</link>
-            <pubDate>Thu, 17 Dec 2015 20:35:42 +0100</pubDate>
+            <title>IMG-20190622-WA0000</title>
+            <link>slides/IMG-20190622-WA0000.html</link>
+            <pubDate>Mon, 24 Jun 2019 21:24:21 +0200</pubDate>
             <description></description>
             <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20151217-WA0007.jpg" width="124" height="124"/>
-            <media:content type="image/jpeg" url="slides/IMG-20151217-WA0007.jpg" width="565" height="510"/>
-            <guid isPermaLink="false">slides/IMG-20151217-WA0007.jpg</guid>
+            <media:thumbnail url="thumbs/IMG-20190622-WA0000.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20190622-WA0000.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20190622-WA0000.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20190622-WA0001</title>
+            <link>slides/IMG-20190622-WA0001.html</link>
+            <pubDate>Mon, 24 Jun 2019 21:24:21 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20190622-WA0001.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20190622-WA0001.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20190622-WA0001.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20190622-WA0002</title>
+            <link>slides/IMG-20190622-WA0002.html</link>
+            <pubDate>Mon, 24 Jun 2019 21:24:21 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20190622-WA0002.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20190622-WA0002.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20190622-WA0002.jpg</guid>
         </item>
     </channel>
 </rss>
