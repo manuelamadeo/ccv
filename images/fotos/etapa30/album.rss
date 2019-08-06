@@ -3,20 +3,50 @@
      xmlns:media="http://search.yahoo.com/mrss/"
      xmlns:jalbum="http://jalbum.net/jalbumrss">
     <channel>
-        <title>Responsive222</title>
+        <title>Fotos Etapa 30</title>
    	<link>.</link>
-        <generator>jAlbum 13</generator>
+        <generator>jAlbum 15</generator>
    		<description></description>
         <jalbum:absolutePath></jalbum:absolutePath>
         <item>
-            <title>IMG-20151217-WA0007</title>
-            <link>slides/IMG-20151217-WA0007.jpg</link>
-            <pubDate>Thu, 17 Dec 2015 20:35:42 +0100</pubDate>
+            <title>IMG-20190726-WA0010</title>
+            <link>slides/IMG-20190726-WA0010.html</link>
+            <pubDate>Tue, 06 Aug 2019 13:02:16 +0200</pubDate>
             <description></description>
             <media:description type="html"></media:description>
-            <media:thumbnail url="thumbs/IMG-20151217-WA0007.jpg" width="124" height="124"/>
-            <media:content type="image/jpeg" url="slides/IMG-20151217-WA0007.jpg" width="565" height="510"/>
-            <guid isPermaLink="false">slides/IMG-20151217-WA0007.jpg</guid>
+            <media:thumbnail url="thumbs/IMG-20190726-WA0010.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/IMG-20190726-WA0010.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20190726-WA0010.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20190726-WA0011</title>
+            <link>slides/IMG-20190726-WA0011.html</link>
+            <pubDate>Tue, 06 Aug 2019 13:02:16 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20190726-WA0011.jpg" width="124" height="124"/>
+            <media:content  url="slides/IMG-20190726-WA0011.jpg" width="1067" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20190726-WA0011.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20190726-WA0012</title>
+            <link>slides/IMG-20190726-WA0012.html</link>
+            <pubDate>Tue, 06 Aug 2019 13:02:16 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20190726-WA0012.jpg" width="124" height="124"/>
+            <media:content  url="slides/IMG-20190726-WA0012.jpg" width="1069" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20190726-WA0012.jpg</guid>
+        </item>
+        <item>
+            <title>IMG-20190727-WA0000</title>
+            <link>slides/IMG-20190727-WA0000.html</link>
+            <pubDate>Tue, 06 Aug 2019 13:02:16 +0200</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/IMG-20190727-WA0000.jpg" width="124" height="124"/>
+            <media:content  url="slides/IMG-20190727-WA0000.jpg" width="800" height="600"/>
+            <guid isPermaLink="false">slides/IMG-20190727-WA0000.jpg</guid>
         </item>
     </channel>
 </rss>
